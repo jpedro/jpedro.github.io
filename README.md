@@ -1,3 +1,4 @@
-## Index
+# Index
 
-- [markdown](markdown.md) some example of a Markdown file.
+- [Markdown](markdown.md) An example of a Markdown file
+- [Bash Dispatch](bash-dispatch.md) How to dispatch with bash
