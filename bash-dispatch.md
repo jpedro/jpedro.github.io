@@ -1,6 +1,13 @@
 # Bash Dispatch
 
-I'm tired of doing this:
+Bash as a language is horrible. The weird syntax reeks of historical hacks on
+top of each other. Unfortunately, until a better shell language is designed
+
+On the plus side, it's everywhere, ZSH is almost compatible with it and it's
+easy to get started. But one normally adds more and more code as time goes by.
+
+In particular, I'm tired of doing case to select the correct subcommand to run
+from a script. Something like this:
 
 ```bash
 #!/usr/bin/env bash
@@ -32,8 +39,8 @@ case "$COMMAND" in
 esac
 ```
 
-The `case` is to select the correct subcommand to run. As you add more, it
-becomes a long case list.
+The `case` selects the correct subcommand to run. As you add more, it becomes a
+long case list.
 
 Lately, I'm using a `dispatch` functions that tries to find the subcommand from
 available functions. Like this:
