@@ -49,7 +49,7 @@ long case list.
 
 ### Enter dispatch
 
-Lately, I'm using a `dispatch` functions that tries to find the subcommand from
+Lately, I'm using a `dispatch` function that tries to find the subcommand from
 available functions. Like this:
 
 ```bash
@@ -93,20 +93,22 @@ dispatch $@
 
 ```
 
-This function will try to find from functions declared with the prefix `cmd.`
-one that matches the arguments you pass.
+It will try to find from declared functions with the prefix `cmd.` one that
+matches the arguments you pass.
 
 It "supports" nested command by taking all the arguments and replacing any
 spaces with a dot `.` and see if there's a function available.
 
-For example, if your main script is called `please`, `please help me` will start
-by loooking for a function called `cmd.help.me`. If that doesn't exist, it will
-look for one called `cmd.help`. Since that one does exists, it will send `me` as
-the `$1` argument to it.
+For example, if your main script is called `please`, `please help me now` will
+start by loooking for a function called `cmd.help.me.now`. If that doesn't
+exist, it will look for one called `cmd.help.me`. That one also doesn't exist,
+so it tries next `cmd.help` which is declare. Then it will send `me` as the `$1`
+argument to it.
 
-If `cmd.help` doesn't exist, it calls the `DEFAULT` function.
+In case `cmd.help` doesn't exist, it calls the function name inside the
+`DEFAULT` variable.
 
-The existence of a `PREFIX`, means other functions will not be used in the
+The existence of a `PREFIX` means other functions will not be searched in the
 lookup process.
 
 
