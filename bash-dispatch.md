@@ -3,10 +3,9 @@
 Bash as a language is horrible.
 
 The weird syntax reeks of historical hacks on top of each other. Unfortunately,
-until a better shell language is designed we are stuck with it.
-
-PowerShell does a good job using objects but most configuration files and
-utilities still use plain text. And plain text is eternal.
+until a better shell language is designed we are stuck with it. PowerShell does
+a good job using objects but most configuration files and utilities still use
+plain text. And plain text is eternal.
 
 On the plus side, it's everywhere, ZSH is almost compatible with it and it's
 easy to get started. As time goes by, one normally add more and more crufty
