@@ -87,11 +87,12 @@ one that matches the arguments you pass.
 It "supports" nested command by taking all the arguments and replacing any
 spaces with a dot `.` and see if there's a function available.
 
-For example, if your main script is called `please`
+For example, if your main script is called `please`, `please help me` will start
+by loooking for a function called `cmd.help.me`. If that doesn't exist, it will
+look for one called `cmd.help`. Since that one does exists, it will send `me` as
+the `$1` argument to it.
 
-`please help me` will start by loooking for a function called `cmd.help.me`. If
-that doesn't exist, it will look for one called `cmd.help`. Since this one
-exists, it will send `me` as the `$1` argument to it.
+If `cmd.help` doesn't exist, it calls a default function.
 
 
 ### The whole shebang
@@ -120,11 +121,12 @@ cmd.other() {
 dispatch() {
   : "Finding command for $@..."
   local PREFIX="cmd"
+  local DEFAULT="cmd.help"
   local max=${#@}
 
   if [ $max -lt 1 ]
   then
-    cmd.help
+    $DEFAULT
     return
   fi
 
