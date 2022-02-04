@@ -46,6 +46,9 @@ esac
 The `case` selects the correct subcommand to run. As you add more, it becomes a
 long case list.
 
+
+### Enter dispatch
+
 Lately, I'm using a `dispatch` functions that tries to find the subcommand from
 available functions. Like this:
 
@@ -109,7 +112,7 @@ lookup process.
 
 ### One more thing
 
-I also get tired to update the usage echo strings.
+I'm also tired to update the usage echo strings.
 
 It's much easier to write the usage in a comment in the beginning of the file
 and grep it. Example:
@@ -131,6 +134,7 @@ cmd.help() {
 
 cmd.help
 ```
+
 
 ### The whole shebang
 
@@ -196,6 +200,7 @@ dispatch() {
 
 dispatch $@
 ```
+
 
 ### Todos
 
