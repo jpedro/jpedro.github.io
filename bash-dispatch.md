@@ -7,9 +7,8 @@ until a better shell language is designed we are stuck with it. PowerShell does
 a good job using objects but most configuration files and utilities still use
 plain text. And plain text is eternal.
 
-On the plus side, it's everywhere, ZSH is almost compatible with it and it's
-easy to get started. As time goes by, one normally add more and more crufty
-code.
+On the plus side, it's everywhere and it's easy to get started. As time goes by,
+you add more and more crufty code.
 
 I'm particularly tired of using `case` to select the correct subcommand to run
 from a script. Something like this:
