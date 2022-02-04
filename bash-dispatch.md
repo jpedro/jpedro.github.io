@@ -1,4 +1,4 @@
-# Batch Dispatch
+# Bash Dispatch
 
 I'm tired of doing this:
 
@@ -14,7 +14,9 @@ cmd.help() {
   echo "Usage: something <command>"
   echo
   echo "Commands:"
-  echo "    list.    # List all files in the home directory"
+  echo "    list          # List all files in the home directory"
+  echo "    other         # Does something else"
+  echo "    help [WHAT]   # It supposed to help with WHAT"
 }
 
 cmd.other() {
@@ -32,8 +34,8 @@ case "$COMMAND" in
 esac
 ```
 
-It's a case to select the correct subcommand to run. As you add more it becomes
-a long case list.
+The `case` is to select the correct subcommand to run. As you add more, it
+becomes a long case list.
 
 Lately, I'm using a `dispatch` functions that tries to find the subcommand from
 available functions. Like this:
