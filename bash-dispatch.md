@@ -15,8 +15,6 @@ cmd.help() {
   echo
   echo "Commands:"
   echo "    list          # List all files in the home directory"
-  echo "    other         # Does something else"
-  echo "    help [WHAT]   # It supposed to help with WHAT"
 }
 
 cmd.other() {
@@ -94,6 +92,9 @@ the `$1` argument to it.
 
 If `cmd.help` doesn't exist, it calls a default function.
 
+The existence of a prefix, means other functions will not be used in the lookup
+process.
+
 
 ### The whole shebang
 
@@ -108,10 +109,12 @@ cmd.list() {
 cmd.help() {
   echo "You ask for help regarding ${1:-something}..."
   echo
-  echo "Usage: something <command>"
+  echo "USAGE: please <command>"
   echo
-  echo "Commands:"
-  echo "    list     # List all files in the home directory"
+  echo "COMMANDS:"
+  echo "    list          # List all files in the home directory"
+  echo "    other         # Does something else"
+  echo "    help [WHAT]   # It supposed to help with WHAT"
 }
 
 cmd.other() {
