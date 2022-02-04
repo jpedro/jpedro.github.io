@@ -90,31 +90,56 @@ by loooking for a function called `cmd.help.me`. If that doesn't exist, it will
 look for one called `cmd.help`. Since that one does exists, it will send `me` as
 the `$1` argument to it.
 
-If `cmd.help` doesn't exist, it calls a default function.
+If `cmd.help` doesn't exist, it calls the `DEFAULT` function.
 
-The existence of a prefix, means other functions will not be used in the lookup
-process.
+The existence of a `PREFIX`, means other functions will not be used in the
+lookup process.
 
+
+### One more thing
+
+I also get tired to update the usage echo strings.
+
+It's much easier to write the usage in a comment in the beginning of the file
+and grep it. Example:
+
+```bash
+#!/usr/bin/env bash
+### USAGE
+###     please <command>
+###
+### COMMANDS
+###    list          # List all files in the home directory"
+###    other         # Does something else"
+###    help [WHAT]   # It supposedly helps with WHAT"
+set -euo pipefail
+
+cmd.help() {
+  grep '^###' $0 | cut -c 5-
+}
+
+cmd.help
+```
 
 ### The whole shebang
 
 ```bash
 #!/usr/bin/env bash
+### USAGE
+###     please <command>
+###
+### COMMANDS
+###    list          # List all files in the home directory"
+###    other         # Does something else"
+###    help [WHAT]   # It supposedly helps with WHAT"
 set -euo pipefail
+
+cmd.help() {
+  grep '^###' $0 | cut -c 5-
+}
 
 cmd.list() {
   ls -alF --color=auto $HOME
-}
-
-cmd.help() {
-  echo "You ask for help regarding ${1:-something}..."
-  echo
-  echo "USAGE: please <command>"
-  echo
-  echo "COMMANDS:"
-  echo "    list          # List all files in the home directory"
-  echo "    other         # Does something else"
-  echo "    help [WHAT]   # It supposed to help with WHAT"
 }
 
 cmd.other() {
@@ -160,7 +185,6 @@ dispatch() {
 
 dispatch $@
 ```
-
 
 ### Todos
 
