@@ -45,9 +45,12 @@ esac
 
 As you add more, the case list becomes longer to maintain a long and it gets
 hard to add nested commands. Worse, some nested commands accept value (not just
-`--args`). So a command like:
+`--args`). So for a command like:
 
-    please list repos
+    please list repo
+
+one would need to check not only `$1` but `$2`. Or use a 2nd case inside the
+`cmd.list` function.
 
 
 ## Enter dispatch
