@@ -120,10 +120,11 @@ lookup process.
 
 ### One more thing
 
-I'm also tired to update the usage echo strings.
+I giveup showing a script's usage using `echo`es.
 
-It's much easier to write the usage in a comment in the beginning of the file
-and grep it. Example:
+It's much cleaner to write the usage in a comment in the beginning of the file
+and grep it. It's also the first thing you see when you open the script in a
+text editor.
 
 ```bash
 #!/usr/bin/env bash
