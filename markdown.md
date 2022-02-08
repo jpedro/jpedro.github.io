@@ -39,7 +39,8 @@ Becomes:
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[This is a link](url) and ![this is an image](src)
+
 ---
 
 ## More details

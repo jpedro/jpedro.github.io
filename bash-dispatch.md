@@ -8,10 +8,10 @@ a good job using objects but most configuration files and utilities still use
 plain text. And plain text is eternal.
 
 On the plus side, it's everywhere and it's easy to get started. As time goes by,
-you add more and more crufty code.
+you add more and more cruft.
 
 I'm particularly tired of using `case` to select the correct subcommand to run
-from a script. Something like this:
+from the first argument. Something like this:
 
 ```bash
 #!/usr/bin/env bash
@@ -206,4 +206,4 @@ dispatch $@
 
 ### Todos
 
-- [ ] Ignore everything after flags
+- [ ]  Ignore everything after flags
