@@ -43,14 +43,17 @@ case "$COMMAND" in
 esac
 ```
 
-The `case` selects the correct subcommand to run. As you add more, it becomes a
-long case list.
+As you add more, the case list becomes longer to maintain a long and it gets
+hard to add nested commands. Worse, some nested commands accept value (not just
+`--args`). So a command like:
+
+    please list repos
 
 
 ### Enter dispatch
 
-Lately, I'm using a `dispatch` function that tries to find the subcommand from
-available functions. Like this:
+Lately, I'm using a `dispatch` function that tries to find the nested command
+from available functions. Like this:
 
 ```bash
 dispatch() {
@@ -94,7 +97,10 @@ dispatch $@
 ```
 
 It will try to find from declared functions with the prefix `cmd.` one that
-matches the arguments you pass.
+matches the arguments you pass. It starts with all the arguments and removes
+one by one until it finds a function that can be run.
+
+Poor man's dispatch or lazy solution? Both.
 
 It "supports" nested command by taking all the arguments and replacing any
 spaces with a dot `.` and see if there's a function available.
@@ -207,3 +213,6 @@ dispatch $@
 ### Todos
 
 - [ ]  Ignore everything after flags
+- [ ]  Think on the ambiguity between a valid value and a valid command. For
+       example: is `repo` in `please list repo` a value to `cmd.list` or the
+       command `cmd.list.repo`? This is what keeps me awake at night.
