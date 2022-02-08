@@ -18,7 +18,7 @@ were:
 
 2. GitHub actually renders markdown pages directly. So no need to add a theme
    and an engine transforming markdown into HTML. And the colors and layout are
-   decent enough to work.
+   decent enough to work. The index page for markdown is simply `README.md`.
 
 
 ## Todos
