@@ -22,8 +22,9 @@ were:
 
 ## Todos
 
-- [ ]  Add metadata (via comments) to pages, like tags, summary, created and
-       have a script running from GitHub actions that generates the `tags/`
-       index page.
+- [ ] Add metadata (via comments) to pages, like tags, summary, created etc...
 
-- [ ]  Add a comments section on each page.
+- [ ] Have a script running from GitHub actions that generates the `tags/`
+      index page.
+
+- [ ] Add a comments section on each page.
