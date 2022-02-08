@@ -50,7 +50,7 @@ hard to add nested commands. Worse, some nested commands accept value (not just
     please list repos
 
 
-### Enter dispatch
+## Enter dispatch
 
 Lately, I'm using a `dispatch` function that tries to find the nested command
 from available functions. Like this:
@@ -100,7 +100,7 @@ It will try to find from declared functions with the prefix `cmd.` one that
 matches the arguments you pass. It starts with all the arguments and removes
 one by one until it finds a function that can be run.
 
-Poor man's dispatch or lazy solution? Both.
+Poor man's dispatch or lazy solution? Both. Always both.
 
 It "supports" nested command by taking all the arguments and replacing any
 spaces with a dot `.` and see if there's a function available.
@@ -118,7 +118,7 @@ The existence of a `PREFIX` means other functions will not be searched in the
 lookup process.
 
 
-### One more thing
+## One more thing
 
 I gave up showing a script's usage using `echo`.
 
@@ -211,7 +211,7 @@ dispatch $@
 ```
 
 
-### Todos
+## Todos
 
 - [ ]  Ignore everything after flags
 - [ ]  Think on the ambiguity between a valid value and a valid command. For
