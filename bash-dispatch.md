@@ -120,7 +120,7 @@ lookup process.
 
 ### One more thing
 
-I giveup showing a script's usage using `echo`es.
+I give up showing a script's usage using `echo`.
 
 It's much cleaner to write the usage in a comment in the beginning of the file
 and grep it. It's also the first thing you see when you open the script in a
