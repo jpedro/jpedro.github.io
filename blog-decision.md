@@ -3,6 +3,9 @@
 I started a few blogs but failed. Not knowing what to write and the right tool
 was not obvious for quite a while.
 
+Many people highlighted the value of writing down stuff. It requires some time
+but I'll try this now.
+
 
 ## Enter GitHub
 
