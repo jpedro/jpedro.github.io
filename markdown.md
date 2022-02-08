@@ -1,4 +1,5 @@
 <!-- Tags: text -->
+<!-- Summary: Example markdown snippets -->
 [//]: # (Tags: text)
 
 
@@ -24,24 +25,8 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-
-Becomes:
 ---
-# Header 1
-## Header 2
-### Header 3
 
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[This is a link](url) and ![this is an image](src)
-
----
 
 ## More details
 
