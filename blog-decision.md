@@ -14,7 +14,7 @@ the 2 things that changed my opinion to use GitHub as the static blog hosting
 were:
 
 1. GitHub uses the `github.com/USER/USER.github.io` repo as for
-   [USER.github.io](USER.github.io). Which is pretty neat.
+   [USER.github.io](https://USER.github.io). Which is pretty neat.
 
 2. GitHub actually renders markdown pages directly with no need to add a theme.
    And the colors and layout is decent enough to work.
