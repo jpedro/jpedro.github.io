@@ -1,4 +1,3 @@
-# Index
+# jpedro.github.io
 
-- [Markdown](markdown.md) An example of a Markdown file
-- [Bash Dispatch](bash-dispatch.md) How to dispatch with bash
+Static blog using the main user GitHub page repo.
