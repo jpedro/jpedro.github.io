@@ -5,4 +5,4 @@
 
 ---
 
-This will be generated. At some point
+This will be generated. Eventually.
