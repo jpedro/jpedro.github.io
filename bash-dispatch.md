@@ -148,7 +148,7 @@ cmd.help
 ```
 
 
-### The whole shebang
+### The whole #!shebang
 
 ```bash
 #!/usr/bin/env bash
