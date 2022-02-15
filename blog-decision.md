@@ -10,7 +10,7 @@ It's easy and cheap. As in free from and with zero maintenance. And now
 I have my post to write on.
 
 
-## Enter GitHub
+## Enter github.io
 
 I've been collecting notes on a GitHub repo and there's of course gists. But
 the 2 things that made me use GitHub as the static blog hosting were:
