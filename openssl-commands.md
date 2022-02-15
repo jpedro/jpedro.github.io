@@ -1,4 +1,6 @@
-# Common OpenSSL Commands
+# OpenSSL Commands
+
+[Original post](https://www.sslshopper.com/article-most-common-openssl-commands.html)
 
 One of the most versatile SSL tools is OpenSSL which is an open
 source implementation of the SSL protocol. There are versions of
