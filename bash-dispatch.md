@@ -216,7 +216,7 @@ dispatch $@
 
 ## Todos
 
-- [ ]  Ignore everything after flags
-- [ ]  Think on the ambiguity between a valid value and a valid command. For
-       example: is `repo` in `please list repo` a value to `cmd.list` or the
-       command `cmd.list.repo`? This is what keeps me awake at night.
+- [ ] Ignore everything after the first flag
+- [ ] Think on the ambiguity between a valid value and a command. For
+      example: is `repo` in `please list repo` a value to `cmd.list` or the
+      command `cmd.list.repo`? This is what keeps me awake at night.
