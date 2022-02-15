@@ -21,8 +21,8 @@ the 2 things that made me use GitHub as the static blog hosting were:
 2. GitHub actually renders markdown pages directly. So no need to add a theme
    and an engine transforming markdown into HTML.
    
-   And the colors and responsive layout is decent and clean. The first page
-   for the rendered markdown is simply `index.md` or if that doesn't exist,
+   The colors and responsive layout are decent. The first page for the
+   rendered github.io markdown is simply `index.md` or if that doesn't exist,
    `README.md`.
 
 
