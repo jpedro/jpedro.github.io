@@ -103,7 +103,7 @@ It will try to find from declared functions with the prefix `cmd.` one that
 matches the arguments you pass. It starts with all the arguments and removes
 one by one until it finds a function that can be run.
 
-Poor man's dispatch or lazy solution? Both. Always both.
+Poor man's dispatch or lazy solution? Both. Always both!
 
 It "supports" nested command by taking all the arguments and replacing any
 spaces with a dot `.` and see if there's a function available.
@@ -216,8 +216,8 @@ dispatch $@
 
 ## Todos
 
-- [ ] Ignore everything after the first flag
+- Ignore everything after the first flag
 
-- [ ] Think on the ambiguity between a valid value and a command. For
-      example: is `repo` in `please list repo` a value to `cmd.list` or the
-      command `cmd.list.repo`? This is what keeps me awake at night.
+- Think on the ambiguity between a valid value and a command. For
+  example: is `repo` in `please list repo` a value to `cmd.list` or the
+  command `cmd.list.repo`? This is what keeps me awake at night.
