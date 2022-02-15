@@ -4,5 +4,5 @@
 - [Bash Dispatch](bash-dispatch.md) How to dispatch with bash
 
 
----
+## 
 This will be generated. Eventually.
