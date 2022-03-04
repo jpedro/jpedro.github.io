@@ -6,5 +6,5 @@
 
 
 ##  
-This will be generated. (Eventually.)
+This will be generated. Eventually
 
