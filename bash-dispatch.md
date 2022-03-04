@@ -223,6 +223,6 @@ dispatch $@
 - Ignore everything after the first flag
 
 - Think on the ambiguity between a valid value and a command. For
-  example: would `repo` in `please list repo` be the `$1` value
+  example: should `repo` in `please list repo` be the `$1` value
   to `cmd.list` or the command `cmd.list.repo`? This is the stuff
   that keeps me awake at night.
