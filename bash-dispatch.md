@@ -224,6 +224,5 @@ dispatch $@
 
 - Think on the ambiguity between a valid value and a command. For
   example: would `repo` in `please list repo` be the `$1` value
-  to `cmd.list` or the command `cmd.list.repo`?
-  
-  This is what keeps me awake at night.
+  to `cmd.list` or the command `cmd.list.repo`? This is the stuff
+  that keeps me awake at night.
