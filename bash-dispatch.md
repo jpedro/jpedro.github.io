@@ -10,8 +10,8 @@ plain text. And plain text is eternal.
 On the plus side, it's everywhere and it's easy to get started. As time goes by,
 you always add more cruft.
 
-I'm particularly tired of using `case` to select the correct subcommand to run
-from the first argument. Something like this:
+I'm tired of using `case` to select the correct subcommand to run from the
+first argument. Something like this:
 
 ```bash
 #!/usr/bin/env bash
@@ -152,7 +152,7 @@ cmd.help
 ```
 
 
-### The whole #!shebang
+## The whole #!shebang
 
 ```bash
 #!/usr/bin/env bash
