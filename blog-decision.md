@@ -1,4 +1,4 @@
-# Blog Decision
+# Blog Thingy
 
 I tried to start a few blogs but failed. Not knowing what to write was
 one problem. Also, the right tool was not obvious for quite a while.
