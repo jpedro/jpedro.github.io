@@ -34,6 +34,7 @@ that made GitHub a good static blog hosting were:
 
 - Add metadata (via comments) to pages, like tags, summary, created etc.
 - Have a script running from a GitHub workflow that generates the
-  `tags/` index page. And even extracts a summary. Because lazy.
+  `tags/` index page. And even extracts a summary used to create the
+  `index.md` file. Because lazy.
 - Think how to add a comments section on each rendered page because
   markdown doesn't allow javascript.
