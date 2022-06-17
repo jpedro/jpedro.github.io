@@ -2,16 +2,17 @@
 
 Bash as a language is horrible.
 
-The weird syntax reeks of historical hacks on top of each other. Unfortunately,
-until a better shell language is wide-spread we are stuck with it. PowerShell
-does a good job using objects.
+The weird syntax reeks of historical hacks on top of each other.
+Unfortunately, until a better shell is wide-spread we are stuck with it.
+PowerShell does a good job using objects.
 
-On the plus side, it's everywhere and it's easy to get started. You just throw
-all shell commands into a file. As time goes by, you always add more cruft,
-like conditionals, loops and functions.
+On the plus side, it's everywhere and it's easy to get started. You just
+throw all shell commands into a file. As time goes by, you always add
+more cruft, like conditionals, loops and functions.
 
-I'm tired of using `case` to select the correct subcommand to run from the
-first argument. Something like this:
+I grew particularly tired of using `case` to select the correct
+subcommand / function to run from the first argument. Something like
+this:
 
 ```bash
 #!/usr/bin/env bash
@@ -44,19 +45,19 @@ esac
 ```
 
 As you add more functionality, the case list becomes longer to maintain
-and it gets hard to add nested commands. Some nested commands might accept
-values that can also be `--flag`s. So for a command like:
+and it gets hard to add nested commands. Some nested commands might
+accept values that can also be `--flag`s. So for a command like:
 
     please list --repos
 
-one would need to check not only `$1` but `$2`. Or use a 2nd case inside the
-`cmd.list` function.
+one would need to check not only `$1` but `$2`. Or use a 2nd case inside
+the `cmd.list` function. And `--repos` is a valid direcotry name.
 
 
 ## Enter dispatch
 
-Lately, I'm using a `dispatch` function that tries to find the subcommand from
-declared functions with a known prefix:
+Lately, I'm using a `dispatch` function that tries to find the
+subcommand from the declared functions, with a known prefix:
 
 ```bash
 
@@ -111,17 +112,17 @@ Poor man's dispatcher or lazy solution? Both. Always both!
 It "supports" nested command by taking replacing any spaces with a
 dot `.` and check if that function is available.
 
-For example, if your main script is called `please`, `please help me now` will
-start by loooking for a function called `cmd.help.me.now`. If that doesn't
-exist, it will look for one called `cmd.help.me`. That one also doesn't exist,
-so it tries next `cmd.help` which is declared. Then it will send `me now` as
-the arguments to it.
+For example, if your main script is called `please`, `please help me
+now` will start by loooking for a function called `cmd.help.me.now`. If
+that doesn't exist, it will look for one called `cmd.help.me`. That one
+also doesn't exist, so it tries next `cmd.help` which is declared. Then
+it will send `me now` as the arguments to it.
 
 In case `cmd.help` doesn't exist, it calls the function name inside the
 `DEFAULT` variable.
 
-The existence of a `PREFIX` means other functions will not be searched in the
-lookup process. It's a guard.
+The existence of a `PREFIX` means other functions will not be searched
+in the lookup process. It's a guard.
 
 
 ## One more thing
@@ -221,7 +222,7 @@ dispatch $@
 
 - Ignore everything after the first flag is found
 
-- Store the found flags
+- Store the found flags in a map
 
 - Think on the ambiguity between a valid value and a command. For
   example: should `repo` in `please list repo` be the `$1` value
