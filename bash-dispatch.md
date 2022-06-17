@@ -3,9 +3,8 @@
 Bash as a language is horrible.
 
 The weird syntax reeks of historical hacks on top of each other. Unfortunately,
-until a better shell language is designed we are stuck with it. PowerShell does
-a good job using objects but most configuration files and utilities still use
-plain text. And plain text is eternal.
+until a better shell language is wide-spread we are stuck with it. PowerShell does
+a good job using objects.
 
 On the plus side, it's everywhere and it's easy to get started. As time goes by,
 you always add more cruft.
@@ -44,10 +43,10 @@ esac
 ```
 
 As you add more functionality, the case list becomes longer to maintain
-and it gets hard to add nested commands. Worse, some nested commands
-accept values (not just `--flag`s). So for a command like:
+and it gets hard to add nested commands. Some nested commands might accept
+values that can also be `--flag`s. So for a command like:
 
-    please list repo
+    please list --repos
 
 one would need to check not only `$1` but `$2`. Or use a 2nd case inside the
 `cmd.list` function.
@@ -56,7 +55,7 @@ one would need to check not only `$1` but `$2`. Or use a 2nd case inside the
 ## Enter dispatch
 
 Lately, I'm using a `dispatch` function that tries to find the subcommand from
-declared functions. Like this:
+declared functions with a known prefix:
 
 ```bash
 
@@ -102,10 +101,9 @@ dispatch $@
 
 ```
 
-It will try to find from declared functions with the prefix `cmd.` the
-longest one that matches the arguments you pass. It starts with all
-the arguments and removes one by one until it finds a function that
-can be run.
+It will try to find `cmd.$1` from declared functions. The longest one
+that matches the arguments you pass. It starts with all the arguments
+and removes one by one until it finds a function that can be run.
 
 Poor man's dispatcher or lazy solution? Both. Always both!
 
@@ -127,10 +125,10 @@ lookup process. It's a guard.
 
 ## One more thing
 
-I gave up showing a script's usage using `echo`.
+I gave up showing a script's usage using `echo`s. It's so ugly.
 
-It's cleaner to write the usage in a comment in the beginning of the file
-and grep it. It's also the first thing you see when you open the script in a
+So now, I slep the usage in a comment in the beginning of the file and
+grep it. It's also the first thing you see when you open the script in a
 text editor.
 
 ```bash
@@ -148,7 +146,7 @@ cmd.help() {
   grep '^###' $0 | cut -c 5-
 }
 
-cmd.help
+# ...
 ```
 
 
@@ -160,9 +158,9 @@ cmd.help
 ###     please <command>
 ###
 ### COMMANDS
-###    list          # List all files in the home directory"
+###    list [DIR]    # List all files in a directory"
 ###    other         # Does something else"
-###    help [WHAT]   # It supposedly helps with WHAT"
+###    help          # Shows this help
 set -euo pipefail
 
 cmd.help() {
@@ -220,7 +218,9 @@ dispatch $@
 
 ## Todos
 
-- Ignore everything after the first flag
+- Ignore everything after the first flag is found
+
+- Store the found flags
 
 - Think on the ambiguity between a valid value and a command. For
   example: should `repo` in `please list repo` be the `$1` value
