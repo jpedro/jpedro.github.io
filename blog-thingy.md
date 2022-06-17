@@ -3,8 +3,9 @@
 I tried to start a few blogs but failed. Not knowing what to write was
 one problem. Also, the right tool was not obvious for quite a while.
 
-The internets keep saying me the value of writing down stuff. It requires
-some time but I'll try this now.
+The internets keep saying me the value of writing stuff, even if no one
+reads it. It requires some mental time but I'm using a Github repo
+rendered markdown pages now.
 
 It's easy, and most importantly, it's cheap. Free actually. As in free
 from maintenance. And now I've (finally) one thing to write about.
