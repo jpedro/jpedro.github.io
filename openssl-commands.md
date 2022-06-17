@@ -2,20 +2,19 @@
 
 [Original post](https://www.sslshopper.com/article-most-common-openssl-commands.html)
 
-One of the most versatile SSL tools is OpenSSL which is an open
-source implementation of the SSL protocol. There are versions of
-OpenSSL for nearly every platform, including Windows, Linux, and
-Mac OS X. OpenSSL is commonly used to create the CSR and private
-key for many different platforms, including Apache. However, it
-also has hundreds of different functions that allow you to view
-the details of a CSR or certificate, compare an MD5 hash of the
-certificate and private key (to make sure they match), verify
-that a certificate is installed properly on any website, and
-convert the certificate to a different format.
+One of the most versatile SSL tools is OpenSSL which is an open source
+implementation of the SSL protocol. There are versions of OpenSSL for
+nearly every platform, including Windows, Linux, and Mac OS X. OpenSSL
+is commonly used to create the CSR and private key for many different
+platforms, including Apache. However, it also has hundreds of different
+functions that allow you to view the details of a CSR or certificate,
+compare an MD5 hash of the certificate and private key (to make sure
+they match), verify that a certificate is installed properly on any
+website, and convert the certificate to a different format.
 
-If you don't want to bother with OpenSSL, you can do many of
-the same things with our SSL Certificate Tools. Below, we have
-listed the most common OpenSSL commands and their usage:
+If you don't want to bother with OpenSSL, you can do many of the same
+things with our SSL Certificate Tools. Below, we have listed the most
+common OpenSSL commands and their usage:
 
 
 ## General OpenSSL Commands
@@ -49,7 +48,7 @@ These commands allow you to
         -out certificate.crt
 
 
-#### Generate a certificate signing request (CSR) for an existing private key
+#### Generate a certificate signing request (CSR) for a private key
 
     openssl req \
         -new \
@@ -57,7 +56,7 @@ These commands allow you to
         -out request.csr
 
 
-#### Generate a certificate signing request based on an existing certificate
+#### Generate a certificate signing request based on a certificate
 
     openssl x509 \
         -x509toreq \
@@ -98,8 +97,8 @@ check certificates using our online tools.
 #### Check a PKCS#12 file (.pfx or .p12)
 
     openssl pkcs12 -info -in keyStore.p12
- 
- 
+
+
 ## Debugging Using OpenSSL
 
 If you are receiving an error that the private doesn't match
