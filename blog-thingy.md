@@ -26,8 +26,8 @@ that made GitHub a good static blog hosting were:
 
    The first page for the rendered github.io markdown is simply
    `index.md` and if that doesn't exist, `README.md`. This distinction
-   is welcomed as one can be used internally for the repo and `index.md`
-   could be generated.
+   is welcomed as one can be used as the repo intro and `index.md` could
+   be generated.
 
 
 ## Todos
