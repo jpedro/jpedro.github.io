@@ -3,11 +3,12 @@
 Bash as a language is horrible.
 
 The weird syntax reeks of historical hacks on top of each other. Unfortunately,
-until a better shell language is wide-spread we are stuck with it. PowerShell does
-a good job using objects.
+until a better shell language is wide-spread we are stuck with it. PowerShell
+does a good job using objects.
 
-On the plus side, it's everywhere and it's easy to get started. As time goes by,
-you always add more cruft.
+On the plus side, it's everywhere and it's easy to get started. You just throw
+all shell commands into a file. As time goes by, you always add more cruft,
+like conditionals, loops and functions.
 
 I'm tired of using `case` to select the correct subcommand to run from the
 first argument. Something like this:
