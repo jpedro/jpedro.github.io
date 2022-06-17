@@ -21,7 +21,8 @@ that made GitHub a good static blog hosting were:
    simply my GH account.
 
 2. GitHub does a decent job of rendering markdown files. So no need to
-   find and having a whole engine, rendering markdown into HTML.
+   find a clean theme and having a whole engine, rendering markdown into
+   HTML.
 
    The first page for the rendered github.io markdown is simply
    `index.md` and if that doesn't exist, `README.md`. This distinction
