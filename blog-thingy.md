@@ -18,7 +18,7 @@ that made GitHub a good static blog hosting were:
 
 1. GitHub uses the `github.com/USER/USER.github.io` repo as source for
    [USER.github.io](https://USER.github.io). Which is handy. My blog is
-   my GH account.
+   simply my GH account.
 
 2. GitHub does a decent job of rendering markdown files. So no need to
    find and having a whole engine, rendering markdown into HTML.
