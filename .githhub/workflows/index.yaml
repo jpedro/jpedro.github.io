@@ -1,0 +1,30 @@
+name: Index pages
+
+
+jobs:
+  index:
+    name: Indexes all pages
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.10'
+
+    - name: Rebuild index.md
+      run: |
+        python index.py
+
+    - name: Commit to master
+      run: |
+        git config --local user.email "actions@github.com"
+        git config --local user.name  ${{ github.actor }}
+        git add .
+        git status
+        git commit -m "Indexing pages"
+        git fetch origin master
+        git rebase origin/master
+        git push origin HEAD
