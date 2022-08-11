@@ -1,5 +1,10 @@
 name: Index pages
 
+on:
+  push:
+    branches:
+    - master
+
 
 jobs:
   index:
