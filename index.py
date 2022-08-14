@@ -15,7 +15,7 @@ TEMPLATE_INDEX = """
 {{ pages }}
 
 
-## Tags
+#### Tags
 {{ tags }}
 
 
