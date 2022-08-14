@@ -8,7 +8,7 @@ on:
 
 jobs:
   index:
-    name: Indexes all pages
+    name: Index pages
     runs-on: ubuntu-latest
 
     steps:
@@ -21,7 +21,7 @@ jobs:
 
     - name: Rebuild index.md
       run: |
-        python index.py
+        python index.py --save
 
     - name: Commit to master
       run: |

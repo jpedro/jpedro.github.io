@@ -1,4 +1,5 @@
 import os
+import sys
 
 EXCLUDE = [
     "README.md",
@@ -9,7 +10,7 @@ COMMENT_START = "<!--"
 COMMENT_END = "-->"
 
 TEMPLATE_INDEX = """
-## Index
+## Pages
 
 {{ pages }}
 
@@ -23,7 +24,7 @@ This will be generated. Eventually
 """
 
 TEMPLATE_TAG = """
-## Tag {{ name }}
+## {{ name }}
 
 {{ content }}
 
@@ -38,7 +39,7 @@ def process(name: str) -> dict:
         line = line.strip()
 
         if line.find("# ") == 0 and meta.get("title") is None:
-            print(f"Using first # header as title: {line}")
+            # print(f"Using first # header as title: {line}")
             meta["title"] = line[2:]
             continue
 
@@ -60,13 +61,17 @@ def process(name: str) -> dict:
 
         key = comment[0:pos].strip()
         val = comment[pos+1:].strip()
-        print(f"  {key}: {val}")
+        # print(f"  {key}: {val}")
         meta[key] = val
 
-    print("meta", meta)
+    # print("meta", meta)
     return meta
 
-def main():
+def titlelize(text: str) -> str:
+    return text[0].upper() + text[1:]
+
+
+def main(save: bool):
     pages = {}
     tags = {}
 
@@ -77,16 +82,16 @@ def main():
         if name in EXCLUDE:
             continue
 
-        print(f"- File {name}")
+        # print(f"- File {name}")
         meta = process(name)
         if meta.get("hidden"):
-            print(f"  - {name} is hidden")
+            # print(f"  - {name} is hidden")
             continue
 
         if meta.get("title") is None:
             title = os.path.basename(name).replace(".md", "").replace("-", " ")
-            meta["title"] = title[0].upper() + title[1:]
-            print(f"  - Using name name as title: {title}")
+            meta["title"] = titlelize(title)
+            # print(f"  - Using name name as title: {title}")
 
         if meta.get("tags"):
             for tag in meta["tags"].split(","):
@@ -97,51 +102,55 @@ def main():
 
         pages[name] = meta["title"]
 
-    print("pages", pages)
-    print("tags", tags)
+    # print("Using pages", pages)
+    # print("Using tags", tags)
 
     tagItems = {}
     os.makedirs(f"tags", exist_ok=True)
     for tag, pages in tags.items():
         tagItems[tag] = []
         content = []
-        print(f"\nTag: {tag}")
+        # print(f"\nTag: {titlelize(tag)}")
         for page, title in pages.items():
             tagItems[tag].append(page)
-            print(f"- Page: {title}: {page}")
+            # print(f"- Page: {title}: {page}")
             content.append(f"- [{title}]({page})")
 
-        text = TEMPLATE_TAG.replace("{{ name }}", tag)
-        text = text.replace("{{ tagContent }}", "\n".join(content))
+        text = TEMPLATE_TAG.replace("{{ name }}", titlelize(tag))
+        text = text.replace("{{ content }}", "\n".join(content)).strip()
         print()
-        print(f"TAG {tag}:")
+        print(f"tags/{tag}.md:")
         print("\033[38;5;242m----")
         print(text)
         print("----\033[0m")
-        os.makedirs(f"tags", exist_ok=True)
-        with open(f"tags/{tag}.md", "w") as f:
-            f.write(text.strip())
+        if save:
+            os.makedirs(f"tags", exist_ok=True)
+            with open(f"tags/{tag}.md", "w") as f:
+                f.write(text)
 
     content = []
-    print("\nPages:")
     for name, title in pages.items():
-        print(f"- Page: {title}: {name}")
+        # print(f"- {title}: {name}")
         content.append(f"- [{title}]({name})")
 
     tagsContent = []
-    print(tagItems)
+    # print(tagItems)
     for tag, pages in tagItems.items():
         count = len(pages)
-        print(f"- Tag: {tag}: {count}")
+        # print(f"- Tag: {tag}: {count}")
         tagsContent.append(f"- [{tag}](tags/{tag}) ({count})")
 
-    print("tagsContent", tagsContent)
+    # print("tagsContent", tagsContent)
     text = TEMPLATE_INDEX.replace("{{ pages }}", "\n".join(content))
-    text = text.replace("{{ tags }}", "\n".join(tagsContent))
+    text = text.replace("{{ tags }}", "\n".join(tagsContent)).strip()
+    print()
+    print("index.md")
     print("\033[38;5;242m----")
     print(text)
     print("----\033[0m")
-    with open("index.md", "w") as f:
-        f.write(text.strip())
+    if save:
+        with open("index.md", "w") as f:
+            f.write(text)
 
-main()
+save = True if "--save" in sys.argv else False
+main(save)
