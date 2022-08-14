@@ -115,6 +115,7 @@ def main(save: bool):
         for page, title in pages.items():
             tagItems[tag].append(page)
             # print(f"- Page: {title}: {page}")
+            # content.append(f"- [{title}](/{page[0:len(page)-3]})")
             content.append(f"- [{title}](/{page})")
 
         text = TEMPLATE_TAG.replace("{{ name }}", titlelize(tag))
