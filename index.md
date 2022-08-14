@@ -1,15 +1,14 @@
 # Index
 
 - [OpenSSL Commands](openssl-commands)
-- [Example markdown snippets](markdown)
+- [Example of markdown snippets](markdown)
 - [Bash Dispatch](bash-dispatch)
 
 
 #### Tags
 - [shell](tags/shell) (1)
 - [security](tags/security) (1)
-- [markdown](tags/markdown) (1)
-- [text](tags/text) (1)
+- [writting](tags/writting) (1)
 
 
 #  &nbsp;
