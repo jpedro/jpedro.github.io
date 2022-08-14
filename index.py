@@ -105,6 +105,7 @@ def main(save: bool):
     # print("Using pages", pages)
     # print("Using tags", tags)
 
+    separator = "─" * 80
     tagItems = {}
     os.makedirs(f"tags", exist_ok=True)
     for tag, pages in blogTags.items():
@@ -119,10 +120,10 @@ def main(save: bool):
         text = TEMPLATE_TAG.replace("{{ name }}", titlelize(tag))
         text = text.replace("{{ content }}", "\n".join(content)).strip()
         print()
-        print(f"tags/{tag}.md:")
-        print("\033[38;5;242m----")
+        print(f"File \033[32;1mtags/{tag}.md")
+        print("\033[38;5;242m" + separator)
         print(text)
-        print("----\033[0m")
+        print(separator + "\033[0m")
         if save:
             os.makedirs(f"tags", exist_ok=True)
             with open(f"tags/{tag}.md", "w") as f:
@@ -130,7 +131,7 @@ def main(save: bool):
 
     content = []
     for name, title in blogPages.items():
-        print(f"- {title}: {name}")
+        # print(f"- {title}: {name}")
         content.append(f"- [{title}]({name})")
 
     tagsContent = []
@@ -144,10 +145,10 @@ def main(save: bool):
     text = TEMPLATE_INDEX.replace("{{ pages }}", "\n".join(content))
     text = text.replace("{{ tags }}", "\n".join(tagsContent)).strip()
     print()
-    print("index.md")
-    print("\033[38;5;242m----")
+    print("File \033[32;1mindex.md")
+    print("\033[38;5;242m" + separator)
     print(text)
-    print("----\033[0m")
+    print(separator + "\033[0m")
     if save:
         with open("index.md", "w") as f:
             f.write(text)
