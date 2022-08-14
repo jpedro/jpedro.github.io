@@ -15,14 +15,14 @@ TEMPLATE_INDEX = """
 {{ pages }}
 
 
-#### Tags
-{{ tags }}
-
-
 #  &nbsp;
 <!-- This ~~will be eventually~~ is generated. -->
 Made with some <3. Not a lot
 """
+# #### Tags
+# {{ tags }}
+
+
 
 TEMPLATE_TAG = """
 ## {{ name }}
