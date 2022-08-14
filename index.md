@@ -1,6 +1,8 @@
-- [OpenSSL Commands](openssl-commands.md)
-- [Example markdown snippets](markdown.md)
-- [Bash Dispatch](bash-dispatch.md)
+## Index
+
+- [OpenSSL Commands](openssl-commands)
+- [Example markdown snippets](markdown)
+- [Bash Dispatch](bash-dispatch)
 
 
 #### Tags
