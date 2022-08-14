@@ -20,7 +20,8 @@ TEMPLATE_INDEX = """
 
 
 #  &nbsp;
-This ~~will be eventually~~ is generated.
+<!-- This ~~will be eventually~~ is generated. -->
+Made with some <3. Not a lot
 """
 
 TEMPLATE_TAG = """
