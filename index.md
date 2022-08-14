@@ -1,4 +1,4 @@
-## Index
+## Pages
 
 - [Example markdown snippets](markdown.md)
 

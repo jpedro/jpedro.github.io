@@ -1,3 +1,3 @@
-## Tag markdown
+## Markdown
 
-{{ content }}
+- [Example markdown snippets](markdown.md)
