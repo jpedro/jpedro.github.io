@@ -72,8 +72,8 @@ def titlelize(text: str) -> str:
 
 
 def main(save: bool):
-    pages = {}
-    tags = {}
+    blogPages = {}
+    blogTags = {}
 
     for name in os.listdir():
         ext = name[len(name)-3:]
@@ -96,18 +96,18 @@ def main(save: bool):
         if meta.get("tags"):
             for tag in meta["tags"].split(","):
                 tag = tag.strip()
-                if tags.get(tag) is None:
-                    tags[tag] = {}
-                tags[tag][name] = meta["title"]
+                if blogTags.get(tag) is None:
+                    blogTags[tag] = {}
+                blogTags[tag][name] = meta["title"]
 
-        pages[name] = meta["title"]
+        blogPages[name] = meta["title"]
 
     # print("Using pages", pages)
     # print("Using tags", tags)
 
     tagItems = {}
     os.makedirs(f"tags", exist_ok=True)
-    for tag, pages in tags.items():
+    for tag, pages in blogTags.items():
         tagItems[tag] = []
         content = []
         # print(f"\nTag: {titlelize(tag)}")
@@ -129,8 +129,8 @@ def main(save: bool):
                 f.write(text)
 
     content = []
-    for name, title in pages.items():
-        # print(f"- {title}: {name}")
+    for name, title in blogPages.items():
+        print(f"- {title}: {name}")
         content.append(f"- [{title}]({name})")
 
     tagsContent = []
