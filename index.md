@@ -1,10 +1,10 @@
 ## Index
 
-- [OpenSSL Commands](openssl-commands.md)
+- [Example markdown snippets](markdown.md)
 
 
 ## Tags
-[markdown](tags/markdown) (1) [text](tags/text) (1) [shell](tags/shell) (1) [security](tags/security) (1)
+[shell](tags/shell) (1) [security](tags/security) (1) [markdown](tags/markdown) (1) [text](tags/text) (1)
 
 
 ##  
