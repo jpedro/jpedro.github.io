@@ -1,4 +1,4 @@
-## Index
+# Index
 
 - [OpenSSL Commands](openssl-commands)
 - [Example markdown snippets](markdown)
@@ -12,5 +12,5 @@
 - [text](tags/text) (1)
 
 
-#  
+#  &nbsp;
 This will be generated. Eventually
