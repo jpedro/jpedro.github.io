@@ -21,7 +21,7 @@ jobs:
 
     - name: Rebuild files
       run: |
-        python index.py --save
+        python ./bin/index.py --save
 
     - name: Commit to master
       run: |
