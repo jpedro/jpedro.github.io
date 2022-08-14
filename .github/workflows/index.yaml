@@ -25,11 +25,22 @@ jobs:
 
     - name: Commit to master
       run: |
+        echo "==> Setting up local user"
         git config --local user.email "actions@github.com"
         git config --local user.name  ${{ github.actor }}
-        git add . || echo "No changes"
+
+        echo "==> Adding all changes"
+        git add . || echo "==> No changes"
+
+        echo "==> Checking the status"
         git status
-        git commit -m "Indexing pages" || echo "All is committed"
+
+        echo "==> Commiting"
+        git commit -m "Indexing pages" || echo "==> All is committed"
         git fetch origin master
-        git rebase origin/master || echo "Already up to date"
-        git push origin HEAD
+
+        echo "==> Rebasing"
+        git rebase origin/master || echo "==> Already up to date"
+
+        echo "==> Pushing"
+        git push origin HEAD || echo "==> Already pushed"
