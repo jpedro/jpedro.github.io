@@ -1,3 +1,5 @@
+<!-- hidden -->
+<!-- tags: blog -->
 # Blog Thingy
 
 I tried to start a few blogs but failed. Not knowing what to write was
