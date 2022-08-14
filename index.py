@@ -133,11 +133,11 @@ def main():
     for tag, pages in tagItems.items():
         count = len(pages)
         print(f"- Tag: {tag}: {count}")
-        tagsContent.append(f"[{tag}](tags/{tag}) ({count})")
+        tagsContent.append(f"- [{tag}](tags/{tag}) ({count})")
 
     print("tagsContent", tagsContent)
     text = TEMPLATE_INDEX.replace("{{ pages }}", "\n".join(content))
-    text = text.replace("{{ tags }}", " ".join(tagsContent))
+    text = text.replace("{{ tags }}", "\n".join(tagsContent))
     print("\033[38;5;242m----")
     print(text)
     print("----\033[0m")
