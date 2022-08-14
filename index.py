@@ -9,8 +9,8 @@ EXCLUDE = [
 COMMENT_START = "<!--"
 COMMENT_END = "-->"
 
-TEMPLATE_INDEX = """
 ## Pages
+TEMPLATE_INDEX = """
 
 {{ pages }}
 
