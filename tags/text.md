@@ -1,3 +1,3 @@
 ## Text
 
-- [Example markdown snippets](markdown.md)
+- [Example markdown snippets](/markdown.md)

@@ -1,3 +1,3 @@
 ## Shell
 
-- [OpenSSL Commands](openssl-commands.md)
+- [OpenSSL Commands](/openssl-commands.md)
