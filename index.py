@@ -10,7 +10,7 @@ COMMENT_START = "<!--"
 COMMENT_END = "-->"
 
 TEMPLATE_INDEX = """
-## Index
+# Index
 
 {{ pages }}
 
@@ -19,7 +19,7 @@ TEMPLATE_INDEX = """
 {{ tags }}
 
 
-#  
+#  &nbsp;
 This will be generated. Eventually
 """
 
