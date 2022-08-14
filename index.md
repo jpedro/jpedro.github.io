@@ -1,9 +1,11 @@
 ## Pages
 
+- [OpenSSL Commands](openssl-commands.md)
 - [Example markdown snippets](markdown.md)
+- [Bash Dispatch](bash-dispatch.md)
 
 
-## Tags
+#### Tags
 - [shell](tags/shell) (1)
 - [security](tags/security) (1)
 - [markdown](tags/markdown) (1)
