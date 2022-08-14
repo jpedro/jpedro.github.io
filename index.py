@@ -20,7 +20,7 @@ TEMPLATE_INDEX = """
 
 
 #  &nbsp;
-This will be generated. Eventually
+This ~will be eventually~ is generated.
 """
 
 TEMPLATE_TAG = """
