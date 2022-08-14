@@ -1,5 +1,3 @@
-## Pages
-
 - [OpenSSL Commands](openssl-commands.md)
 - [Example markdown snippets](markdown.md)
 - [Bash Dispatch](bash-dispatch.md)
