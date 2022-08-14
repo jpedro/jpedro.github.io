@@ -1,8 +1,10 @@
 ## Index
 
-- [Markdown](markdown.md) An example of a Markdown file
-- [Bash Dispatch](bash-dispatch.md) How to dispatch with bash
+- [OpenSSL Commands](openssl-commands.md)
 
+
+## Tags
+[markdown](tags/markdown) (1) [text](tags/text) (1) [shell](tags/shell) (1) [security](tags/security) (1)
 
 
 ##  
