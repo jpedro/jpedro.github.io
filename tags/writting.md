@@ -1,3 +1,3 @@
 ## Writting
 
-- [Example of markdown snippets](../markdown)
+- [Example of markdown snippets](../markdown.md)

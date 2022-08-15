@@ -1,8 +1,8 @@
 # Index
 
-- [OpenSSL Commands](openssl-commands)
-- [Example of markdown snippets](markdown)
-- [Bash Dispatch](bash-dispatch)
+- [OpenSSL Commands](openssl-commands.md)
+- [Example of markdown snippets](markdown.md)
+- [Bash Dispatch](bash-dispatch.md)
 
 
 #  &nbsp;

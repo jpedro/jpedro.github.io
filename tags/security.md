@@ -1,3 +1,3 @@
 ## Security
 
-- [OpenSSL Commands](../openssl-commands)
+- [OpenSSL Commands](../openssl-commands.md)
