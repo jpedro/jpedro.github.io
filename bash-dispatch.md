@@ -1,5 +1,8 @@
 # Bash Dispatch
 
+![Whats this field for?](https://img.shields.io/badge/Tag-bash-brightgreen)
+
+
 Bash as a language is horrible.
 
 The weird syntax reeks of historical hacks on top of each other.
