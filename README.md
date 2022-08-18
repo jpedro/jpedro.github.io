@@ -19,3 +19,4 @@ Supported comments:
 ## Todos
 
 - [ ] Add generated tags at the bottom of each page.
+- [ ] Allow multi-line comments.
