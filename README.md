@@ -1,5 +1,8 @@
 # jpedro.github.io
 
+![Everything is fine](https://img.shields.io/badge/This_shit_is_amazing-Even_more_amazing:_you_are_reading_this!-brightgreen)
+
+
 Maintenance free blog.
 
 
