@@ -1,4 +1,4 @@
-# Bash Dispatch
+# Bash dispatch
 
 ![Whats this field for?](https://img.shields.io/badge/Tag-bash-brightgreen)
 
