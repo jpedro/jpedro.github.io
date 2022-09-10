@@ -1,5 +1,5 @@
 <!-- tags: writting -->
-<!-- title: Example of markdown snippets -->
+<!-- title: Markdown snippets -->
 
 [comment]: <> (This is a comment, it will not be included)
 [comment]: <> (in  the output file unless you use it in)
@@ -8,7 +8,7 @@
 [//]: # (tags: text)
 
 
-## Markdown
+## Markdown Snippets
 
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It
 includes conventions for
