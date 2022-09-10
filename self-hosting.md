@@ -85,10 +85,8 @@ rsync \
     $(cat CNAME):/var/www/vhosts/$(cat CNAME)
 ```
 
-Easy.
-
-Note: Yes. That `CNAME` contains the single line `test.example.com`,
-as surge uses it.
+Easy. And yes. That `CNAME` contains the single line
+`test.example.com`, just like surge.
 
 
 ## Replacing heroku apps
@@ -96,6 +94,6 @@ as surge uses it.
 (Comming soon)
 
 
-## Replacing heroku dataases
+## Replacing heroku databases
 
 (Comming soon)
