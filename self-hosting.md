@@ -24,7 +24,7 @@ Replacing surge is the easiest. Just install nginx on a
 linux machine and run rsync to the right directory.
 
 Nginx's virtual hosting is quite flexible because you can use
-`$<var>` in most of their fields. Nginx 1.9 finally allowed@
+`$<var>` in most of their fields. Nginx 1.9 finally allows
 variable interpolation in the `ssl_*` fields. So one
 `sites-enabled/` config file can rule them all.
 
