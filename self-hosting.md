@@ -94,6 +94,6 @@ Easy. And yes. That `CNAME` contains the single line
 (Comming soon)
 
 
-## Replacing heroku databases
+## Replacing heroku addons
 
 (Comming soon)
