@@ -1,33 +1,34 @@
 # Self hosting
 
 So heroku will stop free plans and surge.sh has a limit for
-the size of all combined the files you upload to them.
+the size of files you upload.
 
-I use surge.sh to host some small static SPAs using heroku
-apps as the API backend.
+I use surge.sh to host some static SPAs and heroku as the
+API backend.
 
 Surge still works great for smaller deployments but there's
-no easy replacement for Heroku's push-to-deploy.
+no easy replacement for Heroku's push-to-deploy. Unless you
+build your own.
 
 
-## Time to roll up your own
+## Time to roll up sleeves
 
-"Every problem is an opportunity in disguise." -- someone
+> "Every problem is an opportunity in disguise." -- someone
 
-In this case, you avoid surge.sh free plan's file size limits
-and no longer have to wait for Heroku's free dynos to start.
-You will lose surge's fast updated CDN though but we can
-replace that too.
+Using your own self hosting stack firstly you avoid surge.sh
+free plan's limits and no longer have to wait for Heroku's
+free dynos to start. You will lose surge's fast updated CDN
+though but we can fix that too.
 
-Replacing surge is by the easiest. Just install nginx on a
-Debian host and run rsync to the right directory.
+Replacing surge is the easiest. Just install nginx on a
+linux machine and run rsync to the right directory.
 
-Nginx's virtual hosting is simple because you can use $vars
-in most of their fields. Nginx 1.9 finally allowed variable
+Nginx's virtual hosting is quite flexible because you can use
+$vars in most of their fields. Nginx 1.9 finally allowed variable
 interpolation in the `ssl_*` fields. So one `site-enabled`
-can rule them all.
+config gile can rule them all.
 
-A "dynamic" server block in nginx looks like this now:
+A "dynamic" server block in nginx looks like this:
 
 ```
 server {
@@ -41,8 +42,8 @@ server {
 	ssl_trusted_certificate  /etc/letsencrypt/live/$host/cert.pem;
 
 	root /var/www/vhosts/$host;
-  index index.html;
-  # ....
+	ndex index.html;
+	# ....
 }
 ```
 
