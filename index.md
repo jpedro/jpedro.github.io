@@ -3,6 +3,7 @@
 - [Bash Dispatch](bash-dispatch.md)
 - [Example of markdown snippets](markdown.md)
 - [OpenSSL Commands](openssl-commands.md)
+- [Self hosting](self-hosting.md)
 
 
 #  &nbsp;
