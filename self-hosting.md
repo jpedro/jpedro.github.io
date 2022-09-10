@@ -28,7 +28,7 @@ Nginx's virtual hosting is quite flexible because you can use
 variable interpolation in the `ssl_*` fields. So one
 `sites-enabled/` config file can rule them all.
 
-A "dynamic" server block in nginx looks like this:
+A server block in nginx looks like this:
 
 ```
 server {
