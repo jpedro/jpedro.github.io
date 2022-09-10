@@ -66,7 +66,7 @@ certbot certonly \
 You should use the DNS challenge for it. The cloudflare plugin works
 really well with Lets Encrypt.
 
-Now a dpeloyment is an `rsync` call away:
+Now a deployment is an `rsync` call away:
 
 ```
 $ cat ./bin/deploy
@@ -74,15 +74,15 @@ $ cat ./bin/deploy
 set -euo pipefail
 
 rsync \
-  --verbose \
-  --archive \
-  --links \
-  --compress \
-  --recursive \
-  --delete \
-  --exclude '.git' \
-  $PWD \
-  $(cat CNAME):/var/www/vhosts/$(cat CNAME)
+    --verbose \
+    --archive \
+    --links \
+    --compress \
+    --recursive \
+    --delete \
+    --exclude '.git' \
+    $PWD \
+    $(cat CNAME):/var/www/vhosts/$(cat CNAME)
 ```
 
 Easy.
@@ -91,6 +91,11 @@ Note: Yes. That `CNAME` contains the single line `test.example.com`,
 as surge uses it.
 
 
-## Replacing heroku
+## Replacing heroku apps
+
+(Comming soon)
+
+
+## Replacing heroku dataases
 
 (Comming soon)
