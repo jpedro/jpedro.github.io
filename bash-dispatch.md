@@ -145,9 +145,9 @@ when you open the script in a code editor.
 ###     please <command>
 ###
 ### COMMANDS
-###    list          # List all files in the home directory"
-###    other         # Does something else"
-###    help [WHAT]   # It supposedly helps with WHAT"
+###    list          # List all files in the home directory
+###    other         # And now for something completely different
+###    help [WHAT]   # It supposedly helps with WHAT
 set -euo pipefail
 
 cmd.help() {
@@ -166,9 +166,9 @@ cmd.help() {
 ###     please <command>
 ###
 ### COMMANDS
-###    list [DIR]    # List all files in a directory"
-###    other         # Does something else"
-###    help          # Shows this help
+###    list          # List all files in the home directory
+###    other         # And now for something completely different
+###    help [WHAT]   # It supposedly helps with WHAT
 set -euo pipefail
 
 cmd.help() {
