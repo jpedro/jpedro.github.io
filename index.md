@@ -1,9 +1,8 @@
 # Index
 
 - [Bash dispatch](bash-dispatch.md)
-- [Markdown snippets](markdown.md)
 - [OpenSSL Commands](openssl-commands.md)
-- [Self hosting](self-hosting.md)
+- [Markdown snippets](markdown.md)
 
 
 #  &nbsp;
