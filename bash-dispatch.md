@@ -71,12 +71,13 @@ subcommand from the declared functions, with a known prefix:
 
 dispatch() {
   : "Finding command for $@..."
-  local PREFIX="cmd"
+  local prefix="cmd"
+  local fallback="cmd.help"
   local max=${#@}
 
   if [ $max -lt 1 ]
   then
-    cmd.help
+    $fallback
     return
   fi
 
@@ -84,12 +85,12 @@ dispatch() {
   do
     arg=${@:1:$max}
     cmd="${arg// /.}"
-    : "Checking $PREFIX.$cmd: $(type $PREFIX.$cmd 2>/dev/null | head -n 1)"
-    if type $PREFIX.$cmd >/dev/null 2>&1
+    : "Checking $prefix.$cmd: $(type $prefix.$cmd 2>/dev/null | head -n 1)"
+    if type $prefix.$cmd >/dev/null 2>&1
     then
       args=${@:$(($max+1))}
-      : "Calling $PREFIX.$cmd($args)"
-      eval $PREFIX.$cmd $args
+      : "Calling $prefix.$cmd($args)"
+      eval $prefix.$cmd $args
       return
     fi
 
@@ -125,9 +126,9 @@ also doesn't exist, so it tries next `cmd.help` which is declared. Then
 it will send `me now` as the arguments to it.
 
 In case `cmd.help` doesn't exist, it calls the function name inside the
-`DEFAULT` variable.
+`fallback` variable.
 
-The existence of a `PREFIX` means other functions will not be searched
+The existence of a `prefix` means other functions will not be searched
 in the lookup process. It's a guard.
 
 
@@ -185,13 +186,13 @@ cmd.other() {
 
 dispatch() {
   : "Finding command for $@..."
-  local PREFIX="cmd"
-  local DEFAULT="cmd.help"
+  local prefix="cmd"
+  local fallback="cmd.help"
   local max=${#@}
 
   if [ $max -lt 1 ]
   then
-    $DEFAULT
+    $fallback
     return
   fi
 
@@ -199,12 +200,12 @@ dispatch() {
   do
     arg=${@:1:$max}
     cmd="${arg// /.}"
-    : "Checking $PREFIX.$cmd: $(type $PREFIX.$cmd 2>/dev/null | head -n 1)"
-    if type $PREFIX.$cmd >/dev/null 2>&1
+    : "Checking $prefix.$cmd: $(type $prefix.$cmd 2>/dev/null | head -n 1)"
+    if type $prefix.$cmd >/dev/null 2>&1
     then
       args=${@:$(($max+1))}
-      : "Calling $PREFIX.$cmd($args)"
-      eval $PREFIX.$cmd $args
+      : "Calling $prefix.$cmd($args)"
+      eval $prefix.$cmd $args
       return
     fi
 
