@@ -135,9 +135,9 @@ in the lookup process. It's a guard.
 
 I gave up showing a script's usage using `echo`s. It's so ugly.
 
-So now, I slep the usage in a comment in the beginning of the file and
-grep it. It's also the first thing you see when you open the script in a
-text editor.
+So now, I just slap the usage in a comment in the beginning of the file
+and grep for it. It's also thas the benefit it's the first thing you see
+when you open the script in a code editor.
 
 ```bash
 #!/usr/bin/env bash
