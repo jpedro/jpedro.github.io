@@ -1,3 +1,5 @@
+<!-- hidden -->
+
 # Self hosting
 
 So heroku will stop free plans and surge.sh has a limit for
