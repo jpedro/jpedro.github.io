@@ -355,8 +355,8 @@ jobs:
     steps:
     - name: Build
       run: |
-        echo "Building ${{ matrix.component }} version \
-          ${{ matrix.version }} for ${{ matrix.os }}..."
+        echo "Building \${{ matrix.component }} version \
+          \${{ matrix.version }} for \${{ matrix.os }}..."
         sleep 30
         echo "Done"
 ```
@@ -364,6 +364,7 @@ jobs:
 That code results in this run:
 
 <!-- ![GitHub matrix run](.github/github-matrix-run.jpg) -->
+
 ![GitHub matrix run](https://github.com/jpedro/jpedro.github.io/raw/master/.github/github-matrix-run.jpg)
 
 Note how Github Actions created 12 parallel jobs (3 OSes x 2 versions
