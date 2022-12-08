@@ -2,8 +2,6 @@
 
 # Hundreds and hundreds
 
-(Original posted in https://nordcloud.com/tech-community/managing-hundreds-google-cloud-projects-in-minutes/)
-
 We maintain and update more than 800 Google Cloud projects. That
 number grows every day. And all runs under 10 minutes.
 
@@ -355,8 +353,8 @@ jobs:
     steps:
     - name: Build
       run: |
-        echo "Building \${{ matrix.component }} version \
-          \${{ matrix.version }} for \${{ matrix.os }}..."
+        echo "Building \$\{\{ matrix.component \}\} version \
+          \$\{\{ matrix.version \}\} for\$\{\{ matrix.os \}\}..."
         sleep 30
         echo "Done"
 ```
@@ -425,3 +423,6 @@ They all live happily in their own repos and run in non-threaded,
 non-parallelised, manually approved python-unstrangled pipelines.
 
 Because they can.
+
+Original posted in https://nordcloud.com/tech-community/managing-hundreds-google-cloud-projects-in-minutes/
+
