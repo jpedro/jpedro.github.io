@@ -247,8 +247,8 @@ steps:
       core.info("This is just here to use the core object.");
 ```
 
-Note that the if conditional ensures this step is only run if
-the value of the pass output for a job called validation is true.
+Note that the `if` conditional ensures this step is only run if
+the value of the `pass` output for a job called `validation` is `true`.
 Anything else and it's skipped.
 
 > **Note**
@@ -353,8 +353,8 @@ jobs:
     steps:
     - name: Build
       run: |
-        echo "Building \$\{\{ matrix.component \}\} version \
-          \$\{\{ matrix.version \}\} for\$\{\{ matrix.os \}\}..."
+        echo "Building $\{{ matrix.component }} version \
+          $\{\{ matrix.version \}\} for\${\{ matrix.os }\}..."
         sleep 30
         echo "Done"
 ```
@@ -424,5 +424,5 @@ non-parallelised, manually approved python-unstrangled pipelines.
 
 Because they can.
 
-Original posted in https://nordcloud.com/tech-community/managing-hundreds-google-cloud-projects-in-minutes/
 
+[Original post](https://nordcloud.com/tech-community/managing-hundreds-google-cloud-projects-in-minutes/)
