@@ -2,6 +2,8 @@
 
 # Hundreds and hundreds
 
+(Original posted in https://nordcloud.com/tech-community/managing-hundreds-google-cloud-projects-in-minutes/)
+
 We maintain and update more than 800 Google Cloud projects. That
 number grows every day. And all runs under 10 minutes.
 
@@ -362,6 +364,8 @@ jobs:
 That code results in this run:
 
 ![GitHub matrix run](.github/github-matrix-run.jpg)
+
+![GitHub matrix run](https://github.com/jpedro/jpedro.github.io/raw/master/.github/github-matrix-run.jpg)
 
 Note how Github Actions created 12 parallel jobs (3 OSes x 2 versions
 x 2 components).
