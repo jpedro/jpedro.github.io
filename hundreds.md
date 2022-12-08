@@ -1,4 +1,4 @@
-<!-- hidden -->
+<!-- hidden-nopes -->
 
 # Hundreds and hundreds
 
@@ -10,7 +10,7 @@ means that most Pull Requests are automatically approved and merged.
 Even changes that affect all projects run under 10 minutes.
 
 We'll cover why we end up centralising all these projects. Then we'll
-get into the how and we made it fast enough.
+get into the how and we sped it up.
 
 
 ### TL;DR
@@ -361,6 +361,7 @@ jobs:
 
 That code results in this run:
 
+![GitHub matrix run](.github/github-matrix-run.jpg)
 
 Note how Github Actions created 12 parallel jobs (3 OSes x 2 versions
 x 2 components).
