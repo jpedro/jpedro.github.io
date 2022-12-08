@@ -363,8 +363,7 @@ jobs:
 
 That code results in this run:
 
-![GitHub matrix run](.github/github-matrix-run.jpg)
-
+<!-- ![GitHub matrix run](.github/github-matrix-run.jpg) -->
 ![GitHub matrix run](https://github.com/jpedro/jpedro.github.io/raw/master/.github/github-matrix-run.jpg)
 
 Note how Github Actions created 12 parallel jobs (3 OSes x 2 versions
