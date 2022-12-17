@@ -108,13 +108,11 @@ just like surge.
 
 ## Replacing heroku apps
 
-To keep things simple, the idea here is to replace heroku's build packs
-with some script or tool that packages the repo files into a docker
-image and deploys it to some container runtime.
+The idea here is to replace heroku's build packs with some tool that
+knows how to package the repo files into a docker image and deploy it.
 
-The script either intelligently figure out what type of application the
-repo runs and how it should package it and deploy it or one explicitly
-tell it.
+The tool either intelligently figure out what type of application the
+repo is and how it should be handled or you explicitly tell it.
 
 Kubernetes fits neatly as the container runtime.
 
@@ -122,16 +120,15 @@ Kubernetes fits neatly as the container runtime.
 ### ~Intelligent~ Lazy guesses
 
 The laziest approach to guessing how the repo should be packaged is to
-look for some files that indicate which language, framework and
-dependencies it should use.
+look for some files that indicate which language, framework it uses.
 
-In java one can check if there's a `pom.xml` or a `build.gradle`. For
-go that would be a `go.mod`.
+In java one can check if there's a `pom.xml` or a `build.gradle` file.
+For go that would be a `go.mod`, for rust `Cargo.toml`.
 
-That would inform the script which base docker image should use, copy
-the repo files into it, install dependencies, run tests in the staged
+That informs the tool which base docker image should use, copies the
+repo files into it, install dependencies, run tests in the staged
 build container, copy the relevant built files into the final stage
-and deploy that via a rendered kubernetes templates or configure the
+and deploys that via a rendered kubernetes templates or configure the
 values for some helm chart.
 
 
@@ -174,8 +171,8 @@ for each runtime the tool figure out and get merged.
 ### Todos
 
 - [ ] Based on the `CNAME` file or some other configuration, rensure
-      the required TLS certificates exist and, of course, get attached
-      to the correct kubernetes Ingress.
+      the required TLS certificates exist and get attached to the
+      correct kubernetes Ingress.
 
 
 ## Replacing heroku addons
