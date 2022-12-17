@@ -118,10 +118,15 @@ Kubernetes fits neatly as the container runtime.
 
 The laziest approach to guessing how the repo should be packaged is to
 look for some files that indicate which language, framework and
-dependencies it should use. In java one can check if there's a `pom.xml`
-or a `build.gradle`. For go that would be a `go.mod`. That would tell
-the script which base docker image should use, copy the built files into
-it, render a kubernetes templates or configure a helm chart.
+dependencies it should use.
+
+In java one can check if there's a `pom.xml` or a `build.gradle`. For
+go that would be a `go.mod`.
+
+That would tell the script which base docker image should use, copy the
+repo files into it, install dependencies, run tests in the staged build
+container, copy the relevant built files into the final stage and deploy
+that via a rendered kubernetes templates or configure a helm chart.
 
 
 ### Explicit
