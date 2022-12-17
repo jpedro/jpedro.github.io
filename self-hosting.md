@@ -14,36 +14,36 @@ replacement for Heroku's push-to-deploy.
 
 ## Replacing surge
 
-Using your own self hosting stack firstly you avoid surge.sh
-free plan's limits and no longer have to wait for Heroku's
-free dynos to start. You will lose surge's fast updated CDN
-though but we can fix that too. If you use Cloudflare, just
-set the static content subdomain(s) and proxy that through them.
+Using your own self hosting stack firstly you avoid surge.sh free
+plan's limits and no longer have to wait for Heroku's free dynos to
+start. You will lose surge's fast updated CDN though but we can fix
+that too. If you use Cloudflare you can subdomain(s) and proxy that
+through them.
 
-Replacing surge is the easiest. Just install nginx on a
-linux machine and run rsync to the right directory.
+Replacing surge is the easiest. Just install nginx on a linux machine
+and run rsync to the right directory.
 
-Nginx's virtual hosting is quite flexible because you can use
-`$<var>` in most of their fields. Nginx 1.9 finally allows
-variable interpolation in the `ssl_*` fields. So one
-`sites-enabled/` config file can rule them all.
+Nginx's virtual hosting is quite flexible because you can use `$var`
+in some of their fields. Nginx 1.9 finally allows variable
+interpolation in the `ssl_*` fields. So one `sites-enabled/` conf file
+can rule them all.
 
-A server block in nginx looks like this:
+A server block in nginx would look like this:
 
 ```
 server {
-	server_name example.com *.example.com;
+    server_name example.com *.example.com;
 
-	listen 443 ssl http2;
-	listen [::]:443 ssl http2;
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
 
-	ssl_certificate          /etc/letsencrypt/live/$ssl_server_name/fullchain.pem;
-	ssl_certificate_key      /etc/letsencrypt/live/$ssl_server_name/privkey.pem;
-	ssl_trusted_certificate  /etc/letsencrypt/live/$ssl_server_name/cert.pem;
+    ssl_certificate          /etc/letsencrypt/live/$ssl_server_name/fullchain.pem;
+    ssl_certificate_key      /etc/letsencrypt/live/$ssl_server_name/privkey.pem;
+    ssl_trusted_certificate  /etc/letsencrypt/live/$ssl_server_name/cert.pem;
 
-	root /var/www/vhosts/$host;
-	index index.html;
-	# ....
+    root /var/www/vhosts/$host;
+    index index.html;
+    # ....
 }
 ```
 
@@ -56,7 +56,7 @@ found at `/var/www/vhosts/test.example.com`. Transparent.
 
 You just need to symlink `/etc/letsencrypt/live/test.example.com`
 to `/etc/letsencrypt/live/example.com` and make sure when you create
-the Lets Encrypt cert, you add a wildcard domain to it. Something like:
+the Lets Encrypt cert you add a wildcard domain to it. Something like:
 
 ```bash
 certbot certonly \
@@ -92,10 +92,11 @@ rsync \
 Easy. And yes. That `CNAME` contains the single line `test.example.com`,
 just like surge.
 
+
 ### Todos
 
 - [ ] Introduce surge-like directives, like redirects and auth, that
-      basically re-render nginx `sites-enabled/` conf files for a
+      basically render nginx `sites-enabled/` conf files for a
       deployment.
 
 
@@ -121,17 +122,17 @@ dependencies it should use.
 In java one can check if there's a `pom.xml` or a `build.gradle`. For
 go that would be a `go.mod`.
 
-That would tell the script which base docker image should use, copy the
-repo files into it, install dependencies, run tests in the staged build
-container, copy the relevant built files into the final stage and deploy
-that via a rendered kubernetes templates or configure a helm chart.
+That would inform the script which base docker image should use, copy
+the repo files into it, install dependencies, run tests in the staged
+build container, copy the relevant built files into the final stage
+and deploy that via a rendered kubernetes templates or configure the
+values for some helm chart.
 
 
 ### Explicit
 
-If you don't need the latest and greatest default runtime configuration,
-you can use a deployment file to explicitly tell the script what to do.
-This could look like:
+If you don't need the latest and greatest default configuration, you
+can tell the script what to do. This could look like:
 
 ```yaml
 test:
@@ -166,9 +167,9 @@ for each runtime the tool figure out and get merged.
 
 ### Todos
 
-- [ ] Based on the `CNAME` file or some other configuration, create the
-      required TLS certificates. And, of course, attach those to the
-      kubernetes Ingress.
+- [ ] Based on the `CNAME` file or some other configuration, rensure
+      the required TLS certificates exist and, of course, get attached
+      to the correct kubernetes Ingress.
 
 
 ## Replacing heroku addons
