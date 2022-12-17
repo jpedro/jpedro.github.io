@@ -3,8 +3,8 @@
 # Self hosting
 
 So heroku [will stop free plans](https://blog.heroku.com/next-chapter)
-and [surge.sh](https://surge.sh) has a limit for the size
-of files you upload.
+and [surge.sh](https://surge.sh) has a limit for the size of files
+you upload.
 
 I use surge.sh to host some static SPAs and heroku as the
 API backend.
@@ -104,8 +104,8 @@ just like surge.
 ## Replacing heroku apps
 
 To keep things simple, the idea here is to replace heroku's build packs
-with some script or tool that packages the repo files into a docker image
-and deploys it to some container runtime.
+with some script or tool that packages the repo files into a docker
+image and deploys it to some container runtime.
 
 The script either intelligently figure out what type of application the
 repo runs and how it should package it and deploy it or one explicitly
@@ -179,4 +179,5 @@ Here the challenge boils down to exposing some CRUD API that creates
 cloud resources, like a new postgres database, a redis database and
 exposes some environment variables via a file for each deployment made.
 
-
+There should be a way to uniquely identify a repo so each time it
+chages its name the same resources env gets attached.
