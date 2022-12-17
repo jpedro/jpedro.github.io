@@ -6,12 +6,10 @@ So heroku [will stop free plans](https://blog.heroku.com/next-chapter)
 and [surge.sh](https://surge.sh) has a limit for the size of files
 you upload.
 
-I use surge.sh to host some static SPAs and heroku as the
-API backend.
+I use surge.sh to host some static SPAs and heroku as the API backend.
 
-Surge still works great for smaller deployments but there's
-no easy replacement for Heroku's push-to-deploy. Unless you
-build your own.
+Surge still works great for smaller deployments but I'll build my own
+replacement for Heroku's push-to-deploy.
 
 
 ## Replacing surge
