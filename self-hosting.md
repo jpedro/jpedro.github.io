@@ -1,4 +1,4 @@
-<!-- hidden -->
+<!-- hidden-doit -->
 
 # Self hosting
 
@@ -14,8 +14,6 @@ build your own.
 
 
 ## Time to roll up sleeves
-
-> "Every problem is an opportunity in disguise." -- someone
 
 Using your own self hosting stack firstly you avoid surge.sh
 free plan's limits and no longer have to wait for Heroku's
@@ -39,15 +37,19 @@ server {
 	listen 443 ssl http2;
 	listen [::]:443 ssl http2;
 
-	ssl_certificate          /etc/letsencrypt/live/$host/fullchain.pem;
-	ssl_certificate_key      /etc/letsencrypt/live/$host/privkey.pem;
-	ssl_trusted_certificate  /etc/letsencrypt/live/$host/cert.pem;
+	ssl_certificate          /etc/letsencrypt/live/$ssl_server_name/fullchain.pem;
+	ssl_certificate_key      /etc/letsencrypt/live/$ssl_server_name/privkey.pem;
+	ssl_trusted_certificate  /etc/letsencrypt/live/$ssl_server_name/cert.pem;
 
 	root /var/www/vhosts/$host;
 	ndex index.html;
 	# ....
 }
 ```
+
+> **Note**
+> 
+> Note that the usage of `$ssl_server_name` cames with a performance price.
 
 So the web root directory for the subdomain `test.example.com` is
 found at `/var/www/vhosts/test.example.com`. Transparent.
@@ -56,7 +58,7 @@ You just need to symlink `/etc/letsencrypt/live/test.example.com`
 to `/etc/letsencrypt/live/example.com` and make sure when you create
 the Lets Encrypt cert, you add a wildcard domain to it. Something like:
 
-```
+```bash
 certbot certonly \
   -d exmaple.com \
   -d '*.exmaple.com' \
@@ -68,9 +70,9 @@ certbot certonly \
 You should use the DNS challenge for it. The cloudflare plugin works
 really well with Lets Encrypt.
 
-Now a deployment is an `rsync` call away:
+Now a "deployment" is an `rsync` call away:
 
-```
+```bash
 $ cat ./bin/deploy
 #!/usr/bin/env bash
 set -euo pipefail
@@ -87,8 +89,8 @@ rsync \
     $(cat CNAME):/var/www/vhosts/$(cat CNAME)
 ```
 
-Easy. And yes. That `CNAME` contains the single line
-`test.example.com`, just like surge.
+Easy. And yes. That `CNAME` contains the single line `test.example.com`,
+just like surge.
 
 
 ## Replacing heroku apps
