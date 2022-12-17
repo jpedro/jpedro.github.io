@@ -108,8 +108,8 @@ just like surge.
 
 ## Replacing heroku apps
 
-The idea here is to replace heroku's build packs with some tool that
-knows how to package the repo files into a docker image and deploy it.
+The idea is to replace heroku's build packs with some tool that knows
+how to package the repo files into a docker image and deploy it.
 
 The tool either intelligently figure out what type of application the
 repo is and how it should be handled or you explicitly tell it.
@@ -177,9 +177,10 @@ for each runtime the tool figure out and get merged.
 
 ## Replacing heroku addons
 
-Here the challenge boils down to exposing some CRUD API that creates
-cloud resources, like a new postgres database, a redis database and
-exposes some environment variables via a file for each deployment made.
+This boils down to exposing some CRUD API that creates cloud resources,
+like a new postgres database, a redis database and exposes some
+environment variables via a file for each deployment made.
 
 There should be a way to uniquely identify a repo so each time it
-chages its name the same resources env gets attached.
+chages its name or domain the same resources env gets injected into
+the kubernetes deployment via config maps or secrets.
