@@ -159,11 +159,11 @@ run:
     LISTEN_POST: $(( run.PORT ))
 ```
 
-Here the use of `$(( scope.var ))` is used to dynamically set values at
-different phases.
+Here the use of `$(( scope.var ))` is used to dynamically insert values
+at different phases.
 
 The configured `test`, `build`, and `run` phases above have defaults
-for each runtime the tool figure out.
+for each runtime the tool figure out and get merged.
 
 
 ### Todos
