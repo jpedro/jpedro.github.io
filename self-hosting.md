@@ -146,8 +146,8 @@ build:
   name: hello-kaiku
   tags:
   - latest
-  - time-${{ build.time.now }}
-  - version-${{ build.git.describe }}
+  - time-$[[ build.time.now ]]
+  - version-$[[ build.git.describe ]]
  
 run:
   # These get translated into `spec.template.spec.containers[]` fields
@@ -155,11 +155,11 @@ run:
   command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
   env:
     SOME_VAR: some-value
-    SOME_SECRET: ${{ build.SOME_SECRET }}
-    LISTEN_POST: ${{ run.PORT }}
+    SOME_SECRET: $[[ build.SOME_SECRET ]]
+    LISTEN_POST: $[[ run.PORT ]]
 ```
 
-Here the use of `${{ scope.var }}` is used to dynamically set values at
+Here the use of `$[[ scope.var ]]` is used to dynamically set values at
 different phases.
 
 The configured `test`, `build`, and `run` phases above have defaults
