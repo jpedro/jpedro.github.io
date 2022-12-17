@@ -63,7 +63,7 @@ the Lets Encrypt cert, you add a wildcard domain to it. Something like:
 ```bash
 certbot certonly \
     -d example.com \
-    -d '*.exmaple.com' \
+    -d '*.example.com' \
     --server https://acme-v02.api.letsencrypt.org/directory \
     --register-unsafely-without-email \
     --agree-tos
