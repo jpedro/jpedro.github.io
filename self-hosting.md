@@ -1,4 +1,4 @@
-<!-- hidden: false -->
+<!-- hidden-no -->
 
 # Self hosting
 
