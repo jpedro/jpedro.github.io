@@ -30,13 +30,13 @@ jobs:
         git config --local user.name  ${{ github.actor }}
 
         echo "==> Adding all changes"
-        git add . || echo "==> No changes"
+        git add . || echo "==> No changes. Hmm"
 
         echo "==> Checking the status"
         git status
 
         echo "==> Commiting"
-        git commit -m "Indexing pages" || echo "==> All is committed"
+        git commit -m "$(curl -sL https://whatthecommit.com/index.txt || echo 'Indexing pages')" || echo "==> No changes. Hmm"
         git fetch origin master
 
         echo "==> Rebasing"
