@@ -20,9 +20,9 @@ through them.
 
 
 Replacing surge is the easiest. Just install nginx on a linux machine
-and run rsync to the right directory.
+and rsync files into the right directory.
 
-Boom! It's done boss. Any more questions?
+**Boom! Done.** Any more questions?
 
 
 ### One conf to rule them all
