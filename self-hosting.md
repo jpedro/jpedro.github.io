@@ -171,9 +171,9 @@ for each runtime the tool figure out and get merged.
 
 ### Todos
 
-- [ ] Based on the `CNAME` file or some other configuration, rensure
-      the required TLS certificates exist and get attached to the
-      correct kubernetes Ingress.
+- [ ] Based on the `CNAME` file or some configuration, ensure the
+      required TLS certificates exist and get attached to the
+      kubernetes Ingress.
 
 
 ## Replacing heroku addons
