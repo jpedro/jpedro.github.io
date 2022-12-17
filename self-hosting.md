@@ -3,8 +3,8 @@
 # Self hosting
 
 So heroku [will stop free plans](https://blog.heroku.com/next-chapter)
-and [surge.sh](https://surge.sh) has a limit for the size of files
-you upload.
+and [surge.sh](https://surge.sh) has a 60 MB (?) limit for the total
+size of files uploaded.
 
 I use surge.sh to host some static SPAs and heroku as the API backend.
 
