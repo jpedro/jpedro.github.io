@@ -2,8 +2,9 @@
 
 # Self hosting
 
-So heroku will stop free plans and surge.sh has a limit for
-the size of files you upload.
+So heroku [will stop free plans](https://blog.heroku.com/next-chapter)
+and [surge.sh](https://surge.sh) has a limit for the size
+of files you upload.
 
 I use surge.sh to host some static SPAs and heroku as the
 API backend.
@@ -18,7 +19,8 @@ build your own.
 Using your own self hosting stack firstly you avoid surge.sh
 free plan's limits and no longer have to wait for Heroku's
 free dynos to start. You will lose surge's fast updated CDN
-though but we can fix that too.
+though but we can fix that too. If you use Cloudflare, just
+set the static content subdomain(s) and proxy it through them.
 
 Replacing surge is the easiest. Just install nginx on a
 linux machine and run rsync to the right directory.
@@ -60,14 +62,14 @@ the Lets Encrypt cert, you add a wildcard domain to it. Something like:
 
 ```bash
 certbot certonly \
-  -d exmaple.com \
-  -d '*.exmaple.com' \
-  --server https://acme-v02.api.letsencrypt.org/directory \
-  --register-unsafely-without-email \
-  --agree-tos
+    -d example.com \
+    -d '*.exmaple.com' \
+    --server https://acme-v02.api.letsencrypt.org/directory \
+    --register-unsafely-without-email \
+    --agree-tos
 ```
 
-You should use the DNS challenge for it. The cloudflare plugin works
+You should use the DNS challenge for it. The Cloudflare plugin works
 really well with Lets Encrypt.
 
 Now a "deployment" is an `rsync` call away:
