@@ -21,12 +21,16 @@ use Cloudflare you select (sub)domain(s) to proxy through them.
 Replacing surge is the easiest. Just install nginx on a linux machine
 and run rsync to the right directory.
 
-Nginx's virtual hosting is quite flexible because you can use `$var`
-in some of their fields. Nginx 1.9 finally allows variable
-interpolation in the `ssl_*` fields. So one `sites-enabled/` conf file
-can rule them all.
+**Boom! It's done boss.** Any more questions?
 
-A server block in nginx would look like this:
+
+### One conf to rule them all
+
+Nginx's virtual hosting is quite flexible because you can use `$var`
+in places. Nginx 1.9 finally allows variable interpolation in the
+`ssl_*` fields. So one `sites-enabled/` conf file can rule them all.
+
+A flexible server block in nginx would look like this:
 
 ```
 server {
@@ -47,7 +51,8 @@ server {
 
 > **Note**
 >
-> Note that the usage of `$ssl_server_name` cames with a performance price.
+> Note that the usage of `$ssl_server_name` cames with a performance
+> price.
 
 So the web root directory for the subdomain `test.example.com` is
 found at `/var/www/vhosts/test.example.com`. Transparent.
