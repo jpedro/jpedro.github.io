@@ -12,7 +12,8 @@ size of files uploaded. A few larger images and you are toast.
 Owning your hosting stack avoids Surge's free plan's limits and no
 longer have to wait for Heroku's free dynos to slowly kick in. You will
 lose surge's fast updated CDN though but we can fix that too. If you
-use Cloudflare you select (sub)domain(s) to proxy through them.
+use Cloudflare you can select which DNS records should be proxied
+through them.
 
 
 ## Replacing surge
