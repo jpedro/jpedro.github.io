@@ -65,9 +65,12 @@ the Lets Encrypt cert you add a wildcard domain to it. Something like:
 certbot certonly \
     -d example.com \
     -d '*.example.com' \
+    -d '*.acme.example.com' \
     --server https://acme-v02.api.letsencrypt.org/directory \
     --register-unsafely-without-email \
-    --agree-tos
+    --agree-tos \
+    --dns-cloudflare \
+    --dns-cloudflare-credentials cloudflare.ini
 ```
 
 You should use the DNS challenge for it. The Cloudflare plugin works
