@@ -178,8 +178,9 @@ for each runtime the tool figure out and get merged.
 ## Replacing heroku addons
 
 This boils down to exposing some CRUD API that creates cloud resources,
-like a new postgres database, a redis database and exposes some
-environment variables via a file for each deployment made.
+like a new postgres database, a redis database or an elasticsearch
+index and exposes environment variables for each deployment that uses
+them.
 
 There should be a way to uniquely identify a repo so each time it
 chages its name or domain the same resources env gets injected into
