@@ -2,15 +2,15 @@
 
 # Self hosting
 
-I used surge.sh to host some static content and some SPAs and heroku
-as the API backend.
+I used surge.sh to host static content and some SPAs and heroku as the
+API backend.
 
 But heroku [will stop free plans](https://blog.heroku.com/next-chapter)
 and [surge.sh](https://surge.sh) has a 60 MB (?) limit for the total
-size of files uploaded.
+size of files uploaded. A few larger images and you are toast.
 
-Using your own self hosting stack you avoid Surge's free plan's limits
-and no longer have to wait for Heroku's free dynos to start. You will
+Owning your hosting stack avoids Surge's free plan's limits and no
+longer have to wait for Heroku's free dynos to slowly kick in. You will
 lose surge's fast updated CDN though but we can fix that too. If you
 use Cloudflare you select (sub)domain(s) to proxy through them.
 
