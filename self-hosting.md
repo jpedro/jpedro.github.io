@@ -14,13 +14,13 @@ no easy replacement for Heroku's push-to-deploy. Unless you
 build your own.
 
 
-## Time to roll up sleeves
+## Replacing surge
 
 Using your own self hosting stack firstly you avoid surge.sh
 free plan's limits and no longer have to wait for Heroku's
 free dynos to start. You will lose surge's fast updated CDN
 though but we can fix that too. If you use Cloudflare, just
-set the static content subdomain(s) and proxy it through them.
+set the static content subdomain(s) and proxy that through them.
 
 Replacing surge is the easiest. Just install nginx on a
 linux machine and run rsync to the right directory.
@@ -44,7 +44,7 @@ server {
 	ssl_trusted_certificate  /etc/letsencrypt/live/$ssl_server_name/cert.pem;
 
 	root /var/www/vhosts/$host;
-	ndex index.html;
+	index index.html;
 	# ....
 }
 ```
@@ -94,12 +94,84 @@ rsync \
 Easy. And yes. That `CNAME` contains the single line `test.example.com`,
 just like surge.
 
+### Todos
+
+- [ ] Introduce surge-like directives, like redirects and auth, that
+      basically re-render nginx `sites-enabled/` conf files for a
+      deployment.
+
 
 ## Replacing heroku apps
 
-(Comming soon)
+To keep things simple, the idea here is to replace heroku's build packs
+with some script or tool that packages the repo files into a docker image
+and deploys it to some container runtime. 
+
+The script either intelligently figure out what type of application the
+repo runs and how it should package it and deploy it or one explicitly
+tell it.
+
+Kubernetes fits neatly as the container runtime.
+
+
+### ~Intelligent~ Lazy guesses
+
+The laziest approach to guessing how the repo should be packaged is to
+look for some files that indicate which language, framework and
+dependencies it should use. In java one can check if there's a `pom.xml`
+or a `build.gradle`. For go that would be a `go.mod`. That would tell
+the script which base docker image should use, copy the built files into
+it, render a kubernetes templates or configure a helm chart.
+
+
+### Explicit
+
+If you don't need the latest and greatest default runtime configuration,
+you can use a deployment file to explicitly tell the script what to do.
+This could look like:
+
+```yaml
+test:
+  command: go test
+  coverage: true # or configure a coverage.out file path
+ 
+build:
+  image: golang:latest
+  args: []
+  name: hello-kaiku
+  tags:
+  - latest
+  - time-${{ build.time.now }}
+  - version-${{ build.git.describe }}
+ 
+run:
+  # These get translated into `spec.template.spec.containers[]` fields
+  # Overrides the command in the docker base image
+  command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
+  env:
+    SOME_VAR: some-value
+    SOME_SECRET: ${{ build.SOME_SECRET }}
+    LISTEN_POST: ${{ run.PORT }}
+```
+
+Here the use of `${{ scope.var }}` is used to dynamically set values at
+different phases.
+
+The configured `test`, `build`, and `run` phases above have defaults
+for each runtime the tool figure out.
+
+
+### Todos
+
+- [ ] Based on the `CNAME` file or some other configuration, create the
+      required TLS certificates. And, of course, attach those to the
+      kubernetes Ingress.
 
 
 ## Replacing heroku addons
 
-(Comming soon)
+Here the challenge boils down to exposing some CRUD API that creates
+cloud resources, like a new postgres database, a redis database and
+exposes some environment variables via a file for each deployment made.
+
+
