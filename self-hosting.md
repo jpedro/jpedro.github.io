@@ -50,7 +50,7 @@ server {
 ```
 
 > **Note**
-> 
+>
 > Note that the usage of `$ssl_server_name` cames with a performance price.
 
 So the web root directory for the subdomain `test.example.com` is
@@ -105,7 +105,7 @@ just like surge.
 
 To keep things simple, the idea here is to replace heroku's build packs
 with some script or tool that packages the repo files into a docker image
-and deploys it to some container runtime. 
+and deploys it to some container runtime.
 
 The script either intelligently figure out what type of application the
 repo runs and how it should package it and deploy it or one explicitly
@@ -139,24 +139,24 @@ This could look like:
 test:
   command: go test
   coverage: true # or configure a coverage.out file path
- 
+
 build:
   image: golang:latest
   args: []
   name: hello-kaiku
   tags:
   - latest
-  - time-$[[ build.time.now ]]
-  - version-$[[ build.git.describe ]]
- 
+  - time-$(( build.time.now ))
+  - version-$(( build.git.describe ))
+
 run:
   # These get translated into `spec.template.spec.containers[]` fields
   # Overrides the command in the docker base image
   command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
   env:
     SOME_VAR: some-value
-    SOME_SECRET: $[[ build.SOME_SECRET ]]
-    LISTEN_POST: $[[ run.PORT ]]
+    SOME_SECRET: $(( build.SOME_SECRET ))
+    LISTEN_POST: $(( run.PORT ))
 ```
 
 Here the use of `$[[ scope.var ]]` is used to dynamically set values at
