@@ -1,24 +1,22 @@
-<!-- hidden-doit -->
+<!-- hidden: false -->
 
 # Self hosting
 
-So heroku [will stop free plans](https://blog.heroku.com/next-chapter)
+I used surge.sh to host some static content and some SPAs and heroku
+as the API backend.
+
+But heroku [will stop free plans](https://blog.heroku.com/next-chapter)
 and [surge.sh](https://surge.sh) has a 60 MB (?) limit for the total
 size of files uploaded.
 
-I use surge.sh to host some static SPAs and heroku as the API backend.
-
-Surge still works great for smaller deployments but I'll build my own
-replacement for Heroku's push-to-deploy.
+Using your own self hosting stack you avoid Surge's free plan's limits
+and no longer have to wait for Heroku's free dynos to start. You will
+lose surge's fast updated CDN though but we can fix that too. If you
+use Cloudflare you select (sub)domain(s) to proxy through them.
 
 
 ## Replacing surge
 
-Using your own self hosting stack firstly you avoid surge.sh free
-plan's limits and no longer have to wait for Heroku's free dynos to
-start. You will lose surge's fast updated CDN though but we can fix
-that too. If you use Cloudflare you can subdomain(s) and proxy that
-through them.
 
 Replacing surge is the easiest. Just install nginx on a linux machine
 and run rsync to the right directory.
