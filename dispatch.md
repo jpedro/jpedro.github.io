@@ -1,3 +1,5 @@
+<!-- date: 2020-08-13 -->
+
 # Bash dispatch
 
 ![Whats this field for?](https://img.shields.io/badge/Tag-bash-brightgreen)
