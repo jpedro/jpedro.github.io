@@ -126,7 +126,7 @@ class Index:
               content.append(f"- [{title}](../{page})")
               # content.append(f"- [{title}](/{page})")
 
-          text = TEMPLATE_TAG.replace("{{ name }}", titlelize(tag))
+          text = TEMPLATE_TAG.replace("{{ name }}", self.titlelize(tag))
           text = text.replace("{{ content }}", "\n".join(content)).strip()
           print()
           print(f"File \033[32;1mtags/{tag}.md")
