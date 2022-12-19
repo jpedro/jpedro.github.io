@@ -1,6 +1,6 @@
 # My favourite unit
 
-It's the **Dirac**.
+It's the **`dirac`**.
 
 Defined as one word per hour.
 
