@@ -109,8 +109,8 @@ class Index:
 
           blogPages[file_path] = meta["title"]
 
-      print(f"==> Using pages {pages}")
-      print(f"==> Using tags {tags}")
+      print(f"==> Using pages {blogPages}")
+      print(f"==> Using tags {blogTags}")
 
       separator = "─" * 80
       tagItems = {}
