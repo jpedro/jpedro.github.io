@@ -1,8 +1,8 @@
 # Index
 
 - [Useful OpenSSL commands](openssl.md)
-- [Self hosting](self-hosting.md)
 - [Bash dispatch](dispatch.md)
+- [Self hosting](hosting.md)
 - [Markdown snippets](markdown.md)
 - [My favourite unit](unit.md)
 
