@@ -1,5 +1,6 @@
 <!-- tags: shell, security -->
-# OpenSSL Commands
+
+# Useful OpenSSL commands
 
 [Original post](https://www.sslshopper.com/article-most-common-openssl-commands.html)
 
