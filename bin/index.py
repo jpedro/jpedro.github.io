@@ -20,10 +20,10 @@ TEMPLATE_INDEX = """
 {{ pages }}
 
 
-#  &nbsp;
 ---
-<!-- This ~~will be eventually~~ is generated. -->
 Made with some <3. Not a lot
+<!-- #  &nbsp; -->
+<!-- This ~~will be eventually~~ is generated. -->
 """
 # #### Tags
 # {{ tags }}
