@@ -1,6 +1,6 @@
 # Index
 
-- [OpenSSL Commands](openssl-commands.md)
+- [Useful OpenSSL commands](openssl.md)
 - [Self hosting](self-hosting.md)
 - [Bash dispatch](bash-dispatch.md)
 - [Markdown snippets](markdown.md)
