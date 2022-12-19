@@ -83,10 +83,10 @@ class Index:
       blogTags = {}
 
       for file_path in os.listdir():
-          ext = file_path[len(name)-3:]
+          ext = file_path[len(file_path)-3:]
           if ext != ".md":
               continue
-          if name in EXCLUDE:
+          if file_path in EXCLUDE:
               continue
 
           print(f"==> Found file {file_path}")
@@ -105,9 +105,9 @@ class Index:
                   tag = tag.strip()
                   if blogTags.get(tag) is None:
                       blogTags[tag] = {}
-                  blogTags[tag][name] = meta["title"]
+                  blogTags[tag][file_path] = meta["title"]
 
-          blogPages[name] = meta["title"]
+          blogPages[file_path] = meta["title"]
 
       print(f"==> Using pages {pages}")
       print(f"==> Using tags {tags}")
