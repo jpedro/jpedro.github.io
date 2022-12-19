@@ -372,8 +372,8 @@ jobs:
     steps:
     - name: Build
       run: |
-        echo "Building $\{{ matrix.component }} version \
-          $\{\{ matrix.version \}\} for\${\{ matrix.os }\}..."
+        echo "Building ${ { matrix.component } } version \
+          ${ { matrix.version } } for\${ { matrix.os } }..."
         sleep 30
         echo "Done"
 ```
