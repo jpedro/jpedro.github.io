@@ -428,9 +428,8 @@ non-parallelised, manually approved python-unstrangled pipelines.
 Because they can.
 
 
-## The title
+## If you missed it
 
-If you missed it, the title pay homage to Carl Sagan's misquoted expression
-that was eventually
-[embraced by him in a book](https://en.wikipedia.org/wiki/Billions_and_Billions).
-
+The title is a reference to Carl Sagan's misquoted expression that was
+eventually
+[embraced by him into a book](https://en.wikipedia.org/wiki/Billions_and_Billions).
