@@ -22,6 +22,8 @@ A combination of centralised yaml files, Python running Terraform and
 GitHub matricised jobs.
 
 
+---
+
 ## The problem
 
 When you have a single digit number of projects, you start by having
@@ -95,6 +97,8 @@ First, we'll dive into how we centralised all projects into a single
 repo.
 
 
+---
+
 ## Enter yaml
 
 First we extracted all config, not into tfvars files, but into yaml
@@ -130,6 +134,8 @@ If you are thinking: "Bro! You just traded 800 small directories for
 
 Now we can do interesting things.
 
+
+---
 
 ## Enter Python
 
@@ -200,6 +206,8 @@ in a separate and manual pipeline.
 > terraform plan with `terraform show -json <plan-file>` and then
 > inspect the `resource_changes` block.
 
+
+---
 
 ## GitHub approval
 
@@ -282,6 +290,8 @@ gathered and combined into a final Javascript decision script that
 approves and merges the request or creates a reporting comment
 otherwise. Kudos to GitHub for all this!
 
+
+---
 
 ## The big slow
 
@@ -406,6 +416,7 @@ Q.E.D. ■
 > different from the `Total duration` inside a run. In the screenshot
 > above, it shows `58s` vs `4m`.
 
+---
 
 ## Final notes
 
