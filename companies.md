@@ -5,15 +5,15 @@ Like humans and stars, companies have a life cycle.
 
 ## Birth
 
-They are created at some point. The success rate of surving birth is
-quite low. Some point out that 9 out of 10 startups fail.
-
-But a new company starts with a product or a service, that's either:
+A new company starts with a product or a service, that's either:
 
 - A innovation -- something new in the world (like Docker)
 - Or by having better execution that beats complacent competitors. That
   better part could be a better UI, better features or simply a better
   price (like Slack).
+
+The survival rate is quite low. Some point out that 9 out of 10
+startups fail.
 
 
 # Childhood
