@@ -21,10 +21,10 @@ startups fail.
 When a company is young, it's often chaotic. With the founders doing a
 bit of everything.
 
-There's no need for "processes". The decision process can be discussion
-between 2 people. Sometimes, just in one.
+There's no need for "processes". The decision process can be a
+discussion between 2 people. Sometimes, it's just inside one head.
 
-There is no time either.
+There is no time for it either.
 
 **Time to market** is the most critical metric here. So, make it work.
 THEN make it pretty and make it fast.
