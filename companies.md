@@ -37,8 +37,10 @@ product, those miliseconds count.
 
 ## Growth pains
 
-If it hits the market and monetise quickly they can afford to pay full
-time employees. The other less atractive option is to get fund raised.
+If it hits the market and monetise quickly enough they can afford to
+pay full time employees by themselves. The other option is to get
+fund-raised.
+
 Either way, the race to attract talent is on.
 
 In the beginning the only option to attract qualified people away from
@@ -47,8 +49,8 @@ that, those potential employees need to become convinved the idea works
 pays off.
 
 In the beginning, the company with less than 10 people, founders tend
-to be pretty down to earth, approachable. Discussions can pretty open
-since it's possible you can sit with the CEO at lunch and talk
+to be pretty down to earth, approachable. Discussions can happen in the
+open since it's possible you can sit with the CEO at lunch and talk
 about almost everything.
 
 Management can keep tabs on most things that are happening. People can
