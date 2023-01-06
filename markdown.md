@@ -1,6 +1,6 @@
 <!-- date: 2020-07-02 -->
 <!-- tags: writting -->
-<!-- title: Markdown snippets -->
+<!-- title2: Markdown snippets -->
 
 [comment]: <> (This is a comment, it will not be included)
 [comment]: <> (in  the output file unless you use it in)
