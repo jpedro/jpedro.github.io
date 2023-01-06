@@ -20,7 +20,9 @@ TEMPLATE_INDEX = """
 {{ pages }}
 
 
-<!-- #  &nbsp; -->
+
+###  &nbsp;
+
 Made with some <3. [Not a lot](https://github.com/jpedro/jpedro.github.io)
 <!-- This ~~will be eventually~~ is generated. -->
 """
