@@ -23,7 +23,7 @@ TEMPLATE_INDEX = """
 
 ###  &nbsp;
 
-Made with some <3  [Not a lot](https://github.com/jpedro/jpedro.github.io)
+Made with some <3 &nbsp; [Not a lot](https://github.com/jpedro/jpedro.github.io)
 <!-- This ~~will be eventually~~ is generated. -->
 """
 # #### Tags
