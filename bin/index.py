@@ -46,9 +46,12 @@ class Index:
       for line in lines:
           line = line.strip()
 
-          if line.find("# ") == 0 and meta.get("title") is None:
-              print(f"==> Using first '#' header as title: {line}")
-              meta["title"] = line[2:]
+          if line.find("# ") == 0:
+              if meta.get("title") is None:
+                  print(f"==> Using first '#' header as title: {line}")
+                  meta["title"] = line[2:]
+              else:
+                  print(f"==> Skip. Using previous title: {meta['title']}")
               continue
 
           start = line.find(COMMENT_START)
