@@ -3,7 +3,7 @@
 - [Useful OpenSSL commands](openssl.md)
 - [Bash dispatch](dispatch.md)
 - [Self hosting](hosting.md)
-- [Header 1](markdown.md)
+- [Markdown](markdown.md)
 - [My favourite unit](unit.md)
 
 
