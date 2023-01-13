@@ -401,7 +401,7 @@ handle them. 1234 changed projects means 124 jobs. It's always
 We use the native GitHub `fromJSON` function when parsing a valid json
 string of values as the matrix list:
 
-    slot: ${{ fromJSON(needs.calculate.outputs.slots)) }}
+    slot: ${ { fromJSON(needs.calculate.outputs.slots)) } }
 
 Since these jobs run in parallel and inside each job the Terraform
 calls are threaded, they all complete in under 10 minutes, no matter
