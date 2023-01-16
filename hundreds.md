@@ -1,5 +1,5 @@
 <!-- date: 2022-11-24 -->
-<!-- hidden: no -->
+<!-- hidden -->
 
 # Hundreds and hundreds
 
