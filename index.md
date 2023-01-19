@@ -1,10 +1,10 @@
 # Index
 
+- [Bash dispatch](dispatch.md)
+- [Markdown](markdown.md)
 - [Self hosting](hosting.md)
 - [My favourite unit](unit.md)
-- [Markdown](markdown.md)
 - [Useful OpenSSL commands](openssl.md)
-- [Bash dispatch](dispatch.md)
 
 
 
