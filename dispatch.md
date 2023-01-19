@@ -27,28 +27,28 @@ this:
 set -euo pipefail
 
 cmd.list() {
-  ls -alF ${1:-$HOME}
+    ls -alF ${1:-$HOME}
 }
 
 cmd.help() {
-  echo "Usage: something <command>"
-  echo
-  echo "Commands:"
-  echo "    list          # List all files in the home directory"
+    echo "Usage: something <command>"
+    echo
+    echo "Commands:"
+    echo "    list          # List all files in the home directory"
 }
 
 cmd.other() {
-  echo "==> Args: $@ ($#)"
+    echo "==> Args: $@ ($#)"
 }
 
 COMMAND="${1:-list}
 shift
 
 case "$COMMAND" in
-  "list")     cmd.list $@ ;;
-  "help")     cmd.help $@ ;;
-  "other")    cmd.other $@ ;;
-  #...
+    "list")     cmd.list $@ ;;
+    "help")     cmd.help $@ ;;
+    "other")    cmd.other $@ ;;
+    #...
 esac
 ```
 
@@ -72,40 +72,40 @@ subcommand from the declared functions, with a known prefix:
 # All of the above...
 
 dispatch() {
-  : "Finding command for $@..."
-  local prefix="cmd"
-  local fallback="cmd.help"
-  local max=${#@}
+    : "Finding command for $@..."
+    local prefix="cmd"
+    local fallback="cmd.help"
+    local max=${#@}
 
-  if [ $max -lt 1 ]
-  then
-    $fallback
-    return
-  fi
-
-  while true
-  do
-    arg=${@:1:$max}
-    cmd="${arg// /.}"
-    : "Checking $prefix.$cmd: $(type $prefix.$cmd 2>/dev/null | head -n 1)"
-    if type $prefix.$cmd >/dev/null 2>&1
-    then
-      args=${@:$(($max+1))}
-      : "Calling $prefix.$cmd($args)"
-      eval $prefix.$cmd $args
-      return
-    fi
-
-    max=$(( max - 1))
     if [ $max -lt 1 ]
     then
-      echo >&2 "Error: Couldn't find command for '$@'. Try '$0 help'."
-      return 1
+        $fallback
+        return
     fi
-  done
 
-  echo >&2 "Error: Command '$1' not found."
-  return 1
+    while true
+    do
+        arg=${@:1:$max}
+        cmd="${arg// /.}"
+        : "Checking $prefix.$cmd: $(type $prefix.$cmd 2>/dev/null | head -n 1)"
+        if type $prefix.$cmd >/dev/null 2>&1
+        then
+            args=${@:$(($max+1))}
+            : "Calling $prefix.$cmd($args)"
+            eval $prefix.$cmd $args
+            return
+        fi
+
+        max=$(( max - 1))
+        if [ $max -lt 1 ]
+        then
+            echo >&2 "Error: Couldn't find command for '$@'. Try '$0 help'."
+            return 1
+        fi
+    done
+
+    echo >&2 "Error: Command '$1' not found."
+    return 1
 }
 
 dispatch $@
@@ -154,7 +154,7 @@ when you open the script in a code editor.
 set -euo pipefail
 
 cmd.help() {
-  grep '^###' $0 | cut -c 5-
+    grep '^###' $0 | cut -c 5-
 }
 
 # ...
@@ -175,11 +175,11 @@ cmd.help() {
 set -euo pipefail
 
 cmd.help() {
-  grep '^###' $0 | cut -c 5-
+    grep '^###' $0 | cut -c 5-
 }
 
 cmd.list() {
-  ls -alF --color=auto ${1:-$HOME}
+    ls -alF --color=auto ${1:-$HOME}
 }
 
 cmd.other() {
@@ -187,40 +187,40 @@ cmd.other() {
 }
 
 dispatch() {
-  : "Finding command for $@..."
-  local prefix="cmd"
-  local fallback="cmd.help"
-  local max=${#@}
+    : "Finding command for $@..."
+    local prefix="cmd"
+    local fallback="cmd.help"
+    local max=${#@}
 
-  if [ $max -lt 1 ]
-  then
-    $fallback
-    return
-  fi
-
-  while true
-  do
-    arg=${@:1:$max}
-    cmd="${arg// /.}"
-    : "Checking $prefix.$cmd: $(type $prefix.$cmd 2>/dev/null | head -n 1)"
-    if type $prefix.$cmd >/dev/null 2>&1
-    then
-      args=${@:$(($max+1))}
-      : "Calling $prefix.$cmd($args)"
-      eval $prefix.$cmd $args
-      return
-    fi
-
-    max=$(( max - 1))
     if [ $max -lt 1 ]
     then
-      echo >&2 "Error: Couldn't find command for '$@'. Try '$0 help'."
-      return 1
+        $fallback
+        return
     fi
-  done
 
-  echo >&2 "Error: Command '$1' not found."
-  return 1
+    while true
+    do
+        arg=${@:1:$max}
+        cmd="${arg// /.}"
+        : "Checking $prefix.$cmd: $(type $prefix.$cmd 2>/dev/null | head -n 1)"
+        if type $prefix.$cmd >/dev/null 2>&1
+        then
+            args=${@:$(($max+1))}
+            : "Calling $prefix.$cmd($args)"
+            eval $prefix.$cmd $args
+            return
+        fi
+
+        max=$(( max - 1))
+        if [ $max -lt 1 ]
+        then
+            echo >&2 "Error: Couldn't find command for '$@'. Try '$0 help'."
+            return 1
+        fi
+    done
+
+    echo >&2 "Error: Command '$1' not found."
+    return 1
 }
 
 dispatch $@
