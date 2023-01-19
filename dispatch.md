@@ -183,7 +183,7 @@ cmd.list() {
 }
 
 cmd.other() {
-  echo "==> Args: $@ ($#)"
+    echo "==> Args: $@ ($#)"
 }
 
 dispatch() {
