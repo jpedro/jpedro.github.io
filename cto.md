@@ -7,8 +7,8 @@ I'm a middle aged man. I'm 44 but not a CTO.
 
 It seems to be a statistical fact. Most middle aged CTO that spent years
 climbing the corporate ladder find themselves in a critical role that
-is right into the middle of strategic thinking and planning meetings
-with no end in sight.
+is right into the middle of "strategic" thinking and recurring planning
+meetings with no end in sight.
 
 And every second in meetings, is a second away from the keyboard. The
 keyboard that made them what they are today. The keyboard that will
@@ -24,11 +24,11 @@ have that last word. And that can last for years to come.
 
 Is this spanking new tech a convinient way to simplify things or, in
 the opposite direction, a very flexible approach that's "future-proof"?
-Or just a fad and we should stick to boring tech that already works
-and is battle tested?
+Or is it just a fad and we should stick to boring tech that already
+works and is battle tested?
 
-Should we use Kubernetes for this new platform or ECS? Or containers on
-Lambdas or something like CloudRun? Rust or Java?
+Kubernetes or ECS? Or containers on Lambdas? Or something like CloudRun?
+Or good old VMs? Rust or Java?
 
 There are very valid arguments for and against each direction. But that
 decision will stick for years.
