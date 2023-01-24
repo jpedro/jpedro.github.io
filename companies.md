@@ -8,7 +8,7 @@ Like humans and stars, companies have a life cycle.
 A new company starts with a product or a service, that's either:
 
 - A innovation -- something new in the world (like Docker)
-- Or by having better execution that beats complacent competitors. That
+- Or has better execution that beats complacent competitors. That
   better part could be a better UI, better features or simply a better
   price (like Slack).
 
