@@ -11,7 +11,8 @@ is right into the middle of strategic thinking and planning meetings
 with no end in sight.
 
 And every second in meetings, is a second away from the keyboard. The
-keyboard that made them what they are today.
+keyboard that made them what they are today. The keyboard that will
+intuitely tell them if this tech feels right or not.
 
 
 ### Decisions, decisions, decisions
