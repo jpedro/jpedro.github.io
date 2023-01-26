@@ -23,3 +23,6 @@ Supported comments:
 
 - [ ] Add generated tags at the bottom of each page.
 - [ ] Allow multi-line comments.
+
+
+![Diagram](https://lucid.app/publicSegments/view/464a0cc4-db0f-4cdb-9857-205a3b6c84c1/image.png)
