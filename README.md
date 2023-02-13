@@ -8,7 +8,7 @@ Maintenance free blog.
 
 ## Features
 
-Add a markdown comment in the format `<!-- comment goes here -->`  to control
+Add a markdown comment in the format `<!-- something magical happens in here -->`  to control
 some properties.
 
 Supported comments:
