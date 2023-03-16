@@ -25,6 +25,7 @@ TEMPLATE_INDEX = """
 
 Made with some <3 &nbsp; [Not a lot](https://github.com/jpedro/jpedro.github.io)
 <!-- This ~~will be eventually~~ is generated. -->
+<script>alert("Hey!");</script>
 """
 # #### Tags
 # {{ tags }}
