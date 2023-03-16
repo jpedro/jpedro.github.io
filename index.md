@@ -12,4 +12,5 @@
 
 Made with some <3 &nbsp; [Not a lot](https://github.com/jpedro/jpedro.github.io)
 <!-- This ~~will be eventually~~ is generated. -->
-<script>alert("Hey!");</script>
+<div id="comments"></div>
+<script src="/app.js" defer></script>
