@@ -1,5 +1,4 @@
 const body = document.body;
-const comments = document.getElementById("comments");
 const MAX = 5;
 const MIN = 1;
 
@@ -24,8 +23,8 @@ const loadComments = () => {
     const h4 = document.createElement("h4")
     const ul = document.createElement("ul")
     h4.innerText = "Expert Comments";
-    comments.appendChild(h4);
-    comments.appendChild(ul);
+    body.appendChild(h4);
+    body.appendChild(ul);
 
     for (i = 0; i < total; i++) {
         getComment()
