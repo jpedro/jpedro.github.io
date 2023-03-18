@@ -21,12 +21,13 @@ TEMPLATE_INDEX = """
 
 
 
+<div id="comments" data-added="manually"></div>
+<script src="/app.js" defer></script>
+
 ###  &nbsp;
 
 Made with some <3 &nbsp; [Not a lot](https://github.com/jpedro/jpedro.github.io)
 <!-- This ~~will be eventually~~ is generated. -->
-<div id="comments" data-added="manually"></div>
-<script src="/app.js" defer></script>
 """
 # #### Tags
 # {{ tags }}
