@@ -27,7 +27,6 @@ Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
 
 
 ###  &nbsp;
-
 <div id="comments" data-added="manually"></div>
 <!-- <script src="/app.js" defer></script> -->
 <script src="https://raw.githubusercontent.com/jpedro/js/master/comments.js" defer></script>
