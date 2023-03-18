@@ -8,7 +8,8 @@ const getComment = async (content, callback) => {
         headers: {
             "Accept": "application/json",
         },
-    }
+    };
+
     const res = await fetch("https://icanhazdadjoke.com/", options)
     if (res.ok) {
         const data = await res.json();
@@ -25,6 +26,7 @@ const loadComments = () => {
     h4.innerText = "Expert Comments";
     comments.appendChild(h4);
     comments.appendChild(ul);
+
     for (i = 0; i < total; i++) {
         getComment()
         .then(data => {
@@ -39,6 +41,6 @@ const loadComments = () => {
 };
 
 window.addEventListener("load", (event) => {
-    body.style.backgroundColor = "#ffe";
+    body.style.backgroundColor = "#ffc";
     loadComments();
 });
