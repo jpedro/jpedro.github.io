@@ -1,5 +1,7 @@
 const body = document.body;
 const comments = document.getElementById("comments");
+const MAX = 5;
+const MIN = 1;
 
 const getComment = async (content, callback) => {
     const options = {
@@ -17,8 +19,11 @@ const getComment = async (content, callback) => {
 };
 
 const loadComments = () => {
-    const total = Math.random() * (10 - 1) + 1;
+    const total = Math.random() * (MAX - MIN) + MIN;
+    const h4 = document.createElement("h4")
     const ul = document.createElement("ul")
+    h4.innerText = "Expert Comments";
+    comments.appendChild(h4);
     comments.appendChild(ul);
     for (i = 0; i < total; i++) {
         getComment()
