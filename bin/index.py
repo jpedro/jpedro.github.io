@@ -27,7 +27,7 @@ Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
 <!-- This ~~will be eventually~~ is generated. -->
 
 <div id="comments" data-added="manually"></div>
-<script src="/app.js"></script>
+<script src="/static/js/app.js"></script>
 <script defer>Comments.start(document.body.children[0]);</script>
 <!--
 // CORB prevents loading from `githubusercontent.com` due to MIME types
