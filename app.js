@@ -40,6 +40,6 @@ const loadComments = () => {
 };
 
 window.addEventListener("load", (event) => {
-    document.body.style.backgroundColor = "#ffc";
+    // document.body.style.backgroundColor = "#ffc";
     loadComments();
 });
