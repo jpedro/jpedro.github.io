@@ -1,24 +1,39 @@
 const body = document.body;
 const comments = document.getElementById("comments");
 
-const addComment = (content) => {
-    const el = document.createElement("li")
-    el.innerHTML = content;
-    return el;
+const getComment = async (content, callback) => {
+    const options = {
+        headers: {
+            "Accept": "application/json",
+        },
+    }
+    const res = await fetch("https://icanhazdadjoke.com/", options)
+    if (res.ok) {
+        const data = await res.json();
+        return Promise.resolve(data);
+    }
+
+    return Promise.reject("Failed to load VIP comment");
 };
 
-const addComments = () => {
+const loadComments = () => {
     const total = Math.random() * (10 - 1) + 1;
     const ul = document.createElement("ul")
     comments.appendChild(ul);
     for (i = 0; i < total; i++) {
-        const li = addComment("This is generated comment " + i);
-        ul.appendChild(li);
+        getComment()
+        .then(data => {
+            const li = document.createElement("li");
+            li.innerHTML = data.joke;
+            ul.appendChild(li);
+        })
+        .catch(err => {
+            console.error("err", err);
+        });
     }
 };
 
-
 window.addEventListener("load", (event) => {
-    body.style.backgroundColor = "#eee";
-    addComments();
+    body.style.backgroundColor = "#ffe";
+    loadComments();
 });
