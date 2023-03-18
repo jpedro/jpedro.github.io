@@ -13,4 +13,4 @@
 
 <div id="comments" data-added="manually"></div>
 <script src="https://jpedro.github.io/js/v1/comments.js"></script>
-<script defer>Comments.mount(document.body.children[0]);</script>
+<script>Comments.mount(document.body.children[0]);</script>
