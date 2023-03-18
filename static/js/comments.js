@@ -7,7 +7,8 @@ class Comments {
     constructor(mount) {
         let script = document.createElement("script");
         script.type = "text/javascript";
-        script.src = "https://raw.githubusercontent.com/jpedro/js/master/v1/test.js";
+        // script.src = "https://raw.githubusercontent.com/jpedro/js/master/v1/test.js";
+        script.src = "https://js.jpedro.dev/test.js";
         document.head.appendChild(script);
         console.log("mount", mount);
         mount ||= document.body;
