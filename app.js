@@ -26,7 +26,7 @@ const loadComments = () => {
     h4.innerText = "Expert comments";
     div.appendChild(h4);
     div.appendChild(ul);
-    document.body.appendChild(div);
+    document.body.children[0].appendChild(div);
 
     for (i = 0; i < total; i++) {
         getComment()
