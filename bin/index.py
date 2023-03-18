@@ -15,7 +15,7 @@ COMMENT_START = "<!--"
 COMMENT_END = "-->"
 
 TEMPLATE_INDEX = """
-<link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📔</text></svg>">
+<!-- <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📔</text></svg>"> -->
 # Index
 
 {{ pages }}
@@ -31,8 +31,10 @@ Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
 <div id="comments" data-added="manually"></div>
 <!-- <script src="/app.js" defer></script> -->
 <script type="application/javascript"
-    src="https://raw.githubusercontent.com/jpedro/js/master/comments.js"
+    _src="https://raw.githubusercontent.com/jpedro/js/master/comments.js"
+    src="https://js.jpedro.dev/comments.js"
     crossorigin="anonymous"
+    defer="defer"
     integrity="sha256-pS6dZ2u4gz9a4fUCym3hz24oYm6gkOAEAGM43oHr87Q="></script>
 """
 
