@@ -20,7 +20,7 @@ const getComment = async (content, callback) => {
 const loadComments = () => {
     const mount = document.body.children[0];
     const total = Math.random() * (MAX - MIN) + MIN;
-    const h4 = document.createElement("h4")
+    const h4 = document.createElement("h2")
     const ul = document.createElement("ul")
     h4.innerText = "Expert comments";
     mount.appendChild(h4);
