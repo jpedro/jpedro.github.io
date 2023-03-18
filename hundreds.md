@@ -22,7 +22,7 @@ A combination of centralised yaml files, Python running Terraform and
 GitHub matricised jobs.
 
 
----
+<!-- --- -->
 
 ## The problem
 
@@ -97,7 +97,7 @@ First, we'll dive into how we centralised all projects into a single
 repo.
 
 
----
+<!-- --- -->
 
 ## Enter yaml
 
@@ -207,7 +207,7 @@ in a separate and manual pipeline.
 > inspect the `resource_changes` block.
 
 
----
+<!-- --- -->
 
 ## GitHub approval
 
@@ -291,7 +291,7 @@ approves and merges the request or creates a reporting comment
 otherwise. Kudos to GitHub for all this!
 
 
----
+<!-- --- -->
 
 ## The big slow
 
@@ -416,7 +416,7 @@ Q.E.D. ■
 > different from the `Total duration` inside a run. In the screenshot
 > above, it shows `58s` vs `4m`.
 
----
+<!-- --- -->
 
 ## Final notes
 
@@ -449,7 +449,7 @@ non-parallelised, manually approved python-unstrangled pipelines.
 Because they can.
 
 
----
+<!-- --- -->
 
 ## If you missed it
 
