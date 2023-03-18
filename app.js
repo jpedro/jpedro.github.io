@@ -22,7 +22,7 @@ const loadComments = () => {
     const total = Math.random() * (MAX - MIN) + MIN;
     const h4 = document.createElement("h4")
     const ul = document.createElement("ul")
-    h4.innerText = "Expert Comments";
+    h4.innerText = "Expert comments";
     body.appendChild(h4);
     body.appendChild(ul);
 
