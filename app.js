@@ -3,8 +3,8 @@ const comments = document.getElementById("comments");
 
 const addComment = (content) => {
     const el = document.createElement("li")
-    li.innerHTML = content;
-    return li;
+    el.innerHTML = content;
+    return el;
 };
 
 const addComments = () => {
