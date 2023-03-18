@@ -20,11 +20,12 @@ TEMPLATE_INDEX = """
 
 {{ pages }}
 
-
  &nbsp;
 
 Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
 <!-- This ~~will be eventually~~ is generated. -->
+
+ &nbsp;
 
 <div id="comments" data-added="manually"></div>
 <script src="/static/js/comments.js"></script>
