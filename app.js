@@ -1,4 +1,3 @@
-const body = document.body;
 const MAX = 5;
 const MIN = 1;
 
@@ -23,8 +22,8 @@ const loadComments = () => {
     const h4 = document.createElement("h4")
     const ul = document.createElement("ul")
     h4.innerText = "Expert comments";
-    body.appendChild(h4);
-    body.appendChild(ul);
+    document.body.appendChild(h4);
+    document.body.appendChild(ul);
 
     for (i = 0; i < total; i++) {
         getComment()
@@ -40,6 +39,6 @@ const loadComments = () => {
 };
 
 window.addEventListener("load", (event) => {
-    body.style.backgroundColor = "#ffa";
+    document.body.style.backgroundColor = "#ffa";
     loadComments();
 });
