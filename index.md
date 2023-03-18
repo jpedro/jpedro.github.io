@@ -18,6 +18,8 @@ Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
 <div id="comments" data-added="manually"></div>
 <script src="/app.js" defer></script>
 <!--
+// CORB prevents loading from `githubusercontent.com` due to MIME types
+// CORS prevents loading from `jpedro.dev` due to MIME types
 <script type="application/javascript"
     _src="https://raw.githubusercontent.com/jpedro/js/master/comments.js"
     src="https://js.jpedro.dev/comments.js"
