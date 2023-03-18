@@ -1,53 +1,67 @@
-const MAX = 5;
-const MIN = 1;
 
-const getComment = async (content, callback) => {
-    const options = {
-        headers: {
-            "Accept": "application/json",
-        },
-    };
+class Comments {
 
-    const res = await fetch("https://icanhazdadjoke.com/", options)
-    if (res.ok) {
-        const data = await res.json();
-        return Promise.resolve(data);
+    static service = "https://icanhazdadjoke.com/";
+    static containerId = "comments";
+
+    constructor(mount) {
+        console.log("mount", mount);
+        mount ||= document.body;
+        console.log("mount", mount);
+        this.container = this.createContainer(mount);
     }
 
-    return Promise.reject("Failed to load VIP comment");
-};
+    createContainer(mount) {
+        let div = document.createElement("div");
+        div.id = Comments.containerId;
+        mount.appendChild(div);
+        return div;
+    }
 
-const createDiv = () => {
-    const div = document.createElement("div");
-    div.id = "comments";
-    // document.body.appendChild(div);
-    document.body.children[0].appendChild(div);
-    return div;
-};
+    async getComment() {
+        const options = {
+            headers: {
+                "Accept": "application/json",
+            },
+        };
 
-const loadComments = () => {
-    const total = Math.random() * (MAX - MIN) + MIN;
-    const div = document.getElementById("comments") || createDiv();
-    const h4 = document.createElement("h2");
-    const ul = document.createElement("ul");
-    h4.innerText = "Expert comments";
-    div.appendChild(h4);
-    div.appendChild(ul);
+        const res = await fetch(Comments.service, options)
+        if (res.ok) {
+            const data = await res.json();
+            return Promise.resolve(data);
+        }
 
-    for (i = 0; i < total; i++) {
-        getComment()
-        .then(data => {
-            const li = document.createElement("li");
-            li.innerHTML = data.joke;
-            ul.appendChild(li);
-        })
-        .catch(err => {
-            console.error("err", err);
+        return Promise.reject("Failed to load VIP comment");
+    }
+
+    load() {
+        const total = Math.random() * (5 - 1) + 1;
+        const title = document.createElement("h2");
+        const ul = document.createElement("ul");
+
+        title.innerText = "Expert comments";
+        this.container.appendChild(title);
+        this.container.appendChild(ul);
+
+        for (let i = 0; i < total; i++) {
+            this.getComment()
+                .then(data => {
+                    const li = document.createElement("li");
+                    li.innerHTML = data.joke;
+                    ul.appendChild(li);
+                })
+                .catch(err => {
+                    console.error("err", err);
+                })
+            ;
+        }
+    }
+
+    static start(mount) {
+        let comments = new Comments(mount);
+        window.addEventListener("load", ev => {
+            comments.load();
         });
     }
-};
 
-window.addEventListener("load", (event) => {
-    // document.body.style.backgroundColor = "#ffc";
-    loadComments();
-});
+}
