@@ -12,8 +12,6 @@
 <!-- Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io) -->
 <!-- This ~~will be eventually~~ is generated. -->
 
-<!--  &nbsp; -->
-
 <div id="comments" data-added="manually"></div>
 <script src="https://jpedro.github.io/js/v1/comments.js"></script>
 <script defer>Comments.mount(document.body.children[0]);</script>
