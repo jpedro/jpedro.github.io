@@ -29,7 +29,7 @@ TEMPLATE_INDEX = """
 
 <div id="comments" data-added="manually"></div>
 <script src="https://jpedro.github.io/js/v1/comments.js"></script>
-<script defer>Comments.start(document.body.children[0]);</script>
+<script defer>Comments.mount(document.body.children[0]);</script>
 <!-- <script src="/static/js/comments.js"></script> -->
 <!--
 // CORB prevents loading from `githubusercontent.com` due to MIME types
