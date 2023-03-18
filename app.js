@@ -17,16 +17,22 @@ const getComment = async (content, callback) => {
     return Promise.reject("Failed to load VIP comment");
 };
 
+const createDiv = () => {
+    const div = document.createElement("div");
+    div.id = "comments";
+    // document.body.appendChild(div);
+    document.body.children[0].appendChild(div);
+    return div;
+};
+
 const loadComments = () => {
     const total = Math.random() * (MAX - MIN) + MIN;
-    const div = document.createElement("div")
-    const h4 = document.createElement("h2")
-    const ul = document.createElement("ul")
-    div.id = "comments"
+    const div = document.getElementById("comments") || createDiv();
+    const h4 = document.createElement("h2");
+    const ul = document.createElement("ul");
     h4.innerText = "Expert comments";
     div.appendChild(h4);
     div.appendChild(ul);
-    document.body.children[0].appendChild(div);
 
     for (i = 0; i < total; i++) {
         getComment()
