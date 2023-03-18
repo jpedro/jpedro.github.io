@@ -31,6 +31,7 @@ Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
 <!-- <script src="/app.js" defer></script> -->
 <script type="application/javascript"
     src="https://raw.githubusercontent.com/jpedro/js/master/comments.js"
+    crossorigin="anonymous"
     integrity="sha256-pS6dZ2u4gz9a4fUCym3hz24oYm6gkOAEAGM43oHr87Q="></script>
 """
 
