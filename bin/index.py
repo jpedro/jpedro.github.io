@@ -35,13 +35,12 @@ Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
 <script defer>Comments.mount(document.body.children[0]);</script>
 """
 
-TEMPLATE_INDEX = f"""
+TEMPLATE_INDEX = """
 # Index
 
 {{ pages }}
 
-{TEMPLATE_COMMENTS}
-"""
+""" + TEMPLATE_COMMENTS
 
 # #### Tags
 # {{ tags }}
