@@ -1,3 +1,3 @@
 ## Markdown
 
-- [Example markdown snippets](../markdown)
+- [Bash dispatch](../dispatch.md)
