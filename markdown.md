@@ -1,5 +1,4 @@
-<!-- date: 2020-07-02 -->
-<!-- tags: writting -->
+<!-- tags: writting, markdown -->
 <!-- title: Markdown -->
 
 [comment]: <> (This is a comment, it will not be included)
@@ -47,8 +46,8 @@ Syntax highlighted code block
 
 Check [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
 
-            
-            
+
+
 
 
 
