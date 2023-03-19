@@ -14,12 +14,7 @@ TRUTHY = [
 COMMENT_START = "<!--"
 COMMENT_END = "-->"
 
-TEMPLATE_INDEX = """
-<!-- <link rel="shortcut icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📔</text></svg>"> -->
-# Index
-
-{{ pages }}
-
+TEMPLATE_COMMENTS = """
  &nbsp;
 
 <!--
@@ -30,8 +25,6 @@ Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.0/firebase-app.js" integrity="sha512-BGba5na4KpjxEWMOuUzaJ5esHUMfU/qotd2zv5sugqedOx3+oHFaeieOzFQs3COa2sq6BAksRirtAFztryVZFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.0/firebase-database.min.js" integrity="sha512-XDKFSZOhFNmwmx69Xr0j3zmePQ3NoSgpzZPr49P6oV7ME5ZhEXUqu+KUA0vQtof87P6IX+ycg4PmSms/EF8/pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-
 -->
 
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
@@ -40,6 +33,14 @@ Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
 <script src="https://jpedro.github.io/js/v1/data.js"></script>
 <script src="https://jpedro.github.io/js/v1/comments.js"></script>
 <script defer>Comments.mount(document.body.children[0]);</script>
+"""
+
+TEMPLATE_INDEX = f"""
+# Index
+
+{{ pages }}
+
+{TEMPLATE_COMMENTS}
 """
 
 # #### Tags
