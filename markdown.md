@@ -29,8 +29,16 @@ Syntax highlighted code block
 
 **Bold** and _Italic_ and `Code` text
 
-[Link](url) and ![Image](src)
+[Link](url) and ![Image](src) and with links
+
+1. [<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
+2. [![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
+
 ```
+
+1. [<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
+2. [![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
+
 ---
 
 
