@@ -1,4 +1,5 @@
 <!-- hidden-no -->
+<!-- tags: shell, servers, kubernetes -->
 
 # Self hosting
 
@@ -187,8 +188,9 @@ There should be a way to uniquely identify a repo so each time it
 chages its name or domain the same resources env gets injected into
 the kubernetes deployment via config maps or secrets.
 
-            
-            
+
+
+
 
 <!-- START FOOTER -->
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
@@ -198,7 +200,7 @@ the kubernetes deployment via config maps or secrets.
 <script src="https://jpedro.github.io/js/v1/comments.js"></script>
 <script defer>Comments.mount(document.body.children[0]);</script>
 <!-- END FOOTER -->
-        
-        
-        
-        
+
+
+
+
