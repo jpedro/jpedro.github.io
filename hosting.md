@@ -9,11 +9,11 @@
 [<img src="https://img.shields.io/badge/Tag-kubernetes-brightgreen">](/tags/kubernetes)
 <!-- END TAGS -->
 
-I used surge.sh to host static content and some SPAs and heroku as the
-API backend.
+I used [surge.sh](https://surge.sh/) to host static content and some
+SPAs and [heroku.com](https://www.heroku.com/) as the backend.
 
-But heroku [will stop free plans](https://blog.heroku.com/next-chapter)
-and [surge.sh](https://surge.sh) has a 60 MB (?) limit for the total
+But [heroku will stop free plans](https://blog.heroku.com/next-chapter)
+and surge [has a 60 MB limit](https://surge.sh) for the total
 size of files uploaded. A few larger images and you are toast.
 
 Owning your hosting stack avoids Surge's free plan's limits and no
