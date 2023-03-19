@@ -1,4 +1,3 @@
-<!-- date: 2020-08-13 -->
 <!-- tags: shell, markdown -->
 
 # Bash dispatch

@@ -3,6 +3,9 @@
 
 # Hundreds and hundreds
 
+<!-- START TAGS -->
+<!-- END TAGS -->
+
 [Original post](https://nordcloud.com/tech-community/managing-hundreds-google-cloud-projects-in-minutes/)
 
 We maintain and update more than 800 Google Cloud projects. That

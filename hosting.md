@@ -3,6 +3,9 @@
 
 # Self hosting
 
+<!-- START TAGS -->
+<!-- END TAGS -->
+
 I used surge.sh to host static content and some SPAs and heroku as the
 API backend.
 

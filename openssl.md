@@ -1,7 +1,9 @@
-<!-- date: 2020-07-02 -->
 <!-- tags: shell, security -->
 
 # Useful OpenSSL commands
+
+<!-- START TAGS -->
+<!-- END TAGS -->
 
 [Original post](https://www.sslshopper.com/article-most-common-openssl-commands.html)
 
