@@ -262,7 +262,7 @@ class Index:
             # print(f"- Tag: {tag}: {count}")
             tagsContent.append(f"- [{tag}](tags/{tag}) ({count})")
 
-        # print("tagsContent", tagsContent)
+        print("tagsContent", tagsContent)
         text = TEMPLATE_INDEX.replace("{{ pages }}", "\n".join(content))
         text = text.replace("{{ tags }}", "\n".join(tagsContent)).strip()
         print()
