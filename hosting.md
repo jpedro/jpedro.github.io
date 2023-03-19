@@ -1,5 +1,5 @@
 <!-- hidden-no -->
-<!-- tags: shell, servers, kubernetes -->
+<!-- tags: shell, linux, kubernetes -->
 
 # Self hosting
 
