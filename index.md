@@ -9,10 +9,9 @@
 
  &nbsp;
 
-<!-- Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io) -->
-
-<div id="comments" data-added="manually"></div>
 <!--
+Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.18.0/firebase-app.js" integrity="sha512-djpBImoa+ot4QGqENJMYq/16OroxOsbJJemqnOpe4wMi8jDEM6iqRZl8H0JLpq1ao/sc5O7+weKuqIX3HbLtsQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/9.18.0/firebase-database.min.js" integrity="sha512-POVwgPHOXVwnhRlyoI5kWg4C9tnDu9FvMUWUVt17i93pEkhgNHNd75fyN/Cp3rDm78kgirFE+tHs+1uPifZ3hg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
