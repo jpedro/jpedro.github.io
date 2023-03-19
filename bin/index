@@ -145,6 +145,7 @@ class Index:
 {endFooter}
 """
 
+        print(f"comments: {comments}")
         if comments == "false":
             text = f"{before}{after}"
         else:
