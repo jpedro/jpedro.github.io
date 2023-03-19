@@ -2,8 +2,9 @@
 
 # Bash dispatch
 
-![Whats this field for?](https://img.shields.io/badge/Tag-bash-brightgreen)
-
+<!-- ![Whats this field for?](https://img.shields.io/badge/Tag-bash-brightgreen) -->
+<!-- [<img src="/static/img/repo.png">](https://google.com/) -->
+[<img src="https://img.shields.io/badge/Tag-bash-brightgreen">](/tags/shell)
 
 Bash as a language is horrible.
 
