@@ -31,10 +31,11 @@ Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.0/firebase-app.js" integrity="sha512-BGba5na4KpjxEWMOuUzaJ5esHUMfU/qotd2zv5sugqedOx3+oHFaeieOzFQs3COa2sq6BAksRirtAFztryVZFA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/8.10.0/firebase-database.min.js" integrity="sha512-XDKFSZOhFNmwmx69Xr0j3zmePQ3NoSgpzZPr49P6oV7ME5ZhEXUqu+KUA0vQtof87P6IX+ycg4PmSms/EF8/pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 
 -->
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 
 <script src="https://jpedro.github.io/js/v1/data.js"></script>
 <script src="https://jpedro.github.io/js/v1/comments.js"></script>
