@@ -31,13 +31,13 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src) and with links
 
-1. [<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
-2. [![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
+1. [<img src="/static/img/repo.png">](https://google.com/)
+2. [![Foo](/static/img/repo.png)](https://google.com/)
 
 ```
 
-1. [<img src="http://www.google.com.au/images/nav_logo7.png">](http://google.com.au/)
-2. [![Foo](http://www.google.com.au/images/nav_logo7.png)](http://google.com.au/)
+1. [<img src="/static/img/repo.png">](https://google.com/)
+2. [![Foo](/static/img/repo.png)](https://google.com/)
 
 ---
 
