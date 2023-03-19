@@ -148,6 +148,7 @@ class Index:
         print(f"comments: {comments}")
         if comments == "false":
             text = f"{before}{after}"
+            print(green("Not adding comments"))
         else:
             text = f"{before}{middle}{after}"
 
