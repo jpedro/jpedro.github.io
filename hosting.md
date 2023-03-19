@@ -3,11 +3,7 @@
 
 # Self hosting
 
-<!-- START TAGS -->
-[<img src="https://img.shields.io/badge/Tag-shell-brightgreen">](/tags/shell)
-[<img src="https://img.shields.io/badge/Tag-linux-brightgreen">](/tags/linux)
-[<img src="https://img.shields.io/badge/Tag-kubernetes-brightgreen">](/tags/kubernetes)
-<!-- END TAGS -->
+<!-- START TAGS --><!-- END TAGS -->
 
 I used [surge.sh](https://surge.sh/) to host static content and some
 SPAs and [heroku.com](https://www.heroku.com/) as the backend.

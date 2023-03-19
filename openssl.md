@@ -2,10 +2,7 @@
 
 # Useful OpenSSL commands
 
-<!-- START TAGS -->
-[<img src="https://img.shields.io/badge/Tag-shell-brightgreen">](/tags/shell)
-[<img src="https://img.shields.io/badge/Tag-security-brightgreen">](/tags/security)
-<!-- END TAGS -->
+<!-- START TAGS --><!-- END TAGS -->
 
 [Original post](https://www.sslshopper.com/article-most-common-openssl-commands.html)
 
