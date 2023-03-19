@@ -1,15 +1,14 @@
-<!-- tags: interesting -->
+<!-- _tags: interesting -->
 
 # My favourite unit
 
-<!-- START TAGS -->
-[<img src="https://img.shields.io/badge/Tag-interesting-brightgreen">](/tags/interesting)
-<!-- END TAGS -->
+<!-- START TAGS --><!-- END TAGS -->
 
 One **`dirac`** is one word per hour.
 
 <!--
-In honour of [one of the most intriguing but lesser known giant physicist of the 20th century](https://en.wikipedia.org/wiki/Paul_Dirac).
+Honours of [one of the most intriguing but lesser known giant physicist
+of the 20th century](https://en.wikipedia.org/wiki/Paul_Dirac).
 -->
 
 
@@ -39,7 +38,5 @@ In honour of [one of the most intriguing but lesser known giant physicist of the
 
 
 
-        
-        
-        
-        
+
+
