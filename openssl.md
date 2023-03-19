@@ -155,3 +155,19 @@ You can add -nocerts to only output the private key or add -nokeys to only outpu
 #### Convert a PEM certificate file and a private key to PKCS#12 (.pfx .p12)
 
     openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt -certfile CACert.crt
+
+            
+            
+
+<!-- START FOOTER -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script src="https://jpedro.github.io/js/v1/data.js"></script>
+<script src="https://jpedro.github.io/js/v1/comments.js"></script>
+<script defer>Comments.mount(document.body.children[0]);</script>
+<!-- END FOOTER -->
+        
+        
+        
+        

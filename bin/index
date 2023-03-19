@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import os
 import sys
 
@@ -53,6 +54,11 @@ TEMPLATE_TAG = """
 
 """
 
+def green(text: str) -> str:
+    return f"\033[32;1m{text}\033[0m"
+
+
+
 
 class Index:
 
@@ -101,6 +107,87 @@ class Index:
         return text[0].upper() + text[1:]
 
 
+    def replaceFooter(self, path: str):
+        with open(path, "r") as f:
+            text = f.read()
+
+        startFooter = "<!-- START FOOTER -->"
+        endFooter = "<!-- END FOOTER -->"
+        posStart = text.find(startFooter)
+        posEnd = text.find(endFooter)
+        print(f"posStart: {posStart}")
+        print(f"posEnd: {posEnd}")
+        print(f"lenEnd: {len(endFooter)}")
+
+        if posStart < 0:
+            print(f"Failed to find {startFooter}")
+            before = text
+            after = ""
+
+        elif posEnd < 0:
+            print(f"Failed to find {endFooter}")
+            before = text
+            after = ""
+
+        else:
+            cutRest = posEnd + len(endFooter)
+            before = text[0:posStart]
+            after = text[cutRest:]
+
+        middle = f"""
+{startFooter}
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script src="https://jpedro.github.io/js/v1/data.js"></script>
+<script src="https://jpedro.github.io/js/v1/comments.js"></script>
+<script defer>Comments.mount(document.body.children[0]);</script>
+{endFooter}
+"""
+
+        text = f"{before}{middle}{after}"
+        with open(path, "w") as f:
+            f.write(text)
+
+
+    def replaceTags(self, path: str, tags: list):
+        with open(path, "r") as f:
+            text = f.read()
+
+        startTags = "<!-- START TAGS -->"
+        endTags = "<!-- END TAGS -->"
+        posStart = text.find(startTags)
+        posEnd = text.find(endTags)
+        print(f"posStart: {posStart}")
+        print(f"posEnd: {posEnd}")
+        print(f"lenEnd: {len(endTags)}")
+
+        if posStart < 0:
+            print(f"Failed to find {startTags}")
+            return
+
+        if posEnd < 0:
+            print(f"Failed to find {endTags}")
+            return
+
+        cutRest = posEnd + len(endTags)
+        print(f"Found start: {posStart}, end: {posEnd}, cut: {cutRest}")
+        before = text[0:posStart]
+        after = text[cutRest:]
+        badges = []
+        badges.append(startTags)
+        for tag in tags:
+            badges.append(
+                f'[<img src="https://img.shields.io/badge/Tag-{tag}-brightgreen">](/tags/{tag})'
+            )
+        badges.append(endTags)
+        middle = "\n".join(badges)
+
+        text = f"{before}{middle}{after}"
+        with open(path, "w") as f:
+            f.write(text)
+
+
     def process(self, save: bool):
         blogPages = {}
         blogTags = {}
@@ -112,24 +199,31 @@ class Index:
             if path in EXCLUDE:
                 continue
 
-            print(f"==> Found file {path}")
+            print(f"==> Found file {green(path)}")
+            # if path == "dispatch.md":
+
             attrs = self.load(path)
             if str(attrs.get("hidden")).lower() in TRUTHY:
-                print(f"==> File {path} is hidden")
+                print(f"==> File {green(path)} is hidden")
                 continue
 
             if not attrs.get("title"):
-                title = os.path.basename(path).replace(
-                    ".md", "").replace("-", " ")
+                title = os.path.basename(path).replace(".md", "").replace("-", " ")
                 attrs["title"] = self.titlelize(title)
-                print(f"==> Using file {path} name as title: {title}")
+                print(f"==> Using file {green(path)} name as title: {title}")
 
-            if attrs.get("tags"):
+            tags = attrs.get("tags")
+            pageTags = []
+            if tags:
                 for tag in attrs["tags"].split(","):
                     tag = tag.strip()
                     if blogTags.get(tag) is None:
                         blogTags[tag] = {}
+                    pageTags.append(tag)
                     blogTags[tag][path] = attrs["title"]
+
+            self.replaceTags(path, pageTags)
+            self.replaceFooter(path)
 
             blogPages[path] = attrs["title"]
 
@@ -153,7 +247,7 @@ class Index:
             text = TEMPLATE_TAG.replace("{{ name }}", self.titlelize(tag))
             text = text.replace("{{ content }}", "\n".join(content)).strip()
             print()
-            print(f"File \033[32;1mtags/{tag}.md")
+            print(f"File tags/{green(tag)}.md")
             print("\033[38;5;242m" + separator)
             print(text)
             print(separator + "\033[0m")

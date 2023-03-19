@@ -1,10 +1,12 @@
 <!-- date: 2020-08-13 -->
+<!-- tags: shell, markdown -->
 
 # Bash dispatch
 
-<!-- ![Whats this field for?](https://img.shields.io/badge/Tag-bash-brightgreen) -->
-<!-- [<img src="/static/img/repo.png">](https://google.com/) -->
-[<img src="https://img.shields.io/badge/Tag-bash-brightgreen">](/tags/shell)
+<!-- START TAGS -->
+[<img src="https://img.shields.io/badge/Tag-shell-brightgreen">](/tags/shell)
+[<img src="https://img.shields.io/badge/Tag-markdown-brightgreen">](/tags/markdown)
+<!-- END TAGS-->
 
 Bash as a language is horrible.
 
@@ -238,3 +240,16 @@ dispatch $@
   example: should `repo` in `please list repo` be the `$1` value
   to `cmd.list` or the command `cmd.list.repo`? This is the stuff
   that keeps me awake at night.
+
+
+
+
+<!-- START FOOTER -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script src="https://jpedro.github.io/js/v1/data.js"></script>
+<script src="https://jpedro.github.io/js/v1/comments.js"></script>
+<script defer>Comments.mount(document.body.children[0]);</script>
+<!-- END FOOTER -->
+        

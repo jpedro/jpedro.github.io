@@ -46,3 +46,19 @@ Syntax highlighted code block
 ### More details
 
 Check [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+
+            
+            
+
+<!-- START FOOTER -->
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+<script src="https://jpedro.github.io/js/v1/data.js"></script>
+<script src="https://jpedro.github.io/js/v1/comments.js"></script>
+<script defer>Comments.mount(document.body.children[0]);</script>
+<!-- END FOOTER -->
+        
+        
+        
+        
