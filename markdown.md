@@ -36,8 +36,9 @@ Syntax highlighted code block
 
 ```
 
-1. [<img src="/static/img/repo.png">](https://google.com/)
-2. [![Foo](/static/img/repo.png)](https://google.com/)
+[<img src="/static/img/repo.png">](https://google.com/)
+
+[![Foo](/static/img/repo.png)](https://google.com/)
 
 ---
 
