@@ -8,20 +8,33 @@ Maintenance free blog.
 
 ## Features
 
-Add a markdown comment in the format `<!-- something magical happens in here -->`
+Add a markdown comment in the format `<!-- something happens in here -->`
 to control some properties.
 
 Supported comments:
 
-- `<!-- hidden -->`: this page will be ignored in the `index.md`.
-- `<!-- title: My custom title -->`: override both the first `# H1` header or
-  the titlelized page name.
-- `<!-- tags: tag1, tag2 -->`: index this page with tags `tag1` and `tag2`.
+- `<!-- hidden -->`
+
+  This page will be ignored in the `index.md`.
+
+- `<!-- title: My custom title -->`
+
+  Override both the first `# H1` header or the titlelized page name.
+
+- `<!-- tags: tag1, tag2 -->`
+
+  Index this page with tags `tag1` and `tag2`. They will show up in
+  [/tags/tag1](/tags/tag1) for example.
+
+- `<!-- comments: false -->`
+
+  Stop showing comments for this page. It's `true` by default.
 
 
 ## Todos
 
-- [ ] Add generated tags at the bottom of each page.
+- [ ] Move posts from the root directory to [.github/.posts](.github/.posts)
+- [ ] Add generated tags at the top of each page.
 - [ ] Allow multi-line comments.
 
 
