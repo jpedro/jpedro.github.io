@@ -385,7 +385,7 @@ That code results in this run:
 
 <!-- ![GitHub matrix run](images/github-matrix-run.jpg) -->
 
-![GitHub matrix run](https://github.com/jpedro/jpedro.github.io/raw/master/static/img/matrix.jpg)
+![Matrix run](https://github.com/jpedro/jpedro.github.io/raw/master/.githu/static/img/matrix.jpg)
 
 Note how GitHub Actions created 12 parallel jobs (3 OSes x 2 versions
 x 2 components).

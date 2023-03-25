@@ -8,8 +8,8 @@ Maintenance free blog.
 
 ## Features
 
-Add a markdown comment in the format `<!-- something magical happens in here -->`  to control
-some properties.
+Add a markdown comment in the format `<!-- something magical happens in here -->`
+to control some properties.
 
 Supported comments:
 
@@ -25,7 +25,7 @@ Supported comments:
 - [ ] Allow multi-line comments.
 
 
-## Diagram
+## Diagrams
 
 Cool diagrams are cool.
 <!-- From https://lucid.app/lucidchart/361e54e9-baa3-4aa1-a592-e63bebc0605f/edit -->
