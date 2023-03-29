@@ -5,6 +5,7 @@
 # My favourite unit
 
 <!-- START TAGS -->
+[<img src="https://img.shields.io/badge/Tag-interesting-brightgreen">](/tags/interesting)
 <!-- END TAGS -->
 
 One **`dirac`** is one word per hour.
