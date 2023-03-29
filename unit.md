@@ -1,4 +1,4 @@
-<!-- _tags: interesting -->
+<!-- tags: interesting -->
 <!-- comments: false -->
 
 
@@ -17,3 +17,19 @@ One **`dirac`** is one word per hour.
 -->
 
 
+
+<script src="https://giscus.app/client.js"
+        data-repo="jpedro/jpedro.github.io"
+        data-repo-id="R_kgDOGuD9Ow"
+        data-category="[ENTER CATEGORY NAME HERE]"
+        data-category-id="[ENTER CATEGORY ID HERE]"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        crossorigin="anonymous"
+        async>
+</script>
