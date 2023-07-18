@@ -2,7 +2,9 @@
 
 # Schemaless
 
-<!-- START TAGS --><!-- END TAGS -->
+<!-- START TAGS -->
+[<img src="https://img.shields.io/badge/Tag-databases-brightgreen">](/tags/databases)
+<!-- END TAGS -->
 
 Schemaless databases are in fashion for a reason. On relational
 databases, out of the box schema changes sometimes involve locking and
@@ -40,4 +42,12 @@ ORDER BY
 LIMIT 10
 ```
 
-<!-- START FOOTER --><!-- END FOOTER -->
+<!-- START FOOTER -->
+ &nbsp;
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://jpedro.github.io/js/v1/data.js"></script>
+<script src="https://jpedro.github.io/js/v1/comments.js"></script>
+<script defer="">Comments.mount(document.body.children[0]);</script>
+<!-- END FOOTER -->

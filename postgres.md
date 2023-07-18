@@ -3,7 +3,9 @@
 
 # Postgres
 
-<!-- START TAGS --><!-- END TAGS -->
+<!-- START TAGS -->
+[<img src="https://img.shields.io/badge/Tag-databases-brightgreen">](/tags/databases)
+<!-- END TAGS -->
 
 I'm learning Postgres for a while and while many things are so much
 nicer than MySQL, the basics are lacking. I'm disappointed.
@@ -67,4 +69,12 @@ secondary index value itself.
 
 
 
-<!-- START FOOTER --><!-- END FOOTER -->
+<!-- START FOOTER -->
+ &nbsp;
+
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+<script src="https://jpedro.github.io/js/v1/data.js"></script>
+<script src="https://jpedro.github.io/js/v1/comments.js"></script>
+<script defer="">Comments.mount(document.body.children[0]);</script>
+<!-- END FOOTER -->
