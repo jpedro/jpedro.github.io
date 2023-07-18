@@ -3,7 +3,8 @@
 
 # Postgres
 
-<!-- START TAGS --><!-- END TAGS -->
+<!-- START TAGS -->
+<!-- END TAGS -->
 
 I'm learning Postgres for a while and while many things are so much
 nicer than MySQL, the basics are lacking. I'm disappointed.
