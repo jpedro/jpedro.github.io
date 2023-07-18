@@ -1,12 +1,10 @@
 # Index
 
 - [My favourite unit](unit.md)
-- [Schemaless](schemaless.md)
 - [Self hosting](hosting.md)
 - [Markdown](markdown.md)
 - [Useful OpenSSL commands](openssl.md)
 - [Bash dispatch](dispatch.md)
-- [Databases](postgres.md)
 
 
  &nbsp;
