@@ -1,4 +1,5 @@
 <!-- tags: databases -->
+<!-- hidden: true -->
 
 # Schemaless
 
@@ -51,3 +52,5 @@ LIMIT 10
 <script src="https://jpedro.github.io/js/v1/comments.js"></script>
 <script defer="">Comments.mount(document.body.children[0]);</script>
 <!-- END FOOTER -->
+
+>>>>>>> 403d83cdac870b6443d13cc591944cdf8ff4d3bb
