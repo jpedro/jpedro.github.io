@@ -1,9 +1,9 @@
 # Simple workflow for deploying static content to GitHub Pages
-name: Deploy pages
+# name: Deploy pages
+name: Manual
 
 on:
-- push
-- workflow_dispatch
+  workflow_dispatch:
 
 permissions:
   contents: read
