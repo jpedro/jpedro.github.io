@@ -1,5 +1,5 @@
 <!-- tags: databases -->
-<!-- _hidden: true -->
+<!-- hidden -->
 
 # Postgres
 
