@@ -5,7 +5,6 @@
 - [Markdown](markdown.md)
 - [Useful OpenSSL commands](openssl.md)
 - [Bash dispatch](dispatch.md)
-- [Postgres](postgres.md)
 
 
  &nbsp;
