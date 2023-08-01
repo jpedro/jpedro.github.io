@@ -135,8 +135,8 @@ To read an entry pass only the `ENTRY`. To set an entry pass both
 And you are not limited to git's internal known values. You can add
 your own.
 
-Armed with this knowledge we can understand now how this `git deploy`
-contraption works.
+Armed with this knowledge we can understand now how this unholy
+`git deploy` contraption works.
 
 
 
