@@ -1,2 +1,2 @@
 host=1.jpedro.dev
-dir=~/_dots
+dir=/home/pedro/_dots
