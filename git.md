@@ -8,8 +8,8 @@ What does it do? Let's ask git.
     $ git help dd
     'dd' is aliased to 'deploy'
 
-O... kay. What *is* `git deploy` then? It's yet another alias. `dd` is
-a git alias to another git alias.
+O... kay. But what *is* `git deploy` then? It's yet another alias.
+`dd` is a git alias to another git alias.
 
     $ git help deploy
     'deploy' is aliased to '!f(){ host=$(git config deploy.host); dir=$(git config deploy.dir); if [[ $host = '' ]] || [[ $dir = '' ]] ; then echo 'Git config deploy is not configured.'; return; fi; git pp; echo '\033[2m'; ssh -A $host 'cd '$dir' && git ff && git log -1'; echo '\033[0m' ;};f'
