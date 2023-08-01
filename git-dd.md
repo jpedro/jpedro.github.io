@@ -47,8 +47,8 @@ and flags, but also to 2. shell calls and 3. inline shell functions.
 
 ```ini
 [alias]
-st = status
-me = branch --show-current
+    st = status
+    me = branch --show-current
 ```
 
 So now `git st` is short for `git status`. And `git me` is short for
@@ -79,7 +79,7 @@ upstream remote name for the current branch, if it exists.
 
 ```ini
 [alias]
-yo = "!f(){ echo "Yo, ${@:-dude}! 🍪" ;};f"
+    yo = "!f(){ echo "Yo, ${@:-dude}! 🍪" ;};f"
 ```
 
 `yo` is now an alias for an inline shell function that we just created.
@@ -99,9 +99,10 @@ Yo, a monad is a monoid in the category of endofunctors! 🍪
 
 ![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
 
-Why? Because shell functions are more flexible. You can do `if`s and
-`for` loops, default arguments, download the internets and stream Veep.
-As your heart always wanted to, but you just didn't know.
+Because shell functions are more flexible that shell commands. You have
+`if` conditionals and `for` loops, default arguments, download the
+internets and stream Veep. As your heart always wanted to, but you
+just didn't know.
 
 
 ## Git config
@@ -117,8 +118,8 @@ this sectrion:
 
 ```ini
 [branch "master"]
-  remote = origin
-  merge = refs/heads/master
+    remote = origin
+    merge = refs/heads/master
 ```
 
 Which is what we used for the `git parent` alias above. In that case,
@@ -131,7 +132,7 @@ For example:
 ```
 $ grep -A 1 hi .git/config
 [hi "are.you"]
-  ok = "FINE, I'VE NEVER BEEN BETTER!!!"
+    ok = "FINE, I'VE NEVER BEEN BETTER!!!"
 
 $ git config hi.are.you.ok
 FINE, I'VE NEVER BEEN BETTER!!!
@@ -175,3 +176,30 @@ f() {
     echo '\033[0m'
 }
 ```
+
+It checks if `host` and `dir` are present and then ssh's into the host
+and does `git ff` in that directory.
+
+What are `git pp` and `git pp`?
+
+```ini
+[alias]
+    pp = "!f(){ git ss \"$1\" && [[ $(git parent) != '' ]] && git push || git push $(git primus) HEAD -u ;};f"
+    ff = "!f(){ git fetch $@ && git rebase $(git upstream) || (git rebase --abort && echo '==> Failed to rebase' && exit 1);};f"
+    ss = "!f(){ git add --all && git cc \"$1\" ;};f"
+    cc = "!f(){ git commit --verbose -m \"${1:-$(git message)}\" || true ;};f"
+
+    parent   = "!git config branch.$(git name).remote"  # Can't use 'remote'
+    upstream = "!git rev-parse --abbrev-ref @{u} 2>/dev/null || echo '(none)'"
+    primus   = "!git remote get-url origin >/dev/null 2>&1 && echo origin || git remote | head -1"
+    message  = "!commitment 2>/dev/null || curl -sfL whatthecommit.com/index.txt || echo 'This reveals a lack of commitment'"
+```
+
+
+## Is there a better way?
+
+I'm glad you probably asked.
+
+You can put that function's code into an executable script `git-deploy`
+and git will use it when you call `deploy`.
+
