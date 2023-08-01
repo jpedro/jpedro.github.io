@@ -81,8 +81,8 @@ upstream remote name for the current branch, if it exists.
 yo = "!f(){ echo "Yo, ${@:-dude}!" ;};f"
 ```
 
-`git yo` is now an alias for a shell function that we just created.
-If you call `git yo` it will print:
+`git yo` is now an alias for an inline shell function that we just
+created. If you call `git yo` it will shout:
 
 ```bash
 $ git yo
