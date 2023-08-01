@@ -83,7 +83,7 @@ $ git yo
 Yo dude!
 ```
 
-And if you pass an argument:
+If you feel bold, you pass an argument:
 
 ```bash
 $ git yo alrighty
