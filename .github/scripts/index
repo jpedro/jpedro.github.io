@@ -36,7 +36,7 @@ TEMPLATE_INDEX = """
 
 {{ pages }}
 
-""" + TEMPLATE_COMMENTS
+""" # + TEMPLATE_COMMENTS
 
 # #### Tags
 # {{ tags }}
