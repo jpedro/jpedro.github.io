@@ -78,7 +78,7 @@ upstream remote name for the current branch, if it exists.
 
 ```ini
 [alias]
-yo = "!f(){ echo "Yo, ${@:-dude}!" ;};f"
+yo = "!f(){ echo "Yo, ${@:-dude}! 🍪" ;};f"
 ```
 
 `git yo` is now an alias for an inline shell function that we just
@@ -86,14 +86,14 @@ created. If you call `git yo` it will utter:
 
 ```bash
 $ git yo
-Yo, dude!
+Yo, dude! 🍪
 ```
 
 If you feel bold, you pass an argument:
 
 ```bash
 $ git yo a monad is a monoid in the category of endofunctors
-Yo, a monad is a monoid in the category of endofunctors!
+Yo, a monad is a monoid in the category of endofunctors! 🍪
 ```
 
 ![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
