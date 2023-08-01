@@ -196,9 +196,9 @@ What are `git pp` and `git pp`?
 ```
 
 
-## Is there a better way?
+## `git-deploy`
 
-I'm glad you probably asked.
+**Is there a better way?** I'm glad you probably asked.
 
 You can put that function's code into an executable script `git-deploy`
 and git will use it when you call `deploy`.
