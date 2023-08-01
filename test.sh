@@ -11,6 +11,13 @@ f() {
         return
     fi
 
+    IFS=','
+    for h in $host
+    do
+        echo "- $h"
+    done
+    return
+
     git pp
     echo '\033[2m'
     ssh -A $host 'cd '$dir' && git ff && git log -1'
@@ -18,3 +25,5 @@ f() {
 }
 
 f
+
+echo $IFS
