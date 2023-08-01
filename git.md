@@ -27,7 +27,7 @@ That's quite a bit to digest. Let's break it down in 4 parts:
 
 3. Ensure they are not empty. We exit early with a message if empty.
 
-4. Run an `ssh` command.
+4. Run some `ssh` command.
 
 
 ## Git aliases
