@@ -39,7 +39,7 @@ That's quite a bit to digest. Let's break it down in 4 parts:
 ## Git aliases
 
 You read it. Git alias can host not only alias to 1. other git commands
-and flags, not only to 2. shell calls but also 3. shell functions.
+and flags, but also to 2. shell calls and 3. inline shell functions.
 
 
 ### 1. Command alias
