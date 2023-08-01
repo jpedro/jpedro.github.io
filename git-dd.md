@@ -92,8 +92,8 @@ Yo, dude!
 If you feel bold, you pass an argument:
 
 ```bash
-$ git yo I feel alive today!
-Yo, I feel alive today!!
+$ git yo a monad is a monoid in the category of endofunctors
+Yo, a monad is a monoid in the category of endofunctors!
 ```
 
 ![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
