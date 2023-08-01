@@ -13,7 +13,7 @@ O... kay. But what *is* `git deploy` then? It's yet another alias.
 
 > "Turtles all the way down"
 >
-> -- Older wiser flat eather
+> — Older wiser flat eather
 
     $ git help deploy
     'deploy' is aliased to '!f(){ host=$(git config deploy.host); dir=$(git config deploy.dir); if [[ $host = '' ]] || [[ $dir = '' ]] ; then echo 'Git config deploy is not configured.'; return; fi; git pp; echo '\033[2m'; ssh -A $host 'cd '$dir' && git ff && git log -1'; echo '\033[0m' ;};f'
