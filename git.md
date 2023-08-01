@@ -1,3 +1,4 @@
+<!-- tags: git, shell -->
 # My favourite git alias
 
 My current favourite git alias is `dd`.
