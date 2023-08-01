@@ -120,7 +120,8 @@ Which is what we use for the `git parent` alias above. In that case the
 You need to quote section name if they are further "dot" separated.
 For example:
 
-```ini
+```bash
+$ grep -A 1 hi .git/config
 [hi "are.you"]
   ok = "YES, I'VE NEVER BEEN BETTER!!!"
 ```
