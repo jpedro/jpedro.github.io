@@ -100,7 +100,7 @@ Yo, a monad is a monoid in the category of endofunctors! 🍪
 
 Why? Because shell functions are more flexible. You can do `if`s and
 `for` loops, default arguments, download the internets and stream Veep.
-As your heart always wanted to but just didn't know how.
+As your heart always wanted to, but you just didn't know.
 
 
 ## Git config
