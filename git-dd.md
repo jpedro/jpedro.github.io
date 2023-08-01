@@ -72,7 +72,7 @@ upstream remote name for the current branch, if it exists.
 
 ```ini
 [alias]
-yo = "!f(){ echo "Yo ${@:-dude}!" ;};f"
+yo = "!f(){ echo "Yo, ${@:-dude}!" ;};f"
 ```
 
 `git yo` is now an alias for a shell function that we just created.
@@ -80,14 +80,14 @@ If you call `git yo` it will print:
 
 ```bash
 $ git yo
-Yo dude!
+Yo, dude!
 ```
 
 If you feel bold, you pass an argument:
 
 ```bash
 $ git yo I feel alive today!
-Yo I feel alive today!!
+Yo, I feel alive today!!
 ```
 
 ![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
