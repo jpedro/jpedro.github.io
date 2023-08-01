@@ -86,8 +86,8 @@ Yo dude!
 If you feel bold, you pass an argument:
 
 ```bash
-$ git yo alrighty
-Yo alrighty!
+$ git yo I feel alive today!
+Yo I feel alive today!!
 ```
 
 ![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
