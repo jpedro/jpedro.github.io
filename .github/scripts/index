@@ -130,13 +130,13 @@ class Index:
             after = text[cutRest:]
 
 
-        print(f"comments: {comments}")
-        if comments == "false":
-            text = f"{before}{after}"
-            print(green("Not adding comments"))
-        else:
-            middle = f"{startFooter}{TEMPLATE_COMMENTS}{endFooter}"
-            text = f"{before}{middle}{after}"
+        # print(f"comments: {comments}")
+        # if comments == "false":
+        #     text = f"{before}{after}"
+        #     print(green("Not adding comments"))
+        # else:
+        #     middle = f"{startFooter}{TEMPLATE_COMMENTS}{endFooter}"
+        #     text = f"{before}{middle}{after}"
 
         with open(path, "w") as f:
             f.write(text)
