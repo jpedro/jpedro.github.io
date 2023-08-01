@@ -5,18 +5,22 @@ My current favourite git alias is `dd`.
 
 What does it do? Let's ask git.
 
-    $ git help dd
-    'dd' is aliased to 'deploy'
+```bash
+$ git help dd
+'dd' is aliased to 'deploy'
+```
 
-O... kay. But what *is* `git deploy` then? It's yet another alias.
-`dd` is a git alias to another git alias.
+O... kay. That was *helpful*... but what's `git deploy` then?
+It's yet another alias. `dd` is a git alias to another git alias.
 
 > "Turtles all the way down"
 >
 > — Older wiser flat eather
 
-    $ git help deploy
-    'deploy' is aliased to '!f(){ host=$(git config deploy.host); dir=$(git config deploy.dir); if [[ $host = '' ]] || [[ $dir = '' ]] ; then echo 'Git config deploy is not configured.'; return; fi; git pp; echo '\033[2m'; ssh -A $host 'cd '$dir' && git ff && git log -1'; echo '\033[0m' ;};f'
+```bash```
+$ git help deploy
+'deploy' is aliased to '!f(){ host=$(git config deploy.host); dir=$(git config deploy.dir); if [[ $host = '' ]] || [[ $dir = '' ]] ; then echo 'Git config deploy is not configured.'; return; fi; git pp; echo '\033[2m'; ssh -A $host 'cd '$dir' && git ff && git log -1'; echo '\033[0m' ;};f'
+```
 
 That's quite a bit to digest. Let's break it down in 4 parts:
 
@@ -139,6 +143,12 @@ Armed with this knowledge we can understand now how this unholy
 `git deploy` contraption works.
 
 
+
+## Git deploy
+
+> "Turtles all the way down"
+>
+> — Older wiser flat eather
 
 
 
