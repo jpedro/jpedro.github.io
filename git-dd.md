@@ -82,8 +82,8 @@ upstream remote name for the current branch, if it exists.
 yo = "!f(){ echo "Yo, ${@:-dude}! 🍪" ;};f"
 ```
 
-`git yo` is now an alias for an inline shell function that we just
-created. If you call `git yo` it will utter:
+`yo` is now an alias for an inline shell function that we just created.
+If you call `git yo` it will utter:
 
 ```
 $ git yo
@@ -107,12 +107,13 @@ As your heart always wanted to, but you just didn't know.
 ## Git config
 
 Git config is a key value store in
-[`INI` format](https://en.wikipedia.org/wiki/INI_file).
+[INI format](https://en.wikipedia.org/wiki/INI_file).
 
 You can store values both in the local repo's `.git/config` or in the
 global `~/.gitconfig` file. The command is unsurprisingly
 `git config [ENTRY] [VALUE]`. The INI `ENTRY` is formed by a section
-and a key name. For example my local git repo has this entry:
+and a key name joined by a `.`. For example this local git repo has
+this sectrion:
 
 ```ini
 [branch "master"]
@@ -120,20 +121,20 @@ and a key name. For example my local git repo has this entry:
   merge = refs/heads/master
 ```
 
-Which is what we use for the `git parent` alias above. In that case the
-`ENTRY` is `branch.master.remote` and `branch.master` is the section,
-`remote` being the key.
+Which is what we used for the `git parent` alias above. In that case,
+the `ENTRY` is `branch.master.remote` and `branch.master` is the
+section, `remote` being the key.
 
-You need to quote section name if they are further "dot" separated.
+You need to quote the section name part if they are further dots in it.
 For example:
 
 ```
 $ grep -A 1 hi .git/config
 [hi "are.you"]
-  ok = "YES, I'VE NEVER BEEN BETTER!!!"
+  ok = "FINE, I'VE NEVER BEEN BETTER!!!"
 
 $ git config hi.are.you.ok
-YES, I'VE NEVER BEEN BETTER!!!
+FINE, I'VE NEVER BEEN BETTER!!!
 ```
 
 To read an entry pass only the `ENTRY`. To set an entry pass both
@@ -153,8 +154,9 @@ Armed with this knowledge we can understand now how this unholy
 >
 > — Wiser flat eather
 
-If we break down the inline function in the `deploy` alias it looks
-like a pretty run-of-the-mill function:
+If we break down the inline function in the `deploy` alias, indent it
+propertly and remove extraneous semicolons, it looks like a pretty
+run-of-the-mill function:
 
 ```bash
 f() {
