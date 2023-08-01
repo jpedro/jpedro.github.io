@@ -58,7 +58,7 @@ format as the first argument.
 
 Also note how `git parent` calls `git` itself as an external program
 and accepts subshell commands (the `$(command)` part). In this case,
-it will use the alias we created above `git me` and will find the
+it will use the alias we created above `git me` and will resolve the
 upstream remote name for the current branch, if it exists.
 
 
