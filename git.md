@@ -93,7 +93,7 @@ Yo alrighty!
 ![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
 
 Why? Because shell functions are more flexible. You can do `if`s and
-`for` loops and default arguments, as you do in shell functions.
+`for` loops and default arguments, as you do.
 
 
 ## Git config
