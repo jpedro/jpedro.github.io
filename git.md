@@ -103,8 +103,8 @@ and a key name. For example my local git repo has this entry:
 
 ```ini
 [branch "master"]
-	remote = origin
-	merge = refs/heads/master
+  remote = origin
+  merge = refs/heads/master
 ```
 
 Which is what we use for the `git parent` alias above. In that case the
