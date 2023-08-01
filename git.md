@@ -93,9 +93,45 @@ Why? Because shell functions are more flexible. You can do `if`s and
 
 ## Git config
 
-You can store both local repo and global configuration values in git.
-The command is quite unsurprisingly `git config [KEY] [VALUE]`. To read
-an entry just pass the `KEY`. To set an entry pass the `VALUE`.
+Git config is a key value store in
+[`INI` format](https://en.wikipedia.org/wiki/INI_file).
+
+You can store values both in the local repo and in the global
+`~/.gitconfig` file. The command is unsurprisingly
+`git config [ENTRY] [VALUE]`. The INI `ENTRY` is formed by a section
+and a key name. For example my local git repo has this entry:
+
+```ini
+[branch "master"]
+	remote = origin
+	merge = refs/heads/master
+```
+
+Which is what we use for the `git parent` alias above. In that case the
+`ENTRY` is `branch.master.remote` and `branch.master` is the section,
+`remote` being the key.
+
+You need to quote section name if they are further "dot" separated.
+For example:
+
+```ini
+[hi "are.you"]
+  ok = "YES, I'VE NEVER BEEN BETTER!!!"
+```
+
+```bash
+$ git config hi.are.you.ok
+YES, I'VE NEVER BEEN BETTER!!!
+```
+
+To read an entry pass only the `ENTRY`. To set an entry pass both
+`ENTRY` and `VALUE`.
+
+And you are not limited to git's internal known values. You can add
+your own.
+
+Armed with this knowledge we can understand now how this `git deploy`
+contraption works.
 
 
 
