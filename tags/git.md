@@ -1,3 +1,3 @@
 ## Git
 
-- [My favourite git alias](../git.md)
+- [`git-dd`](../git-dd.md)
