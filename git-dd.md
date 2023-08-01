@@ -1,5 +1,5 @@
 <!-- tags: git, shell -->
-# My favourite git alias
+# `git-dd`
 
 My current favourite git alias is `dd`.
 
