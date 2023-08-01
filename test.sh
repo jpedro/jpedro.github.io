@@ -3,6 +3,8 @@ f() {
     dir=$(git config deploy.dir)
     source "deploy.sh"
 
+    echo "$host --> $dir"
+
     if [[ $host = '' ]] || [[ $dir = '' ]]
     then
         echo 'Git config deploy is not configured.'
