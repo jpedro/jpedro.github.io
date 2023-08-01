@@ -32,7 +32,7 @@ You read it. Git alias can host not only alias to 1. other git commands
 and flags, not only to 2. shell calls but also 3. shell functions.
 
 
-\1. **Command alias**
+### 1. Command alias
 
     ```ini
     [alias]
@@ -45,7 +45,7 @@ So now `git st` is short for `git status`. And `git me` is short for
 set it to `rev-parse --abbrev-ref HEAD`).
 
 
-\2. **Shell calls**
+### 2. Shell calls
 
 ```ini
 [alias]
@@ -64,7 +64,7 @@ it will use the alias we created above `git me` and will resolve the
 upstream remote name for the current branch, if it exists.
 
 
-\3. **Shell functions**
+### 3. Shell functions
 
 ```ini
 [alias]
