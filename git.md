@@ -102,8 +102,8 @@ just didn't know.
 Git config is a key value store in
 [`INI` format](https://en.wikipedia.org/wiki/INI_file).
 
-You can store values both in the local repo and in the global
-`~/.gitconfig` file. The command is unsurprisingly
+You can store values both in the local repo's `.git/config` or in the
+global `~/.gitconfig` file. The command is unsurprisingly
 `git config [ENTRY] [VALUE]`. The INI `ENTRY` is formed by a section
 and a key name. For example my local git repo has this entry:
 
