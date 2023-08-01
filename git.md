@@ -38,11 +38,11 @@ and flags, not only to 2. shell calls but also 3. shell functions.
 
 ### 1. Command alias
 
-    ```ini
-    [alias]
-    st = status
-    me = branch --show-current
-    ```
+```ini
+[alias]
+st = status
+me = branch --show-current
+```
 
 So now `git st` is short for `git status`. And `git me` is short for
 `git branch --show-current` (or if you are using an older git version
