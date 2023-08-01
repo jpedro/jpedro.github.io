@@ -85,7 +85,7 @@ $ git yo alrighty
 Yo alrighty!
 ```
 
-![But why](https://raw.githubusercontent.com/jpedro/levelup-terraform/master/.github/assets/images/why.jpg)
+![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
 
 Why? Because shell functions are more flexible. You can do `if`s and
 `for` loops and default arguments, as you do in shell functions.
