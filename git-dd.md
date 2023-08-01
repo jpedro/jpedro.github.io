@@ -10,7 +10,7 @@ $ git help dd
 'dd' is aliased to 'deploy'
 ```
 
-O... kay. That was... *helpful*... but what's `git deploy` then?
+O kay. That was... *helpful*... but what's `git deploy` then?
 
 It's another alias. `dd` is a git finger-friendly alias to yet another
 git alias.
