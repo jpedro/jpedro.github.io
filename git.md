@@ -73,14 +73,14 @@ yo = "!f(){ echo "Yo ${@:-dude}!" ;};f"
 If you call `git yo` it will print:
 
 ```bash
-$ git yooo
+$ git yo
 Yo dude!
 ```
 
 And if you pass an argument:
 
 ```bash
-$ git yooo alrighty
+$ git yo alrighty
 Yo alrighty!
 ```
 
