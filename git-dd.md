@@ -17,7 +17,7 @@ git alias.
 
 > "Turtles all the way down"
 >
-> — Older wiser flat eather
+> — Older flat eather
 
 ```bash
 $ git help deploy
@@ -148,9 +148,9 @@ Armed with this knowledge we can understand now how this unholy
 
 ## Git deploy
 
-> "Turtles all the way down"
+> "Finger-friendly turtles all the way down"
 >
-> — Older wiser flat eather
+> — Wiser flat eather
 
 
 
