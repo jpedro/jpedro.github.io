@@ -124,9 +124,7 @@ For example:
 $ grep -A 1 hi .git/config
 [hi "are.you"]
   ok = "YES, I'VE NEVER BEEN BETTER!!!"
-```
 
-```bash
 $ git config hi.are.you.ok
 YES, I'VE NEVER BEEN BETTER!!!
 ```
