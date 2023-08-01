@@ -157,7 +157,7 @@ If we break down the inline function in the `deploy` alias it looks
 like a pretty run-of-the-mill function:
 
 ```bash
-'f(){
+f(){
     host=$(git config deploy.host)
     dir=$(git config deploy.dir)
 
