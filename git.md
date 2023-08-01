@@ -14,14 +14,14 @@ O... kay. What *is* `git deploy` then?
 
 That's quite a bit to digest. Let's break it down in 4 parts:
 
-    1. The `!f() { ... ;};f` sets the git alias to become a shell
-       function. Inside this function we:
+1. The `!f() { ... ;};f` sets the git alias to become a shell
+    function. Inside this function we:
 
-    2. Grab the `deploy.host` and `deploy.dir` git config  values.
+2. Grab the `deploy.host` and `deploy.dir` git config  values.
 
-    3. Ensure they are not empty. We exit early with a message if empty.
+3. Ensure they are not empty. We exit early with a message if empty.
 
-    4. Run an `ssh` command.
+4. Run an `ssh` command.
 
 
 ## Git aliases
@@ -31,7 +31,7 @@ and flags, not only to 2. shell calls but also 3. shell functions.
 
 Examples:
 
-    1. Command alias
+1. Command alias
 
     ```ini
     [alias]
@@ -39,48 +39,51 @@ Examples:
     me = branch --show-current
     ```
 
-    So now `git st` is short for `git status`. And `git me` is short for
-    `git branch --show-current` (or if you are using an older git
-    version set it to `rev-parse --abbrev-ref HEAD`).
+So now `git st` is short for `git status`. And `git me` is short for
+`git branch --show-current` (or if you are using an older git version
+set it to `rev-parse --abbrev-ref HEAD`).
 
-    2. Shell calls
 
-    ```ini
-    [alias]
-    date   = "!date +'%Y-%m-%d'"
-    parent = "!git config branch.$(git me).remote" # Can't call it `remote`
-    ```
+2. Shell calls
 
-    `git date` is just an example of calling the `/usr/date` with the
-    format as the first argument. The `!` indicate this is a external
-    shell call.
+```ini
+[alias]
+date   = "!date +'%Y-%m-%d'"
+parent = "!git config branch.$(git me).remote" # Can't call it `remote`
+```
 
-    Also note how `git parent` calls `git` itself as an external program
-    and accepts subshell commands (the `$(command)` part). In this case,
-    it will find the upstream remote name for the current branch, if
-    it exists.
+The `!` indicate this is a external shell call.
 
-    3. Shell functions
+`git date` is just an example of calling the `/usr/date` with the
+format as the first argument.
 
-    ```ini
-    [alias]
-    yo = "!f(){ echo "Yo ${@:-dude}!" ;};f"
-    ```
+Also note how `git parent` calls `git` itself as an external program
+and accepts subshell commands (the `$(command)` part). In this case,
+it will find the upstream remote name for the current branch, if it
+exists.
 
-    `git yo` is now an alias for a shell function that we just created.
-    If you call `git yo` it will print:
 
-    ```bash
-    $ git yooo
-    Yo dude!
-    ```
+3. Shell functions
 
-    And if you pass an argument:
+```ini
+[alias]
+yo = "!f(){ echo "Yo ${@:-dude}!" ;};f"
+```
 
-    ```bash
-    $ git yooo alrighty
-    Yo alrighty!
-    ```
+`git yo` is now an alias for a shell function that we just created.
+If you call `git yo` it will print:
+
+```bash
+$ git yooo
+Yo dude!
+```
+
+And if you pass an argument:
+
+```bash
+$ git yooo alrighty
+Yo alrighty!
+```
 
 
 ## Git config
