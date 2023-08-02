@@ -119,7 +119,7 @@ You can store values both in the local repo's `.git/config` or in the
 global `~/.gitconfig` file. The command is unsurprisingly
 `git config [ENTRY] [VALUE]`. The INI `ENTRY` is formed by a section
 and a key name joined by a `.`. For example this local git repo has
-this sectrion:
+this section:
 
 ```ini
 [branch "master"]
