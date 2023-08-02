@@ -73,7 +73,7 @@ set it to `rev-parse --abbrev-ref HEAD`).
     parent = "!git config branch.$(git me).remote" # Can't use `remote`
 ```
 
-The leading `!` indicates this is an external shell call.
+The leading `!` again indicates this is a shell call.
 
 `git date` is just an example of calling the `/usr/date` with the
 format as the first argument.
