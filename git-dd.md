@@ -182,10 +182,10 @@ f() {
 }
 ```
 
-It checks if `host` and `dir` are present and then ssh's into the host
-and does `git ff` in that directory.
+It loads and checks if `host` and `dir` are present and then ssh's into
+the host and does `git ff` in that directory.
 
-Here's `git pp` and `git pp` along with the rest:
+Here's `git ff` along with the rest:
 
 ```ini
 [alias]
