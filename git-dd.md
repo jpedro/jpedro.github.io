@@ -131,7 +131,7 @@ Which is what we used for the `git parent` alias above. In that case,
 the `ENTRY` is `branch.master.remote` and `branch.master` is the
 section, `remote` being the key.
 
-You need to quote the section name part if they are further dots in it.
+You need to quote aditional section parts if they have dots on them.
 For example:
 
 ```
