@@ -222,6 +222,9 @@ How does that work?
 
 Well, git started as a collection of small C binaries named after their
 commands. For example `git hash-object` used to call `git-hash-object`.
-git still follows that standard
+git still follows that standard.
+
+Any executables in your PATH that start with `git-xxx` can be called as
+`git xxx`.
 
 
