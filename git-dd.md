@@ -41,8 +41,9 @@ That's quite a bit to process. Let's break it down.
 - `ssh` into the host and rebases the current branch in the target
   directory against its upstream.
 
-The last part is wrapped with a pair of `\033[2m` and `\033[0m` to
-signal that output comes from the host, not your local machine.
+The last part is surrounded with a pair of dimmed and reset ansi codes
+(`\033[2m` and `\033[0m`, respectively) to signal that output comes
+from the host, not your local machine.
 
 
 ## Git aliases
