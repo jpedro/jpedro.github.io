@@ -96,8 +96,8 @@ tells we are creating a function, and the last `f` means we are
 calling it immediately. The extra semicolons are required for
 one-liners.
 
-`yo` is now an alias for that inline shell function. If you call
-`git yo` it will answer.
+`yo` is now an alias for that inline shell function. If you call it,
+it will answer.
 
 ```
 $ git yo
