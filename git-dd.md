@@ -121,7 +121,6 @@ global `~/.gitconfig` file. The command is unsurprisingly
 and a key name joined by a `.`. For example this local git repo has
 this section:
 
-
 ```ini
 [branch "master"]
     remote = origin
