@@ -32,13 +32,17 @@ That's quite a bit to process. Let's break it down.
 ## TL;DR
 
 - The `!f() { ... ;};f` sets the git alias to become a shell
-  function. Inside this function we:
+  function. Inside this function:
 
 - Grab the `deploy.host` and `deploy.dir` git config  values.
 
-- Ensure they are not empty. We exit early with a message if empty.
+- Ensure they have values. Exit early with a message if empty.
 
-- Run some `ssh` command.
+- `ssh` into the host and rebases the current branch in the target
+  directory against its upstream.
+
+The last part is wrapped with a pair of `\033[2m` and `\033[0m` to
+signal that output comes from the host, not your local machine.
 
 
 ## Git aliases
