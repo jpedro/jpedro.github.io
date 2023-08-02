@@ -99,10 +99,10 @@ Yo, a monad is a monoid in the category of endofunctors! 🍪
 
 ![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
 
-Because shell functions are more flexible that shell commands. You have
-`if` conditionals and `for` loops, default arguments, download the
-internets and stream Veep. As your heart always wanted to, but you
-just didn't know.
+Because functions are more flexible that commands. You have `if`
+conditionals and `for` loops, they accept default arguments, download the internets
+and stream Veep. As your heart always wanted to, but you just didn't
+know.
 
 
 ## Git config
