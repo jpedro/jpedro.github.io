@@ -180,7 +180,7 @@ f() {
 It checks if `host` and `dir` are present and then ssh's into the host
 and does `git ff` in that directory.
 
-What are `git pp` and `git pp`?
+Here's `git pp` and `git pp` along with the rest:
 
 ```ini
 [alias]
@@ -193,6 +193,7 @@ What are `git pp` and `git pp`?
     upstream = "!git rev-parse --abbrev-ref @{u} 2>/dev/null || echo '(none)'"
     primus   = "!git remote get-url origin >/dev/null 2>&1 && echo origin || git remote | head -1"
     message  = "!commitment 2>/dev/null || curl -sfL whatthecommit.com/index.txt || echo 'This reveals a lack of commitment'"
+    alias    = "!git --no-pager config -l | grep 'alias.' | cut -c7- | awk -F= '{ printf \"\\033\\[32;1m%-20s\\033\\[0m%s\\n\", $1, $2 }'"$2}'"
 ```
 
 
@@ -201,5 +202,5 @@ What are `git pp` and `git pp`?
 **Is there a better way?** I'm glad you probably asked.
 
 You can put that function's code into an executable script `git-deploy`
-and git will use it when you call `deploy`.
+in your `PATH` and git will use it when you call `git deploy`.
 
