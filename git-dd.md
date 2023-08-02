@@ -64,7 +64,7 @@ date   = "!date +'%Y-%m-%d'"
 parent = "!git config branch.$(git me).remote" # Can't call it `remote`
 ```
 
-The `!` indicate this is a external shell call.
+The leading `!` indicates this is an external shell call.
 
 `git date` is just an example of calling the `/usr/date` with the
 format as the first argument.
