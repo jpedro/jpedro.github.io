@@ -160,9 +160,9 @@ Armed with this knowledge we can understand now how this unholy
 >
 > — Wiser flat eather
 
-If we break down the inline function in the `deploy` alias, indent it
-propertly and remove extraneous semicolons, it looks like a pretty
-run-of-the-mill function:
+If we break down the inline function in the `deploy` alias and format
+it humanely and compassionately, it looks like your run-of-the-mill
+shell function:
 
 ```bash
 f() {
