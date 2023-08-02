@@ -82,8 +82,13 @@ upstream remote name for the current branch, if it exists.
     yo = "!f(){ echo "Yo, ${@:-dude}! 🍪" ;};f"
 ```
 
-`yo` is now an alias for an inline shell function that we just created.
-If you call `git yo` it will utter:
+The leading `!` tells us we are calling the shell, then the `f(){ ... }`
+tells we are creating a function, and the last `f` means we are
+calling it immediately. The extra semicolons are required for
+one-liners.
+
+`yo` is now an alias for that inline shell function. If you call
+`git yo` it will utter:
 
 ```
 $ git yo
