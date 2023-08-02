@@ -60,8 +60,8 @@ set it to `rev-parse --abbrev-ref HEAD`).
 
 ```ini
 [alias]
-date   = "!date +'%Y-%m-%d'"
-parent = "!git config branch.$(git me).remote" # Can't call it `remote`
+    date   = "!date +'%Y-%m-%d'"
+    parent = "!git config branch.$(git me).remote" # Can't use `remote`
 ```
 
 The leading `!` indicates this is an external shell call.
