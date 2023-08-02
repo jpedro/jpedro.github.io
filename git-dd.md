@@ -4,21 +4,22 @@
 
 My current favourite git alias is `dd`.
 
-What does it do? Let's ask git.
+What does it do?
 
 ```
 $ git help dd
 'dd' is aliased to 'deploy'
 ```
 
-O kay. That was... *helpful*... but what's `git deploy` then?
+O kay. That was... *helpful*.
 
-It's another alias. `dd` is a git finger-friendly alias to yet another
-git alias.
+`dd` is a git finger-friendly alias to yet another git alias.
 
 > "Turtles all the way down"
 >
 > — Older flat eather
+
+What's `git deploy` then?
 
 ```
 $ git help deploy
@@ -208,4 +209,11 @@ Here's `git ff` along with the rest:
 
 You can put that function's code into an executable script `git-deploy`
 in your `PATH` and git will use it when you call `git deploy`.
+
+How does that work?
+
+Well, git started as a collection of small C binaries named after their
+commands. For example `git hash-object` used to call `git-hash-object`.
+git still follows that standard
+
 
