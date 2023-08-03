@@ -206,7 +206,7 @@ Here's `git ff` along with the rest:
     parent   = "!git config branch.$(git name).remote"  # Can't use 'remote'
     upstream = "!git rev-parse --abbrev-ref @{u} 2>/dev/null || echo '(none)'"
     primus   = "!git remote get-url origin >/dev/null 2>&1 && echo origin || git remote | head -1"
-    message  = "!commitment 2>/dev/null || curl -sfL whatthecommit.com/index.txt || echo 'This reveals a lack of commitment'"
+    message  = "!commitment 2>/dev/null || curl -sfL commit.jpedro.dev || echo 'This reveals a lack of commitment'"
     alias    = "!git --no-pager config -l | grep 'alias.' | cut -c7- | awk -F= '{ printf \"\\033\\[32;1m%-20s\\033\\[0m%s\\n\", $1, $2 }'"$2}'"
 ```
 
