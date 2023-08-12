@@ -1,4 +1,4 @@
-name: Index pages
+name: Index
 
 on:
   push:
@@ -8,22 +8,22 @@ on:
 
 jobs:
   index:
-    name: Index pages
+    name: Index
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout code
+    - name: Checkout
       uses: actions/checkout@v3
 
     - uses: actions/setup-python@v4
       with:
         python-version: "3.11"
 
-    - name: Rebuild index
+    - name: Build
       run: |
         ./.github/scripts/index --save
 
-    - name: Commit to master
+    - name: Commit
       run: |
         echo "==> Setting up local user"
         git config --local user.email "actions@github.com"
