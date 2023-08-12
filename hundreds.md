@@ -9,7 +9,7 @@
 [<img src="https://img.shields.io/badge/Tag-pipelines-brightgreen">](/tags/pipelines)
 <!-- END TAGS -->
 
-[Original post](https://nordcloud.com/tech-community/managing-hundreds-google-cloud-projects-in-minutes/)
+There's the [original post](https://nordcloud.com/tech-community/managing-hundreds-google-cloud-projects-in-minutes/)
 but it's ~easier~ possible to edit it here.
 
 We maintain and update more than 800 Google Cloud projects. That
