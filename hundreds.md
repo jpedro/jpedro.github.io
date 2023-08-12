@@ -21,8 +21,8 @@ The pipelines are automated and almost completely autonomous. This
 means that most Pull Requests are automatically approved and merged.
 Even changes that affect all projects run under 10 minutes.
 
-We'll cover why we end up centralising all these projects. Then we'll
-get into the how and we sped it up.
+We'll cover the why we centralised all these projects. Then the how to
+make it work. Finally how to make it fast.
 
 
 ### TL;DR
