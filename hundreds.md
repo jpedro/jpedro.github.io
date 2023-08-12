@@ -76,9 +76,10 @@ implies managing these projects centrally.
 ### Project drift
 
 There's also the risk of snowflake environments. They happen when
-upstream modules are updated but the root project module lags behind
-the latest changes. This is akin to
-[snowflake servers](https://martinfowler.com/bliki/SnowflakeServer.html)
+upstream modules are updated but the root (project) module lags behind
+the latest changes. The project hasn't done an apply recently.
+
+This is akin to [snowflake servers](https://martinfowler.com/bliki/SnowflakeServer.html)
 and creates a drift between the Infrastructure as Code and their live
 deployments.
 
