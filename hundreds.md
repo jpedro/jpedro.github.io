@@ -231,7 +231,7 @@ certain events, like pushing a commit to a branch or a pull request.
 Inside a workflow, jobs run in their own separate containers and, by
 default, run in parallel. Steps inside those jobs are sequential.
 Typical steps include checking out the code, running a shell script
-or use plugins that GitHub calls Actions.
+or use plugins, that GitHub calls Actions.
 
 
 ### Playing with the API
