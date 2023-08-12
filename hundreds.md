@@ -85,8 +85,6 @@ deployments.
 The way to fight this is to ensure new changes get deployed in a
 consistent way to all.
 
-So definitely managing these projects centrally.
-
 
 ### Bored humans
 
@@ -100,6 +98,10 @@ It's impractical to maintain hundreds of projects with manual reviews.
 The reviews could be done by the developer teams but all projects need
 those minimal set of features, connected to the central structure. At
 the very start. Before they are handed out to developer teams.
+
+Centralising these projects under this single vending machine allows
+covering 90% of the Terraform plan validations. The rest 10% can
+be flagged for inspection.
 
 
 <!-- --- -->
