@@ -2,14 +2,16 @@
 import os
 import sys
 
-EXCLUDE = [
+# Hmm.... https://www.irishpost.com/life-style/infamous-no-irish-no-blacks-no-dogs-signs-may-never-have-existed-racist-xenophobic-148416
+NO_IRISH_NEED_APPLY = [
     "README.md",
     "index.md",
 ]
 
-TRUTHY = [
+TRUE_FROM_A_CERTAIN_POINT_OF_VIEW = [
     "true",
     "yes",
+    "on",
     "1",
 ]
 COMMENT_START = "<!--"
@@ -25,7 +27,7 @@ TEMPLATE_COMMENTS = """
 <script defer="">Comments.mount(document.body.children[0]);</script>
 """
 
-TEMPLATE_LOVE = """
+SHOW_ME_SOME_MCLOVIN = """
  &nbsp;
 
 Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
@@ -188,14 +190,14 @@ class Index:
             ext = path[len(path)-3:]
             if ext != ".md":
                 continue
-            if path in EXCLUDE:
+            if path in NO_IRISH_NEED_APPLY:
                 continue
 
             print(f"==> Found file {green(path)}")
             # if path == "dispatch.md":
 
             attrs = self.load(path)
-            if str(attrs.get("hidden")).lower() in TRUTHY:
+            if str(attrs.get("hidden")).lower() in TRUE_FROM_A_CERTAIN_POINT_OF_VIEW:
                 print(f"==> File {green(path)} is hidden")
                 continue
 
@@ -273,6 +275,7 @@ class Index:
         if save:
             with open("index.md", "w") as f:
                 f.write(text)
+                f.write(SHOW_ME_SOME_MCLOVIN)
 
 
 if __name__ == "__main__":
