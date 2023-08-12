@@ -10,6 +10,7 @@
 <!-- END TAGS -->
 
 [Original post](https://nordcloud.com/tech-community/managing-hundreds-google-cloud-projects-in-minutes/)
+but it's ~easier~ possible to edit it here.
 
 We maintain and update more than 800 Google Cloud projects. That
 number grows every day. And all runs under 10 minutes.
