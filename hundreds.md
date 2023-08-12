@@ -446,7 +446,7 @@ Yes – you need to raise those! If you forget, the fierce Google Cloud
 APIs limits will remind you. If you need, you can introduce a delay,
 via say a `time.sleep(slot_index * 5)`, to spread each matrix job a few
 seconds apart. In 80 jobs a delay of 5 seconds means the last job will
-start 6 minutes after the first job. There goes the 10 minute
+start 6 minutes after the first job. There goes the 10 minute bait
 achievement of this post but it might be just enough to survive API
 limits that can't be further raised.
 
