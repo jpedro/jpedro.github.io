@@ -1,4 +1,4 @@
-<!-- hidden -->
+<!-- not-so-hidden-now -->
 <!-- tags: google, cloud, pipelines -->
 
 # Hundreds and hundreds
