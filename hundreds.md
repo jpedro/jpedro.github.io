@@ -417,7 +417,8 @@ Since these jobs run in parallel and inside each job the Terraform
 calls are threaded, they all complete in under 10 minutes, no matter
 the number of projects involved.
 
-Q.E.D. $${\color{red}■}$$
+Q.E.D. ■
+<!-- $${\color{red}■}$$ -->
 
 > **Note**
 >
