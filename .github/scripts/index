@@ -17,7 +17,7 @@ TRUE_FROM_A_CERTAIN_POINT_OF_VIEW = [
 COMMENT_START = "<!--"
 COMMENT_END = "-->"
 
-TEMPLATE_COMMENTS = """
+CENSORED_COMMENTS = """
  &nbsp;
 
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
@@ -176,8 +176,9 @@ class Index:
         badges = []
         badges.append(startTags)
         for tag in tags:
+            clean = tag.replace(" ", "-")
             badges.append(
-                f'[<img src="https://img.shields.io/badge/Tag-{tag}-brightgreen">](/tags/{tag.replace(" ", "-")})'
+                f'[<img src="https://img.shields.io/badge/Tag-{tag}-brightgreen">](/tags/{clean})'
             )
         badges.append(endTags)
         middle = "\n".join(badges)
