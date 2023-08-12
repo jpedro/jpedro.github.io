@@ -434,7 +434,7 @@ an update to all projects. All done in minutes.
 
 ### Quotas
 
-Yes – you need to raise those!
+Yes – you need to raise those.
 
 If you forget, the fierce Google Cloud APIs limits will remind you. If
 you need, you can introduce a delay, via say a `time.sleep(slot_index * 5)`,
