@@ -94,16 +94,13 @@ With a large number of projects, you can imagine how having slow,
 error-prone, bored humans reviewing and approving Terraform plans,
 potentially for hundreds of projects, each with potentially a hundred
 resources or more, becomes a bottleneck issue. Not even to mention
-incredibly inefficient.
+inefficient.
 
-To sum up: it's impractical to maintain hundreds of projects with
-manual reviews. The reviews could be reviewed by each developer team
-but all projects need to share a minimal set of features to connect
-with the central structure. At the very start. Even before we hand
-them to each developer team.
-
-First, we'll dive into how we centralised all projects into a single
-repo.
+It's impractical to maintain hundreds of projects with manual reviews.
+The reviews could be reviewed by each developer team but all projects
+need to share a minimal set of features to connect with the central
+structure. At the very start. Even before we hand them to each
+developer team.
 
 
 <!-- --- -->
