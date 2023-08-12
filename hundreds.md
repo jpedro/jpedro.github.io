@@ -61,28 +61,28 @@ deploy on dev need to be replicated somehow on the other 2 environments.
 And since in Google Cloud the best isolation mechanism to reduce the
 blast radius is the project, this leads to more copy-pasting-tweaking.
 
-In larger organisations, functionality like Single Sign On, VPC
-interconnectivity, connectivity to OnPrem, security and log analysis
-and incident alerts are managed centrally. And the design that achieves
-this is the poorly named Landing Zone. It basically defines a structure
-that all workload projects need to hook up with.
+In larger organisations, functionality like Single Sign On, private
+networking, connectivity to OnPrem, security, log analysis and incident
+alerts are managed centrally. And the design that achieves this is the
+poorly named Landing Zone. It basically defines a structure that all
+workload projects need to hook up with.
 
 All projects need to connect with several points of the Landing Zone.
 And you want that from the very start. This sets a minimal set of
-functionality every project should have baked in at creation. This
-hints strongly at managing these projects centrally.
+functionality every project should have baked at creation. This
+implies managing these projects centrally.
 
 
 ### Project drift
 
 There's also the risk of snowflake environments. They happen when
-underlying modules are updated but the root project module lags
-behind the latest changes. This is akin to
+upstream modules are updated but the root project module lags behind
+the latest changes. This is akin to
 [snowflake servers](https://martinfowler.com/bliki/SnowflakeServer.html)
 and creates a drift between the Infrastructure as Code and their live
 deployments.
 
-The way to fight this is to ensure new changes get deployed in a
+The way to fight this is to ensure new changes get rolled out in a
 consistent way to all.
 
 
