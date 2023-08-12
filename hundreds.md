@@ -99,8 +99,8 @@ inefficient.
 It's impractical to maintain hundreds of projects with manual reviews.
 The reviews could be reviewed by each developer team but all projects
 need to share a minimal set of features to connect with the central
-structure. At the very start. Before they are handed out to each
-developer team.
+structure. At the very start. Before they are handed out to developer
+teams.
 
 
 <!-- --- -->
