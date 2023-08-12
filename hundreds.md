@@ -243,8 +243,8 @@ and in that inline code you can do API things, like approve and merge
 PRs. This amount of flexibility and automation in the pipelines means
 we can enable them to start making decisions.
 
-GitHub exposes its API by making 3 objects available: `github`,
-`context` and `core`. `github` talks to the GitHub API. The others
+GitHub exposes its APIs by making 3 objects available: `github`,
+`context` and `core`. `github` is a client to the GitHub API. The others
 refer to the event's `context` and `core` is used to control the
 workflow run itself, and can be used to issue warnings that show in
 the run, set environmental variables and more.
