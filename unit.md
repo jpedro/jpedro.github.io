@@ -1,4 +1,4 @@
-<!-- tags: interesting -->
+<!-- tags: mildly interesting -->
 <!-- comments: false -->
 
 
