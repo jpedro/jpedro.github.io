@@ -88,7 +88,7 @@ consistent way to all.
 So definitely managing these projects centrally.
 
 
-### Slow bored humans
+### Bored humans
 
 With a large number of projects, you can imagine how having slow,
 error-prone, bored humans reviewing and approving Terraform plans,
