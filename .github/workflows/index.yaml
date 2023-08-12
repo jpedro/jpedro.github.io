@@ -19,7 +19,7 @@ jobs:
       with:
         python-version: "3.11"
 
-    - name: Rebuild files
+    - name: Rebuild index
       run: |
         ./.github/scripts/index --save
 
