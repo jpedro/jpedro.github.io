@@ -447,7 +447,7 @@ APIs limits will remind you. If you need, you can introduce a delay,
 via say a `time.sleep(slot_index * 5)`, to spread each matrix job a few
 seconds apart. In 80 jobs a delay of 5 seconds means the last job will
 start 6 minutes after the first job. It might be just enough to survive
-hard API limits.
+API limits that can't be further raised.
 
 
 ### Landing Zone
