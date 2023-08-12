@@ -36,7 +36,7 @@ Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
 """
 
 TEMPLATE_INDEX = """
-# Posts nobody asked for.
+# Posts nobody asked for
 
 <!-- # Index -->
 <!--  &nbsp; -->
