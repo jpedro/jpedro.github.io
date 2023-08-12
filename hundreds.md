@@ -108,12 +108,14 @@ be flagged for inspection.
 
 ## Enter yaml
 
-First we extracted all config, not into tfvars files, but into yaml
-files. Could be JSON or TOML but yaml is human-friendly enough and,
-as opposed to no-dangling-commas-quote-everything-JSON and weirdly
-indented TOML, you can add comments. Better still, Terraform can
-natively load yaml and using the `locals` block you can massage that
-data before feeding it off to the resources and their loops.
+Firsty and foremostly, we extracted all config, not into tfvars files,
+but into yaml files. Could be JSON or TOML but yaml is human-friendly
+enough and, as opposed to no-dangling-commas-quote-everything-JSON and
+weirdly indented TOML, you can add comments.
+
+Better still, Terraform can natively load yaml and using the `locals`
+block you can massage that data before feeding it off to the resources
+and their loops.
 
 A bare minimum project in yaml can look like this:
 
@@ -128,8 +130,8 @@ project:
   - tyrell.wellick@ecorp.com
   - whiterose@deus.net
   labels:
-    cost-centre: CC1234
-    application-type: analytics
+    cost-centre: CC-1234
+    app-type: analytics
 ```
 
 Other project settings can include creating service accounts, groups,
@@ -141,8 +143,6 @@ If you are thinking: "Bro! You just traded 800 small directories for
 
 Now we can do interesting things.
 
-
----
 
 ## Enter Python
 
@@ -213,8 +213,6 @@ in a separate and manual pipeline.
 > terraform plan with `terraform show -json <plan-file>` and then
 > inspect the `resource_changes` block.
 
-
-<!-- --- -->
 
 ## GitHub's approval
 
@@ -298,9 +296,7 @@ approves and merges the request or creates a reporting comment
 otherwise. Kudos to GitHub for all this!
 
 
-<!-- --- -->
-
-## The big slow
+## The big long (slow)
 
 After having a mostly autonomous CI/CD pipeline, one of the biggest
 challenges was the total time the Terraform command cycles took.
@@ -325,7 +321,7 @@ changes that touch all projects.
 > If your next question is: "git diff... against which commit?" that
 > would be a great question! For apply workflows, we store the last
 > successful commit in a bucket. For PRs, GitHub tracks which commit
-> you would be merging into. You can grab that from the context.
+> you would be merging into. You can grab that from the `context`.
 
 
 ### Threads
@@ -339,11 +335,11 @@ ballpark for a measly 40 projects.
 
 > **Warning**
 >
-> One note if you are interested in parallelising Terraform: you should
-> not run several Terraform calls from the same directory because
-> each init will overwrite each other's local files. So we instead copy the
-> original Terraform directory and threaded Terraform calls operate from
-> that new temporary directory instead.
+> Important note if you are interested in parallelising Terraform: you
+> **should not run** several Terraform calls from the same directory
+> because each init will overwrite each other's local files. So
+> instead we copy the original Terraform directory and threaded
+> Terraform calls operate from that new temporary directory instead.
 
 
 ### Life in the matrix
@@ -360,7 +356,7 @@ jobs to satisfy those combinations.
 Another "thorough" example:
 
 ```yaml
-name: Matrix FTW
+name: Matrices \o/
 
 on:
   workflow_dispatch:
@@ -387,9 +383,7 @@ jobs:
 
 That code results in this run:
 
-<!-- ![GitHub matrix run](images/github-matrix-run.jpg) -->
-
-![Matrix run](https://github.com/jpedro/jpedro.github.io/raw/master/.github/static/img/matrix.jpg)
+![Matrix run](.github/static/img/matrix.jpg)
 <!-- ![Matrix run](https://raw.githubusercontent.com/jpedro/jpedro.github.io/raw/master/.github/static/img/matrix.jpg) -->
 
 Note how GitHub Actions created 12 parallel jobs (3 OSes x 2 versions
