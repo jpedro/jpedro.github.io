@@ -179,8 +179,8 @@ things between an init and a plan and between a plan and an apply.
 
 All Terraform commands are called from Python and for us, this turned
 out to be important. Because some projects were migrated from a flat
-hierarchy to the Landing Zone structure and some resources had to be
-imported to avoid duplication and eventual deployment errors. Also,
+hierarchy to the Landing Zone tree structure and some resources had to
+be imported to avoid duplication and eventual deployment errors. Also,
 people tend to create some things manually and then add them later to
 the project settings. So between an init and a plan, we import
 resources and fix some resources.
