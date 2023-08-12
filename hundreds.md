@@ -88,7 +88,7 @@ consistent way to all.
 So definitely managing these projects centrally.
 
 
-### Slow humans
+### Slow bored humans
 
 With a large number of projects, you can imagine how having slow,
 error-prone, bored humans reviewing and approving Terraform plans,
@@ -218,7 +218,7 @@ in a separate and manual pipeline.
 
 <!-- --- -->
 
-## GitHub approval
+## GitHub's approval
 
 Whereas Python handles the validation and wraps Terraform, GitHub
 Actions is the glue and plays a critical role in reducing project
