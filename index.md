@@ -11,8 +11,8 @@ Posts nobody asked for.
 - [`git-dd`](git-dd.md)
 - [Hundreds and hundreds](hundreds.md)
 - [Useful OpenSSL commands](openssl.md)
-
- &nbsp;
-# &nbsp;
+<br />
+<br />
+#  &nbsp;
 
 Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io)
