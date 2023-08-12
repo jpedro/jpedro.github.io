@@ -301,9 +301,9 @@ otherwise. Kudos to GitHub for all this!
 After having a mostly autonomous CI/CD pipeline, one of the biggest
 challenges was the total time the Terraform command cycles took.
 
-An average plan for a project took 1 to 5 minutes and to apply took
+An average plan for a project took 1 to 5 minutes and an apply took
 2 to 10 minutes. When you run that for 40+ projects sequentially, it
-brought the whole pipeline to a grand total of 4 hours. Unusable!
+brought the whole pipeline to a grand total of 4 hours. Unusable.
 
 But now all hundreds of projects run smoothly under 10 minutes. How?
 
