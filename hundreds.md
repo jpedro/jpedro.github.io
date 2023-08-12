@@ -178,7 +178,7 @@ things between an init and a plan and between a plan and an apply.
 ### State fixing
 
 All Terraform commands are called from Python and for us, this turned
-out to be important. Because some projects were migrated from a flat
+out to be significant. Because some projects were migrated from a flat
 hierarchy to the Landing Zone tree structure and some resources had to
 be imported to avoid duplication and eventual deployment errors. Also,
 people tend to create some things manually and then add them later to
