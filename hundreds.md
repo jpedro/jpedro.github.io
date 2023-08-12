@@ -397,6 +397,12 @@ That code results in this run:
 Note how GitHub Actions created 12 parallel jobs (3 OSes x 2 versions
 x 2 components).
 
+Also note how GitHub charges you the minutes across all jobs. That gets
+reported under `Billable time`, which is visible only when different
+from the `Total duration` inside a run. In the screenshot above, it
+shows `58s` vs `4m`.
+
+
 
 ### The fix
 
@@ -423,13 +429,6 @@ Q.E.D. <font color="red">■</font>
 (Well... not exactly. You will hit some hard limited APIs. Check the
 #Quotas section below.)
 
-
-> **Note**
->
-> Mind you, GitHub still charges you the total minutes all jobs took.
-> That gets reported under `Billable time`, which is visible only when
-> different from the `Total duration` inside a run. In the screenshot
-> above, it shows `58s` vs `4m`.
 
 <!-- --- -->
 
