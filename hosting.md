@@ -1,5 +1,5 @@
 <!-- hidden-no -->
-<!-- tags: shell, linux, kubernetes -->
+<!-- tags: shell, linux, kubernetes, reinventing the wheels -->
 
 # Self hosting
 
