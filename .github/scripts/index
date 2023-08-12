@@ -178,7 +178,7 @@ class Index:
         badges.append(startTags)
         for tag in tags:
             badges.append(
-                f'[<img src="https://img.shields.io/badge/Tag-{tag}-brightgreen">](/tags/{tag.replace(' ', '-')})'
+                f'[<img src="https://img.shields.io/badge/Tag-{tag}-brightgreen">](/tags/{tag.replace(" ", "-")})'
             )
         badges.append(endTags)
         middle = "\n".join(badges)
