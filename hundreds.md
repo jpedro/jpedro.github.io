@@ -93,14 +93,13 @@ So definitely managing these projects centrally.
 With a large number of projects, you can imagine how having slow,
 error-prone, bored humans reviewing and approving Terraform plans,
 potentially for hundreds of projects, each with potentially a hundred
-resources or more, becomes a bottleneck issue. Not even to mention
+resources or more, becomes a bottleneck. Not even to mention
 inefficient.
 
 It's impractical to maintain hundreds of projects with manual reviews.
-The reviews could be reviewed by each developer team but all projects
-need to share a minimal set of features to connect with the central
-structure. At the very start. Before they are handed out to developer
-teams.
+The reviews could be done by the developer teams but all projects need
+those minimal set of features, connected to the central structure. At
+the very start. Before they are handed out to developer teams.
 
 
 <!-- --- -->
