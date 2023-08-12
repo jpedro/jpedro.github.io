@@ -239,10 +239,9 @@ or use plugins, that GitHub calls Actions.
 Apart from a wealth of neat features, GitHub exposes its API to the
 workflow itself. This means you can write
 [javascript in there](https://github.com/actions/github-script#comment-on-an-issue)
-and in that inline code you can do things like approve and merge a PR.
-This brings a good amount of flexibility and automation into the
-pipelines themselves. On top of validation, this means we can enable
-the pipelines to start making decisions.
+and in that inline code you can do API things, like approve and merge
+PRs. This amount of flexibility and automation in the pipelines means
+we can enable them to start making decisions.
 
 GitHub exposes its API by making 3 objects available: `github`,
 `context` and `core`. `github` talks to the GitHub API. The others
