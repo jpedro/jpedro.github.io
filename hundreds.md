@@ -420,6 +420,10 @@ the number of projects involved.
 Q.E.D. <font color="red">■</font>
 <!-- $${\color{red}■}$$ -->
 
+(Well... not exactly. You will hit some hard limited APIs. Check the
+#Quotas section below.)
+
+
 > **Note**
 >
 > Mind you, GitHub still charges you the total minutes all jobs took.
