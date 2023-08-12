@@ -4,6 +4,9 @@
 # Hundreds and hundreds
 
 <!-- START TAGS -->
+[<img src="https://img.shields.io/badge/Tag-google-brightgreen">](/tags/google)
+[<img src="https://img.shields.io/badge/Tag-cloud-brightgreen">](/tags/cloud)
+[<img src="https://img.shields.io/badge/Tag-pipelines-brightgreen">](/tags/pipelines)
 <!-- END TAGS -->
 
 [Original post](https://nordcloud.com/tech-community/managing-hundreds-google-cloud-projects-in-minutes/)
