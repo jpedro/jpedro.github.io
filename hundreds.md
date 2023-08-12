@@ -109,7 +109,7 @@ be flagged for inspection.
 
 ## Enter yaml
 
-Firsty and foremostly, we extracted all config, not into tfvars files,
+Firstly and foremostly, we extracted all config, not into tfvars files,
 but into yaml files. Could be JSON or TOML but yaml is human-friendly
 enough and, as opposed to no-dangling-commas-quote-everything-JSON and
 weirdly indented TOML, you can add comments.
