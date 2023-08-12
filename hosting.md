@@ -7,6 +7,7 @@
 [<img src="https://img.shields.io/badge/Tag-shell-brightgreen">](/tags/shell)
 [<img src="https://img.shields.io/badge/Tag-linux-brightgreen">](/tags/linux)
 [<img src="https://img.shields.io/badge/Tag-kubernetes-brightgreen">](/tags/kubernetes)
+[<img src="https://img.shields.io/badge/Tag-reinventing the wheels-brightgreen">](/tags/reinventing-the-wheels)
 <!-- END TAGS -->
 
 I used [surge.sh](https://surge.sh/) to host static content and some
