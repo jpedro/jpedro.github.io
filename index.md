@@ -1,6 +1,8 @@
 Posts nobody asked for.
+ &nbsp;
 
-# Index
+<!-- # Index -->
+ &nbsp;
 
 - [Bash dispatch](dispatch.md)
 - [My favourite unit](unit.md)
