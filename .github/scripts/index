@@ -236,6 +236,7 @@ class Index:
         for tag, pages in blogTags.items():
             tagItems[tag] = []
             content = []
+            clean = tag.replace(" ", "-")
             # print(f"\nTag: {titlelize(tag)}")
             for page, title in pages.items():
                 tagItems[tag].append(page)
@@ -253,7 +254,7 @@ class Index:
             print(separator + "\033[0m")
             if save:
                 os.makedirs(f"tags", exist_ok=True)
-                with open(f"tags/{tag}.md", "w") as f:
+                with open(f"tags/{clean}.md", "w") as f:
                     f.write(text)
 
         content = []
