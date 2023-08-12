@@ -111,9 +111,9 @@ be flagged for inspection.
 First we extracted all config, not into tfvars files, but into yaml
 files. Could be JSON or TOML but yaml is human-friendly enough and,
 as opposed to no-dangling-commas-quote-everything-JSON and weirdly
-indented TOML, you can add comments. Terraform can natively load yaml
-and using the `locals` block you can massage that data before feeding
-it off to the resources and their loops.
+indented TOML, you can add comments. Better still, Terraform can
+natively load yaml and using the `locals` block you can massage that
+data before feeding it off to the resources and their loops.
 
 A bare minimum project in yaml can look like this:
 
