@@ -240,7 +240,7 @@ dispatch $@
   to `cmd.list` or the command `cmd.list.repo`? This is the stuff
   that keeps me awake at night.
 
-- Stick that `dispatch` into a bash snippet (good luck escaping it all)
+- Stick that `dispatch` into a snippet (oh the joy of escaping it all!)
 
 
 
