@@ -112,11 +112,12 @@ Yo, a monad is a monoid in the category of endofunctors! Have a 🍪
 
 ![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
 
-Because inline functions are more flexible that shell commands. `if`s,
-loops, arguments work better better, and you can download the internets
-and stream Veep. Right there from the comfort of your local git repo.
+Because inline functions are more flexible that shell commands.
+Conditionals, loops, arguments work better better, and you can
+download the internets and stream Veep. Right there, from the comfort
+of your local repo.
 
-As your heart always wanted to, but you just didn't know.
+(As your heart always wanted to, but you just didn't know.)
 
 
 ## Git config
