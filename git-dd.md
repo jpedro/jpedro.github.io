@@ -43,8 +43,8 @@ from the host, not your local machine.
 
 ## Git aliases
 
-You read it. Git alias can host not only alias to 1. other git commands
-and flags, but also to 2. shell calls and 3. inline shell functions.
+Git alias can host not only alias to 1. other git commands and flags,
+but also to 2. shell calls and 3. inline shell functions.
 
 Basically we can abuse git as a task manager. And so we shall.
 
