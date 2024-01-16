@@ -218,7 +218,7 @@ Here's `git ff` along with the rest of the gang:
 ```
 
 
-## A cleaner mess
+## A cleaner mess?
 
 **Is there a better way?** I'm glad you probably asked.
 
