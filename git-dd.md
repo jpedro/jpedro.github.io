@@ -84,16 +84,16 @@ it will use the alias we created above `git me` and will resolve the
 upstream remote name for the current branch, if it exists.
 
 
-### 3. Shell functions
+### 3. Shell calls but using functions
 
 ```ini
 [alias]
-    yo = "!f(){ echo "Yo, ${@:-dude}! 🍪" ;};f"
+    yo = "!f(){ echo "Yo, ${@:-dude}! Have a 🍪" ;};f"
 ```
 
-The leading `!` tells us we are calling the shell, then the `f(){ ... }`
-tells we are creating a function, and the last `f` means we are
-calling it immediately. The extra semicolons are required for
+The leading `!` tells us we are shelling out, then the `f(){ ... }`
+tells we are creating an inline function, and the last `f` means we are
+calling it immediately. The extra semicolons are required for shell
 one-liners.
 
 `yo` is now an alias for that inline shell function. If you call it,
@@ -101,34 +101,42 @@ it will answer.
 
 ```
 $ git yo
-Yo, dude! 🍪
+Yo, dude! Have a 🍪
 ```
 
 If you feel bold, you pass an argument:
 
 ```
 $ git yo a monad is a monoid in the category of endofunctors
-Yo, a monad is a monoid in the category of endofunctors! 🍪
+Yo, a monad is a monoid in the category of endofunctors! Have a 🍪
 ```
 
 ![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
 
-Because functions are more flexible that commands. You have `if`
-conditionals and `for` loops, they accept multiple arguments, download
-the internets and stream Veep. As your heart always wanted to, but you
-just didn't know.
+Because inline functions are more flexible that shell commands. `if`s,
+loops, arguments work better better, and you can download the internets
+and stream Veep. Right there from the comfort of your local git repo.
+
+As your heart always wanted to, but you just didn't know.
 
 
 ## Git config
 
-Git config is a key value store in
+Git config is a convenient key value store in
 [INI format](https://en.wikipedia.org/wiki/INI_file).
 
 You can store values both in the local repo's `.git/config` or in the
-global `~/.gitconfig` file. The command is unsurprisingly
-`git config [ENTRY] [VALUE]`. The INI `ENTRY` is formed by a section
-and a key name joined by a `.`. For example this local git repo has
-this section:
+global `~/.gitconfig` file. The command is unsurprising:
+
+    git config ENTRY [VALUE]
+
+The `ENTRY` is formed by an INI section and an INI key name joined
+by a `.`.
+
+If you pass the `VALUE` it sets it. If you don't, it returns the stored
+value.
+
+For example, this local git repo has this section:
 
 ```ini
 [branch "master"]
@@ -136,9 +144,11 @@ this section:
     merge = refs/heads/master
 ```
 
+Note how the INI section name has quotes when composed of 2 words.
+
 Which is what we used for the `git parent` alias above. In that case,
-the `ENTRY` is `branch.master.remote` and `branch.master` is the
-section, `remote` being the key.
+the `ENTRY` is `branch.master.remote` and `branch.master` is the INI
+section, `remote` being the INI key.
 
 You need to quote aditional section parts if they have dots on them.
 For example:
@@ -152,15 +162,10 @@ $ git config hi.are.you.ok
 FINE, I'VE NEVER BEEN BETTER!!!
 ```
 
-To read an entry pass only the `ENTRY`. To set an entry pass both
-`ENTRY` and `VALUE`.
-
-And you are not limited to git's internal known values. You can add
-your own.
+There's no section or key checking by git. So you can add your own.
 
 Armed with this knowledge we can understand now how this unholy
 `git deploy` contraption works.
-
 
 
 ## Git deploy
@@ -189,12 +194,14 @@ f() {
     ssh -A $host 'cd '$dir' && git ff && git log -1'
     echo '\033[0m'
 }
+f
 ```
 
-It loads and checks if `host` and `dir` are present and then ssh's into
-the host and does `git ff` in that directory.
+It loads and checks if the `host` and `dir` keys are present in the
+`deploy` section and then ssh's into the host and does `git ff` in
+that directory.
 
-Here's `git ff` along with the rest:
+Here's `git ff` along with the rest of the gang:
 
 ```ini
 [alias]
@@ -205,18 +212,18 @@ Here's `git ff` along with the rest:
 
     parent   = "!git config branch.$(git name).remote"  # Can't use 'remote'
     upstream = "!git rev-parse --abbrev-ref @{u} 2>/dev/null || echo '(none)'"
-    primus   = "!git remote get-url origin >/dev/null 2>&1 && echo origin || git remote | head -1"
+    origin   = "!git remote get-url origin >/dev/null 2>&1 && echo origin || git remote | head -1"
     message  = "!commitment 2>/dev/null || curl -sfL commit.jpedro.dev || echo 'This reveals a lack of commitment'"
     alias    = "!git --no-pager config -l | grep 'alias.' | cut -c7- | awk -F= '{ printf \"\\033\\[32;1m%-20s\\033\\[0m%s\\n\", $1, $2 }'"$2}'"
 ```
 
 
-## `git-deploy`
+## A cleaner mess
 
 **Is there a better way?** I'm glad you probably asked.
 
 You can put that function's code into an executable script `git-deploy`
-in your `PATH` and git will use it when you call `git deploy`.
+in your `$PATH` and git will use it when you call `git deploy`.
 
 How does that work?
 
@@ -225,6 +232,5 @@ commands. For example `git hash-object` used to call `git-hash-object`.
 git still follows that standard.
 
 Any executables in your PATH that start with `git-xxx` can be called as
-`git xxx`.
-
-
+`git xxx`. Just don't code that one because it's taken. I dare ya to
+ask me what it does.
