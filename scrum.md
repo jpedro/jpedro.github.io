@@ -15,11 +15,14 @@ track its progress.
 
 ## What
 
-There are 5 "ceremonies". 3 are idiotic. 1 should be optional.
+There are 5 "ceremonies".
+
+1 is required for every project. 1 should be optional. The other 3 are
+idiotic.
 
 - ✅ Sprint Planning
 
-  Should be done every week.
+  Should be done every week or every cycle.
 
 - ❓ Daily Scrum
 
@@ -28,16 +31,12 @@ There are 5 "ceremonies". 3 are idiotic. 1 should be optional.
 
 - ❌ Sprint Review
 
-  Don't wait for the "sprint" to be over to **show** something.
+  Problem: Don't wait for the sprint to be over to **show** something.
 
 - ❌ Sprint Retrospective
 
-  Don't wait for the "sprint" to be over to **say** something.
+  Problem: Don't wait for the sprint to be over to **say** something.
 
 - ❌ Backlog Refinement
 
-  Superfulous, it's part of planning.
-
-
-## Problems
-
+  Problem: Superfulous, it's part of planning.
