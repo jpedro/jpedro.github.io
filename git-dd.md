@@ -232,6 +232,6 @@ Well, git started as a
 named after their commands. For example `git write-tree` used to call
 `git-write-tree`.
 
-Any executables in your `$PATH` (or pedantically `$GIT_EXEC_PATH`)
+Any executables in your `$PATH` (or `$GIT_EXEC_PATH`)
 that start with `git-xxx` can be called as `git xxx`. Just don't code
 that one because it's taken. I dare ya to ask me what it does.
