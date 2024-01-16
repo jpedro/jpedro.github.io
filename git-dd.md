@@ -165,7 +165,7 @@ FINE, I'VE NEVER BEEN BETTER!!!
 There's no section or key checking by git. So you can add your own.
 
 Armed with this knowledge we can understand now how this unholy
-`git dd` aka `git deploy` contraption works.
+contraption works.
 
 
 ## Git deploy
