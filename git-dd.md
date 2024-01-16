@@ -227,9 +227,10 @@ in your `$PATH` and git will use it when you call `git deploy`.
 
 How does that work?
 
-Well, git started as a collection of small C binaries named after their
-commands. For example `git hash-object` used to call `git-hash-object`.
-git still follows that standard.
+Well, git started as a
+[collection of small C binaries](https://github.com/git/git/tree/e83c5163316f89bfbde7d9ab23ca2e25604af290)
+named after their commands. For example `git write-tree` used to call
+`git-write-tree`. git still follows that standard.
 
 Any executables in your PATH that start with `git-xxx` can be called as
 `git xxx`. Just don't code that one because it's taken. I dare ya to
