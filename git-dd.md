@@ -28,11 +28,8 @@ $ git help deploy
 
 That's quite a bit to process. Let's break it down.
 
-
-## TL;DR
-
-- The `!f() { ... ;};f` sets the git alias to become a shell
-  function. Inside this function:
+- The `!f() { ... ;};f` sets the git alias to call a shell command with
+  an inline function. Inside this function:
 
 - Grab the `deploy.host` and `deploy.dir` git config  values.
 
@@ -42,7 +39,7 @@ That's quite a bit to process. Let's break it down.
   directory against its upstream.
 
 The last part is surrounded with a pair of dimmed and reset ansi codes
-(`\033[2m` and `\033[0m`, respectively) to signal that output comes
+(`\033[2m` and `\033[0m` respectively) to signal that output comes
 from the host, not your local machine.
 
 
@@ -50,6 +47,8 @@ from the host, not your local machine.
 
 You read it. Git alias can host not only alias to 1. other git commands
 and flags, but also to 2. shell calls and 3. inline shell functions.
+
+Basically we can abuse git as a task manager. And so we shall.
 
 
 ### 1. Command alias
@@ -165,7 +164,7 @@ FINE, I'VE NEVER BEEN BETTER!!!
 There's no section or key checking by git. So you can add your own.
 
 Armed with this knowledge we can understand now how this unholy
-`git deploy` contraption works.
+`git dd` aka `git deploy` contraption works.
 
 
 ## Git deploy
