@@ -11,7 +11,7 @@ $ git help dd
 'dd' is aliased to 'deploy'
 ```
 
-That was... *helpful*.
+That was... helpful.
 
 `dd` is a git finger-friendly alias to another git alias.
 
