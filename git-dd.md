@@ -168,7 +168,7 @@ Armed with this knowledge we can understand now how this unholy
 contraption works.
 
 
-## Git deploy
+## Ru(n/i)ning things
 
 > "Finger-friendly turtles all the way down"
 >
