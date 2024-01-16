@@ -19,9 +19,9 @@ will be unavailable, sometimes for hours.
 
 In theory, only 2 tables are needed to hold a schemaless schema:
 
-- `item`, each item in the database has an `id` and a `type`.
-- `data`, holds the `field=value` for each for each of the item's `id`.
-- `find`, holds indexed data and is optional.
+- `item`, basically holds an `id` and a `type` and some metadata.
+- `data`, holds the `field=value` for each for each of the items.
+- `find`, holds indexed data (optional).
 
 The `data` table hydrates `item`.
 
