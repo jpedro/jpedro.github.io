@@ -29,7 +29,7 @@ $ git help deploy
 That's quite a bit to process. Let's break it down.
 
 - The `!f() { ... ;};f` sets the git alias to call a shell command with
-  an inline function. Inside this function:
+  an inline function `f`, that we call immediately. Inside it:
 
 - Grab the `deploy.host` and `deploy.dir` git config  values.
 
