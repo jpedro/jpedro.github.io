@@ -215,6 +215,9 @@ Here's `git ff` along with the rest of the gang:
     alias    = "!git --no-pager config -l | grep 'alias.' | cut -c7- | awk -F= '{ printf \"\\033\\[32;1m%-20s\\033\\[0m%s\\n\", $1, $2 }'"$2}'"
 ```
 
+So not only are we abusing git as a task manager, we are using it as a code
+sync mechanism.
+
 
 ## A cleaner mess?
 
