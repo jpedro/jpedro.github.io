@@ -24,7 +24,7 @@ $ git help deploy
 'deploy' is aliased to '!f(){ host=$(git config deploy.host); dir=$(git config deploy.dir); if [[ $host = '' ]] || [[ $dir = '' ]] ; then echo 'Git config deploy is not configured.'; return; fi; git pp; echo '\033[2m'; ssh -A $host 'cd '$dir' && git ff && git log -1'; echo '\033[0m' ;};f'
 ```
 
-That's quite a bit to process. Let's break it down.
+That's quite a bit. Let's break it down.
 
 - The `!f() { ... ;};f` sets the git alias to call a shell command with
   an inline function `f`, that we call immediately. Inside it:
