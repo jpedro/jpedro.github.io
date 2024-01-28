@@ -1,6 +1,6 @@
 <!-- tags: shell, markdown -->
 
-# Bash dispatch
+# Bash Dispatch
 
 <!-- START TAGS -->
 [<img src="https://img.shields.io/badge/Tag-shell-brightgreen">](/tags/shell)
