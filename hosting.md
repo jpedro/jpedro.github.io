@@ -122,16 +122,18 @@ just like surge.
 The idea is to replace heroku's build packs with some tool that knows
 how to package the repo files into a docker image and deploy it.
 
-The tool either intelligently figure out what type of application the
-repo is and how it should be handled or you explicitly tell it.
+The tool figures out what type of application the repo is and how it
+should be handled or you explicitly tell it to.
 
-Kubernetes fits neatly as the container runtime.
+Kubernetes or plain old docker daemon can fit neatly as the container
+runtime.
 
 
-### ~Intelligent~ Lazy guesses
+### Lazy guesses
 
 The laziest approach to guessing how the repo should be packaged is to
-look for some files that indicate which language, framework it uses.
+look for some files that indicate which language, framework the repo
+uses.
 
 In java one can check if there's a `pom.xml` or a `build.gradle` file.
 For go that would be a `go.mod`, for rust `Cargo.toml`.
@@ -139,8 +141,8 @@ For go that would be a `go.mod`, for rust `Cargo.toml`.
 That informs the tool which base docker image should use, copies the
 repo files into it, install dependencies, run tests in the staged
 build container, copy the relevant built files into the final stage
-and deploys that via a rendered kubernetes templates or configure the
-values for some helm chart.
+and deploys that via a rendered kubernetes, docker-composer or helm
+charts.
 
 
 ### Explicit
@@ -154,13 +156,21 @@ test:
   coverage: true # or configure a coverage.out file path
 
 build:
-  image: golang:latest
+  command: go build .
   args: []
-  name: hello-kaiku
-  tags:
-  - latest
-  - time-$(( build.time.now ))
-  - version-$(( build.git.describe ))
+  image:
+    base: golang:latest
+    name: hello-kaiku
+    tags:
+    - latest
+    - time-$(( build.time.now ))
+    - version-$(( build.git.describe ))
+
+deploy:
+  targets:
+  - docker-compose
+  - kubernetes
+  - helm
 
 run:
   # These get translated into `spec.template.spec.containers[]` fields
@@ -168,7 +178,7 @@ run:
   command: ['sh', '-c', 'echo "Hello, Kubernetes!" && sleep 3600']
   env:
     SOME_VAR: some-value
-    SOME_SECRET: $(( build.SOME_SECRET ))
+    SOME_SECRET: $(( build.secrets.SOME_SECRET ))
     LISTEN_POST: $(( run.PORT ))
 ```
 
@@ -192,8 +202,9 @@ like a new postgres database, a redis database or an elasticsearch
 index and exposes environment variables for each deployment that uses
 them.
 
-There should be a way to uniquely identify a repo so each time it
-chages its name or domain the same resources env gets injected into
-the kubernetes deployment via config maps or secrets.
 
+### Todos
 
+- There should be a way to uniquely identify a repo so each time it
+  chages its name or domain the same resources env gets injected into
+  the kubernetes deployment via config maps or secrets.
