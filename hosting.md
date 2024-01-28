@@ -186,7 +186,7 @@ Here the use of `$(( scope.var ))` is used to dynamically insert values
 at different phases.
 
 The configured `test`, `build`, and `run` phases above have defaults
-for each runtime the tool figure out and get merged.
+for each runtime the tool figures out and merges.
 
 
 ### Todos
