@@ -231,16 +231,17 @@ dispatch $@
 
 ## Todos
 
-- Ignore everything after the first flag is found
+- Ignore everything after the first flag is found.
 
-- Store the found flags in a map
+- Store the found flags in a map.
+
+- Stick that `dispatch` into a snippet.
 
 - Think on the ambiguity between a valid value and a command. For
   example: should `repo` in `please list repo` be the `$1` value
   to `cmd.list` or the command `cmd.list.repo`? This is the stuff
   that keeps me awake at night.
 
-- Stick that `dispatch` into a snippet
 
 
 
