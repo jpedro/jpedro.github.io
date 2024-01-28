@@ -18,7 +18,7 @@ opposed to more traditional "static" data types systems. That's because
 columns in Postgres belong to an object data type and you can define
 your own types.
 
-Also, tables can have hierarchical relationships. There's sequences,
+Also, tables can have hierarchical relationships. There're sequences,
 better view support and the list go on.
 
 But the database should behave like a dumb API. It stores and fetches
