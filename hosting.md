@@ -1,7 +1,7 @@
 <!-- hidden-no -->
 <!-- tags: shell, linux, kubernetes, reinventing the wheels -->
 
-# Self hosting
+# Self Hosting
 
 <!-- START TAGS -->
 [<img src="https://img.shields.io/badge/Tag-shell-brightgreen">](/tags/shell)

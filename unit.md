@@ -2,7 +2,7 @@
 <!-- comments: false -->
 
 
-# My favourite unit
+# My Favourite Unit
 
 <!-- START TAGS -->
 [<img src="https://img.shields.io/badge/Tag-mildly interesting-brightgreen">](/tags/mildly-interesting)
