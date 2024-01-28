@@ -110,9 +110,11 @@ just like surge.
 
 ### Todos
 
-- [ ] Introduce surge-like directives, like redirects and auth, that
-      basically render nginx `sites-enabled/` conf files for a
-      deployment.
+- Introduce surge-like directives, like `redirect` and `auth`, that
+  basically render a custom nginx `sites-enabled/` conf files for a
+  deployment. You lose the single conf to rule 'em all but you can
+  optimize settings per host. Caching static assets could be one of
+  them, if you are not proxying those through some CDN.
 
 
 ## Replacing heroku apps
@@ -179,9 +181,8 @@ for each runtime the tool figure out and get merged.
 
 ### Todos
 
-- [ ] Based on the `CNAME` file or some configuration, ensure the
-      required TLS certificates exist and get attached to the
-      kubernetes Ingress.
+- Based on the `CNAME` file or some configuration, ensure the required
+  TLS certificates exist and get attached to the kubernetes Ingress.
 
 
 ## Replacing heroku addons
