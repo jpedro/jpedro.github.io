@@ -93,15 +93,18 @@ $ cat ./bin/deploy
 set -euo pipefail
 
 rsync \
-    --verbose \
+    --recursive \
     --archive \
+    --verbose \
+    --perms \
     --links \
     --compress \
-    --recursive \
     --delete \
     --exclude '.git' \
     $PWD \
     $(cat CNAME):/var/www/vhosts/$(cat CNAME)
+
+    # "Rave please" is a good mnemonic for the short flags "rsync -ravplz"
 ```
 
 Easy. And yes. That `CNAME` contains the single line `test.example.com`,
