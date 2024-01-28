@@ -1,3 +1,3 @@
 ## Reinventing the wheels
 
-- [Self hosting](../hosting.md)
+- [Self Hosting](../hosting.md)

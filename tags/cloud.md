@@ -1,3 +1,3 @@
 ## Cloud
 
-- [Hundreds and hundreds](../hundreds.md)
+- [Hundreds and Hundreds](../hundreds.md)

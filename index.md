@@ -4,13 +4,13 @@
 <!-- # Index -->
 <!--  &nbsp; -->
 
-- [My favourite unit](unit.md)
+- [My Favourite Unit](unit.md)
 - [Bash Dispatch](dispatch.md)
 - [Markdown](markdown.md)
 - [`git-dd`](git-dd.md)
 - [Useful OpenSSL commands](openssl.md)
-- [Hundreds and hundreds](hundreds.md)
-- [Self hosting](hosting.md)
+- [Hundreds and Hundreds](hundreds.md)
+- [Self Hosting](hosting.md)
 <br />
 <br />
 <!-- #  &nbsp; -->

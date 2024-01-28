@@ -1,3 +1,3 @@
 ## Kubernetes
 
-- [Self hosting](../hosting.md)
+- [Self Hosting](../hosting.md)

@@ -1,3 +1,3 @@
 ## Mildly interesting
 
-- [My favourite unit](../unit.md)
+- [My Favourite Unit](../unit.md)
