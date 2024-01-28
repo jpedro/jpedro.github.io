@@ -83,7 +83,7 @@ certbot certonly \
 ```
 
 You should use the DNS challenge for it. The Cloudflare plugin works
-really well with Lets Encrypt.
+well with Lets Encrypt.
 
 Now a "deployment" is an `rsync` call away:
 
