@@ -115,8 +115,6 @@ Conditionals, loops, arguments work better better, and you can
 download the internets and stream Veep. Right there, from the comfort
 of your local repo.
 
-(As your heart always wanted to, but you just didn't know.)
-
 
 ## Git config
 
@@ -233,6 +231,5 @@ Well, git started as a
 named after their commands. For example `git write-tree` used to call
 `git-write-tree`.
 
-Any executables in your `$PATH` (or `$GIT_EXEC_PATH`)
-that start with `git-xxx` can be called as `git xxx`. Just don't code
-that one because it's taken. I dare ya to ask me what it does.
+Any executables in your `$PATH` (even better, `$GIT_EXEC_PATH`)
+that start with `git-xxx` can be called as `git xxx`.
