@@ -1,4 +1,4 @@
 ## Markdown
 
-- [Bash dispatch](../dispatch.md)
+- [Bash Dispatch](../dispatch.md)
 - [Markdown](../markdown.md)

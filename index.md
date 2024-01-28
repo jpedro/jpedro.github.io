@@ -5,7 +5,7 @@
 <!--  &nbsp; -->
 
 - [My favourite unit](unit.md)
-- [Bash dispatch](dispatch.md)
+- [Bash Dispatch](dispatch.md)
 - [Markdown](markdown.md)
 - [`git-dd`](git-dd.md)
 - [Useful OpenSSL commands](openssl.md)
