@@ -11,31 +11,26 @@ I'm learning Postgres for a while and while many things are *so much
 nicer* than MySQL, some basics are lacking. I'm disappointed.
 
 
-## The basics
+## The good
 
 Postgres is sometimes defined as an object-relational database, as
 opposed to more traditional "static" data types systems. That's because
 columns in Postgres belong to an object data type and you can define
 your own types.
 
-Also, tables can have hierarchical relationships. There're sequences,
-better view support and the list go on.
+But the database should behave like a dumb API. It stores and retrieves
+data and allows performing simple queries. I can't see how extending
+the object type system as necessarily a great thing. Unless, of course,
+you are building your own data store atop Postgres. Which then, this
+all makes sense.
 
-But the database should behave like a dumb API. It stores and fetches
-data and allows performing simple queries. I can't see how extensive
-use of the object type system as necessarily a great thing. Unless,
-of course, you are building your own data store atop Postgres. Which
-then, this all makes sense.
+Tables can have hierarchical relationships. There're sequences, better
+view support, support for `UUID`s out of the box and many other
+goodies. It's just a better, more compliant RDBMS.
 
-
-
-## The good
-
-The `psql` cli is friendlier than `mysql`. `\l` is and `\d+ table_name`
-are faster than `SHOW DATABASES` and `SHOW CREATE TABLE table_name`.
-
-Also Postgres support `UUID` out of the box and many other goodies.
-It's just a better, more compliant RDBMS.
+It's superficial but the `psql` cli is friendlier than `mysql`. `\l`
+is and `\d+ table_name` are faster than `SHOW DATABASES` and
+`SHOW CREATE TABLE table_name`.
 
 
 ## The different
