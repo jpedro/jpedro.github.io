@@ -13,15 +13,20 @@ nicer* than MySQL, some basics are lacking. I'm disappointed.
 
 ## The basics
 
-The database should behave like a dumb API. It stores, fetches and
-performs some simple queries the data.
-
-Business logic should stay in the application layer.
-
 Postgres is sometimes defined as an object-relational database, as
-opposed to more traditional pure-reational databases. That's because
-columns in Postgres belong to an object data type. You can create your
-own object types. Even tables can have hierarchical relationships.
+opposed to more traditional "static" data types systems. That's because
+columns in Postgres belong to an object data type and you can define
+your own types.
+
+Also, tables can have hierarchical relationships. There's sequences,
+better view support and the list go on.
+
+But the database should behave like a dumb API. It stores and fetches
+data and allows performing simple queries. I can't see how extensive
+use of the object type system as necessarily a great thing. Unless,
+of course, you are building your own data store atop Postgres. Which
+then, this all makes sense.
+
 
 
 ## The good
