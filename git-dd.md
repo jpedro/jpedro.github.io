@@ -217,9 +217,9 @@ So not only are we abusing git as a task manager, we are using it as a code
 sync mechanism.
 
 
-## A cleaner mess?
+## Is there a better way?
 
-**Is there a better way?** I'm glad you probably asked.
+**I'm glad you probably asked that!**
 
 You can put that function's code into an executable script `git-deploy`
 in your `$PATH` and git will use it when you call `git deploy`.
