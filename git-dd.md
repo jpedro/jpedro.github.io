@@ -128,7 +128,7 @@ global `~/.gitconfig` file. The command is unsurprising:
 
     git config ENTRY [VALUE]
 
-The `ENTRY` is formed by an INI section and an INI key name joined
+The `ENTRY` is formed by an INI `section` and an INI `key` name, joined
 by a `.`.
 
 If you pass the `VALUE` it sets it. If you don't, it returns the stored
