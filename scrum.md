@@ -26,7 +26,7 @@ idiotic.
 
 - ❓ Daily Scrum
 
-  Should be optional. Most of time people ust say "I did this and I'll
+  Should be optional. Most of time people just say "I did this and I'll
   continue on it"
 
 - ❌ Sprint Review
