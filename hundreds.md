@@ -414,7 +414,7 @@ Since these jobs run in parallel and inside each job the Terraform
 calls are threaded, they all complete in under 10 minutes, no matter
 the number of projects involved.
 
-Q.E.D. <font color="red">■</font>
+Q.E.D. <font color="red" size="1px">■</font>
 <!-- $${\color{red}■}$$ -->
 
 (Well... not exactly. You will hit some hard limited APIs. Check the
