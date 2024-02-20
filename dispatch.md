@@ -237,7 +237,7 @@ dispatch $@
 
 - Store the found flags in a map.
 
-- Stick that `dispatch` into a snippet.
+- Try to stick that `dispatch` into a code snippet...
 
 - Think on the ambiguity between a valid value and a command. For
   example: should `repo` in `please list repo` be the `$1` value
