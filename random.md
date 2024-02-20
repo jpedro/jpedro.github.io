@@ -9,14 +9,14 @@ Why so important? Because AU. TO. MA. TION.
 
 Those API calls are the smallest lego pieces. Atop that, you can
 assemble walls, rooms, flats, houses, buildings. Whole cities in the
-cloud can be scripted.
+cloud can be captured in a git repo.
 
 
 ## Sometimes you don't need the cloud
 
 Deploy that app straight into a bare host. Use unix sockets, avoid the
-whole TCP/IP network overheads. And boom! You get the best available
-performance you will ever get.
+whole TCP/IP network overheads. And boom! It's the best available
+performance you will _ever_ get.
 
 
 ## On a knife's edge
