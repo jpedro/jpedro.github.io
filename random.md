@@ -1,4 +1,4 @@
-# Random thoughts
+# Random Thoughts
 
 
 
