@@ -1,6 +1,23 @@
 # Random Thoughts
 
 
+## The most undersold value of public clouds
+
+Their single API. That's it.
+
+Why so important? Because AU. TO. MA. TION.
+
+Those API calls are the smallest lego pieces. Atop that, you can
+assemble walls, rooms, flats, houses, buildings. Whole cities in the
+cloud can be scripted.
+
+
+## Sometimes you don't need the cloud
+
+Deploy that app straight into a bare host. Use unix sockets, avoid the
+whole TCP/IP network overheads. And boom! You get the best available
+performance you will ever get.
+
 
 ## On a knife's edge
 
