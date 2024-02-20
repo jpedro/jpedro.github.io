@@ -214,7 +214,7 @@ Here's `git ff` along with the rest of the gang:
 ```
 
 So not only are we abusing git as a task manager, we are using it as a code
-sync mechanism.
+sync mechanism. Fan. Tas. Tic.
 
 
 ## Is there a better way?
