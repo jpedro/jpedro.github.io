@@ -61,13 +61,13 @@ accept values that can also be `--flag`s. So for a command like:
     please list --repos
 
 one would need to check not only `$1` but `$2`. Or use a 2nd case inside
-the `cmd.list` function. And `--repos` is a valid direcotry name.
+the `cmd.list` function. And `--repos` is a valid directory name.
 
 
 ## Enter dispatch
 
 Lately, I'm using a `dispatch` function that tries to find the
-subcommand from the declared functions, with a known prefix:
+subcommand from the declared functions with a known prefix:
 
 ```bash
 
@@ -114,20 +114,22 @@ dispatch $@
 
 ```
 
-It will try to find `cmd.$1` from declared functions. The longest one
-that matches the arguments you pass. It starts with all the arguments
-and removes one by one until it finds a function that can be run.
+It will try to find `cmd.${@// /.}` from declared functions. The
+longest one that matches the arguments you pass. It starts with all
+the arguments and removes one by one until it finds a function that
+can be run.
 
-Poor man's dispatcher or lazy solution? Both. Always both!
+Poor man's function router dispatcher or lazy solution? Both. Always
+both!
 
-It "supports" nested command by taking replacing any spaces with a
-dot `.` and check if that function is available.
+It "supports" nested command by replacing any spaces with a period `.`
+and check if that function is available.
 
-For example, if your main script is called `please`, `please help me
-now` will start by loooking for a function called `cmd.help.me.now`. If
-that doesn't exist, it will look for one called `cmd.help.me`. That one
-also doesn't exist, so it tries next `cmd.help` which is declared. Then
-it will send `me now` as the arguments to it.
+For example, if your main script is called `please`,
+`please help me now` will start by loooking for a function called
+`cmd.help.me.now`. If that doesn't exist, it will look for one called
+`cmd.help.me`. That one also doesn't exist, so it tries next `cmd.help`
+which is declared. Then it will send `me now` as the arguments to it.
 
 In case `cmd.help` doesn't exist, it calls the function name inside the
 `fallback` variable.
