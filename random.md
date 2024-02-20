@@ -1,7 +1,7 @@
 # Random Thoughts
 
 
-## The most undersold value of public clouds
+## The most undersold value of the cloud
 
 Their single API. That's it.
 
