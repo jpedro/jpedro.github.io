@@ -14,10 +14,10 @@ And it makes sense, when you think about it. It's the outcome of:
 > if ain't broke don't fix it
 
 Companies invest considerable time and money to get things off the
-ground and make them work. And _just that_. I say, *barely that*.
+ground and make them work. And _just that_. Even **barely that**.
 
-As soon as that minimum level is achieved, most times beyond schedule
-and over budget, there's little or zero incentive to improve it. To
+As soon as that minimum level is achieved (most times beyond schedule
+and over budget) there's zero or negative incentives to improve it. To
 polish it. Refactor it. To what we all know are better standards.
 
 Developers want to move on to shinnier things, after the initial
