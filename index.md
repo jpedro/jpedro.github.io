@@ -8,6 +8,7 @@
 - [My Favourite Unit](unit.md)
 - [Self Hosting](hosting.md)
 - [Useful OpenSSL commands](openssl.md)
+- [Random thoughts](random.md)
 - [Markdown](markdown.md)
 - [`git-dd`](git-dd.md)
 - [Hundreds and Hundreds](hundreds.md)
