@@ -47,7 +47,7 @@ Accomplished" (_cue George W. Bush_) and end the apologising.
 Touching code that barely works becomes a risky adventure, that only
 the approved go, and only when there’s a clear reward for it. Fresh
 meat assigned to add features or fix stuff are only allowed to touch
-the minimal amount of code, in the smallest amount of time. And every
+the minimal amount of code, in the smallest amount of time. So, every
 10 years, say hello to my little friend, aka that big-bang rewrite
 (_cue Tony Montana_).
 
