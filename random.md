@@ -44,10 +44,13 @@ After the struggles to barely make it work, developers are keen to
 move to shinnier things. Managers want to close projects as "Mission
 Accomplished" (_cue George W. Bush_) and end the apologising.
 
-Over time, fresh meat assigned to add features or fix stuff are only
-allowed to touch the minimal amount of code, in the smallest amount
-of time. Say hello to cruft and the whole broken windows theory. And
-every 10 years, it's time for that big-bang rewrite.
+Touching code that barely works becomes a risky adventure, that only
+the approved go, and only when there’s a clear reward for it.
 
-And that’s why everywhere you go, every company is "operating on a
+Fresh meat assigned to add features or fix stuff are only allowed to
+touch the minimal amount of code, in the smallest amount of time. Say
+hello to cruft and the whole broken windows theory. And every 10 years,
+it's time for that big-bang rewrite.
+
+And that’s why, everywhere you go, every company is "operating on a
 knife’s edge".
