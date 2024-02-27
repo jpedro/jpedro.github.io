@@ -45,12 +45,11 @@ move to shinnier things. Managers want to close projects as "Mission
 Accomplished" (_cue George W. Bush_) and end the apologising.
 
 Touching code that barely works becomes a risky adventure, that only
-the approved go, and only when there’s a clear reward for it.
-
-Fresh meat assigned to add features or fix stuff are only allowed to
-touch the minimal amount of code, in the smallest amount of time. Say
-hello to cruft and the whole broken windows theory. And every 10 years,
-it's time for that big-bang rewrite.
+the approved go, and only when there’s a clear reward for it. Fresh
+meat assigned to add features or fix stuff are only allowed to touch
+the minimal amount of code, in the smallest amount of time. And every
+10 years, say hello to my little big-bang-rewrite friend
+(_cue Tony Montana_).
 
 And that’s why, everywhere you go, every company is "operating on a
 knife’s edge".
