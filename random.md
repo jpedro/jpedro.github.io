@@ -21,14 +21,12 @@ performance you will _ever_ get.
 
 ## On a knife's edge
 
-[In this comment](https://news.ycombinator.com/item?id=39366352)
+[In this comment](https://news.ycombinator.com/item?id=39365187#39366352)
 someone remarked:
 
 > all companies are operating on a knife's edge
 
-And it makes sense, when you think about it.
-
-It's the outcome of:
+And it makes sense, when you think about it. It's the outcome of:
 
 > if ain't broke don't fix it
 
