@@ -26,9 +26,7 @@ through them.
 
 ## But why?
 
-To avoid this: https://news.ycombinator.com/item?id=39520776#39524350
-
-Plus, fun.
+Fun and profit. Read this: [https://news.ycombinator.com/item?id=39520776#39524350](https://news.ycombinator.com/item?id=39520776#39524350)
 
 
 ## Replacing surge
