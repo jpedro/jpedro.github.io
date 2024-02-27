@@ -40,18 +40,14 @@ As soon as the minimum acceptance is achieved there's zero or negative
 incentives to improve it. To polish it. Refactor it. But also to
 revisit the tech debt left behind.
 
-Touching code that _barely_ works becomes a risky adventure, that only
-the approved go, and only when there's a clear reward for it.
-
-After the struggles to _barely_ make it work, developers are keen to
+After the struggles to barely make it work, developers are keen to
 move to shinnier things. Managers want to close projects as "Mission
 Accomplished" (_cue George W. Bush_) and end the apologising.
 
 Over time, fresh meat assigned to add features or fix stuff are only
 allowed to touch the minimal amount of code, in the smallest amount
-of time. Say hello to cruft and the whole broken windows theory.
-
-And every 10 years, it's time for that big-bang rewrite.
+of time. Say hello to cruft and the whole broken windows theory. And
+every 10 years, it's time for that big-bang rewrite.
 
 And that’s why everywhere you go, every company is "operating on a
 knife’s edge".
