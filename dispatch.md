@@ -119,8 +119,7 @@ longest one that matches the arguments you pass. It starts with all
 the arguments and removes one by one until it finds a function that
 can be run.
 
-Poor man's function router dispatcher or lazy solution? Both. Always
-both!
+Poor man's function dispatcher or lazy solution? Both. Always both!
 
 It "supports" nested command by replacing any spaces with a period `.`
 and check if that function is available.
