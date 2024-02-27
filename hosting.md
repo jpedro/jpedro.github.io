@@ -24,6 +24,13 @@ use Cloudflare you can select which DNS records should be proxied
 through them.
 
 
+## But why?
+
+To avoid this: https://news.ycombinator.com/item?id=39524350
+
+Plus, fun.
+
+
 ## Replacing surge
 
 
