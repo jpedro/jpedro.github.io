@@ -67,7 +67,7 @@ server {
 > **Note**
 >
 > Note that the usage of `$ssl_server_name` comes with a performance
-> price.
+> cost.
 
 So the web root directory for the subdomain `test.example.com` is
 found at `/var/www/vhosts/test.example.com`. Transparent.
