@@ -26,7 +26,7 @@ through them.
 
 ## But why?
 
-To avoid this: https://news.ycombinator.com/item?id=39524350
+To avoid this: https://news.ycombinator.com/item?id=39520776#39524350
 
 Plus, fun.
 
