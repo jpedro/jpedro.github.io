@@ -52,8 +52,8 @@ Touching code that barely works becomes a risky adventure, that only
 the approved go, and only when there’s a clear reward for it. Fresh
 meat assigned to add features or fix stuff are only allowed to touch
 the minimal amount of code, in the smallest amount of time. So, every
-10 years, say hello to my little friend, aka that big-bang rewrite
-(_cue Tony Montana_).
+10 years, "say hello to my little friend" (_cue Tony Montana_), aka
+that big-bang rewrite.
 
 And that’s why, everywhere you go, every company is "operating on a
 knife’s edge".
