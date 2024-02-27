@@ -11,12 +11,18 @@ Those API calls are the smallest lego pieces. Atop that, you can
 assemble walls, rooms, flats, houses, buildings. Whole cities in the
 cloud can be captured in a git repo.
 
+Most ad-hoc scripts and home brewed provisioning tools can't even agree
+on a standard for the _sand_ that builds the bricks.
+
 
 ## Sometimes you don't need the cloud
 
 Deploy that app straight into a bare host. Use unix sockets, avoid the
-whole TCP/IP network overheads. And boom! It's the best available
-performance you will _ever_ get.
+whole TCP/IP network overheads.
+
+You better pray the backups are working
+
+It's the best available performance you will _ever_ get.
 
 
 ## On a knife's edge
