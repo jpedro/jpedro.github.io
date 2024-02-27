@@ -33,9 +33,9 @@ It's the outcome of:
 > if ain't broke don't fix it
 
 Companies invest considerable time and money to get things off the
-ground and make them work. I'd say even to **barely** make it work.
+ground and make them work. I'd say to **barely** make them work.
 
-Because, drumrol... most projects are completed beyond schedule and
+Because, drumroll... most projects are completed beyond schedule and
 over budget.
 
 As soon as the minimum acceptance is achieved there's zero or negative
