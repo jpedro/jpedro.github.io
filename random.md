@@ -54,3 +54,6 @@ allowed to touch the minimal amount of code, in the smallest amount
 of time. Say hello to cruft and the whole broken windows theory.
 
 And every 10 years, it's time for that big-bang rewrite.
+
+And that’s why everywhere you go, every company is "operating on a
+knife’s edge".
