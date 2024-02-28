@@ -2,9 +2,7 @@
 
 # `git-dd`
 
-My current favourite git alias is `dd`.
-
-What does it do?
+My current favourite git alias is `dd`. Cool, cool. What does it do?
 
 ```
 $ git help dd
@@ -16,8 +14,6 @@ $ git help dd
 > "Turtles all the way down"
 >
 > — Older flat eather
-
-What's `git deploy` then?
 
 ```
 $ git help deploy
@@ -37,14 +33,14 @@ That's quite a bit. Let's break it down.
   directory against its upstream.
 
 The last part is surrounded with a pair of dimmed and reset ansi codes
-(`\033[2m` and `\033[0m` respectively) to signal that output comes
-from the host, not your local machine.
+to signal that output comes from the host, not your local machine.
 
 
 ## Git aliases
 
 Git alias can host not only alias to 1. other git commands and flags,
-but also to 2. shell calls and 3. inline shell functions.
+but also to 2. shelled out calls and, abusing that, 3. inline shell
+functions.
 
 Basically we can abuse git as a task manager. And so we shall.
 
@@ -101,7 +97,7 @@ $ git yo
 Yo, dude! Have a 🍪
 ```
 
-If you feel bold, you pass an argument:
+If you feel bold, you can pass an argument:
 
 ```
 $ git yo a monad is a monoid in the category of endofunctors
@@ -111,9 +107,8 @@ Yo, a monad is a monoid in the category of endofunctors! Have a 🍪
 ![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
 
 Because inline functions are more flexible that shell commands.
-Conditionals, loops, arguments work better better, and you can
-download the internets and stream Veep. Right there, from the comfort
-of your local repo.
+Conditionals, loops, arguments work better. You can download the
+internets and stream Veep. From the comfort of your local repo.
 
 
 ## Git config
@@ -132,7 +127,7 @@ by a `.`.
 If you pass the `VALUE` it sets it. If you don't, it returns the stored
 value.
 
-For example, this local git repo has this section:
+For example, a local git repo has this section:
 
 ```ini
 [branch "master"]
@@ -152,13 +147,14 @@ For example:
 ```
 $ grep -A 1 hi .git/config
 [hi "are.you"]
-    ok = "FINE, I'VE NEVER BEEN BETTER!!!"
+    ok = "FINE, I'VE NEVER BEEN BETTER"
 
 $ git config hi.are.you.ok
-FINE, I'VE NEVER BEEN BETTER!!!
+FINE, I'VE NEVER BEEN BETTER
 ```
 
-There's no section or key checking by git. So you can add your own.
+There's no section or key checking by git. Just follow your heart, my
+friend.
 
 Armed with this knowledge we can understand now how this unholy
 contraption works.
@@ -224,12 +220,8 @@ I'm glad you probably asked that!
 You can put that function's code into an executable script `git-deploy`
 in your `$PATH` and git will use it when you call `git deploy`.
 
-How does that work?
-
-Well, git started as a
+How does that work? Well, git started as a
 [collection of small C binaries](https://github.com/git/git/tree/e83c5163316f89bfbde7d9ab23ca2e25604af290)
 named after their commands. For example `git write-tree` used to call
-`git-write-tree`.
-
-Any executables in your `$PATH` (even better, `$GIT_EXEC_PATH`)
-that start with `git-xxx` can be called as `git xxx`.
+`git-write-tree`. Any executables in your `$PATH` (even better,
+`$GIT_EXEC_PATH`) that start with `git-xxx` can be called as `git xxx`.
