@@ -1,6 +1,6 @@
 # Random Thoughts
 
-[<img src="https://img.shields.io/badge/Tag-mildly interesting-brightgreen">](/mildly/interesting)
+[<img src="https://img.shields.io/badge/Mildly-interesting-brightgreen">](/tags/mildly-interesting)
 
 
 ## Sounds
