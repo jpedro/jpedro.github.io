@@ -70,7 +70,7 @@ minimal amount of code, in the smallest amount of time. So, every
 10 years, "say hello to my little friend" (_cue Tony Montana_), aka
 that big-bang rewrite.
 
-![Chaos](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/chaos.png)
+![Chaos](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/chaos-2.png)
 
 And that’s why, everywhere you go, every company is "operating on a
 knife’s edge".
