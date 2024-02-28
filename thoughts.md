@@ -58,8 +58,8 @@ As soon as that minimum acceptance is achieved there's less than zero
 incentives to improve it. To polish it. Refactor it. But also to
 revisit the tech debt left behind. After the struggles to make it
 airborne, developers are keen to move to shinnier things. Managers
-to close projects as "Mission Accomplished" (_cue George W. Bush_)
-and end the apologising.
+to end the apologising and proclaim "Mission Accomplished"
+(_cue George W. Bush_).
 
 Touching code that barely works becomes a risky adventure, that only
 the approved go, and only when there’s a clear for it. Fresh meat
