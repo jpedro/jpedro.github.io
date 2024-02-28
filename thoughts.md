@@ -8,10 +8,9 @@
 Sometimes I wonder how much music or how many songs connect to us at a
 deeper level because they resemble sounds we hear in the womb.
 
-Can you see in there? No. Can you smell? Doubt. Can you touch? Not much
-room to flex. Can you taste? Also not much in there.
+Can you see in there? No. Can you smell, touch or taste? Prob not.
 
-Most, if not all, external stimuli must come through sounds.
+All external stimuli are sounds.
 
 Just think. In total darkness, floating in that warm sensory-deprived
 amniotic universe. It has be the ultimate ASMR experience.
