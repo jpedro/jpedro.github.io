@@ -148,7 +148,9 @@ Fine, I'VE NEVER BEEN BETTER
 ```
 
 There's no section or key checking by git. Just follow your heart, my
-friend. Armed with this knowledge we can understand now how this unholy
+friend. You got this!
+
+Armed with this knowledge we can understand now how this unholy
 contraption works.
 
 
