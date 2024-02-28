@@ -1,6 +1,20 @@
 # Random Thoughts
 
 
+## Music and the womb
+
+Sometimes I wonder how much music or how many songs connect to us at a
+deeper level because they resemble sounds we hear in the womb.
+
+Can you see in there? No. Can you touch? Probably but not much room to
+flex. Can you smell? Probably not. Can you taste? Probably not.
+
+Most if not all external stimuli must come through sound.
+
+Just think. In total darkness, floating in that warm sensory-deprived
+amniotic universe. It has be the ultimate ASMR experience.
+
+
 ## The most undersold value of the cloud
 
 Their single API. That's it.
