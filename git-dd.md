@@ -2,7 +2,7 @@
 
 # `git-dd`
 
-My current favourite git alias is `dd`. Cool cool. What does it do?
+I have this git alias called `dd`. Cool cool. What does it do?
 
 ```
 $ git help dd
@@ -45,7 +45,7 @@ functions.
 Basically we can abuse git as a task manager. And so we shall.
 
 
-### 1. Command alias
+### 1. Subcommand alias
 
 ```ini
 [alias]
@@ -77,7 +77,7 @@ it will use the alias we created above `git me` and will resolve the
 upstream remote name for the current branch, if it exists.
 
 
-### 3. Shell calls but using functions
+### 3. Shell functions
 
 ```ini
 [alias]
