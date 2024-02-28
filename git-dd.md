@@ -2,7 +2,7 @@
 
 # `git-dd`
 
-My current favourite git alias is `dd`. Cool, cool. What does it do?
+My current favourite git alias is `dd`. Cool cool. What does it do?
 
 ```
 $ git help dd
