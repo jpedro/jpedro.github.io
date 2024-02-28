@@ -215,7 +215,7 @@ sync mechanism. Fan. Tas. Tic.
 
 ## Is there a better way?
 
-I'm glad you probably asked that!
+I'm glad you probably asked!
 
 You can put that function's code into an executable script `git-deploy`
 in your `$PATH` and git will use it when you call `git deploy`.
