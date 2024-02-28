@@ -20,7 +20,7 @@ $ git help deploy
 'deploy' is aliased to '!f(){ host=$(git config deploy.host); dir=$(git config deploy.dir); if [[ $host = '' ]] || [[ $dir = '' ]] ; then echo 'Git config deploy is not configured.'; return; fi; git pp; echo '\033[2m'; ssh -A $host 'cd '$dir' && git ff && git log -1'; echo '\033[0m' ;};f'
 ```
 
-That's quite a bit. Let's break it down.
+Let's break it down.
 
 - The `!f() { ... ;};f` sets the git alias to call a shell command with
   an inline function `f`, that we call immediately. Inside it:
@@ -215,7 +215,7 @@ sync mechanism. Fan. Tas. Tic.
 
 ## Is there a better way?
 
-I'm glad you probably asked!
+I'm glad you probably asked.
 
 You can put that function's code into an executable script `git-deploy`
 in your `$PATH` and git will use it when you call `git deploy`.
