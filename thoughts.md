@@ -52,7 +52,7 @@ And it makes sense, when you think about it. It's the outcome of:
 Companies invest considerable time and money to get things off the
 ground and make them work. I say to **barely** make them work.
 
-Because, most projects are completed beyond schedule and over budget.
+Because most projects are completed beyond schedule and over budget.
 
 As soon as that minimum acceptance is achieved there's less than zero
 incentives to improve it. To polish it. Refactor it. But also to
