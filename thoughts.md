@@ -12,7 +12,7 @@ Can you see in there? No. Can you smell, touch or taste? Prob not.
 
 All external stimuli are sounds.
 
-Just think. In total darkness, floating in that dark, warm
+Just think. In total darkness, floating in that dark, warm,
 sensory-deprived amniotic universe. It has be the ultimate ASMR
 experience.
 
