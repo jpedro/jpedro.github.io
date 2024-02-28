@@ -15,9 +15,9 @@ Just think. In total darkness, floating in that warm sensory-deprived
 amniotic universe. It has be the ultimate ASMR experience.
 
 
-## The most undersold value of the cloud
+## Undersold
 
-Their single API. That's it.
+The most undersold value of the cloud is their unified API. That's it.
 
 Why so important? Because AU. TO. MA. TION.
 
@@ -29,16 +29,16 @@ Most ad-hoc scripts and home brewed provisioning tools can't even agree
 on a standard for the _sand_ that builds the bricks.
 
 
-## Sometimes you don't need a cloud
+## Don't
 
-Deploy that app straight into a bare host. Use unix sockets, avoid the
-whole TCP/IP network overheads.
+Sometimes you don't need a cloud. Deploy that app straight into a bare
+host. Use unix sockets, avoid the whole TCP/IP network overheads.
 
 You better pray the backups are working when things fail (which they
 will) but until then, it's the best performance you will _ever_ get.
 
 
-## On a knife's edge
+## Knife's edge
 
 [In this comment](https://news.ycombinator.com/item?id=39365187#39366352)
 someone remarked:
