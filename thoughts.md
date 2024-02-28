@@ -56,8 +56,8 @@ Because most projects are completed beyond schedule and over budget.
 
 As soon as that minimum acceptance is achieved there's less than zero
 incentives to improve it. To polish it. Refactor it. But also to
-revisit the tech debt left behind. After the struggles to barely make
-it work, developers are keen to move to shinnier things. Managers
+revisit the tech debt left behind. After the struggles to make it
+airborne, developers are keen to move to shinnier things. Managers
 to close projects as "Mission Accomplished" (_cue George W. Bush_)
 and end the apologising.
 
