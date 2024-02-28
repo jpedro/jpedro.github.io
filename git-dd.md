@@ -111,23 +111,18 @@ arguments work better. You can download the internets and stream Veep.
 From the comfort of your local repo.
 
 
-## Git config
+## Git Config
 
 Git config is a convenient key value store in
-[INI format](https://en.wikipedia.org/wiki/INI_file).
-
-You can store values both in the local repo's `.git/config` or in the
-global `~/.gitconfig` file. The command is unsurprising:
+[INI format](https://en.wikipedia.org/wiki/INI_file). You can store
+values both in the local repo's `.git/config` or in the global
+`~/.gitconfig` file. The command is unsurprising:
 
     git config ENTRY [VALUE]
 
 The `ENTRY` is formed by an INI `section` and an INI `key` name, joined
-by a `.`.
-
-If you pass the `VALUE` it sets it. If you don't, it returns the stored
-value.
-
-For example, a local git repo has this section:
+by a `.`. If you pass the `VALUE` it sets it. If you don't, it returns
+the stored value. For example, a local git repo has this section:
 
 ```ini
 [branch "master"]
@@ -136,7 +131,6 @@ For example, a local git repo has this section:
 ```
 
 Note how the INI section name has quotes when composed of 2 words.
-
 Which is what we used for the `git parent` alias above. In that case,
 the `ENTRY` is `branch.master.remote` and `branch.master` is the INI
 section, `remote` being the INI key.
@@ -147,16 +141,14 @@ For example:
 ```
 $ grep -A 1 hi .git/config
 [hi "are.you"]
-    ok = "FINE, I'VE NEVER BEEN BETTER"
+    ok = "Fine, I'VE NEVER BEEN BETTER"
 
 $ git config hi.are.you.ok
-FINE, I'VE NEVER BEEN BETTER
+Fine, I'VE NEVER BEEN BETTER
 ```
 
 There's no section or key checking by git. Just follow your heart, my
-friend.
-
-Armed with this knowledge we can understand now how this unholy
+friend. Armed with this knowledge we can understand now how this unholy
 contraption works.
 
 
@@ -191,9 +183,7 @@ f
 
 It loads and checks if the `host` and `dir` keys are present in the
 `deploy` section and then ssh's into the host and does `git ff` in
-that directory.
-
-Here's `git ff` along with the rest of the gang:
+that directory. Here's `git ff` along with the rest of the gang:
 
 ```ini
 [alias]
@@ -209,8 +199,8 @@ Here's `git ff` along with the rest of the gang:
     alias    = "!git --no-pager config -l | grep 'alias.' | cut -c7- | awk -F= '{ printf \"\\033\\[32;1m%-20s\\033\\[0m%s\\n\", $1, $2 }'"$2}'"
 ```
 
-So not only are we abusing git as a task manager, we are using it as a code
-sync mechanism. Fan. Tas. Tic.
+So not only are we abusing git as a task manager, we are using it as a
+code sync mechanism. Fan. Tas. Tic.
 
 
 ## Is there a better way?
