@@ -34,7 +34,7 @@ on a standard for the _sand_ that builds the bricks.
 ## Don't
 
 Sometimes you don't need a cloud. Deploy that app straight into a bare
-host. Use unix sockets, avoid the whole TCP/IP network overheads.
+host. Use unix sockets. Avoid the TCP/IP network overheads.
 
 You better pray the backups are working when things fail (which they
 will) but until then, it's the best performance you will _ever_ get.
