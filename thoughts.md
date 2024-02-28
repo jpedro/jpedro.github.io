@@ -9,7 +9,7 @@ deeper level because they resemble sounds we hear in the womb.
 Can you see in there? No. Can you smell? Doubt. Can you touch? Not much
 room to flex. Can you taste? Also not much in there.
 
-Most, if not all, external stimuli must come through sound.
+Most, if not all, external stimuli must come through sounds.
 
 Just think. In total darkness, floating in that warm sensory-deprived
 amniotic universe. It has be the ultimate ASMR experience.
