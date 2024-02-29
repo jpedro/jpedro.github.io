@@ -10,7 +10,7 @@
 - [Useful OpenSSL commands](openssl.md)
 - [Markdown](markdown.md)
 - [`git-dd`](git-dd.md)
-- [Random Thoughts](thoughts.md)
+- [Random Stuff](stuff.md)
 - [Hundreds and Hundreds](hundreds.md)
 <br />
 <br />
