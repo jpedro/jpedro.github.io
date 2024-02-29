@@ -3,6 +3,19 @@
 [<img src="https://img.shields.io/badge/Mildly-Interesting-brightgreen">](/tags/mildly-interesting)
 
 
+## Sand in my shoe
+
+From my limited viewpoint, the worst managers are the one that were
+very technical at some point. And it's worst if this happened recently.
+
+I know I would be a terrible manager. Because I'm fussy about code. A
+comma out of place is a like a small sand in my shoe. I might not
+remove it immediately but my brain _knows_ it's there.
+
+And when you code, you have absolute control over every character you
+type. That translate poorly when managing people.
+
+
 ## Boredom
 
 Boredom is severly underrated. (I know, that word comes here a lot.)
