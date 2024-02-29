@@ -7,8 +7,6 @@
 - [Bash Dispatch](dispatch.md)
 - [My Favourite Unit](unit.md)
 - [Self Hosting](hosting.md)
-- [Useful OpenSSL commands](openssl.md)
-- [Markdown](markdown.md)
 - [`git-dd`](git-dd.md)
 - [Random Stuff](stuff.md)
 - [Hundreds and Hundreds](hundreds.md)
