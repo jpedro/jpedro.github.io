@@ -115,9 +115,10 @@ amniotic universe. It has be the ultimate ASMR experience.
 
 ## Undersold
 
-The most undersold value of the cloud is their unified API. That's it.
+The most undersold value of the cloud is their unified API. Why so
+important?
 
-Why so important? Because AU. TO. MA. TION.
+Because AU. TO. MA. TION.
 
 Those API calls are the smallest lego pieces. Atop that, you can
 assemble walls, rooms, flats, houses, buildings. Whole cities in the
