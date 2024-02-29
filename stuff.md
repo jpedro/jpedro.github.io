@@ -115,8 +115,7 @@ amniotic universe. It has be the ultimate ASMR experience.
 
 ## Undersold
 
-The most undersold value of the cloud is their unified API. Why so
-important?
+The most undersold value of the cloud is their unified API. Why?
 
 Because AU. TO. MA. TION.
 
