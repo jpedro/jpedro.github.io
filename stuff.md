@@ -188,3 +188,5 @@ And that’s why, everywhere you go, every company is "operating on a
 knife’s edge".
 
 - [// we are such morons](http://atdt.freeshell.org/k5/story_2004_2_15_71552_7795.html)
+
+- [Swear words in the kernel](https://www.vidarholen.net/contents/wordcount/)
