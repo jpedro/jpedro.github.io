@@ -6,8 +6,8 @@
 
 - [Bash Dispatch](dispatch.md)
 - [My Favourite Unit](unit.md)
+- [`git-dd`](git dd.md)
 - [Self Hosting](hosting.md)
-- [`git-dd`](git-dd.md)
 - [Random Stuff](stuff.md)
 - [Hundreds and Hundreds](hundreds.md)
 <br />
