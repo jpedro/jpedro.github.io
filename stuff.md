@@ -3,24 +3,76 @@
 [<img src="https://img.shields.io/badge/Mildly-Interesting-brightgreen">](/tags/mildly-interesting)
 
 
+## Boredom
+
+Boredom is severly underrated. (I know, that word comes here a lot.)
+
+Most people think it's a bad thing. Being bored is no fun but boredom
+is. I think it's critical to human development, both at individual and
+civilisation level. When people are bored they get restless and need
+to do something about it. Being constantly bored at your job means soon
+enough you will start looking for other things to do or improve what
+you do do.
+
+If we didn't get bored we would just happily continue do whatever
+we did. We would still leave in caves. Happily. But no.
+
+Our brains demands incoming information to the point of
+[even turning paranoid](https://www.bbc.com/future/article/20170526-inside-the-quietest-place-on-earth),
+desperately compensating for the lack of stimuli. It's a
+marvel!
+
+All this to say, **we need more boredom**. Our societies barely allow
+room for this. Everyone seems too busy all the time. Hard to reach
+that the magical moment where the brain starts to see patterns we
+missed (whether they are real or immaginary is another topic).
+
+I read that students in schools that have no homework perform better.
+That workers with 4+ weeks of vacations and free wealthcare do not
+perform worse. The brain doesn't just need sleep. It also needs
+downtime during the day. Then those brains are sorted and ready for new
+information.
+
+<!--
+And that's why a 4 work day week might be a good thing.
+-->
+
+<!--
+I get this feeling civilisation peaked around the 1800's. The music,
+the arts, the sciences. Improvements after are huge on absolute
+terms but in relative terms, in orders of magnitute to the previous
+iteration, I think we are slowly slowing down.
+
+There's an optimal point between access to information and overflooded
+with it. An optimal point between fight for survival all the time and
+-->
+
 ## Coding
 
 Coding does something to your brain. Basically it structures it.
 
 Maybe other activities do that too but if you code long enough you will
-inevitably arrive at big hairy problems you created and fix your own
-entangled code.
+inevitably arrive at big hairy problems you created and you will need
+to fix your own entangled code.
 
-Coding is easy. Everyone can learn it in a week or less. But organising
-code, specially at scale... that's the real "learnings" (in corporate
-speech).
+Coding itself is easy. Everyone can learn it in a week or less. But
+_organising_ code, specially at scale, that's the interest.
 
-Writing one or more functions is trivial but what should be inside those
-functions?
+I met smart, knowledgeable people working in operations but when I read
+their code I got a gut reaction to it. It was unmanageable. Unreusable.
 
-I met some smart people working in operations that were great at
-knowing infrastructure like no one else. But when I read their code I
-got gut reactions to it.
+Maybe it's how their messy brains work. But I keep finding the people
+that do the best work in operations/infrastructure/cloud were for a
+long enough time developers. They think in layers and single
+responsabilities, reusability and decoupling.
+
+Everyone should be exposed at coding. Coding should be mandatory at
+school, even if just for a few lessons. Sometimes it doesn't stick. For
+others, it can become addictive and it will change how they approach
+problems.
+
+Programming languages are the midway between human languages and
+math.
 
 
 ## Series
