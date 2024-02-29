@@ -28,9 +28,9 @@ that the magical moment where the brain starts to see patterns we
 missed (whether they are real or immaginary is another topic).
 
 Students in schools that have no homework perform better. Companies with
-4+ weeks of vacations and free wealthcare do not perform worse. The
-brain doesn't just need sleep. It also needs downtime during the day.
-Then those brains are sorted and ready for new intakes.
+4+ weeks of vacations and countries with free wealthcare are not less
+productive. The brain doesn't just need sleep. It also needs downtime
+during the day. Then those brains are sorted and ready for new intakes.
 
 <!--
 And that's why a 4 work day week might be a good thing.
