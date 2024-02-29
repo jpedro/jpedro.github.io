@@ -1,6 +1,6 @@
 <!-- tags: git, shell -->
 
-# `git-dd`
+# `git dd`
 
 I have this git alias called `dd`. Cool cool. What does it do?
 
