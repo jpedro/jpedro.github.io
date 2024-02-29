@@ -3,6 +3,26 @@
 [<img src="https://img.shields.io/badge/Mildly-Interesting-brightgreen">](/tags/mildly-interesting)
 
 
+## Coding
+
+Coding does something to your brain. Basically it structures it.
+
+Maybe other activities do that too but if you code long enough you will
+inevitably arrive at big hairy problems you created and fix your own
+entangled code.
+
+Coding is easy. Everyone can learn it in a week or less. But organising
+code, specially at scale... that's the real "learnings" (in corporate
+speech).
+
+Writing one or more functions is trivial but what should be inside those
+functions?
+
+I met some smart people working in operations that were great at
+knowing infrastructure like no one else. But when I read their code I
+got gut reactions to it.
+
+
 ## Series
 
 - Veep: it's an amazing satirical series. Fast punch lines, a few

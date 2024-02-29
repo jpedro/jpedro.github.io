@@ -1,5 +1,6 @@
 <!-- tags: writting, markdown -->
 <!-- title: Markdown -->
+<!-- hidden -->
 
 [comment]: <> (This is a comment, it will not be included)
 [comment]: <> (in  the output file unless you use it in)

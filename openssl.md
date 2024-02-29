@@ -1,4 +1,5 @@
 <!-- tags: shell, security -->
+<!-- hidden -->
 
 # Useful OpenSSL commands
 
