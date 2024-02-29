@@ -140,6 +140,8 @@ a service or a platform.
 Most ad-hoc scripts and home brewed provisioning tools can't even agree
 on a standard for the _sand_ that builds the bricks.
 
+(Totally unrelated: [I have a bridge to sell you](/hosting))
+
 
 ## Don't
 
