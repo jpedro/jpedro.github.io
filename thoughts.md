@@ -35,7 +35,7 @@ deeper level because they resemble sounds we hear in the womb.
 
 Can you see in there? No. Can you smell, touch or taste? Prob not.
 
-All external stimuli are sounds.
+The sole source of external stimuli are sounds.
 
 Just think. In total darkness, floating in that warm, sensory-deprived
 amniotic universe. It has be the ultimate ASMR experience.
