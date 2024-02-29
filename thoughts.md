@@ -3,6 +3,31 @@
 [<img src="https://img.shields.io/badge/Mildly-Interesting-brightgreen">](/tags/mildly-interesting)
 
 
+## Series
+
+- Veep: it's an amazing satirical series. Fast punch lines, a few
+  subtle jokes in an ocean of unafraid, pure, brutal insults. Nev-AD-a!
+  #NotMe
+
+- Silicon Valley: one of the most funny, realistic, ironic peeks into
+  the startup world. Well thought and refreshingly up-to-date, where
+  the writers knew the end before opening the lenses for the first shot.
+  Halt and Catch Fire is another peek is but this one is not a comedy.
+  Irony happens when you try so much to avoid something that you
+  inevitably fall doing exactly it. It's really hard to plot right
+  and Silicon Valley is full of them.
+
+- The Americans: underrated spy series. Slow burning, feels realistic.
+  Humane without getting mushy.
+
+- Succession: many people's favourite but the end let too many loose
+  ends unsolved. Feels closer to reality than Billions. Billions is how
+  billionaries think they are. Succession how they really are.
+
+- Peep Show: another underrated cringe series but not for everyone.
+  Same creator as Succession
+
+
 ## Sounds
 
 Sometimes I wonder how much music or how many songs connect to us at a
