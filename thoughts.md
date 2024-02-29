@@ -25,7 +25,7 @@
   billionaries think they are. Succession how they really are.
 
 - Peep Show: another underrated cringe series but not for everyone.
-  Same creator as Succession
+  Same creator as Succession.
 
 
 ## Sounds
