@@ -11,7 +11,7 @@ transaction happened.
 
 I know I would be a terrible manager. Because I'm fussy about code. A
 comma or a space out of place done by someone else is a like sand in
-my shoe. I might not remove it immediately but my brain _knows_ it's
+my shoe. I might not remove it immediately but my brain _knoooows_ it's
 there.
 
 When you code, you have absolute control over every character you type.
