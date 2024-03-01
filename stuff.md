@@ -1,4 +1,4 @@
-# Random Stuff
+# Random
 
 [<img src="https://img.shields.io/badge/Mildly-Interesting-brightgreen">](/tags/mildly-interesting)
 
