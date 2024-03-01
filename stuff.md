@@ -8,7 +8,7 @@
 The internets tell me mastery is spending 10 thousand hours doing
 something. Sweet but I prefer this:
 
-It's when you made all the possible mistakes you can. Several times.
+It's when you made all the possible mistakes you can. Many, many times.
 
 Even then, maybe...
 
