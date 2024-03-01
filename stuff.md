@@ -32,14 +32,13 @@ you do do.
 If we didn't get bored we would just happily continue do whatever
 we did. We would still leave in caves. Happily. But no.
 
-Our brains demands incoming information to the point of
+Our brains crave incoming information to the point of
 [even turning paranoid](https://www.bbc.com/future/article/20170526-inside-the-quietest-place-on-earth),
-desperately compensating for the lack of stimuli. It's a
-marvel!
+desperately compensating for the lack of it. It's a marvel!
 
-All this to say, **we need more boredom**. Our societies barely allow
-room for this. Everyone seems too busy all the time. Hard to reach
-that the magical moment where the brain starts to see patterns we
+All this to say, **we need more boredom**. Our societies don't allow
+muich room for this. Everyone seems too busy all the time. Hard to
+reach that magical moment where the brain starts to see patterns we
 missed (whether they are real or immaginary is another topic).
 
 Students in schools that have no homework perform better. Companies with
@@ -118,11 +117,10 @@ math.
 ## Sounds
 
 Sometimes I wonder how much music or how many songs connect to us at a
-deeper level because they resemble sounds we hear in the womb.
+deeper level because they resemble sounds we hear in the womb. Can we
+see, smell, touch, taste in there? No, no, and probably not.
 
-Can you see in there? No. Can you smell, touch or taste? Prob not.
-
-The sole source of external stimuli are sounds.
+The sole source of stimuli are sounds.
 
 Just think. In total darkness, floating in that warm, sensory-deprived
 amniotic universe. It has be the ultimate ASMR experience.
@@ -142,7 +140,7 @@ a service or a platform.
 Most ad-hoc scripts and home brewed provisioning tools can't even agree
 on a standard for the sand that builds the bricks.
 
-(Totally unrelated: [I have a bridge to sell you](/hosting))
+Totally unrelated: [I have a bridge to sell you](/hosting).
 
 
 ## Don't
