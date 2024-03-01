@@ -7,7 +7,7 @@
 
 From my limited viewpoint, the worst managers are the one that were
 very technical at some point. And it's worse the more recently that
-transaction happened.
+transition happened.
 
 I'm not bragging but I know I would be a terrible manager. Because I'm
 fussy about code. A comma or a space out of place done by someone else
