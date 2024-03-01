@@ -12,7 +12,7 @@ transaction happened.
 I'm not bragging but I know I would be a terrible manager. Because I'm
 fussy about code. A comma or a space out of place done by someone else
 is a like a small particle in my shoe. I might not remove it
-immediately but my brain _knoooows_ it's there.
+immediately but my brain knows it's there.
 
 When you code, you have absolute control over every character you type.
 That translate poorly when managing people.
@@ -28,7 +28,7 @@ civilisation level. When people are bored they get restless and need
 to do something about it. Being constantly bored at your job means soon
 enough you will start looking for other things to do or improve what
 you do do. If we didn't get bored we would just happily continue do
-whatever we did. We would still live in caves. Happily. But no.
+whatever we did. We would still live in caves. Happily. But nooooo.
 Some dude decided he could build a roof. The gall!
 
 Our brains crave incoming information to the point of
