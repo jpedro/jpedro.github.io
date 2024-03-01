@@ -3,16 +3,16 @@
 [<img src="https://img.shields.io/badge/Mildly-Interesting-brightgreen">](/tags/mildly-interesting)
 
 
-## Sand in my shoe
+## In my shoe
 
 From my limited viewpoint, the worst managers are the one that were
 very technical at some point. And it's worse the more recently that
 transaction happened.
 
 I know I would be a terrible manager. Because I'm fussy about code. A
-comma or a space out of place done by someone else is a like sand in
-my shoe. I might not remove it immediately but my brain _knoooows_ it's
-there.
+comma or a space out of place done by someone else is a like a small
+particle in my shoe. I might not remove it immediately but my brain
+_knoooows_ it's there.
 
 When you code, you have absolute control over every character you type.
 That translate poorly when managing people.
