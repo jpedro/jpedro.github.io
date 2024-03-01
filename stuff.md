@@ -37,9 +37,9 @@ desperately compensating for the lack of it. It's a marvel!
 All this to say, **we need more boredom**. Our societies don't allow
 much room for this. Everyone seems too busy, all the time. We all have
 a list of things we want to read, test somewhere. Probably on pinned
-browser tabs. Hard to reach that magical moment where the brain starts
-to see patterns we missed (whether they are real or immaginary is
-another topic).
+browser tabs. Hard to reach that magical moment where the brain
+spontaneously starts to look for patterns (whether they are real or
+immaginary is another story).
 
 Students in schools that have no homework perform better. Companies with
 4+ weeks of paid vacations and countries with free wealthcare are not
