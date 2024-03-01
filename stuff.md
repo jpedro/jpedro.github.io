@@ -153,7 +153,7 @@ Totally unrelated: [I have a bridge to sell you](/hosting).
 ## Don't
 
 Sometimes you don't need a cloud. Deploy that app straight into a bare
-host. Use unix sockets. Avoid the TCP/IP network overheads.
+host. Use unix sockets. Avoid TCP/IP network overheads.
 
 You better pray the backups are working when things fail (which they
 will) but until then, it's the best performance you will _ever_ get.
