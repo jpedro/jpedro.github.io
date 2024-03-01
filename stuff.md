@@ -20,7 +20,7 @@ That translate poorly when managing people.
 
 ## Boredom
 
-Boredom is severly underrated. (I know, that word comes here a lot.)
+Boredom is severly underrated.
 
 Most people think it's a bad thing. Being bored is no fun but boredom
 is. I think it's critical to human development, both at individual and
