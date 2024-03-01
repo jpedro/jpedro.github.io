@@ -44,14 +44,14 @@ from popping randomly in the shower.
 
 Students in schools that have no homework perform better. Companies with
 4+ weeks of paid vacations and countries with free wealthcare are not
-less productive. Germany has one of the highest productivity ratios in
-the world and one of the shortest week hours on average. Concerns after
-reducing the
+less productive. Concerns after reducing the
 [work week to 4 days](https://www.euronews.com/next/2024/02/02/the-four-day-week-which-countries-have-embraced-it-and-how-s-it-going-so-far)
 were more centered on fairness across industries than productivity
-discussions.
+discussions. Germany has one of the highest productivity ratios in
+the world and one of the shortest week hours on average. This is a case
+of "not despite of, because of".
 
-This is a case of "not despite of, because of". Let's make Wednesday the
+Let's make Wednesday the
 [Little Saturday](https://naob.no/ordbok/lillel%C3%B8rdag). For reals.
 
 <!--
