@@ -45,7 +45,7 @@ from popping randomly in the shower.
 Students in schools that have no homework perform better. Companies with
 4+ weeks of paid vacations and countries with free wealthcare are not
 less productive. Brains don't just need sleep. They also need downtime
-during the day. After sorting themselves out they are ready fresh
+during the day. After sorting themselves out they are ready for fresh
 intakes.
 
 <!--
