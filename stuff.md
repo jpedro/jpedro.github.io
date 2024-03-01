@@ -117,8 +117,8 @@ math.
   ends. Feels closer to reality than Billions. You could say, Billions
   is how see themselves. Succession how they really are.
 
-- Peep Show: another underrated cringe series but not for everyone.
-  Same creator as Succession.
+- Peep Show: another underrated cringe series. Not for everyone. Same
+  creator as Succession.
 
 
 ## Sounds
@@ -141,8 +141,8 @@ Because AU. TO. MA. TION.
 
 Those API calls are the smallest lego pieces. Atop that, you can
 assemble walls, rooms, flats, houses, buildings. Whole cities in the
-cloud can be captured in a git repo, automated, packaged in a library,
-a service or a platform.
+cloud can be captured in a repo, automated, packaged as a library,
+a cli or some tool.
 
 Most ad-hoc scripts and home brewed provisioning tools can't even agree
 on a standard for the sand that builds the bricks.
