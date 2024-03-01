@@ -52,31 +52,25 @@ that magical moment where the brain spontaneously starts to look for
 patterns (real or immaginary). Stress also halts those lighting bulbs
 from popping randomly in the shower.
 
-Students in schools that have no homework perform better. Companies with
-4+ weeks of paid vacations and countries with free wealthcare are not
+Students in schools that have no homework perform better. Countries with
+4+ weeks of paid vacations and a robust, free social welfare are not
 less productive. Concerns after reducing the
 [work week to 4 days](https://www.euronews.com/next/2024/02/02/the-four-day-week-which-countries-have-embraced-it-and-how-s-it-going-so-far)
 were more centered on fairness across industries than productivity
 discussions. Germany has one of the highest productivity ratios in
-the world and one of the shortest average working hours per week. This
-is a case of "Not despite of. Because of".
+the world and one of the shortest average week working hours. This is a
+case of "Not despite of. Because of".
 
 Let's make Wednesday the
 [Little Saturday](https://naob.no/ordbok/lillel%C3%B8rdag). For reals.
-
-<!--
-And that's why a 4 work day week might be a good thing.
--->
 
 <!--
 I get this feeling civilisation peaked around the 1800's. The music,
 the arts, the sciences. Improvements after are huge on absolute
 terms but in relative terms, in orders of magnitute to the previous
 iteration, I think we are slowly slowing down.
-
-There's an optimal point between access to information and overflooded
-with it. An optimal point between fight for survival all the time and
 -->
+
 
 ## Coding
 
