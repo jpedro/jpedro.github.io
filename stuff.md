@@ -3,6 +3,16 @@
 [<img src="https://img.shields.io/badge/Mildly-Interesting-brightgreen">](/tags/mildly-interesting)
 
 
+## Mastery
+
+The internets tell me mastery is spending 10 thousand hours doing
+something. Sweet but I prefer this:
+
+It's when you made all the possible mistakes you can. Several times.
+
+Even then, maybe...
+
+
 ## In my shoe
 
 From my limited viewpoint, the worst managers are the one that were
