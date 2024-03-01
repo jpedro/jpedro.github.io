@@ -27,25 +27,25 @@ is. I think it's critical to human development, both at individual and
 civilisation level. When people are bored they get restless and need
 to do something about it. Being constantly bored at your job means soon
 enough you will start looking for other things to do or improve what
-you do do.
-
-If we didn't get bored we would just happily continue do whatever
-we did. We would still leave in caves. Happily. But no.
+you do do. If we didn't get bored we would just happily continue do
+whatever we did. We would still leave in caves. Happily. But no.
 
 Our brains crave incoming information to the point of
 [even turning paranoid](https://www.bbc.com/future/article/20170526-inside-the-quietest-place-on-earth),
 desperately compensating for the lack of it. It's a marvel!
 
 All this to say, **we need more boredom**. Our societies don't allow
-muich room for this. Everyone seems too busy all the time. Hard to
-reach that magical moment where the brain starts to see patterns we
-missed (whether they are real or immaginary is another topic).
+much room for this. Everyone seems too busy, all the time. We all have
+a list of things we want to read, test somewhere. Probably on pinned
+browser tabs. Hard to reach that magical moment where the brain starts
+to see patterns we missed (whether they are real or immaginary is
+another topic).
 
 Students in schools that have no homework perform better. Companies with
 4+ weeks of paid vacations and countries with free wealthcare are not
 less productive. The brain doesn't just need sleep. It also needs
 downtime during the day. Then they sorted themselves out and are ready
-for new intakes.
+fresh intakes.
 
 <!--
 And that's why a 4 work day week might be a good thing.
