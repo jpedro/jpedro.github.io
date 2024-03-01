@@ -33,7 +33,7 @@ Some dude decided he could build a roof. The gall!
 
 Our brains crave incoming information to the point of
 [even turning paranoid](https://www.bbc.com/future/article/20170526-inside-the-quietest-place-on-earth),
-desperately compensating for the lack of it. It's a marvel!
+desperately compensating the lack of it. It's a marvel!
 
 **We need more boredom**. Our societies don't leave much room for it.
 Everyone seems busy, all the time. We all have a list of things we want
