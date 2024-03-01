@@ -43,9 +43,9 @@ immaginary is another story).
 
 Students in schools that have no homework perform better. Companies with
 4+ weeks of paid vacations and countries with free wealthcare are not
-less productive. The brain doesn't just need sleep. It also needs
-downtime during the day. Then they sorted themselves out and are ready
-fresh intakes.
+less productive. Brains don't just need sleep. It also needs downtime
+during the day. Then they sorted themselves out and are ready fresh
+intakes.
 
 <!--
 And that's why a 4 work day week might be a good thing.
