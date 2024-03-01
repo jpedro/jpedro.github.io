@@ -28,7 +28,7 @@ civilisation level. When people are bored they get restless and need
 to do something about it. Being constantly bored at your job means soon
 enough you will start looking for other things to do or improve what
 you do do. If we didn't get bored we would just happily continue do
-whatever we did. We would still leave in caves. Happily. But no.
+whatever we did. We would still live in caves. Happily. But no.
 Some dude decided he could build a roof. The gall!
 
 Our brains crave incoming information to the point of
