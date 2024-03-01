@@ -49,8 +49,8 @@ desperately compensating the lack of it. It's a marvel!
 Everyone seems busy, all the time. We all have a list of things we want
 to read, test somewhere. Probably on pinned browser tabs. Hard to reach
 that magical moment where the brain spontaneously starts to look for
-patterns (real or immaginary). Stress also halts those lighting bulbs
-from popping randomly in the shower.
+patterns. Stress also halts those lighting bulbs from popping randomly
+in the shower.
 
 Students in schools that have no homework perform better. Countries with
 4+ weeks of paid vacations and a robust, free social welfare are not
