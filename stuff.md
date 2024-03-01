@@ -29,7 +29,7 @@ to do something about it. Being constantly bored at your job means soon
 enough you will start looking for other things to do or improve what
 you do do. If we didn't get bored we would just happily continue do
 whatever we did. We would still leave in caves. Happily. But no.
-Some crazy dude decided to build a roof. The gall!
+Some crazy dude decided he could build a roof. The gall!
 
 Our brains crave incoming information to the point of
 [even turning paranoid](https://www.bbc.com/future/article/20170526-inside-the-quietest-place-on-earth),
