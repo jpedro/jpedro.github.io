@@ -39,7 +39,8 @@ much room for this. Everyone seems too busy, all the time. We all have
 a list of things we want to read, test somewhere. Probably on pinned
 browser tabs. Hard to reach that magical moment where the brain
 spontaneously starts to look for patterns (whether they are real or
-immaginary is another story).
+immaginary is another story). Also, stress halts those lighting bulbs
+popping randomly in the shower.
 
 Students in schools that have no homework perform better. Companies with
 4+ weeks of paid vacations and countries with free wealthcare are not
