@@ -44,9 +44,17 @@ from popping randomly in the shower.
 
 Students in schools that have no homework perform better. Companies with
 4+ weeks of paid vacations and countries with free wealthcare are not
-less productive. Brains don't just need sleep. They also need downtime
+less productive. Germany has one of the highest productivity rations in
+the world and one of the shortest week hours on average. Concerns after
+reducing the
+[work week to 4 days](https://www.euronews.com/next/2024/02/02/the-four-day-week-which-countries-have-embraced-it-and-how-s-it-going-so-far)
+were more centered on fairness across industries than productivity
+discussions. Brains don't just need sleep. They also need downtime
 during the day. After sorting themselves out they are ready for fresh
 intakes.
+
+Let's make Wednesday the
+[Little Saturday](https://naob.no/ordbok/lillel%C3%B8rdag). For reals.
 
 <!--
 And that's why a 4 work day week might be a good thing.
