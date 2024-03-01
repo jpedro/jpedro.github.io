@@ -191,4 +191,4 @@ knife’s edge".
 
 - [Swear words in the kernel](https://www.vidarholen.net/contents/wordcount/)
 
-- [Do you need more swear?](https://eeggs.com/items/37700.html)
+- [Do you need more swear? I know you do](https://eeggs.com/items/37700.html)
