@@ -73,8 +73,8 @@ with it. An optimal point between fight for survival all the time and
 Coding does something to your brain. Basically it structures it.
 
 Maybe other activities do that too but if you code long enough you will
-inevitably arrive at big hairy problems you created and you will need
-to fix your own entangled code.
+inevitably arrive at a hairy mess you created and you will need to fix
+your own entangled code.
 
 Coding itself is easy. Everyone can learn it in a week or less. But
 _organising_ code, specially at scale, that's the interest.
@@ -85,12 +85,13 @@ their code I got a gut reaction to it. It was unmanageable. Unreusable.
 Maybe it's how their messy brains work. But I keep finding the people
 that do the best work in operations/infrastructure/cloud were for a
 long enough time developers. They think in layers and single
-responsabilities, reusability and decoupling.
+responsabilities, reusability and decoupling. Naming, punctation,
+attention to detail matter, because compilers don't tolerate typos.
 
 Everyone should be exposed at coding. Coding should be mandatory at
 school, even if just for a few lessons. Sometimes it doesn't stick. For
 others, it can become addictive and it will change how they approach
-problems.
+problems. It's a good mental tool.
 
 Programming languages are the midway between human languages and
 math.
@@ -105,10 +106,10 @@ math.
 - Silicon Valley: one of the most funny, realistic, ironic peeks into
   the startup world. Well thought and refreshingly up-to-date, where
   the writers knew the end before opening the lenses for the first shot.
-  Halt and Catch Fire is another peek it's not a comedy. Irony happens
-  when you try so hard to avoid something that you inevitably fall doing
-  exactly that. It's really hard to plot right and Silicon Valley is
-  full of them.
+  Halt and Catch Fire is another peek but it's not a comedy. Irony
+  happens when you try so hard to avoid something that you inevitably
+  fall doing exactly that. It's really hard to plot right and Silicon
+  Valley is full of them.
 
 - The Americans: underrated spy series. Slow burning, realistic. Humane
   without getting mushy.
@@ -117,8 +118,8 @@ math.
   ends. Feels closer to reality than Billions. You could say, Billions
   is how see themselves. Succession how they really are.
 
-- Peep Show: another underrated cringe series. Not for everyone. Same
-  creator as Succession.
+- Peep Show: another underrated cringe, dry comedy series. Not for
+  everyone. Same creator as Succession.
 
 
 ## Sounds
