@@ -115,7 +115,8 @@ math.
   fall doing exactly that. It's really hard to plot right and Silicon
   Valley is full of them.
 
-- The Americans: underrated spy series. Slow burning, realistic. Humane
+- The Americans: underrated spy series. Slow burning,
+  [realistic](https://www.youtube.com/watch?v=TYo-ziwOAWQ). Humane
   without getting mushy.
 
 - Succession: many people's favourite but the finale left too many loose
