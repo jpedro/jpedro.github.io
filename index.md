@@ -8,7 +8,7 @@
 - [My Favourite Unit](unit.md)
 - [`git dd`](git dd.md)
 - [Self Hosting](hosting.md)
-- [Random](stuff.md)
+- [Random](random.md)
 - [Hundreds and Hundreds](hundreds.md)
 <br />
 <br />
