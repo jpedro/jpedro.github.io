@@ -119,6 +119,10 @@ math.
   [realistic](https://www.youtube.com/watch?v=TYo-ziwOAWQ). Humane
   without getting mushy.
 
+- Like The Americans, Line of Duty is a slow burning series about
+  undercover cops. The writing will slow cook you to helplessness. It's
+  a sad gripping show. Good when it's raining.
+
 - Succession: many people's favourite but the finale left too many loose
   ends. Feels closer to reality than Billions. You could say, Billions
   is how see themselves. Succession how they really are.
