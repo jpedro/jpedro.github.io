@@ -199,6 +199,11 @@ amount of code, in the smallest amount of time. So, every 10 years,
 "say hello to my little friend" (_cue Tony Montana_), aka that big-bang
 rewrite.
 
+> Broken gets fixed but shoddy is forever
+>
+> [https://twitter.com/bl0rq/status/1772076422435131489](https://twitter.com/bl0rq/status/1772076422435131489)
+
+
 ![Chaos](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/chaos-2.png)
 
 And that’s why, everywhere you go, every company is "operating on a
@@ -209,8 +214,3 @@ knife’s edge".
 - [Swear words in the kernel](https://www.vidarholen.net/contents/wordcount/)
 
 - [Do you need more swear? I know you do](https://eeggs.com/items/37700.html)
-
-> Broken gets fixed but shoddy is forever
->
-> [https://twitter.com/bl0rq/status/1772076422435131489](https://twitter.com/bl0rq/status/1772076422435131489)
-
