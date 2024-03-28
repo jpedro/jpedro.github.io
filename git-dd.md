@@ -221,4 +221,5 @@ How does that work? Well, git started as a
 [collection of small C binaries](https://github.com/git/git/tree/e83c5163316f89bfbde7d9ab23ca2e25604af290)
 named after their commands. For example `git write-tree` used to call
 `git-write-tree`. Any executables in your `$PATH` (even better,
-`$GIT_EXEC_PATH`) that start with `git-xxx` can be called as `git xxx`.
+[`$GIT_EXEC_PATH`](https://github.com/git/git/blob/c75fd8d8150afdf836b63a8e0534d9b9e3e111ba/exec-cmd.c#L289-L300))
+that start with `git-xxx` can be called as `git xxx`.
