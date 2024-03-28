@@ -29,7 +29,7 @@ That translate poorly when managing people.
 
 [Peter Principle discussion on Hacker News](https://news.ycombinator.com/item?id=39844104)
 
-[Where it all started](https://www.youtube.com/watch?v=39wzku9KIEM)
+[How that name started](https://www.youtube.com/watch?v=39wzku9KIEM)
 
 
 ## Boredom
