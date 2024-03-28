@@ -16,8 +16,13 @@ $ git help dd
 > — Older flat eather
 
 ```
-$ git help deploy
-'deploy' is aliased to '!f(){ host=$(git config deploy.host); dir=$(git config deploy.dir); if [[ $host = '' ]] || [[ $dir = '' ]] ; then echo 'Git config deploy is not configured.'; return; fi; git pp; echo '\033[2m'; ssh -A $host 'cd '$dir' && git ff && git log -1'; echo '\033[0m' ;};f'
+$ git help deploy | fold -sw 72
+'deploy' is aliased to '!f(){ host=$(git config deploy.host); dir=$(git
+config deploy.dir); if [[ $host = '' ]] || [[ $dir = '' ]] ; then echo
+'Git config deploy is not configured.'; return 1; fi; git pp; IFS=,;
+for h in $host; do echo; echo Updating $(git green $dir) @ $(git green
+$h); printf '\033[2m'; git hr; ssh -A $h 'cd '$dir' && git ff && git
+log -1'; git hr; printf '\033[0m'; done ;};f'
 ```
 
 Let's break it down.
