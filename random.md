@@ -27,6 +27,10 @@ immediately but my brain knows it's there.
 When you code, you have absolute control over every character you type.
 That translate poorly when managing people.
 
+[Peter Principle discussion on Hacker News](https://news.ycombinator.com/item?id=39844104)
+
+[Where it all started](https://www.youtube.com/watch?v=39wzku9KIEM)
+
 
 ## Boredom
 
