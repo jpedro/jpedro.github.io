@@ -3,6 +3,31 @@
 [<img src="https://img.shields.io/badge/Mildly-Interesting-brightgreen">](/tags/mildly-interesting)
 
 
+## Simplicity
+
+In the age of microservices (yes, without a space or the hyphen)
+monoliths are coming back in fashion. With a reason. They are just
+simpler. Simpler to grasp, simpler to deploy and simpler to monitor.
+
+Microservices might solve some problems but introduce overheads,
+complexity. A natural fit for microservices can be a container
+runtime, like ECS or even better, Kubernetes
+
+https://tableplus.com/blog/2024/03/how-we-deal-with-ddos.html
+has a great article on how their monolith brings them a lot of value,
+in that case, in terms of not caring their ongoing DDoS attack.
+
+Not all products or platforms can afford a monolith though, or having
+a single binary that serves all requests. Then _and only then_ you
+should plan to carve out one or more services out of that
+[majestic monolith](https://signalvnoise.com/svn3/the-majestic-monolith/).
+I say the main drivers should be the tech stack (meaning the choice of
+programming language or framework) and distinct business requirements.
+
+
+
+
+
 ## Mastery
 
 The internets tell me mastery is spending 10 thousand hours doing
