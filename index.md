@@ -4,12 +4,12 @@
 <!-- # Index -->
 <!--  &nbsp; -->
 
+- [Self Hosting](hosting.md)
+- [`git dd`](git-dd.md)
+- [Bash Dispatch](dispatch.md)
 - [Hundreds and Hundreds](hundreds.md)
 - [My Favourite Unit](unit.md)
 - [Random](random.md)
-- [`git dd`](git-dd.md)
-- [Bash Dispatch](dispatch.md)
-- [Self Hosting](hosting.md)
 <br />
 <br />
 <!-- #  &nbsp; -->
