@@ -2,6 +2,7 @@
 
 [<img src="https://img.shields.io/badge/Mildly-Interesting-brightgreen">](/tags/mildly-interesting)
 
+<!--
 
 ## Simplicity
 
@@ -24,7 +25,7 @@ should plan to carve out one or more services out of that
 I say the main drivers should be the tech stack (meaning the choice of
 programming language or framework) and distinct business requirements.
 
-
+-->
 
 
 
