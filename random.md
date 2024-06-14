@@ -41,9 +41,10 @@ programming language or framework) and distinct business requirements.
 The internets tell me mastery is spending 10 thousand hours doing
 something. Cute but no. I prefer this:
 
-It's when you made all the possible mistakes you can. Many, many times.
-
-Even then, maybe...
+> It's when you made all the possible mistakes you can. Over and over
+> again.
+>
+> Even then, maybe...
 
 
 ## In my shoe
