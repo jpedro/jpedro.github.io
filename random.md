@@ -171,7 +171,7 @@ human languages and math (nature's language).
 - Succession: many people's favourite but the finale left too many loose
   ends. Feels closer to reality than Billions. You could say, Billions
   is how billionaires see themselves. Succession how they really are.
-  Same The West Wing vs as Veep. How politicians see themselves vs how
+  Same The West Wing vs Veep. How politicians see themselves vs how
   they really are. Allegedly.
 
 - Peep Show: another underrated cringe, dry comedy series. Not for
