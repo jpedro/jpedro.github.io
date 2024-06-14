@@ -164,7 +164,7 @@ human languages and math (nature's language).
   [realistic](https://www.youtube.com/watch?v=TYo-ziwOAWQ). Humane
   without getting mushy.
 
-- Like The Americans, Line of Duty is a slow burning series about
+- Like The Americans, Line of Duty is another slow burning series about
   undercover operations. The writing will slow cook you to helplessness.
   It's a sad, gripping show. Save it for when it rains.
 
