@@ -49,7 +49,7 @@ something. Cute but no. I prefer this:
 
 ## In my shoe
 
-From my limited viewpoint, the worst managers are the one that were
+From my limited viewpoint, the worst managers are the ones that were
 very technical at some point. And it's worse the more recently that
 transition happened.
 
