@@ -99,10 +99,10 @@ discussions. Germany has one of the highest productivity ratios in
 the world and one of the shortest average week working hours. This is a
 case of "Not despite of. Because of".
 
+<!--
 Let's make Wednesday the
 [Little Saturday](https://naob.no/ordbok/lillel%C3%B8rdag). For reals.
 
-<!--
 I get this feeling civilisation peaked around the 1800's. The music,
 the arts, the sciences. Improvements after are huge on absolute
 terms but in relative terms, in orders of magnitute to the previous
