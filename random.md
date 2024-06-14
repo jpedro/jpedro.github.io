@@ -165,12 +165,14 @@ human languages and math (nature's language).
   without getting mushy.
 
 - Like The Americans, Line of Duty is a slow burning series about
-  undercover cops. The writing will slow cook you to helplessness. It's
-  a sad, gripping show. Good when it's raining.
+  undercover operations. The writing will slow cook you to helplessness.
+  It's a sad, gripping show. Save it for when it rains.
 
 - Succession: many people's favourite but the finale left too many loose
   ends. Feels closer to reality than Billions. You could say, Billions
-  is how see themselves. Succession how they really are.
+  is how billionaires see themselves. Succession how they really are.
+  Same The West Wing vs as Veep. How politicians see themselves vs how
+  they really are. Allegedly.
 
 - Peep Show: another underrated cringe, dry comedy series. Not for
   everyone. Same creator as Succession.
