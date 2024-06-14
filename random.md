@@ -6,7 +6,7 @@
 ## The end
 
 Sometimes the means to an end are not the means to the end. They are
-the end goal themselves. The real end is the "means". Nuff said.
+the end goal themselves. The real end is the "means". Enough said.
 
 
 <!--
