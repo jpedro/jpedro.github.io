@@ -2,6 +2,13 @@
 
 [<img src="https://img.shields.io/badge/Mildly-Interesting-brightgreen">](/tags/mildly-interesting)
 
+
+## The end
+
+Sometimes the means to an end are not the means to the end. It's the
+end goal itself. The real end is the means. Nuff said.
+
+
 <!--
 
 ## Simplicity
