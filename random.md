@@ -70,8 +70,10 @@ That translate poorly when managing people.
 
 Boredom is severly underrated.
 
-Most people think it's a bad thing. Being bored is no fun but boredom
-is. I think it's critical to human development, both at individual and
+Most people think it's a bad thing. Being bored is no fun and
+*that's precisely the point here*.
+
+I think it's critical to human development. Both at individual and
 civilisation level. When people are bored they get restless and need
 to do something about it. Being constantly bored at your job means soon
 enough you will start looking for other things to do or improve what
