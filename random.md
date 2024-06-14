@@ -246,8 +246,11 @@ every 10 years, "say hello to my little friend" (_cue Tony Montana_),
 aka that big-bang rewrite.
 
 > Broken gets fixed but shoddy is forever
+
+<!--
 >
 > [https://twitter.com/bl0rq/status/1772076422435131489](https://twitter.com/bl0rq/status/1772076422435131489)
+-->
 
 
 ![Chaos](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/chaos-2.png)
