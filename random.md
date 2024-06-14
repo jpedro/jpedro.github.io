@@ -199,7 +199,7 @@ Because AU. TO. MA. TION.
 Those API calls are the smallest lego pieces. Atop that, you can
 assemble walls, rooms, flats, houses, buildings. Whole cities in the
 cloud can be captured in a repo, automated, packaged as a library,
-a cli or some tool.
+a cli or some tool, service or platform.
 
 Most ad-hoc scripts and home brewed provisioning tools can't even agree
 on a standard for the sand that builds the bricks.
