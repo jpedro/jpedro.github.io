@@ -117,7 +117,7 @@ iteration, I think we are slowly slowing down.
 
 Coding does something to your brain.
 
-It structures it. But also introduces a dopamine reward mechanism when
+It structures it. It also introduces a dopamine reward mechanism when
 you get a high when you get it just right and things worked as you
 said so. No other activity that I know of allows such precise control.
 
