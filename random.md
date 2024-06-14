@@ -5,8 +5,8 @@
 
 ## The end
 
-Sometimes the means to an end are not the means to the end. It's the
-end goal itself. The real end is the means. Nuff said.
+Sometimes the means to an end are not the means to the end. They are
+the end goal itself. The real end is the means. Nuff said.
 
 
 <!--
