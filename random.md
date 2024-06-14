@@ -233,18 +233,17 @@ ground and make them work. I say to _barely_ make them work.
 Because most projects are completed beyond schedule and over budget.
 
 As soon as that minimum acceptance is achieved there's less than zero
-incentives to improve it. To polish it. Refactor it. But also to
-revisit the tech debt left behind. After the struggles to make it
-airborne, developers are keen to move to shinnier things. Managers
-to end the apologising and proclaim "Mission Accomplished"
-(_cue George W. Bush_).
+incentives to improve it. To polish it. Refactor it. To revisit tech
+debt left behind. After the struggles to make it airborne, developers
+are keen to move to shinnier things. Managers to end the apologising
+and proclaim "Mission Accomplished" (_cue George W. Bush_).
 
 Touching code that barely works becomes a risky adventure, that only
-the approved go, and only when there’s a clear case for it. Fresh meat
-assigned to add or fix stuff are only allowed to touch the minimal
-amount of code, in the smallest amount of time. So, every 10 years,
-"say hello to my little friend" (_cue Tony Montana_), aka that big-bang
-rewrite.
+the approved are allowed to enter, and only when there’s a clear case
+for it. Fresh meat assigned to add or fix stuff are only allowed to
+touch the minimal amount of code, in the minimal amount of time. So,
+every 10 years, "say hello to my little friend" (_cue Tony Montana_),
+aka that big-bang rewrite.
 
 > Broken gets fixed but shoddy is forever
 >
