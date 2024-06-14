@@ -228,7 +228,7 @@ And it makes sense, when you think about it. It's the outcome of:
 > if ain't broke don't fix it
 
 Companies invest considerable time and money to get things off the
-ground and make them work. I say to barely make them work.
+ground and make them work. I say to _barely_ make them work.
 
 Because most projects are completed beyond schedule and over budget.
 
