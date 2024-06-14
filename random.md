@@ -38,7 +38,7 @@ programming language or framework) and distinct business requirements.
 
 ## Mastery
 
-The internets tell me mastery is spending 10 thousand hours doing
+The internets tell me mastery is spending 10 000 hours doing
 something. Cute but no. I prefer this:
 
 > It's when you made all the possible mistakes you can. Over and over
