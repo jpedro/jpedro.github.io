@@ -115,7 +115,7 @@ iteration, I think we are slowly slowing down.
 
 ## Coding
 
-Coding does something to your brain. Basically it structures it.
+Coding does something to your brain. It structures it.
 
 Maybe other activities do that too but if you code long enough you will
 inevitably arrive at a hairy mess you created and you will need to fix
