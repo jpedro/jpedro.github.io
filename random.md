@@ -96,8 +96,9 @@ less productive. Concerns after reducing the
 [work week to 4 days](https://www.euronews.com/next/2024/02/02/the-four-day-week-which-countries-have-embraced-it-and-how-s-it-going-so-far)
 were more centered on fairness across industries than productivity
 discussions. Germany has one of the highest productivity ratios in
-the world and one of the shortest average week working hours. This is a
-case of "Not despite of. Because of".
+the world and one of the shortest average week working hours.
+
+This is a case of "Not despite of. Because of".
 
 <!--
 Let's make Wednesday the
