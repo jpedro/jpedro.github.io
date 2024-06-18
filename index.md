@@ -20,6 +20,7 @@
 - [Self Hosting](hosting.md)
 - [`git dd`](git-dd.md)
 - [Bash Dispatch](dispatch.md)
+- [179 Ways to Annoy People](annoy.md)
 - [Hundreds and Hundreds](hundreds.md)
 <br />
 <br />
