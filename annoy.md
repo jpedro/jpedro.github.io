@@ -362,6 +362,8 @@
 
 179. At random times in a conversation, say "hi," "hello Sir, how are you?" or "have a good day, thank you."
 
+---
+
 Now for 180. Forward stupid chain letters to as many people as you can.
 
-Remember: Be annoying whenever possible
+Remember: **Be annoying** whenever possible.
