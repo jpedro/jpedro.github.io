@@ -162,7 +162,7 @@ terms but in relative terms, in orders of magnitute to the previous
 iteration, I think we are slowly slowing down.
 -->
 
-
+<!--
 ## Coding
 
 Coding does something to your brain.
@@ -194,6 +194,8 @@ problems.
 
 It's a great mental tool. Programming languages are the midway between
 human languages and math (nature's language).
+
+-->
 
 
 <!--
