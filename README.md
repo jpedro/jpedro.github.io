@@ -7,8 +7,8 @@ Posts nobody asked for.
 
 ## Features
 
-Add a markdown comment in the format `<!-- something happens in here -->`
-to control some properties.
+Add a markdown comment in the format `<!-- something something in here -->`
+to set properties.
 
 Supported comments:
 
