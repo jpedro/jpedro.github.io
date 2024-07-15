@@ -15,7 +15,7 @@ I'm disappointed.
 
 ## The good
 
-Postgres is sometimes defined as an object-relational database, as
+Postgres is sometimes referred as an object-relational database, as
 opposed to what now looks like "static" data types systems. That's
 because columns in Postgres belong to an object data type and you can
 expand on them by defining your own types.
