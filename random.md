@@ -3,6 +3,30 @@
 [<img src="https://img.shields.io/badge/Mildly-Interesting-brightgreen">](/tags/mildly-interesting)
 
 
+## Interviewing
+
+Just read [Career Retrospective: Being Interviewed](https://thecodist.com/career-retrospective-being-interviewed/).
+
+Andrew ends by saying:
+
+> I never asked anyone to write code in an interview
+
+I disagree with this statement. The post reflects on his experiences
+being interviewed and you can see the progression from interviews being
+human conversations to harder and more technical.
+
+I insist on getting people to code on interviews. Real code, not
+leetcode, on their preferred IDE or code editor. Normally, the smallest
+example, that can be expanded or complicated as allowed by the
+candidate.
+
+I know this adds extra stress to the process but coding live helps
+us to gain invaluable insight. We don't care if they complete the coding
+challenge or not. We care how they search and filter information,
+how they tweak code they find and think.
+
+
+
 ## Scrum
 
 I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
@@ -242,6 +266,7 @@ You better pray the backups are working when things fail (which they
 will) but until then, it's the best performance you will _ever_ get.
 
 
+<!--
 ## Knife's edge
 
 [In this comment](https://news.ycombinator.com/item?id=39365187#39366352)
@@ -273,10 +298,10 @@ aka that big-bang rewrite.
 
 > Broken gets fixed but shoddy is forever
 
-<!--
+<!-
 >
 > [https://twitter.com/bl0rq/status/1772076422435131489](https://twitter.com/bl0rq/status/1772076422435131489)
--->
+->
 
 
 ![Chaos](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/chaos-2.png)
@@ -289,3 +314,5 @@ knife’s edge".
 - [Swear words in the kernel](https://www.vidarholen.net/contents/wordcount/)
 
 - [Do you want more swear?? I know you do](https://eeggs.com/items/37700.html)
+
+-->
