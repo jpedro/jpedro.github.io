@@ -8,7 +8,7 @@ Scrum is a way to get workers to estimate, commit to a deadline and
 track their progress. This is, obviously, important.
 
 
-## Why such failures
+## The failure
 
 The problem is that managers fail to grasp how hard is to get back into
 a coding flow state of mind after meetings. It can take hours.
@@ -21,18 +21,8 @@ them are totally a waste of time and only one (a weekly meeting,
 combining task status and planning) is truly essential.
 
 
-## The articles
 
-I'm not alone. I'm collecting here articles that share my long distaste
-for it.
-
-- [Yet Another Post On Scrum, But Different](https://thecodist.com/yet-another-post-on-scrum-but-different/)
-
-- [Agile at 20: The Failed Rebellion](https://www.simplethread.com/agile-at-20-the-failed-rebellion/)
-
-
-
-## The waste
+## The Waste
 
 These are 5 ceremonies:
 
@@ -58,3 +48,26 @@ These are 5 ceremonies:
 - Backlog Refinement: Unnecessary
 
   Superfulous, it's part of planning. No need for a separate meeting.
+
+
+
+## The articles
+
+I'm not alone. I'm collecting here articles that share my long distaste
+for it.
+
+- [Yet Another Post On Scrum, But Different](https://thecodist.com/yet-another-post-on-scrum-but-different/)
+
+  Andrew is very much against Scrum except in one instance where it
+  looks it did its job. But not how you think:
+
+  > I worked at one place in the mid-2000s that decided they needed
+  > a new process—it took more than a year and, when released, had 15
+  > stages with meetings, documents, and sign-offs—and that was before
+  > any code was written, which was simply the last step. **The point**
+  > **was IT did not want to write any more code, so the process was**
+  > **designed to ensure that!**
+
+  (Bold is mine)
+
+- [Agile at 20: The Failed Rebellion](https://www.simplethread.com/agile-at-20-the-failed-rebellion/)
