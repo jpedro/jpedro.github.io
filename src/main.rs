@@ -19,7 +19,7 @@ fn main() {
     if let Ok(paths) = found {
         for path in paths {
             // println!("- {:?}.", path);
-            post::process(&path);
+            let _post = post::process(&path);
         }
     }
 }
