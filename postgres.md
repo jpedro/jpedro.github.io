@@ -77,8 +77,7 @@ This is because indexes in Postgres store **the whole damned row**.
 Another way to say it is: Postgres itself doesn't follow the Normal
 Forms. I get it. Normally this would be a trade between more space and
 saving one extra disk search (to hidrate Row IDs) but in write
-intensive applications, if the data is not immutable, this comes at a
-cost.
+intensive applications mutating data, this costs.
 
 MySQL doesn't suffer from this amplification as data is stored in the
 primary btree index and other indexes just hold the primary key value
