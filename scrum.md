@@ -71,3 +71,7 @@ for it.
   (Bold is mine)
 
 - [Agile at 20: The Failed Rebellion](https://www.simplethread.com/agile-at-20-the-failed-rebellion/)
+
+- [Developers Should Abandon Agile](https://ronjeffries.com/articles/018-01ff/abandon-1/)
+
+- [Agile is Dead (Long Live Agility)](https://pragdave.me/thoughts/active/2014-03-04-time-to-kill-agile.html)
