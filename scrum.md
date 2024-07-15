@@ -28,6 +28,8 @@ for it.
 
 - [Yet Another Post On Scrum, But Different](https://thecodist.com/yet-another-post-on-scrum-but-different/)
 
+- [Agile at 20: The Failed Rebellion](https://www.simplethread.com/agile-at-20-the-failed-rebellion/)
+
 
 
 ## The waste
