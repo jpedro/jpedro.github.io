@@ -32,10 +32,10 @@ Tables can have hierarchical relationships. There're sequences, better
 view support, native support for `UUID`s out of the box and many other
 goodies. And overall, it's just a better, more compliant RDBMS.
 
-It's superficial but the `psql` cli is friendlier than `mysql`. `\l`
-is and `\d+ table_name` are faster than `SHOW DATABASES` and
-`SHOW CREATE TABLE table_name`. But all of this goes away with pgcli,
-mycli and litecli tools readible available.
+It's superficial but the out-of-the-box `psql` cli is friendlier
+than `mysql`. `\l` is and `\d+ table_name` are faster than
+`SHOW DATABASES` and `SHOW CREATE TABLE table_name`. All of this though
+goes away with `pgcli`, `mycli` and `litecli` tools available.
 
 
 ## The different
