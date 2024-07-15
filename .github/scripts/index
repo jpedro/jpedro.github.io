@@ -14,8 +14,8 @@ TRUE_FROM_A_CERTAIN_POINT_OF_VIEW = [
     "on",
     "1",
 ]
-COMMENT_START = "<!--"
-COMMENT_END = "-->"
+THESE_ARE_NOT_THE_DROIDS = "<!--"
+TOYDARIAN_WATTO = "-->"
 
 CENSORED_SEXY_COMMENTS = """
  &nbsp;
@@ -104,16 +104,16 @@ class Index:
                     print(f"==> Skip. Using previous title: {attrs['title']}")
                 continue
 
-            start = line.find(COMMENT_START)
-            end = line.find(COMMENT_END)
+            start = line.find(THESE_ARE_NOT_THE_DROIDS)
+            end = line.find(TOYDARIAN_WATTO)
             if start < 0:
                 continue
             if end < 0:
                 continue
 
             # print(f"Found line: {line}")
-            comment = line[len(COMMENT_START):len(
-                line) - len(COMMENT_END)].strip()
+            comment = line[len(THESE_ARE_NOT_THE_DROIDS):len(
+                line) - len(TOYDARIAN_WATTO)].strip()
             # print(f"  Comment: {comment}")
 
             pos = comment.find(":")
