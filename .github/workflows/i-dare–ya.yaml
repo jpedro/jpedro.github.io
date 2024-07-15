@@ -42,18 +42,37 @@ jobs:
         run: |
           echo "What did you expect?"
 
-      - name: VW fix
+      - name: The toolkit
         if: always()
         uses: actions/github-script@v7
         with:
           script: |
             console.log(github);
+
+      - name: The context
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
             console.log(context);
+
+      - name: The pipeline
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
             console.log(core);
+
+      - name: VW fix
+        if: always()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            core.warning('Will the debug message be skipped?');
             if (core.isDebug()) {
-              core.warning('The debug message will be skipped.');
-            } else {
               core.debug('This is a debug message.');
+            } else {
+              core.warning('It WAS skipped.');
             }
             core.info('This is an info.')
             core.notice('What does this do?')
