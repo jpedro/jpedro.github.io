@@ -196,6 +196,7 @@ It's a great mental tool. Programming languages are the midway between
 human languages and math (nature's language).
 
 
+<!--
 ## Series
 
 - Veep: it's an amazing satirical series. Fast punch lines, a few
@@ -226,6 +227,8 @@ human languages and math (nature's language).
 
 - Peep Show: another underrated cringe, dry comedy series. Not for
   everyone. Same creator as Succession.
+
+-->
 
 
 ## Sounds
