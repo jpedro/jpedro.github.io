@@ -74,7 +74,7 @@ jobs:
             } else {
               core.warning('It WAS skipped.');
             }
-            core.info('This is an info.')
+            core.info('This is an info so basically this will not be in the "Annotations" section.')
             core.notice('What does this do?')
             core.warning('This is a warning!');
             core.error('This is bad, action may still succeed though.')
