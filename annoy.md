@@ -367,3 +367,9 @@
 Now for 180. Forward stupid chain letters to as many people as you can.
 
 Remember: **Be annoying** whenever possible.
+<!-- START FOOTER -->
+ &nbsp;
+
+<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
+<script defer="">Comments.start(document.body.children[0]);</script>
+<!-- END FOOTER -->

@@ -463,3 +463,9 @@ Because they can.
 The title is a reference to Carl Sagan's misquoted expression that was
 eventually
 [embraced by him into a book](https://en.wikipedia.org/wiki/Billions_and_Billions).
+<!-- START FOOTER -->
+ &nbsp;
+
+<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
+<script defer="">Comments.start(document.body.children[0]);</script>
+<!-- END FOOTER -->

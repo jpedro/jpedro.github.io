@@ -242,3 +242,9 @@ dispatch $@
   example: should `repo` in `please list repo` be the `$1` value
   to `cmd.list` or the command `cmd.list.repo`? This is the stuff
   that keeps me awake at night.
+<!-- START FOOTER -->
+ &nbsp;
+
+<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
+<script defer="">Comments.start(document.body.children[0]);</script>
+<!-- END FOOTER -->

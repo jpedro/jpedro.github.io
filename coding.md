@@ -29,3 +29,9 @@ problems.
 
 It's a great mental tool. Programming languages are the midway between
 human languages and math (nature's language).
+<!-- START FOOTER -->
+ &nbsp;
+
+<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
+<script defer="">Comments.start(document.body.children[0]);</script>
+<!-- END FOOTER -->

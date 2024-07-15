@@ -75,3 +75,9 @@ for it.
 - [Developers Should Abandon Agile](https://ronjeffries.com/articles/018-01ff/abandon-1/)
 
 - [Agile is Dead (Long Live Agility)](https://pragdave.me/thoughts/active/2014-03-04-time-to-kill-agile.html)
+<!-- START FOOTER -->
+ &nbsp;
+
+<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
+<script defer="">Comments.start(document.body.children[0]);</script>
+<!-- END FOOTER -->

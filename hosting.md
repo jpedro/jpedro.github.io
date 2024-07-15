@@ -217,3 +217,9 @@ them.
 - There should be a way to uniquely identify a repo so each time it
   chages its name or domain the same resources env gets injected into
   the kubernetes deployment via config maps or secrets.
+<!-- START FOOTER -->
+ &nbsp;
+
+<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
+<script defer="">Comments.start(document.body.children[0]);</script>
+<!-- END FOOTER -->

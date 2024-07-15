@@ -36,3 +36,9 @@ discussions. Germany has one of the highest productivity ratios in
 the world and one of the shortest average week working hours.
 
 This is a case of "Not despite of. Because of".
+<!-- START FOOTER -->
+ &nbsp;
+
+<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
+<script defer="">Comments.start(document.body.children[0]);</script>
+<!-- END FOOTER -->
