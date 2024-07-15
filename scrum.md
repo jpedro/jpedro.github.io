@@ -1,42 +1,58 @@
-<!-- tags: mildly interesting -->
-<!-- comments: false -->
-<!-- hidden -->
+## Scrum
 
-# Why SCRUM fails
+I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
+but I understand for managers, that need to justify development
+~costs~ time, that is meaningless.
 
-<!-- START TAGS -->
-<!-- END TAGS -->
-
-## Why
-
-SCRUM is basically a way to get workers to commit to a timeframe and
-track its progress.
+Scrum is a way to get workers to estimate, commit to a deadline and
+track their progress. This is, obviously, important.
 
 
-## What
+## Why such failures
 
-There are 5 "ceremonies".
+The problem is that managers fail to grasp how hard is to get back into
+a coding flow state of mind after meetings. It can take hours.
 
-1 is required for every project. 1 should be optional. The other 3 are
-idiotic.
+**Meetings are work killers**.
 
-- ✅ Sprint Planning
+And Scrum is _meeting heavy_. It's designed to appeal to managers, by
+giving them a view into what's going on. There are 5 ceremonies, 3 of
+them are totally a waste of time and only one (a weekly meeting,
+combining task status and planning) is truly essential.
+
+
+## The articles
+
+I'm not alone. I'm collecting here articles that share my long distaste
+for it.
+
+- [Yet Another Post On Scrum, But Different](https://thecodist.com/yet-another-post-on-scrum-but-different/)
+
+
+
+## The waste
+
+These are 5 ceremonies:
+
+- Sprint Planning: Required
 
   Should be done every week or every cycle.
 
-- ❓ Daily Scrum
+- Daily Scrum: Optional
 
   Should be optional. Most of time people just say "I did this and I'll
-  continue on it"
+  continue on it".
 
-- ❌ Sprint Review
+- Sprint Demo: Unnecessary
 
-  Problem: Don't wait for the sprint to be over to **show** something.
+  Don't wait for the sprint to be over to **show** something.
 
-- ❌ Sprint Retrospective
+- Sprint Retrospective: Unnecessary
 
-  Problem: Don't wait for the sprint to be over to **say** something.
+  Don't wait for the sprint to be over to **say** something.
+  Just say it when you can. Then expand it on the weekly meeting, if
+  need be.
 
-- ❌ Backlog Refinement
+- Backlog Refinement: Unnecessary
 
-  Problem: Superfulous, it's part of planning.
+  Superfulous, it's part of planning. No need for a separate meeting.

@@ -27,6 +27,7 @@ how they tweak code they find and think.
 
 
 
+<!--
 ## Scrum
 
 I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
@@ -51,6 +52,7 @@ Anyway. I'm collecting articles that share my long distaste for it.
 
 - [Yet Another Post On Scrum, But Different](https://thecodist.com/yet-another-post-on-scrum-but-different/)
 
+-->
 
 
 ## The end
