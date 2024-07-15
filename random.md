@@ -9,7 +9,7 @@ I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
 but I understand that for managers, that need to justify development
 ~costs~ time, that is meaningless.
 
-So Scrum filled that gap. It's a way to get workers to estimate, commit
+So Scrum filled that gap as a way to get workers to estimate, commit
 to a deadline and track their progress. This is obviously important.
 
 The problem is that managers fail to grasp how hard is to get back into
