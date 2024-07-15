@@ -48,5 +48,16 @@ jobs:
         with:
           script: |
             console.log(github);
-            console.log(event);
+            console.log(context);
             console.log(core);
+            if (core.isDebug()) {
+              core.warning('The debug message will be skipped.');
+            } else {
+              core.debug('This is a debug message.');
+            }
+            core.info('This is an info.')
+            core.notice('What does this do?')
+            core.warning('This is a warning!');
+            core.error('This is bad, action may still succeed though.')
+            core.setOutput('outputKey', 'outputVal');
+            core.exportVariable('envVar', 'Val');
