@@ -24,8 +24,8 @@ ceremonies, 3 of them are totally a waste of time and only one (a
 weekly meeting, combining task reviewing and planning) is truly
 essential.
 
-Anyway. I'm collecting here articles that share my strong and loooong
-distate for Scrum.
+Anyway. I'm starting to collect articles that share my strong and
+loooong distate for Scrum.
 
 - [Yet Another Post On Scrum, But Different](https://thecodist.com/yet-another-post-on-scrum-but-different/)
 
