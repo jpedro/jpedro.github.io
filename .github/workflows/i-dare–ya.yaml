@@ -41,3 +41,11 @@ jobs:
         if: always()
         run: |
           echo "What did you expect?"
+
+      - name: VW fix
+        uses: actions/github-script@v7
+        if: always()
+        script: |
+          console.log(github);
+          console.log(event);
+          console.log(core);
