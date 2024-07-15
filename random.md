@@ -15,9 +15,9 @@ This is fine.
 
 The problem is that managers fail to grasp how hard is to get back into
 a coding flow state of mind after meetings. It can take hours.
-<span style="background-color: #ffff00">Meetings are work killers.</span>
+**Meetings are work killers**.
 
-And SCRUM **is meeting heavy**. It's designed to appeal to managers, by
+And SCRUM is _meeting heavy_. It's designed to appeal to managers, by
 giving them a sense of what's going on. In SCRUM there are 5
 "ceremonies", 3 of them are totally a waste of time and only one (a
 weekly meeting, combining task reviewing and planning) is essential.
