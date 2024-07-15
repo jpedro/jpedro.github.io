@@ -7,7 +7,7 @@
 
 I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
 but I understand that for managers, that need to justify development
-~costs~ time, that is truly meaningless.
+~costs~ time, that is meaningless.
 
 So Scrum filled that gap. It's a way to get workers to estimate, commit
 to some sort of deadline and track their progress. This is obviously
@@ -21,7 +21,8 @@ a coding flow state of mind after meetings. It can take hours.
 And Scrum is _meeting heavy_. It's designed to appeal to managers, by
 giving them a sense of what's going on. In Scrum there are 5
 "ceremonies", 3 of them are totally a waste of time and only one (a
-weekly meeting, combining task reviewing and planning) is essential.
+weekly meeting, combining task reviewing and planning) is truly
+essential.
 
 Anyway. I'm collecting here articles that share my strong and loooong
 distate for Scrum.
