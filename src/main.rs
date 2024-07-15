@@ -1,28 +1,22 @@
-use std::path::PathBuf;
+use clap::Parser;
 
-mod args;
+mod cli;
 
 fn main() {
-    let values = args::Args::parse();
-    // let files = args::Files::new();
-    // values.load();
-    // values::parse();
+    let args = cli::Args::parse();
+    println!("DIR: {}", args.dir);
 
-    let cwd = match env::current_dir() {
-        Ok(path) => path,
-        Err(error) => panic!("Couldn't use currrent dir: {}", error),
-    };
-    println!("CWD: {}", cwd);
-    let dir = PathBuf::from(values.dir);
-    println!("DIR: {:?}", dir);
+    for _ in 0 .. args.count {
+        println!("{} {}!", args.prefix, args.name);
+    }
 
-    // println!("{:?}", files.find(path:: ".posts".));
-
-    // for file in files.files {
-    //     println!("- {:?}.", file);
-    // }
-
-    for _ in 0 .. values.count {
-        println!("{} {}.",  values.prefix, values.name);
+    let found = cli::Files::find(&args.dir);
+    // println!("{:?}", files);
+    if let Ok(files) = found {
+        for file in files {
+            println!("- {:?}.", &file);
+        }
+    } else {
+        println!("No files found.");
     }
 }
