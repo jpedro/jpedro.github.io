@@ -1,8 +1,12 @@
 name: Don't you dare!
-run-name: You dared!!! ${{ inputs.SHA || github.sha }}
+run-name: You dared!!! ${{ github.ref }} :: ${{ inputs.SHA || github.sha }}
 
 on:
   workflow_dispatch:
+    inputs:
+      SHA:
+        type: string
+        description: Something something
 
 env:
   AWS_REGION : "eu-west-1"
