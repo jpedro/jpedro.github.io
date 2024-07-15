@@ -40,4 +40,4 @@ jobs:
       - name: Of course this wouldn't work...
         if: always()
         run: |
-          echo "..."
+          echo "What did you expect?"
