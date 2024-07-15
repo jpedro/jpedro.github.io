@@ -19,8 +19,8 @@ a coding flow state of mind after meetings. It can take hours.
 **Meetings are work killers**.
 
 And Scrum is _meeting heavy_. It's designed to appeal to managers, by
-giving them a sense of what's going on. In Scrum there are 5
-"ceremonies", 3 of them are totally a waste of time and only one (a
+giving them a view into what's going on. In Scrum there are 5
+ceremonies, 3 of them are totally a waste of time and only one (a
 weekly meeting, combining task reviewing and planning) is truly
 essential.
 
