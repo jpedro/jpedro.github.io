@@ -1,0 +1,25 @@
+name: Don't you dare!
+
+on:
+  workflow_dispatch:
+
+env:
+  AWS_REGION : "eu-west-1"
+
+permissions:
+  id-token: write   # This is required for requesting the JWT
+  contents: read    # This is required for actions/checkout
+
+jobs:
+  assume:
+    runs-on: ubuntu-latest
+    steps:
+      # - name: Checkout
+      #   uses: actions/checkout@v4
+
+      - name: I'm doing it!
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          role-to-assume: ${{ secrets.AWS_LOGIN }}
+          role-session-name: i-am-daring
+          aws-region: ${{ env.AWS_REGION }}
