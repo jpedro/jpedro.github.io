@@ -20,7 +20,7 @@ pub fn process(path: &Path) -> Result<Post, Error> {
 
     let mut post = Post{
         path: &path,
-        text: text.clone(),
+        text: text,
         title: path.file_name().expect("Failed to get file name").to_string_lossy().to_string(),
         lines: vec![],
         attrs: HashMap::new(),
