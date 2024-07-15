@@ -27,4 +27,4 @@ Supported comments:
 - [ ] Add generated tags at the top of each page.
 - [ ] Allow multi-line comments.
 - [ ] Allow `date` and `index` ordering.
-- [ ] Allow `path` or the ugly name `slug` for custom urls.
+- [ ] Allow `path` or the ugly noun `slug` for custom urls.
