@@ -16,6 +16,7 @@
 <!--  &nbsp; -->
 
 - [Series](series.md)
+- [Scrum](scrum.md)
 - [Boredom](boredom.md)
 - [My Favourite Unit](unit.md)
 - [Random](random.md)
