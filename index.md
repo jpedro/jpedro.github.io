@@ -23,6 +23,7 @@
 - [Self Hosting](hosting.md)
 - [`git dd`](git-dd.md)
 - [Bash Dispatch](dispatch.md)
+- [Coding](coding.md)
 - [Annoy People](annoy.md)
 <br />
 <br />
