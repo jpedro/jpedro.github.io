@@ -12,14 +12,12 @@ to control some properties.
 
 Supported comments:
 
-|------------|------------------------------------------------|------------------|
 | Comment    | Description                                    | Example          |
 |------------|------------------------------------------------|------------------|
 | `hidden`   | Hides a page from the `index.md`               |                  |
 | `title`    | Overrides both `# H1` and beautified file name |                  |
 | `tags`     | Custom tags                                    | `shell, linux`   |
 | `comments` | Controls comments in pages                     | `true`, `false`  |
-|------------|------------------------------------------------|------------------|
 
 
 
