@@ -33,4 +33,4 @@
 
 <!-- Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io) -->
 <!-- Posts nobody asked for <font color="red" size="1px">■</font> -->
-Made with some <3 [not a lot](https://github.com/jpedro/jpedro.github.io).
+Made with some <3 [not a lot](https://github.com/jpedro/jpedro.github.io)
