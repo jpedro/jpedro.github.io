@@ -23,6 +23,13 @@ jobs:
       # - name: Checkout
       #   uses: actions/checkout@v4
 
+      - name: Debugs
+        run: |
+          echo "export"
+          echo "---"
+          export
+          echo ""==="
+
       - name: I'm doing it!
         uses: aws-actions/configure-aws-credentials@v3
         with:
