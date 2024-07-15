@@ -18,6 +18,7 @@
 - [My Favourite Unit](unit.md)
 - [Random](random.md)
 - [Hundreds and Hundreds](hundreds.md)
+- [Knife's edge](chaos.md)
 - [Self Hosting](hosting.md)
 - [`git dd`](git-dd.md)
 - [Bash Dispatch](dispatch.md)
