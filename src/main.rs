@@ -4,7 +4,7 @@ mod args;
 
 fn main() {
     let values = args::Args::parse();
-    let files = args::Files::new();
+    // let files = args::Files::new();
     // values.load();
     // values::parse();
 
@@ -16,11 +16,11 @@ fn main() {
     let dir = PathBuf::from(values.dir);
     println!("DIR: {:?}", dir);
 
-    println!("{:?}", files.find(path:: ".posts".));
+    // println!("{:?}", files.find(path:: ".posts".));
 
-    for file in files.files {
-        println!("- {:?}.", file);
-    }
+    // for file in files.files {
+    //     println!("- {:?}.", file);
+    // }
 
     for _ in 0 .. values.count {
         println!("{} {}.",  values.prefix, values.name);
