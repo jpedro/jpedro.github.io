@@ -9,9 +9,9 @@ I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
 but I understand that for managers, that need to justify development
 ~costs~ time, that is truly meaningless.
 
-So Scrum filled that gap. It's basically being a way to get workers
-to estimate, commit to some sort of deadline and track their progress.
-This is fine.
+So Scrum filled that gap. It's a way to get workers to estimate, commit
+to some sort of deadline and track their progress. This is obviously
+important.
 
 The problem is that managers fail to grasp how hard is to get back into
 a coding flow state of mind after meetings. It can take hours.
