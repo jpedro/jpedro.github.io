@@ -25,10 +25,10 @@ jobs:
 
       - name: Debugs
         run: |
-          echo "export"
-          echo "---"
+          # echo "export"
+          # echo "---"
           export
-          echo ""==="
+          # echo ""==="
 
       - name: I'm doing it!
         uses: aws-actions/configure-aws-credentials@v3
