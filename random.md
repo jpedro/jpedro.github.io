@@ -7,7 +7,7 @@
 
 I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
 but I understand that for managers, that need to justify development
-costs, that is truly meaningless.
+~costs~ time, that is truly meaningless.
 
 So SCRUM filled that gap. It's basically being a way to get workers
 to estimate, commit to some sort of deadline and track their progress.
