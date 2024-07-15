@@ -8,7 +8,7 @@ Scrum is a way to get workers to estimate, commit to a deadline and
 track their progress. This is, obviously, important.
 
 
-## The failure
+## The fails
 
 The problem is that managers fail to grasp how hard is to get back into
 a coding flow state of mind after meetings. It can take hours.
@@ -22,7 +22,7 @@ combining task status and planning) is truly essential.
 
 
 
-## The Waste
+## The wasteland
 
 These are 5 ceremonies:
 
