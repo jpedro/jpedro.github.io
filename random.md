@@ -3,13 +3,13 @@
 [<img src="https://img.shields.io/badge/Mildly-Interesting-brightgreen">](/tags/mildly-interesting)
 
 
-## SCRUM
+## Scrum
 
 I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
 but I understand that for managers, that need to justify development
 ~costs~ time, that is truly meaningless.
 
-So SCRUM filled that gap. It's basically being a way to get workers
+So Scrum filled that gap. It's basically being a way to get workers
 to estimate, commit to some sort of deadline and track their progress.
 This is fine.
 
@@ -17,13 +17,13 @@ The problem is that managers fail to grasp how hard is to get back into
 a coding flow state of mind after meetings. It can take hours.
 **Meetings are work killers**.
 
-And SCRUM is _meeting heavy_. It's designed to appeal to managers, by
-giving them a sense of what's going on. In SCRUM there are 5
+And Scrum is _meeting heavy_. It's designed to appeal to managers, by
+giving them a sense of what's going on. In Scrum there are 5
 "ceremonies", 3 of them are totally a waste of time and only one (a
 weekly meeting, combining task reviewing and planning) is essential.
 
 Anyway. I'm collecting here articles that share my strong and loooong
-distate for SCRUM.
+distate for Scrum.
 
 - [Yet Another Post On Scrum, But Different](https://thecodist.com/yet-another-post-on-scrum-but-different/)
 
