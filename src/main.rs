@@ -1,6 +1,11 @@
+use std::path::PathBuf;
+
 use clap::Parser;
 
 mod cli;
+mod find;
+mod post;
+
 
 fn main() {
     let args = cli::Args::parse();
@@ -10,13 +15,11 @@ fn main() {
         println!("{} {}!", args.prefix, args.name);
     }
 
-    let found = cli::Files::find(&args.dir);
-    // println!("{:?}", files);
-    if let Ok(files) = found {
-        for file in files {
-            println!("- {:?}.", &file);
+    let found = find::files(PathBuf::from(&args.dir));
+    if let Ok(paths) = found {
+        for path in paths {
+            // println!("- {:?}.", path);
+            post::process(&path);
         }
-    } else {
-        println!("No files found.");
     }
 }
