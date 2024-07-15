@@ -85,4 +85,11 @@ on their leaves. Updates only affect the primary key btree. Unless of
 course, if you update the secondary index value(s) themselves.
 
 [Uber migrated away from Postgres](https://www.uber.com/en-NO/blog/postgres-to-mysql-migration/)
-due to this.
+due to this. Plus, the replication is heavier than MySQL.
+
+
+## The conclusion
+
+I'm migrating some apps to Postgres but for smaller non-HA stuff I
+will use SQLite statically linked as a library. This has to be the best
+performance, as one skips the whole TCP/IP overheads.
