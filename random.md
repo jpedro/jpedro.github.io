@@ -15,6 +15,7 @@ important.
 
 The problem is that managers fail to grasp how hard is to get back into
 a coding flow state of mind after meetings. It can take hours.
+
 **Meetings are work killers**.
 
 And Scrum is _meeting heavy_. It's designed to appeal to managers, by
