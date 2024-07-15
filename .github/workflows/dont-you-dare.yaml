@@ -12,6 +12,7 @@ permissions:
 
 jobs:
   assume:
+    name: Assumptions...
     runs-on: ubuntu-latest
     steps:
       # - name: Checkout
