@@ -13,9 +13,9 @@ So SCRUM filled that gap. It's basically being a way to get workers
 to estimate, commit to some sort of deadline and track their progress.
 This is fine.
 
-The biggest problem is that managers fail to grasp how hard is to get
-back into a coding flow state of mind. It can take hours. Meetings are
-work killers.
+The problem is that managers fail to grasp how hard is to get back into
+a coding flow state of mind after meetings. It can take hours.
+<span style="background-color: #ffff00">Meetings are work killers.</span>
 
 And SCRUM **is meeting heavy**. It's designed to appeal to managers, by
 giving them a sense of what's going on. In SCRUM there are 5
