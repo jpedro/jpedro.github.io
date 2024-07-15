@@ -36,3 +36,8 @@ jobs:
           role-to-assume: ${{ secrets.AWS_LOGIN }}
           role-session-name: i-am-daring
           aws-region: ${{ env.AWS_REGION }}
+
+      - name: Of course this wouldn't work...
+        if: always()
+        run: |
+          echo "..."
