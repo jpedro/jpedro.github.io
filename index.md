@@ -15,6 +15,7 @@
 <!-- # Index -->
 <!--  &nbsp; -->
 
+- [Series](series.md)
 - [My Favourite Unit](unit.md)
 - [Random](random.md)
 - [Hundreds and Hundreds](hundreds.md)
