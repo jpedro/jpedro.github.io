@@ -84,3 +84,6 @@ MySQL doesn't suffer from this amplification as data is stored in the
 primary btree index and other indexes just hold the primary key value
 on their leaves. Updates only affect the primary key btree. Unless of
 course, if you update the secondary index value(s) themselves.
+
+[Uber migrated away from Postgres](https://www.uber.com/en-NO/blog/postgres-to-mysql-migration/)
+due to this.
