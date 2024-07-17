@@ -227,17 +227,18 @@ class Posts:
             f.write(text)
 
 
-    def process(self, save: bool):
+    def process(self, dir: str, save: bool):
         posts = {}
         uniqueTags = {}
 
-        for path in os.listdir(".posts"):
-            ext = path[len(path)-3:]
+        for name in os.listdir(dir):
+            ext = name[len(path)-3:]
             if ext != ".md":
                 continue
-            if path in NO_IRISH_NEED_APPLY:
+            if name in NO_IRISH_NEED_APPLY:
                 continue
 
+            path = f"{dir}/{name}"
             print(f"==> Found file {Colors.green(path)}")
             # if path == "dispatch.md":
 
@@ -330,4 +331,4 @@ class Posts:
 
 if __name__ == "__main__":
     posts = Posts()
-    posts.process(True)
+    posts.process(".posts", True)
