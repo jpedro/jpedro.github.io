@@ -109,8 +109,8 @@ class Colors:
 class Post:
     path: str = "hmm"
     title: str = "Untitled by Default"
-    attrs: dict[str, str] = {}
-    tags: list[str] = []
+    attrs: dict = {}
+    tags: list = []
 
 
 class Posts:
