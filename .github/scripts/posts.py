@@ -98,6 +98,10 @@ class Colors:
     def yellow(text: str) -> str:
         return f"\033[33;1m{text}\033[0m"
 
+    @staticmethod
+    def gray(text: str) -> str:
+        return f"\033[2m{text}\033[0m"
+
 
 
 
@@ -232,10 +236,12 @@ class Posts:
         uniqueTags = {}
 
         for name in os.listdir(dir):
-            ext = name[len(path)-3:]
+            ext = name[len(name)-3:]
             if ext != ".md":
+                print(f"==> Skip file {Colors.gray(name)}")
                 continue
             if name in NO_IRISH_NEED_APPLY:
+                print(f"==> No irish please {Colors.gray(name)}")
                 continue
 
             path = f"{dir}/{name}"
