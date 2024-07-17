@@ -88,8 +88,15 @@ TEMPLATE_TAG = """
 
 """
 
-def green(text: str) -> str:
-    return f"\033[32;1m{text}\033[0m"
+class Colors:
+
+    @staticmethod
+    def green(text: str) -> str:
+        return f"\033[32;1m{text}\033[0m"
+
+    @staticmethod
+    def yellow(text: str) -> str:
+        return f"\033[33;1m{text}\033[0m"
 
 
 
@@ -172,7 +179,7 @@ class Posts:
         print(f"comments: {comments}")
         if comments == "false":
             text = f"{before}{after}"
-            print(green("Not adding comments"))
+            print(Colors.green("Not adding comments"))
         else:
             middle = f"{startFooter}{COOL_SEXY_COMMENTS}{endFooter}"
             text = f"{before}{middle}{after}"
@@ -231,36 +238,40 @@ class Posts:
             if path in NO_IRISH_NEED_APPLY:
                 continue
 
-            print(f"==> Found file {green(path)}")
+            print(f"==> Found file {Colors.green(path)}")
             # if path == "dispatch.md":
 
-        #     attrs = self.load(path)
-        #     if str(attrs.get("hidden")).lower() in TRUE_FROM_A_CERTAIN_POINT_OF_VIEW:
-        #         print(f"==> File {green(path)} is hidden")
-        #         continue
+            attrs = self.load(path)
+            if str(attrs.get("hidden")).lower() in TRUE_FROM_A_CERTAIN_POINT_OF_VIEW:
+                print(f"==> File {Colors.yellow(path)} is hidden")
+                continue
 
-        #     if not attrs.get("title"):
-        #         title = os.path.basename(path).replace(".md", "").replace("-", " ")
-        #         attrs["title"] = self.titlelize(title)
-        #         print(f"==> Using file {green(path)} name as title: {title}")
+            if not attrs.get("title"):
+                title = os.path.basename(path).replace(".md", "").replace("-", " ")
+                attrs["title"] = self.titlelize(title)
+                print(f"==> Using file {Colors.yellow(path)} name as title: {title}")
+            else:
+                print(f"==> In file {Colors.green(path)} found title: {attrs.get('title')}")
 
-        #     tags = attrs.get("tags")
-        #     pageTags = []
-        #     if tags:
-        #         for tag in attrs["tags"].split(","):
-        #             tag = tag.strip()
-        #             if uniqueTags.get(tag) is None:
-        #                 uniqueTags[tag] = {}
-        #             pageTags.append(tag)
-        #             uniqueTags[tag][path] = attrs["title"]
+            tags = attrs.get("tags")
+            pageTags = []
+            if tags:
+                for tag in attrs["tags"].split(","):
+                    tag = tag.strip()
+                    if uniqueTags.get(tag) is None:
+                        uniqueTags[tag] = {}
+                    pageTags.append(tag)
+                    uniqueTags[tag][path] = attrs["title"]
+
+            print(f"==> Found page tags: {pageTags}")
 
         #     self.replaceTags(path, pageTags)
         #     self.replaceFooter(path, attrs.get("comments", "true"))
 
         #     posts[path] = attrs["title"]
 
-        # print(f"==> Using posts: {posts}")
-        # print(f"==> Using tags:  {uniqueTags}")
+        print(f"==> Found posts: {posts}")
+        print(f"==> Found tags:  {uniqueTags}")
 
         # separator = "─" * 80
         # tagItems = {}
@@ -280,7 +291,7 @@ class Posts:
         #     text = TEMPLATE_TAG.replace("{{ name }}", self.titlelize(tag))
         #     text = text.replace("{{ content }}", "\n".join(content)).strip()
         #     print()
-        #     print(f"File tags/{green(tag)}.md")
+        #     print(f"File tags/{Colors.green(tag)}.md")
         #     print("\033[38;5;242m" + separator)
         #     print(text)
         #     print(separator + "\033[0m")
