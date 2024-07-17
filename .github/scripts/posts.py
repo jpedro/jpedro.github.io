@@ -107,10 +107,10 @@ class Colors:
 
 @dataclass
 class Post:
-    path: str
-    title: str
-    attrs: dict[str, str]
-    tags: list[str]
+    path: str = "hmm"
+    title: str = "Untitled by Default"
+    attrs: dict[str, str] = {}
+    tags: list[str] = []
 
 
 class Posts:
