@@ -3,12 +3,6 @@
 
 # Hundreds and Hundreds
 
-<!-- START TAGS -->
-[<img src="https://img.shields.io/badge/Tag-google-brightgreen">](/tags/google)
-[<img src="https://img.shields.io/badge/Tag-cloud-brightgreen">](/tags/cloud)
-[<img src="https://img.shields.io/badge/Tag-pipelines-brightgreen">](/tags/pipelines)
-<!-- END TAGS -->
-
 > There's the [original post](https://nordcloud.com/tech-community/managing-hundreds-google-cloud-projects-in-minutes/)
 > but it's possible to edit it here.
 
@@ -463,9 +457,3 @@ Because they can.
 The title is a reference to Carl Sagan's misquoted expression that was
 eventually
 [embraced by him into a book](https://en.wikipedia.org/wiki/Billions_and_Billions).
-<!-- START FOOTER -->
- &nbsp;
-
-<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
-<script defer="">Comments.start(document.body.children[0]);</script>
-<!-- END FOOTER -->

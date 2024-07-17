@@ -3,13 +3,6 @@
 
 # Self Hosting
 
-<!-- START TAGS -->
-[<img src="https://img.shields.io/badge/Tag-shell-brightgreen">](/tags/shell)
-[<img src="https://img.shields.io/badge/Tag-linux-brightgreen">](/tags/linux)
-[<img src="https://img.shields.io/badge/Tag-kubernetes-brightgreen">](/tags/kubernetes)
-[<img src="https://img.shields.io/badge/Tag-reinventing the wheels-brightgreen">](/tags/reinventing-the-wheels)
-<!-- END TAGS -->
-
 I used [surge.sh](https://surge.sh/) to host static content and some
 SPAs and [heroku.com](https://www.heroku.com/) as the backend.
 
@@ -217,9 +210,3 @@ them.
 - There should be a way to uniquely identify a repo so each time it
   chages its name or domain the same resources env gets injected into
   the kubernetes deployment via config maps or secrets.
-<!-- START FOOTER -->
- &nbsp;
-
-<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
-<script defer="">Comments.start(document.body.children[0]);</script>
-<!-- END FOOTER -->

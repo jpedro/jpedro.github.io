@@ -45,9 +45,3 @@ knife’s edge".
 - [Swear words in the kernel](https://www.vidarholen.net/contents/wordcount/)
 
 - [Do you want more swear?? I know you do](https://eeggs.com/items/37700.html)
-<!-- START FOOTER -->
- &nbsp;
-
-<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
-<script defer="">Comments.start(document.body.children[0]);</script>
-<!-- END FOOTER -->

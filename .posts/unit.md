@@ -4,10 +4,6 @@
 
 # My Favourite Unit
 
-<!-- START TAGS -->
-[<img src="https://img.shields.io/badge/Tag-mildly interesting-brightgreen">](/tags/mildly-interesting)
-<!-- END TAGS -->
-
 One **`dirac`** is one word per hour.
 
 <!--

@@ -10,7 +10,7 @@ NO_IRISH_NEED_APPLY = [
     "index.md",
 ]
 
-TRUE_FROM_A_CERTAIN_POINT_OF_VIEW = [
+TRUTHY = [
     "true",
     "yes",
     "on",
@@ -90,6 +90,18 @@ TEMPLATE_TAG = """
 
 """
 
+DEBUG = os.environ.get("DEBUG", "").lower() in TRUTHY
+# DEBUG = bool(os.environ.get("DEBUG", "false"))
+print(f"==> DEBUG: {DEBUG}", type(DEBUG))
+# exit(1)
+
+class Text:
+
+    @classmethod
+    def titlelize(self, text: str) -> str:
+        return text[0].upper() + text[1:]
+
+
 class Colors:
 
     @staticmethod
@@ -104,32 +116,37 @@ class Colors:
     def gray(text: str) -> str:
         return f"\033[2m{text}\033[0m"
 
+    @staticmethod
+    def debug(text: str) -> str:
+        if not DEBUG: return
+        # print(DEBUG, text)
+        print(Colors.gray("==> " + str(text)))
+
 
 @dataclass
 class Post:
-    path: str = "hmm"
-    title: str = "Untitled by Default"
-    attrs: dict = {}
-    tags: list = []
+    path: str
+    title: str
+    lines: list[str]
+    attrs: dict[str, str]
+    tags: list[str]
 
 
 class Posts:
 
     def load(self, path: str) -> Post:
-        post = Post()
-        lines = open(path, "r").readlines()
-        attrs = {}
+        post = Post(path, "Untitled by Default", [], {}, [])
+        post.lines = open(path, "r").readlines()
 
-        for line in lines:
+        for line in post.lines:
             line = line.strip()
 
             if line.find("# ") == 0:
-                if attrs.get("title") is None:
-                    print(f"==> Using first '#' header as title: {Color.green(line)}")
-                    attrs["title"] = line[2:]
+                if not post.attrs.get("title"):
+                    Colors.debug(f"Using first '#' header as title: {line}")
+                    post.attrs["title"] = line[2:]
                 else:
-                    print(f"==> Skip. Just use previous title: {Color.yellow(attrs['title'])}")
-                continue
+                    Colors.debug(f"Using previous title: {post.attrs['title']}")
 
             start = line.find(COMMENT_START)
             stop = line.find(COMMENT_STOP)
@@ -138,48 +155,35 @@ class Posts:
             if stop < 0:
                 continue
 
-            # print(f"Found line: {line}")
+            Colors.debug(f"Found comment line: {line}")
             comment = line[len(COMMENT_START):len(line) - len(COMMENT_STOP)].strip()
-            # print(f"  Comment: {comment}")
+            Colors.debug(f"Found comment text: {comment}")
 
             pos = comment.find(":")
             if pos < 0:
-                attrs[comment] = True
+                post.attrs[comment.strip()] = True
                 continue
 
             key = comment[0:pos].strip()
             val = comment[pos+1:].strip()
-            # print(f"  {key}: {val}")
-            attrs[key] = val
+            Colors.debug(f"Found comment: '{key}' --> '{val}'")
+            post.attrs[key] = val
 
-        if attrs.get("title"):
-            print(f"==> In file {Colors.green(path)} found title: {attrs['title']}")
-            post.title = attrs["title"]
+        if post.attrs.get("title"):
+            Colors.debug(f"In file {path} found title: {post.attrs['title']}")
+            post.title = post.attrs["title"]
         else:
             title = os.path.basename(path).replace(".md", "").replace("-", " ")
-            post.title = self.titlelize(title)
-            print(f"==> Using file name {Colors.yellow(path)} as title: {post.title}")
+            post.title = Text.titlelize(title)
+            Colors.debug(f"Using file name {path} as title: {post.title}")
 
-        post.attrs = attrs
-        post.tags = []
-
-        for name in attrs.get("tags", []).split(","):
+        for name in post.attrs.get("tags", "").split(","):
             post.tags.append(name.strip())
 
-            # if uniqueTags.get(tag) is None:
-            #     uniqueTags[tag] = {}
-            # uniqueTags[tag][path] = attrs["title"]
-
-        print(f"==> Found page tags: {pageTags}")
-
-
-        print(f"==> Loaded post from file {path}:")
-        print(post)
+        Colors.debug(f"Loaded post from {post.path}:")
+        Colors.debug(f"Title: {post.title}")
+        Colors.debug(f"Attrs: {post.attrs}")
         return post
-
-
-    def titlelize(self, text: str) -> str:
-        return text[0].upper() + text[1:]
 
 
     # def replaceFooter(self, path: str, comments: bool):
@@ -263,32 +267,26 @@ class Posts:
 
     def process(self, dir: str, save: bool):
         posts = {}
-        uniqueTags = {}
+        # uniqueTags = {}
 
         for name in os.listdir(dir):
             ext = name[len(name)-3:]
             if ext != ".md":
-                print(f"==> Skip file {Colors.gray(name)}")
+                Colors.debug(f"Skip file {name}: {ext}")
                 continue
+
             if name in NO_IRISH_NEED_APPLY:
-                print(f"==> No irish please {Colors.gray(name)}")
+                Colors.debug(f"No irish, please {name}")
                 continue
 
             path = f"{dir}/{name}"
-            print(f"==> Found file {Colors.green(path)}")
-            # if path == "dispatch.md":
+            print(f"==> Found file: {Colors.green(path)}")
 
             post = self.load(path)
-            if str(post.attrs.get("hidden")).lower() in TRUE_FROM_A_CERTAIN_POINT_OF_VIEW:
-                print(f"==> File {Colors.yellow(path)} is hidden")
-                continue
 
-            # if not attrs.get("title"):
-            #     title = os.path.basename(path).replace(".md", "").replace("-", " ")
-            #     attrs["title"] = self.titlelize(title)
-            #     print(f"==> Using file {Colors.yellow(path)} name as title: {title}")
-            # else:
-            #     print(f"==> In file {Colors.green(path)} found title: {attrs.get('title')}")
+            if str(post.attrs.get("hidden")).lower() in TRUTHY:
+                Colors.debug(f"File {path} is hidden")
+                continue
 
             # tags = post.attrs.get("tags")
             # pageTags = []
@@ -302,13 +300,10 @@ class Posts:
 
             # print(f"==> Found page tags: {pageTags}")
 
-        #     self.replaceTags(path, pageTags)
-        #     self.replaceFooter(path, attrs.get("comments", "true"))
+            posts[path] = post
 
-        #     posts[path] = attrs["title"]
-
-        print(f"==> Found posts: {posts}")
-        print(f"==> Found tags:  {uniqueTags}")
+        # print(f"==> Found posts: {posts}")
+        # print(f"==> Found tags:  {uniqueTags}")
 
         # separator = "─" * 80
         # tagItems = {}
@@ -317,7 +312,7 @@ class Posts:
         #     tagItems[tag] = []
         #     content = []
         #     clean = tag.replace(" ", "-")
-        #     # print(f"\nTag: {titlelize(tag)}")
+        #     # print(f"\nTag: {Text.titlelize(tag)}")
         #     for page, title in pages.items():
         #         tagItems[tag].append(page)
         #         # print(f"- Page: {title}: {page}")
@@ -325,7 +320,7 @@ class Posts:
         #         content.append(f"- [{title}](../{page})")
         #         # content.append(f"- [{title}](/{page})")
 
-        #     text = TEMPLATE_TAG.replace("{{ name }}", self.titlelize(tag))
+        #     text = TEMPLATE_TAG.replace("{{ name }}", self.Text.titlelize(tag))
         #     text = text.replace("{{ content }}", "\n".join(content)).strip()
         #     print()
         #     print(f"File tags/{Colors.green(tag)}.md")

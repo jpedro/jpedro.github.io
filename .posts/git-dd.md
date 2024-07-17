@@ -227,9 +227,3 @@ named after their commands. For example `git write-tree` used to call
 that start with `git-` can be called from git. `git-xxx` can be called
 as `git xxx`. I mean, you saved yourself from an hyphen. Now if this
 is not something to brag about in the company water cooler what is?
-<!-- START FOOTER -->
- &nbsp;
-
-<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
-<script defer="">Comments.start(document.body.children[0]);</script>
-<!-- END FOOTER -->

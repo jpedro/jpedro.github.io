@@ -28,9 +28,3 @@
 
 - **Peep Show**: another underrated cringe, dry comedy series. Not for
   everyone. Same creator as Succession.
-<!-- START FOOTER -->
- &nbsp;
-
-<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
-<script defer="">Comments.start(document.body.children[0]);</script>
-<!-- END FOOTER -->

@@ -3,10 +3,6 @@
 
 # Schemaless
 
-<!-- START TAGS -->
-[<img src="https://img.shields.io/badge/Tag-databases-brightgreen">](/tags/databases)
-<!-- END TAGS -->
-
 Schemaless databases are in fashion for a reason. On relational
 databases, out of the box schema changes sometimes involve locking and
 copying an entire table from the old to the new structure.

@@ -3,10 +3,6 @@
 
 # Postgres
 
-<!-- START TAGS -->
-[<img src="https://img.shields.io/badge/Tag-databases-brightgreen">](/tags/databases)
-<!-- END TAGS -->
-
 I'm learning Postgres for a while and while many things are
 _**so much nicer**_ than MySQL (I mean, come on! How long until there's
 a timezoned datetime field?), some basics are lacking.

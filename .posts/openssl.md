@@ -3,11 +3,6 @@
 
 # Useful OpenSSL commands
 
-<!-- START TAGS -->
-[<img src="https://img.shields.io/badge/Tag-shell-brightgreen">](/tags/shell)
-[<img src="https://img.shields.io/badge/Tag-security-brightgreen">](/tags/security)
-<!-- END TAGS -->
-
 [Original post](https://www.sslshopper.com/article-most-common-openssl-commands.html)
 
 One of the most versatile SSL tools is OpenSSL which is an open source
@@ -160,4 +155,3 @@ You can add -nocerts to only output the private key or add -nokeys to only outpu
 #### Convert a PEM certificate file and a private key to PKCS#12 (.pfx .p12)
 
     openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt -certfile CACert.crt
-

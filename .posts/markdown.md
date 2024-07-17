@@ -11,11 +11,6 @@
 
 # Markdown Snippets
 
-<!-- START TAGS -->
-[<img src="https://img.shields.io/badge/Tag-writting-brightgreen">](/tags/writting)
-[<img src="https://img.shields.io/badge/Tag-markdown-brightgreen">](/tags/markdown)
-<!-- END TAGS -->
-
 Markdown is a lightweight and easy-to-use syntax for styling your writing. It
 includes conventions for
 
@@ -51,11 +46,3 @@ Syntax highlighted code block
 ### More details
 
 Check [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
-
-
-
-
-
-
-
-
