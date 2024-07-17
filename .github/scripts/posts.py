@@ -2,6 +2,8 @@
 import os
 import sys
 
+from dataclasses import dataclass
+
 # Hmm.... https://www.irishpost.com/life-style/infamous-no-irish-no-blacks-no-dogs-signs-may-never-have-existed-racist-xenophobic-148416
 NO_IRISH_NEED_APPLY = [
     "README.md",
@@ -14,8 +16,8 @@ TRUE_FROM_A_CERTAIN_POINT_OF_VIEW = [
     "on",
     "1",
 ]
-THESE_ARE_NOT_THE_DROIDS = "<!--"
-TOYDARIAN_WATTO = "-->"
+COMMENT_START = "<!--"
+COMMENT_STOP = "-->"
 
 CENSORED_SEXY_COMMENTS = """
  &nbsp;
@@ -103,11 +105,18 @@ class Colors:
         return f"\033[2m{text}\033[0m"
 
 
+@dataclass
+class Post:
+    path: str
+    title: str
+    attrs: dict[str, str]
+    tags: list[str]
 
 
 class Posts:
 
-    def load(self, path: str) -> dict:
+    def load(self, path: str) -> Post:
+        post = Post()
         lines = open(path, "r").readlines()
         attrs = {}
 
@@ -116,22 +125,21 @@ class Posts:
 
             if line.find("# ") == 0:
                 if attrs.get("title") is None:
-                    print(f"==> Using first '#' header as title: {line}")
+                    print(f"==> Using first '#' header as title: {Color.green(line)}")
                     attrs["title"] = line[2:]
                 else:
-                    print(f"==> Skip. Using previous title: {attrs['title']}")
+                    print(f"==> Skip. Just use previous title: {Color.yellow(attrs['title'])}")
                 continue
 
-            start = line.find(THESE_ARE_NOT_THE_DROIDS)
-            end = line.find(TOYDARIAN_WATTO)
+            start = line.find(COMMENT_START)
+            stop = line.find(COMMENT_STOP)
             if start < 0:
                 continue
-            if end < 0:
+            if stop < 0:
                 continue
 
             # print(f"Found line: {line}")
-            comment = line[len(THESE_ARE_NOT_THE_DROIDS):len(
-                line) - len(TOYDARIAN_WATTO)].strip()
+            comment = line[len(COMMENT_START):len(line) - len(COMMENT_STOP)].strip()
             # print(f"  Comment: {comment}")
 
             pos = comment.find(":")
@@ -144,91 +152,113 @@ class Posts:
             # print(f"  {key}: {val}")
             attrs[key] = val
 
-        print(f"==> Found attrs in file {path}: {attrs}")
-        return attrs
+        if attrs.get("title"):
+            print(f"==> In file {Colors.green(path)} found title: {attrs['title']}")
+            post.title = attrs["title"]
+        else:
+            title = os.path.basename(path).replace(".md", "").replace("-", " ")
+            post.title = self.titlelize(title)
+            print(f"==> Using file name {Colors.yellow(path)} as title: {post.title}")
+
+        post.attrs = attrs
+        post.tags = []
+
+        for name in attrs.get("tags", []).split(","):
+            post.tags.append(name.strip())
+
+            # if uniqueTags.get(tag) is None:
+            #     uniqueTags[tag] = {}
+            # uniqueTags[tag][path] = attrs["title"]
+
+        print(f"==> Found page tags: {pageTags}")
+
+
+        print(f"==> Loaded post from file {path}:")
+        print(post)
+        return post
 
 
     def titlelize(self, text: str) -> str:
         return text[0].upper() + text[1:]
 
 
-    def replaceFooter(self, path: str, comments: bool):
-        with open(path, "r") as f:
-            text = f.read()
+    # def replaceFooter(self, path: str, comments: bool):
+    #     with open(path, "r") as f:
+    #         text = f.read()
 
-        startFooter = "<!-- START FOOTER -->"
-        endFooter = "<!-- END FOOTER -->"
-        posStart = text.find(startFooter)
-        posEnd = text.find(endFooter)
-        print(f"posStart: {posStart}")
-        print(f"posEnd: {posEnd}")
-        print(f"lenEnd: {len(endFooter)}")
+    #     startFooter = "<!-- START FOOTER -->"
+    #     endFooter = "<!-- END FOOTER -->"
+    #     posStart = text.find(startFooter)
+    #     posEnd = text.find(endFooter)
+    #     print(f"posStart: {posStart}")
+    #     print(f"posEnd: {posEnd}")
+    #     print(f"lenEnd: {len(endFooter)}")
 
-        if posStart < 0:
-            print(f"Failed to find {startFooter}")
-            before = text
-            after = ""
+    #     if posStart < 0:
+    #         print(f"Failed to find {startFooter}")
+    #         before = text
+    #         after = ""
 
-        elif posEnd < 0:
-            print(f"Failed to find {endFooter}")
-            before = text
-            after = ""
+    #     elif posEnd < 0:
+    #         print(f"Failed to find {endFooter}")
+    #         before = text
+    #         after = ""
 
-        else:
-            cutRest = posEnd + len(endFooter)
-            before = text[0:posStart]
-            after = text[cutRest:]
-
-
-        print(f"comments: {comments}")
-        if comments == "false":
-            text = f"{before}{after}"
-            print(Colors.green("Not adding comments"))
-        else:
-            middle = f"{startFooter}{COOL_SEXY_COMMENTS}{endFooter}"
-            text = f"{before}{middle}{after}"
-
-        with open(path, "w") as f:
-            f.write(text)
+    #     else:
+    #         cutRest = posEnd + len(endFooter)
+    #         before = text[0:posStart]
+    #         after = text[cutRest:]
 
 
-    def replaceTags(self, path: str, tags: list):
-        with open(path, "r") as f:
-            text = f.read()
+    #     print(f"comments: {comments}")
+    #     if comments == "false":
+    #         text = f"{before}{after}"
+    #         print(Colors.green("Not adding comments"))
+    #     else:
+    #         middle = f"{startFooter}{COOL_SEXY_COMMENTS}{endFooter}"
+    #         text = f"{before}{middle}{after}"
 
-        startTags = "<!-- START TAGS -->"
-        endTags = "<!-- END TAGS -->"
-        posStart = text.find(startTags)
-        posEnd = text.find(endTags)
-        print(f"posStart: {posStart}")
-        print(f"posEnd: {posEnd}")
-        print(f"lenEnd: {len(endTags)}")
+    #     with open(path, "w") as f:
+    #         f.write(text)
 
-        if posStart < 0:
-            print(f"Failed to find {startTags}")
-            return
 
-        if posEnd < 0:
-            print(f"Failed to find {endTags}")
-            return
+    # def replaceTags(self, path: str, tags: list):
+    #     with open(path, "r") as f:
+    #         text = f.read()
 
-        cutRest = posEnd + len(endTags)
-        print(f"Found start: {posStart}, end: {posEnd}, cut: {cutRest}")
-        before = text[0:posStart]
-        after = text[cutRest:]
-        badges = []
-        badges.append(startTags)
-        for tag in tags:
-            clean = tag.replace(" ", "-")
-            badges.append(
-                f'[<img src="https://img.shields.io/badge/Tag-{tag}-brightgreen">](/tags/{clean})'
-            )
-        badges.append(endTags)
-        middle = "\n".join(badges)
+    #     startTags = "<!-- START TAGS -->"
+    #     endTags = "<!-- END TAGS -->"
+    #     posStart = text.find(startTags)
+    #     posEnd = text.find(endTags)
+    #     print(f"posStart: {posStart}")
+    #     print(f"posEnd: {posEnd}")
+    #     print(f"lenEnd: {len(endTags)}")
 
-        text = f"{before}{middle}{after}"
-        with open(path, "w") as f:
-            f.write(text)
+    #     if posStart < 0:
+    #         print(f"Failed to find {startTags}")
+    #         return
+
+    #     if posEnd < 0:
+    #         print(f"Failed to find {endTags}")
+    #         return
+
+    #     cutRest = posEnd + len(endTags)
+    #     print(f"Found start: {posStart}, end: {posEnd}, cut: {cutRest}")
+    #     before = text[0:posStart]
+    #     after = text[cutRest:]
+    #     badges = []
+    #     badges.append(startTags)
+    #     for tag in tags:
+    #         clean = tag.replace(" ", "-")
+    #         badges.append(
+    #             f'[<img src="https://img.shields.io/badge/Tag-{tag}-brightgreen">](/tags/{clean})'
+    #         )
+    #     badges.append(endTags)
+    #     middle = "\n".join(badges)
+
+    #     text = f"{before}{middle}{after}"
+    #     with open(path, "w") as f:
+    #         f.write(text)
 
 
     def process(self, dir: str, save: bool):
@@ -248,19 +278,19 @@ class Posts:
             print(f"==> Found file {Colors.green(path)}")
             # if path == "dispatch.md":
 
-            attrs = self.load(path)
-            if str(attrs.get("hidden")).lower() in TRUE_FROM_A_CERTAIN_POINT_OF_VIEW:
+            post = self.load(path)
+            if str(post.attrs.get("hidden")).lower() in TRUE_FROM_A_CERTAIN_POINT_OF_VIEW:
                 print(f"==> File {Colors.yellow(path)} is hidden")
                 continue
 
-            if not attrs.get("title"):
-                title = os.path.basename(path).replace(".md", "").replace("-", " ")
-                attrs["title"] = self.titlelize(title)
-                print(f"==> Using file {Colors.yellow(path)} name as title: {title}")
-            else:
-                print(f"==> In file {Colors.green(path)} found title: {attrs.get('title')}")
+            # if not attrs.get("title"):
+            #     title = os.path.basename(path).replace(".md", "").replace("-", " ")
+            #     attrs["title"] = self.titlelize(title)
+            #     print(f"==> Using file {Colors.yellow(path)} name as title: {title}")
+            # else:
+            #     print(f"==> In file {Colors.green(path)} found title: {attrs.get('title')}")
 
-            tags = attrs.get("tags")
+            tags = post.attrs.get("tags")
             pageTags = []
             if tags:
                 for tag in attrs["tags"].split(","):
