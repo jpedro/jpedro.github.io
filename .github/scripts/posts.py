@@ -290,17 +290,17 @@ class Posts:
             # else:
             #     print(f"==> In file {Colors.green(path)} found title: {attrs.get('title')}")
 
-            tags = post.attrs.get("tags")
-            pageTags = []
-            if tags:
-                for tag in attrs["tags"].split(","):
-                    tag = tag.strip()
-                    if uniqueTags.get(tag) is None:
-                        uniqueTags[tag] = {}
-                    pageTags.append(tag)
-                    uniqueTags[tag][path] = attrs["title"]
+            # tags = post.attrs.get("tags")
+            # pageTags = []
+            # if tags:
+            #     for tag in attrs["tags"].split(","):
+            #         tag = tag.strip()
+            #         if uniqueTags.get(tag) is None:
+            #             uniqueTags[tag] = {}
+            #         pageTags.append(tag)
+            #         uniqueTags[tag][path] = attrs["title"]
 
-            print(f"==> Found page tags: {pageTags}")
+            # print(f"==> Found page tags: {pageTags}")
 
         #     self.replaceTags(path, pageTags)
         #     self.replaceFooter(path, attrs.get("comments", "true"))
