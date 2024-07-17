@@ -23,7 +23,7 @@ Supported comments:
 
 ## Todos
 
-- [ ] Move posts from the root directory to [.posts](.posts)
+- [x] Move posts from the root directory to [.posts](.posts)
 - [ ] Add generated tags at the top of each page.
 - [ ] Allow multi-line comments.
 - [ ] Allow `date` and `index` ordering.
