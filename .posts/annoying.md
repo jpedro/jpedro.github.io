@@ -1,16 +1,18 @@
-# Annoy People
+# Annoying People
 
-179 ways to annoy people. From
+179 ways to annoy people.
+
+From
 [http://patorjk.com/misc/chainletters/179waystoannoypeople.htm](http://patorjk.com/misc/chainletters/179waystoannoypeople.htm).
 
 
 1. Specify that your drive-thru order is "to go."
 
-2. If you have a glass eye, tap on it occasionally with your pen while talking to others.
+2. Name your dog "Dog."
 
-3. Start each meal by conspicuously licking all your food, and announce that this is so no one will "swipe your grub."
+3. If you have a glass eye, tap on it occasionally with your pen while talking to others.
 
-4. Name your dog "Dog."
+4. Start each meal by conspicuously licking all your food, and announce that this is so no one will "swipe your grub."
 
 5. Insist on keeping your car windshield wipers running in all weather conditions "to keep them tuned up."
 
@@ -365,11 +367,3 @@
 ---
 
 Now for 180. Forward stupid chain letters to as many people as you can.
-
-Remember: **Be annoying** whenever possible.
-<!-- START FOOTER -->
- &nbsp;
-
-<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
-<script defer="">Comments.start(document.body.children[0]);</script>
-<!-- END FOOTER -->

@@ -35,7 +35,7 @@ aka that big-bang rewrite.
 -->
 
 
-![Chaos](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/chaos-2.png)
+![Chaos](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/chaos.png)
 
 And that’s why, everywhere you go, every company is "operating on a
 knife’s edge".

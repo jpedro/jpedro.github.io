@@ -94,7 +94,7 @@ def green(text: str) -> str:
 
 
 
-class Index:
+class Posts:
 
     def load(self, path: str) -> dict:
         lines = open(path, "r").readlines()
@@ -221,10 +221,10 @@ class Index:
 
 
     def process(self, save: bool):
-        blogPages = {}
-        blogTags = {}
+        posts = {}
+        uniqueTags = {}
 
-        for path in os.listdir():
+        for path in os.listdir(".posts"):
             ext = path[len(path)-3:]
             if ext != ".md":
                 continue
@@ -234,90 +234,89 @@ class Index:
             print(f"==> Found file {green(path)}")
             # if path == "dispatch.md":
 
-            attrs = self.load(path)
-            if str(attrs.get("hidden")).lower() in TRUE_FROM_A_CERTAIN_POINT_OF_VIEW:
-                print(f"==> File {green(path)} is hidden")
-                continue
+        #     attrs = self.load(path)
+        #     if str(attrs.get("hidden")).lower() in TRUE_FROM_A_CERTAIN_POINT_OF_VIEW:
+        #         print(f"==> File {green(path)} is hidden")
+        #         continue
 
-            if not attrs.get("title"):
-                title = os.path.basename(path).replace(".md", "").replace("-", " ")
-                attrs["title"] = self.titlelize(title)
-                print(f"==> Using file {green(path)} name as title: {title}")
+        #     if not attrs.get("title"):
+        #         title = os.path.basename(path).replace(".md", "").replace("-", " ")
+        #         attrs["title"] = self.titlelize(title)
+        #         print(f"==> Using file {green(path)} name as title: {title}")
 
-            tags = attrs.get("tags")
-            pageTags = []
-            if tags:
-                for tag in attrs["tags"].split(","):
-                    tag = tag.strip()
-                    if blogTags.get(tag) is None:
-                        blogTags[tag] = {}
-                    pageTags.append(tag)
-                    blogTags[tag][path] = attrs["title"]
+        #     tags = attrs.get("tags")
+        #     pageTags = []
+        #     if tags:
+        #         for tag in attrs["tags"].split(","):
+        #             tag = tag.strip()
+        #             if uniqueTags.get(tag) is None:
+        #                 uniqueTags[tag] = {}
+        #             pageTags.append(tag)
+        #             uniqueTags[tag][path] = attrs["title"]
 
-            self.replaceTags(path, pageTags)
-            self.replaceFooter(path, attrs.get("comments", "true"))
+        #     self.replaceTags(path, pageTags)
+        #     self.replaceFooter(path, attrs.get("comments", "true"))
 
-            blogPages[path] = attrs["title"]
+        #     posts[path] = attrs["title"]
 
-        print(f"==> Using pages {blogPages}")
-        print(f"==> Using tags {blogTags}")
+        # print(f"==> Using posts: {posts}")
+        # print(f"==> Using tags:  {uniqueTags}")
 
-        separator = "─" * 80
-        tagItems = {}
-        os.makedirs(f"tags", exist_ok=True)
-        for tag, pages in blogTags.items():
-            tagItems[tag] = []
-            content = []
-            clean = tag.replace(" ", "-")
-            # print(f"\nTag: {titlelize(tag)}")
-            for page, title in pages.items():
-                tagItems[tag].append(page)
-                # print(f"- Page: {title}: {page}")
-                # content.append(f"- [{title}](../{page[0:len(page)-3]})")
-                content.append(f"- [{title}](../{page})")
-                # content.append(f"- [{title}](/{page})")
+        # separator = "─" * 80
+        # tagItems = {}
+        # os.makedirs(f"tags", exist_ok=True)
+        # for tag, pages in uniqueTags.items():
+        #     tagItems[tag] = []
+        #     content = []
+        #     clean = tag.replace(" ", "-")
+        #     # print(f"\nTag: {titlelize(tag)}")
+        #     for page, title in pages.items():
+        #         tagItems[tag].append(page)
+        #         # print(f"- Page: {title}: {page}")
+        #         # content.append(f"- [{title}](../{page[0:len(page)-3]})")
+        #         content.append(f"- [{title}](../{page})")
+        #         # content.append(f"- [{title}](/{page})")
 
-            text = TEMPLATE_TAG.replace("{{ name }}", self.titlelize(tag))
-            text = text.replace("{{ content }}", "\n".join(content)).strip()
-            print()
-            print(f"File tags/{green(tag)}.md")
-            print("\033[38;5;242m" + separator)
-            print(text)
-            print(separator + "\033[0m")
-            if save:
-                os.makedirs(f"tags", exist_ok=True)
-                with open(f"tags/{clean}.md", "w") as f:
-                    f.write(text)
+        #     text = TEMPLATE_TAG.replace("{{ name }}", self.titlelize(tag))
+        #     text = text.replace("{{ content }}", "\n".join(content)).strip()
+        #     print()
+        #     print(f"File tags/{green(tag)}.md")
+        #     print("\033[38;5;242m" + separator)
+        #     print(text)
+        #     print(separator + "\033[0m")
+        #     if save:
+        #         os.makedirs(f"tags", exist_ok=True)
+        #         with open(f"tags/{clean}.md", "w") as f:
+        #             f.write(text)
 
-        content = []
-        for name, title in blogPages.items():
-            # print(f"- {title}: {name}")
-            # content.append(f"- [{title}]({name})")
-            # content.append(f"- [{title}]({name[0:len(name)-3]})")
-            content.append(f"- [{title}]({name})")
+        # content = []
+        # for name, title in pages.items():
+        #     # print(f"- {title}: {name}")
+        #     # content.append(f"- [{title}]({name})")
+        #     # content.append(f"- [{title}]({name[0:len(name)-3]})")
+        #     content.append(f"- [{title}]({name})")
 
-        tagsContent = []
-        # print(tagItems)
-        for tag, pages in tagItems.items():
-            count = len(pages)
-            # print(f"- Tag: {tag}: {count}")
-            tagsContent.append(f"- [{tag}](tags/{tag}) ({count})")
+        # tagsContent = []
+        # # print(tagItems)
+        # for tag, pages in tagItems.items():
+        #     count = len(pages)
+        #     # print(f"- Tag: {tag}: {count}")
+        #     tagsContent.append(f"- [{tag}](tags/{tag}) ({count})")
 
-        print("tagsContent", tagsContent)
-        text = TEMPLATE_INDEX.replace("{{ pages }}", "\n".join(content))
-        text = text.replace("{{ tags }}", "\n".join(tagsContent)).strip()
-        print()
-        print("File \033[32;1mindex.md")
-        print("\033[38;5;242m" + separator)
-        print(text)
-        print(separator + "\033[0m")
-        if save:
-            with open("index.md", "w") as f:
-                f.write(text)
-                f.write(SHOW_ME_SOME_MCLOVIN)
+        # print("tagsContent", tagsContent)
+        # text = TEMPLATE_INDEX.replace("{{ pages }}", "\n".join(content))
+        # text = text.replace("{{ tags }}", "\n".join(tagsContent)).strip()
+        # print()
+        # print("File \033[32;1mindex.md")
+        # print("\033[38;5;242m" + separator)
+        # print(text)
+        # print(separator + "\033[0m")
+        # if save:
+        #     with open("index.md", "w") as f:
+        #         f.write(text)
+        #         f.write(SHOW_ME_SOME_MCLOVIN)
 
 
 if __name__ == "__main__":
-    index = Index()
-    save = True if "--save" in sys.argv else False
-    index.process(save)
+    posts = Posts()
+    posts.process(True)
