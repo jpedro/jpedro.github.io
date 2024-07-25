@@ -45,3 +45,6 @@ knife’s edge".
 - [Swear words in the kernel](https://www.vidarholen.net/contents/wordcount/)
 
 - [Do you want more swear?? I know you do](https://eeggs.com/items/37700.html)
+
+- [I Contribute to the Windows Kernel](https://blog.zorinaq.com/i-contribute-to-the-windows-kernel-we-are-slower-than-other-oper/)
+
