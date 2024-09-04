@@ -5,10 +5,8 @@
 
 ## Features
 
-Add a markdown comment in the format `<!-- something something in here -->`
-to set properties.
-
-Supported comments:
+Add a markdown comment in the format `<!-- write something smart here -->`
+to set properties. Supported:
 
 | Comment    | Description                                    | Example          |
 |------------|------------------------------------------------|------------------|
