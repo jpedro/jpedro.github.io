@@ -11,7 +11,7 @@ to set properties. Supported:
 | Comment    | Description                                            | Type    | Default         |
 | ---------- | ------------------------------------------------------ | ------- | --------------- |
 | `hidden`   | Hides a page from the `index.md`                       | boolean | `false`         |
-| `title`    | Overrides both `# H1` and beautified file name         | string  | ``              |
+| `title`    | Overrides both `# H1` and beautified file name         | string  | `""`            |
 | `tags`     | Custom tags                                            | csv     | `shell, linux`  |
 | `comments` | Controls comments in pages (right now, only dad jokes) | boolean | `true`, `false` |
 
