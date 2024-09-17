@@ -7,10 +7,13 @@ but I understand for managers, that need to justify development costs
 (that ties directly to development time), that manifesto is meaningless.
 Wishful thinking.
 
-So Scrum comes in as a way to get workers to estimate and commit to
-deadlines and of course, track progress. This is, obviously,
-important. And Scrum even allows developers to estimate themselves.
-And most of the time they fail their own generous estimations. The gal!
+So Scrum saves the day as a way to get workers to estimate and commit
+to deadlines and of course, track progress. This is, obviously,
+important.
+
+Scrum amkes a concession: it even allows developers to estimate
+themselves. And most of the time they fail their own generous
+estimations. Slackers!
 
 
 ## The fails
