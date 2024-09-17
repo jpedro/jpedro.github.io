@@ -39,14 +39,14 @@ combining task status and planning) is truly essential.
 
 These are 5 ceremonies:
 
-- Sprint Planning: Required
+- Sprint Planning
 
-  Should be done every week or every cycle.
+  Should be done _every_ week or every cycle. The only one needed.
 
-- Daily Scrum: Optional
+- Daily Scrum
 
   Should be optional. Most of time people just say "I did this and I'll
-  continue on it".
+  continue on it". Why. Even. Bother?!
 
 - Sprint Demo: Unnecessary
 
@@ -58,7 +58,7 @@ These are 5 ceremonies:
   Just say it when you can. Then expand it on the weekly meeting, if
   need be.
 
-- Backlog Refinement: Unnecessary
+- Backlog Refinement / Grooming: Unnecessary
 
   Superfulous, it's part of planning. No need for a separate meeting.
 
