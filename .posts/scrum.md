@@ -7,13 +7,12 @@ but I understand for managers, that need to justify development costs
 (that ties directly to development time), that manifesto is meaningless.
 Wishful thinking.
 
-So Scrum saves the day as a way to get workers to estimate and commit
-to deadlines and of course, track progress. This is, obviously,
-important.
+So Scrum saves the day as a way to get workers to commit to deadlines
+and track those. This is, obviously, important.
 
-Scrum amkes a concession: it even allows developers to estimate
-themselves. And most of the time they fail their own generous
-estimations. Slackers!
+Scrum even make a concession: it even allows developers to estimate
+themselves. (And most of the time they fail their own generous
+estimations. Slackers!)
 
 
 ## The fails
@@ -47,7 +46,7 @@ and resposibilities. Weird ways to track progress. What problem does
 time.
 
 It's the most anti-Agile thing ever. It's processes and tools. And
-companies gobbled it. Because there's no alternative.
+companies gobbled it. Because there's no widespread alternative.
 
 These are 5 ceremonies:
 
