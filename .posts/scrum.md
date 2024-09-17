@@ -18,7 +18,7 @@ And most of the time they fail their own generous estimations. The gal!
 But "it is a truth universally acknowledged, that a single developer
 in possession of a good project, must be in hate of Scrum".
 
-    — Proud and Prejudiced
+  — Proud and Prejudiced
 
 
 **Meetings are work killers**.
