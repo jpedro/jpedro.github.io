@@ -1,5 +1,7 @@
 ## Scrum
 
+Scrum sucks.
+
 I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
 but I understand for managers, that need to justify development
 ~costs~ time, that is meaningless.
