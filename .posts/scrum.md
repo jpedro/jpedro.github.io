@@ -15,7 +15,7 @@ And most of the time they fail their own generous estimations. The gal!
 
 ## The fails
 
-But "it is a truth universally acknowledged, that a single developer
+"It is a truth universally acknowledged, that a single developer
 in possession of a good project, must be in hate of Scrum".
 
   — Proud and Prejudiced
