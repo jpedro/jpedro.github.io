@@ -26,8 +26,8 @@ in possession of a good project, _must_ be in resentment of Scrum".
 
 ### Work Killers
 
-Managers fail to grasp how hard is to get back into a coding flow state
-of mind after meetings. It can take hours.
+Managers fail to grasp how hard is to get back into a coding state
+of mind (flow) after meetings. It can take hours.
 
 And Scrum is _meeting heavy_. This carries incredible appeal to managers,
 by giving them a feeling that they are in the loop.
@@ -39,6 +39,15 @@ combining task status and planning) is truly essential.
 
 
 ### The wasteland
+
+Agile is all about ad-hoc interactions ("Individuals and interactions").
+Scrum establishes processes, cadences, cerimonies, strangely named roles
+and resposibilities. Weird ways to track progress. What problem does
+"complexity points" solve? The only metric that matters is development
+time.
+
+It's the most anti-Agile thing ever. It's processes and tools. And
+companies gobbled it. Because there's no alternative.
 
 These are 5 ceremonies:
 
@@ -93,3 +102,12 @@ for it.
 - [Agile is Dead (Long Live Agility)](https://pragdave.me/thoughts/active/2014-03-04-time-to-kill-agile.html)
 
 - [Why Scrum is Stressing You Out](https://rethinkingsoftware.substack.com/p/why-scrum-is-stressing-you-out)
+
+
+## Alternatives
+
+37signals has an interesting approach. They have 6 weeks cycles followed with a 2 week
+cool-off period. And in those 6 weeks they try to add features. In those 2 weeks they
+polish what was done or play with new stuff.
+
+
