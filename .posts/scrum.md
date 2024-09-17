@@ -7,25 +7,35 @@ but I understand for managers, that need to justify development costs
 (that ties directly to development time), that manifesto is meaningless.
 Wishful thinking.
 
-So Scrum comes in as a way to get workers to estimate, commit to a
-deadline and track their progress. This is, obviously, important.
+So Scrum comes in as a way to get workers to estimate and commit to
+deadlines and of course, track progress. This is, obviously,
+important. And Scrum even allows developers to estimate themselves.
+And most of the time they fail their own generous estimations. The gal!
 
 
 ## The fails
 
-The problem is that managers fail to grasp how hard is to get back into
-a coding flow state of mind after meetings. It can take hours.
+But "it is a truth universally acknowledged, that a single developer
+in possession of a good project, must be in hate of Scrum".
+
+    — Proud and Prejudiced
+
 
 **Meetings are work killers**.
 
-And Scrum is _meeting heavy_. It's designed to appeal to managers, by
-giving them a view into what's going on. There are 5 ceremonies, 3 of
+Managers fail to grasp how hard is to get back into a coding flow state
+of mind after meetings. It can take hours.
+
+And Scrum is _meeting heavy_. This carries incredible appeal to managers,
+by giving them a feeling that they are in the loop.
+
+There are 5 ceremonies, 3 of
 them are totally a waste of time and only one (a weekly meeting,
 combining task status and planning) is truly essential.
 
 
 
-## The wasteland
+### The wasteland
 
 These are 5 ceremonies:
 
