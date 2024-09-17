@@ -24,7 +24,7 @@ in possession of a good project, _must_ be in resentment of Scrum".
   — Proud and Prejudiced
 
 
-## Work Killers
+### Work Killers
 
 Managers fail to grasp how hard is to get back into a coding flow state
 of mind after meetings. It can take hours.
