@@ -102,11 +102,15 @@ for it.
 
 - [Why Scrum is Stressing You Out](https://rethinkingsoftware.substack.com/p/why-scrum-is-stressing-you-out)
 
+- [Scrum is the Symptom, not the Problem
+](https://rethinkingsoftware.substack.com/p/scrum-is-the-symptom-not-the-problem)
+
 
 ## Alternatives
 
-37signals has an interesting approach. They have 6 weeks cycles followed with a 2 week
-cool-off period. And in those 6 weeks they try to add features. In those 2 weeks they
-polish what was done or play with new stuff.
+37signals has an interesting approach. They have 6 weeks cycles
+followed by a 2 week cool-off period. And in the 6 weeks they add
+features. In the 2 weeks they polish what was done or play with
+new stuff.
 
 
