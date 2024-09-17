@@ -4,10 +4,10 @@ Scrum sucks.
 
 I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
 but I understand for managers, that need to justify development
-~costs~ time, that is meaningless.
+~costs~ time, that manifesto is meaningless.
 
-Scrum is a way to get workers to estimate, commit to a deadline and
-track their progress. This is, obviously, important.
+So Scrum comes in as a way to get workers to estimate, commit to a
+deadline and track their progress. This is, obviously, important.
 
 
 ## The fails
