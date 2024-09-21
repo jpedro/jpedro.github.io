@@ -1,54 +1,60 @@
 ## Scrum
 
-Scrum sucks.
+"It is a truth universally acknowledged, that a single developer
+in possession of a good project, _must_ be in sear hate of Scrum".
+
+Scrum sucks. People shifting from "is it bad?" to "why is it bad?"
+And people still don't have a viable alternative.
+
+
+## Agile
+
+Agile, whatever that may be, is not enough.
 
 I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
 but I understand for managers, that need to justify development costs
 (that ties directly to development time), that manifesto is meaningless.
 Wishful thinking.
 
-So Scrum saves the day as a way to get workers to commit to deadlines
+So Scrum saved the day as a way to get workers to commit to deadlines
 and track those. This is, obviously, important.
 
-Scrum even make a concession: it even allows developers to estimate
-themselves. (And most of the time they fail their own generous
-estimations. Slackers!)
+Scrum even make a concession: it allows developers to estimate
+themselves. And most of the time they fail their own generous
+estimations.
 
 
-## The fails
-
-"It is a truth universally acknowledged, that a single developer
-in possession of a good project, _must_ be in resentment of Scrum".
-
-  — Proud and Prejudiced
-
-
-### Work Killers
+## Work Killers
 
 Managers fail to grasp how hard is to get back into a coding state
-of mind (flow) after meetings. It can take hours.
+of mind (flow) after meetings. It can take hours. Most of the time
+it ruins the day. Yes, you might do something but it's not as
+productive as before that meeting.
 
-And Scrum is _meeting heavy_. This carries incredible appeal to managers,
-by giving them a feeling that they are in the loop.
+And Scrum is _meeting heavy_. This carries appeal to managers,
+by giving them a feeling that they are in the loop. Which they should.
+Because they are the ones calming the customer down when things take
+longer.
 
-There are 5 ceremonies, 3 of
-them are totally a waste of time and only one (a weekly meeting,
-combining task status and planning) is truly essential.
+But Agile is all about ad-hoc interactions ("Individuals and
+interactions"). Scrum on the other hand, establishes processes,
+cadences, cerimonies, strangely named roles and resposibilities.
+Weird ways to track progress. What problem does "complexity points"
+solve? The only metric that matters is development time.
 
-
-
-### The wasteland
-
-Agile is all about ad-hoc interactions ("Individuals and interactions").
-Scrum establishes processes, cadences, cerimonies, strangely named roles
-and resposibilities. Weird ways to track progress. What problem does
-"complexity points" solve? The only metric that matters is development
-time.
+Yes, Scrum, which is older than Agile, jumped into the Agile
+bangwagon, got a restart and promises to be cool and flexible and
+whatnot to get the devs onboard. But it really isn't.
 
 It's the most anti-Agile thing ever. It's processes and tools. And
-companies gobbled it. Because there's no widespread alternative.
+companies gobbled it. Because there's no viable alternative.
 
-These are 5 ceremonies:
+
+## The wasteland
+
+There are 5 ceremonies, 3 of them are totally a waste of time and
+only one (a weekly meeting, combining task status and planning) is
+truly essential.
 
 - Sprint Planning
 
@@ -59,17 +65,17 @@ These are 5 ceremonies:
   Should be optional. Most of time people just say "I did this and I'll
   continue on it". Why. Even. Bother?!
 
-- Sprint Demo: Unnecessary
+- Sprint Demo: Waste
 
   Don't wait for the sprint to be over to **show** something.
 
-- Sprint Retrospective: Unnecessary
+- Sprint Retrospective: Waste
 
   Don't wait for the sprint to be over to **say** something.
   Just say it when you can. Then expand it on the weekly meeting, if
   need be.
 
-- Backlog Refinement / Grooming: Unnecessary
+- Backlog Refinement / Grooming: Waste
 
   Superfulous, it's part of planning. No need for a separate meeting.
 
@@ -102,14 +108,16 @@ for it.
 
 - [Why Scrum is Stressing You Out](https://rethinkingsoftware.substack.com/p/why-scrum-is-stressing-you-out)
 
-- [Scrum is the Symptom, not the Problem
-](https://rethinkingsoftware.substack.com/p/scrum-is-the-symptom-not-the-problem)
+- [Scrum is the Symptom, not the Problem](https://rethinkingsoftware.substack.com/p/scrum-is-the-symptom-not-the-problem)
+
+  This articles points out that by not having devs on receiveing end of
+  the fruits of their labour, they got reduced to punch card workers.
 
 
 ## Alternatives
 
 37signals has an interesting approach. They have 6 weeks cycles
-followed by a 2 week cool-off period. And in the 6 weeks they add
+followed by a 2 week cool-off period. And in the 6 weeks they ship
 features. In the 2 weeks they polish what was done or play with
 new stuff.
 
