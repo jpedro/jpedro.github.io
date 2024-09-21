@@ -65,12 +65,12 @@ goes away with `pgcli`, `mycli` and `litecli` tools available.
 ## The different
 
 Postgres won't return the last inserted id value by default. It's a
-small annoyance. Makes me added `if`s and buts to my SQL adapters.
+small annoyance. It forces me to add ifs and buts to my SQL adapters.
 
-It _does_ allow instead to return one or more fields from each insert.
+It _does_ allow instead to return one or more fields from each write.
 It's not even limited to `INSERT INTO table ... RETURN <field>`. It can
 be used with a `DELETE FROM table WHERE id = 123 OR id = 456 RETURNING *`
-and you loop over the data of those 2 deleted rows. So that saves you
+and you can loop over those now 2 deleted rows. So that saves you
 another round trip to the database. But most of the times, you just
 need that new serial id and redirect the page to the `GET /blah/<id>`.
 
