@@ -4,29 +4,56 @@
 # Postgres
 
 I'm learning Postgres for a while and while many things are
-_**so much nicer**_ than MySQL (I mean, come on! How long until there's
-a timezoned datetime field?), some basics are lacking.
-I'm disappointed.
+_**so much nicer**_ than MySQL. I mean, come on! How long until
+there's a datetime type with a timezoned component?
+
+But Postgres misses on some basics. I'm disappointed.
 
 
 ## The good
 
 Postgres is sometimes referred as an object-relational database, as
-opposed to what now looks like "static" data types systems. That's
-because columns in Postgres belong to an object data type and you can
-expand on them by defining your own types.
+opposed to predefined data types systems. That's because columns
+in Postgres belong to an object data type and you can expand on
+them by defining your own types. Which it's pretty neat.
 
-But the database should behave like a dumb API. It stores and retrieves
-data and allows performing simple queries. I can't see how extending
-the object type system as necessarily a great thing. Unless, of course,
-you are building your own data store atop Postgres. Which then, this
-all makes sense. (On the other hand, except in a few places, custom
-types reduces database portability and introduces opacity into this
-layer.)
+Tables can have hierarchical relationships. But not sure how this
+can be a good thing. Plus, in my naive opinion database schema
+tools can handle data hierarchies with more flexibility.
 
-Tables can have hierarchical relationships. There're sequences, better
-view support, native support for `UUID`s out of the box and many other
-goodies. And overall, it's just a better, more compliant RDBMS.
+There're also sequences, better view support, native support for
+`UUID`s, JSONPath functionality and much more candy out of the box.
+And it's also a more compliant RDBMS.
+
+
+## Design
+
+But at core there's a fundamental fork how Postgres and say MySQL
+were designed.
+
+For a long time, MySQL just wanted to be the fastest. Screw reference
+integrity. Leverage the application and build your own triggers.
+Also stored procedures only added after strong demand. To be fair,
+99.9% of the time you don't need _and_ you don't want application
+logic in the most critical tech stack piece. The one that's
+non-trivial to horizontally scale. The database. So keep it simple.
+Keep it dumb.
+
+Because the database should be a dumb API. Just store and retrieve
+my data. In the relational world, they also allow me to performing
+adhoc queries in unindexed fields 😱, that in other systems is
+simply impossible.
+
+So do **that** and do it well. And please, for the love of god,
+make the WAL _impossible_ to turn off. Don't make me opt' it in
+(_looking at SQLite_).
+
+So I can't see how extending the database type system as added value.
+It's not keeping it dumb. It's definitely not keeping portable.
+
+Unless, of course, you are building your own data store atop Postgres.
+Then this makes sense. Maybe that opacity is exactly what pays the
+bills.
 
 It's superficial but the out-of-the-box `psql` cli is friendlier
 than `mysql`. `\l` is and `\d+ table_name` are faster than
@@ -34,26 +61,31 @@ than `mysql`. `\l` is and `\d+ table_name` are faster than
 goes away with `pgcli`, `mycli` and `litecli` tools available.
 
 
+
 ## The different
 
-Postgres won't return the last inserted id value. It allows instead to
-return one or more fields from each query. It's not even limited to
-`INSERT INTO table`. It can be used with a
-`DELETE FROM table WHERE id = 123 OR id = 456 RETURNING *` and you
-loop over the fields of the 2 deleted rows. Pretty neat but it forces
-generic database adapters to append that `RETURNING id` to the end of
-each insert and load it separately. Some ORMs actually return the whole
-row by default, just in case.
+Postgres won't return the last inserted id value by default. It's a
+small annoyance. Makes me added `if`s and buts to my SQL adapters.
+
+It _does_ allow instead to return one or more fields from each insert.
+It's not even limited to `INSERT INTO table ... RETURN <field>`. It can
+be used with a `DELETE FROM table WHERE id = 123 OR id = 456 RETURNING *`
+and you loop over the data of those 2 deleted rows. So that saves you
+another round trip to the database. But most of the times, you just
+need that new serial id and redirect the page to the `GET /blah/<id>`.
+
+Some ORMs actually return the whole row by default, just in case. It
+feels a bit wasteful but this is a row oriented system, right? The other
+fields are already in memory anyway.
 
 Postgres also adds support for JSON and JSONB values but I find this
-very weird. In my mind, why the need for a specialised JSON column?
-You can put it in a TEXT field and if you need to really index those
-values just create a separate table pointing to them. Or use a proper
-search engine for this. Doing searches on JSON fields comes with a
-performance penalty.
-
-But I get it. It's convenient and for small datasets very useful to use
-these sparse indexes.
+very weird. In my mind, why the need for a specialised JSON column or
+its space optimised version? You can put it in a TEXT field and
+if you need to really index some values just create a separate table
+pointing to them. Or use a proper search engine for this. Doing
+searches on JSON fields comes with a performance penalty. But I do get
+that you can shrink the amount of data significantly enough that
+searching the records doesn't hurt performance.
 
 
 ## The ugly
@@ -64,21 +96,22 @@ put forward, none was adopted so far.
 
 This write amplification happens when **for each new update**, even to
 a single field, Postgres creates a new row version, while older ones
-are marked as dead. Those dead records accumulate in disk and therefore
-Postgres needs frequent garbagge collection in the form of `VACUUM`.
-This operation can run in parallel and can be scheduled to run after
-certain thresholds are hit.
+are marked as dead. Those tombstoned records accumulate in disk and
+therefore Postgres needs to garbagge collect them frequently enough,
+in the form of `VACUUM`. This operation can run in parallel and can
+be scheduled to run after certain thresholds are hit.
 
 This is because indexes in Postgres store **the whole damned row**.
 Another way to say it is: Postgres itself doesn't follow the Normal
 Forms. I get it. Normally this would be a trade between more space and
 saving one extra disk search (to hidrate Row IDs) but in write
-intensive applications mutating data, this costs.
+intensive applications with mutating data this costs.
 
 MySQL doesn't suffer from this amplification as data is stored in the
 primary btree index and other indexes just hold the primary key value
 on their leaves. Updates only affect the primary key btree. Unless of
-course, if you update the secondary index value(s) themselves.
+course, if you update the secondary index value(s) themselves. But
+the extra lookup has't hurt MySQL performance much.
 
 [Uber migrated away from Postgres](https://www.uber.com/en-NO/blog/postgres-to-mysql-migration/)
 due to this. Plus, the heavier (and weirder) replication, the use of
@@ -88,6 +121,11 @@ caches and a whole OS process per connection (solution: install
 
 ## The conclusion
 
-Despite all this, I'm migrating some apps to Postgres but for smaller
-non-HA stuff I will use SQLite statically linked as a library. This has
-to be the best performance, as one skips the whole TCP/IP overheads.
+Is this enough to stop me from using it? Hell no. Sometimes, you gotta
+swallow somethoing whole. Then you can judge how it really tastes.
+
+I'm migrating some apps to Postgres but for smaller stuff I'm using
+SQLite. It statically links as a library. Yes, storage is a single
+file that no one else can write into but it simplifies so much. And
+the performance is as good as it gets for a traditional relational
+system.
