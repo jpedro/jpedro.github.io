@@ -237,5 +237,5 @@ named after their commands. For example `git write-tree` used to call
 `git-write-tree`. Any executables in your `$PATH` (even better,
 [`$GIT_EXEC_PATH`](https://github.com/git/git/blob/c75fd8d8150afdf836b63a8e0534d9b9e3e111ba/exec-cmd.c#L289-L300))
 that start with `git-` can be called from git. `git-xxx` can be called
-as `git xxx`. I mean, you saved yourself from an hyphen. Now if this
-is not something to brag about in the company water cooler what is?
+as `git xxx`. I mean, you saved yourself from an hyphen! Now... if this
+is not something to brag about around the company water cooler what is?
