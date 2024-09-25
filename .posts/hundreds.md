@@ -193,7 +193,7 @@ below.
 
 Between a `terraform plan` and a `terraform apply` we parse the
 Terraform plan to ensure only some resources are allowed to be
-destroyed. You can't simply rely on a Terraform plan to error to catch
+destroyed. One can't simply rely on a Terraform plan to error to catch
 mistakes, for example because of a typo in the database instance name.
 But by parsing the plan we catch and halt that destruction and
 recreation. And this is definitely cleaner than sprinkling lifecycle
