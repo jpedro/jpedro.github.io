@@ -46,10 +46,9 @@ logic in the most critical tech stack piece. The one that's
 non-trivial to horizontally scale. The database. So keep it simple.
 Keep it dumb.
 
-Because the database should be a dumb API. Just store and retrieve
-my data. In the relational world, they also allow me to performing
-adhoc queries in unindexed fields 😱, that in other systems is
-simply impossible.
+Because the database _should_ be a dumb API. Just store and retrieve
+my data. And let me to perform some adhoc queries over unindexed
+fields 😱, that other wiser systems is strictly forbudt.
 
 So do **that** and do it well. And please, for the love of god,
 make the WAL _impossible_ to turn off. Don't make me opt' it in
@@ -79,7 +78,7 @@ It's not even limited to `INSERT INTO table ... RETURN <field>`. It can
 be used with a `DELETE FROM table WHERE id = 123 OR id = 456 RETURNING *`
 and you can loop over those now 2 deleted rows. So that saves you
 another round trip to the database. But most of the times, you just
-need that new serial id and redirect the page to the `GET /blah/<id>`.
+need that new serial id and redirect the page to the `GET /blah/id`.
 
 Some ORMs actually return the whole row by default, just in case. It
 feels a bit wasteful but this is a row oriented system, right? The other
@@ -118,21 +117,23 @@ MySQL doesn't suffer from this amplification as data is stored in the
 primary btree index and other indexes just hold the primary key value
 on their leaves. Updates only affect the primary key btree. Unless of
 course, if you update the secondary index value(s) themselves. But
-the extra lookup has't hurt MySQL performance much.
+the extra lookup has't hurt MySQL performance.
 
 [Uber migrated away from Postgres](https://www.uber.com/en-NO/blog/postgres-to-mysql-migration/)
-due to this. Plus, the heavier (and weirder) replication, the use of
-caches and a whole OS process per connection (solution: install
-`pgbouncer` everywhere) leaves a bitter taste.
+due to this.
+
+Plus, the heavier (and weirder) replication, the use of caches and a
+whole OS process per connection (solution: install `pgbouncer` everywhere)
+leaves a sour taste.
 
 
 ## The conclusion
 
 Is this enough to stop me from using it? Hell no. Sometimes, you gotta
-swallow somethoing whole. Then you can judge how it really tastes.
+swallow something whole. Then you can judge how it really tastes.
 
-I'm migrating some apps to Postgres but for smaller stuff I'm using
+I'm migrating some apps to Postgres but for the small fish I'm using
 SQLite. It statically links as a library. Yes, storage is a single
 file that no one else can write into but it simplifies so much. And
 the performance is as good as it gets for a traditional relational
-system.
+storage.
