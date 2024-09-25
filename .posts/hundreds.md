@@ -446,7 +446,7 @@ monitoring and other LZ functionality is outside of the scope of this
 article.
 
 They all live happily in their own repos and run in non-threaded,
-non-parallelised, manually approved python-unstrangled pipelines.
+non-parallelised, manually approved, python-unstrangled pipelines.
 
 Because they can.
 
