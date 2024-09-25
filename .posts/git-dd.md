@@ -47,7 +47,7 @@ Git alias can host not only alias to 1. other git commands and flags,
 but also to 2. shelled out calls and, abusing that, 3. inline shell
 functions.
 
-Basically we can abuse git as a task manager. And so we shall.
+We can abuse git as a task manager. And so we shall.
 
 
 ### 1. Subcommand alias
@@ -111,9 +111,9 @@ Yo, a monad is a monoid in the category of endofunctors! Have a 🍪
 
 ![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
 
-Functions are more flexible that shell commands. Conditionals, loops,
-arguments work better. You can download the internets and stream Veep.
-From the comfort of your local repo.
+Functions are more flexible that shelled out commands. Conditionals,
+loops, arguments work better. You can download the internets and stream
+Veep. From the comfort of your local repo.
 
 
 ## Git Config
@@ -209,7 +209,7 @@ that directory. Here's `git ff` along with the rest of the gang:
 So not only are we abusing git as a task manager, we are using it as a
 code sync mechanism. Fan. Tas. Tic.
 
-make has nothin' on git!
+`make` has nothin' on `git`!
 
 
 ## Is there a better way?
