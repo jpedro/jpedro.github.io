@@ -4,8 +4,8 @@
 in possession of a good project, _must be_ in sear hate of Scrum".
 
 Scrum sucks. The Zeitgeist (am I using this right??) shifted from
-"is it bad?" to "why is it so soo bad?". And there's still no
-viable alternative.
+"is it bad?" to "why is it so soo bad?". And there's no visible
+alternative.
 
 
 ## Agile
