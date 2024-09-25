@@ -1,15 +1,15 @@
 ## Scrum
 
 "It is a truth universally acknowledged, that a single developer
-in possession of a good project, _must_ be in sear hate of Scrum".
+in possession of a good project, _must be_ in sear hate of Scrum".
 
-Scrum sucks. People shifting from "is it bad?" to "why is it bad?"
-And people still don't have a viable alternative.
+Scrum sucks. People shifted from "is it bad?" to "why is it bad?"
+And there's still no viable alternative.
 
 
 ## Agile
 
-Agile, whatever that may be, is not enough.
+Agile, whatever that may be (_cue Prince Charles_), is not enough.
 
 I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
 but I understand for managers, that need to justify development costs
