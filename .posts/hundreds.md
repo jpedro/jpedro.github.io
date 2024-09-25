@@ -161,7 +161,7 @@ threshold is authorised. The list of auto-approved, manually approved
 or straight up denied settings also live in yaml files. Which means
 they can be extended as needed via pull requests.
 
-In short, pulling these definitions into Python adds better control
+In short, pulling these definitions into Python adds more flexibility
 than Terraform could ever offer. One could argue that the Terraform
 CDK allows this too but running this from Python allows us to control
 things between an init and a plan and between a plan and an apply.
@@ -175,7 +175,7 @@ hierarchy to the Landing Zone tree structure and some resources had to
 be imported to avoid duplication and eventual deployment errors. Also,
 people tend to create some things manually and then add them later to
 the project settings. So between an init and a plan, we import
-resources and fix some resources.
+resources and mend some things.
 
 > **Note**
 >
@@ -185,7 +185,8 @@ resources and fix some resources.
 
 Another benefit of having Python wrapping Terraform (see what I
 did there) is speeding up Terraform calls by parallelising python and
-therefore Terraform calls. More details on this below.
+therefore Terraform calls at a _project_ level. More details on this
+below.
 
 
 ### Plan safety
