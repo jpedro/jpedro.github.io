@@ -111,6 +111,14 @@ $ git yo a monad is a monoid in the category of endofunctors
 Yo, a monad is a monoid in the category of endofunctors! Have a 🍪
 ```
 
+**Note:** Keep in mind, when git shells out it calls, not `bash`, not
+`zsh`, but `sh`. But there is no binary named `sh`. In most systems
+it's symlinked to `bash` or more commonly to `dash`. And dash is
+kinda old. 10 times smaller than bash sure but misses some nice bash'isms.
+For example, the better `[[` builtin doesn't exist. You can either fix
+the `sh` symlink or code accordingly.
+
+
 ![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
 
 Functions are more flexible that shelled out commands. Conditionals,
