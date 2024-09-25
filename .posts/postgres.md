@@ -26,7 +26,8 @@ them by defining your own types. Which it's pretty neat.
 
 Tables can have hierarchical relationships. But not sure how this
 can be a good thing. Plus, in my naive opinion database schema
-tools can handle data hierarchies with more flexibility.
+tools can handle data hierarchies with more flexibility. But we'll
+see with more use.
 
 There're also sequences, better view support, native support for
 `UUID`s, JSONPath functionality and much more candy out of the box.
@@ -38,17 +39,19 @@ And it's also a more compliant RDBMS.
 But at core there's a fundamental fork how Postgres and say MySQL
 were designed.
 
-For a long time, MySQL just wanted to be the fastest. Screw reference
-integrity. Leverage the application and build your own triggers.
-Also stored procedures only added after strong demand. To be fair,
-99.9% of the time you don't need _and_ you don't want application
-logic in the most critical tech stack piece. The one that's
-non-trivial to horizontally scale. The database. So keep it simple.
+For a long time, MySQL just wanted to be the fastest. For a long time,
+screw referential integrity. Use the application and build your own
+triggers. Stored procedures? You mean, schmore procedures?!... Only
+added after strong demand.
+
+To be fair, 99.9% of the time you don't need _and_ you definitely do not
+want application logic in database. The most critical tech component.
+The one that's non-trivial to horizontally scale. So keep it simple.
 Keep it dumb.
 
-Because the database _should_ be a dumb API. Just store and retrieve
-my data. And let me to perform some adhoc queries over unindexed
-fields 😱, that other wiser systems is strictly forbudt.
+Because the database _should_ be dumb. Just store and retrieve my data.
+And let me to run some adhoc queries over unindexed fields 😱, that
+other wiser systems is strictly forbudt.
 
 So do **that** and do it well. And please, for the love of god,
 make the WAL _impossible_ to turn off. Don't make me opt' it in
@@ -58,13 +61,13 @@ So I can't see how extending the database type system as added value.
 It's not keeping it dumb. It's definitely not keeping portable.
 
 Unless, of course, you are building your own data store atop Postgres.
-Then this makes sense. Maybe that opacity is exactly what pays the
+Then this all makes sense. Maybe that opacity is exactly what pays the
 bills.
 
 It's superficial but the out-of-the-box `psql` cli is friendlier
 than `mysql`. `\l` is and `\d+ table_name` are faster than
-`SHOW DATABASES` and `SHOW CREATE TABLE table_name`. All of this though
-goes away with `pgcli`, `mycli` and `litecli` tools available.
+`SHOW DATABASES` and `SHOW CREATE TABLE table_name` (this though
+goes away with `pgcli`, `mycli` and `litecli` tools available).
 
 
 
@@ -80,7 +83,7 @@ and you can loop over those now 2 deleted rows. So that saves you
 another round trip to the database. But most of the times, you just
 need that new serial id and redirect the page to the `GET /blah/id`.
 
-Some ORMs actually return the whole row by default, just in case. It
+Some ORMs actually return the whole row by default. Just in case. It
 feels a bit wasteful but this is a row oriented system, right? The other
 fields are already in memory anyway.
 
@@ -109,22 +112,22 @@ be scheduled to run after certain thresholds are hit.
 
 This is because indexes in Postgres store **the whole damned row**.
 Another way to say it is: Postgres itself doesn't follow the Normal
-Forms. I get it. Normally this would be a trade between more space and
-saving one extra disk search (to hidrate Row IDs) but in write
-intensive applications with mutating data this costs.
+Forms. I get it. This is a trade between more space and saving one
+extra disk searchs (to hidrate Row IDs) but in write intensive
+applications, with mutating data, this shows.
 
 MySQL doesn't suffer from this amplification as data is stored in the
-primary btree index and other indexes just hold the primary key value
-on their leaves. Updates only affect the primary key btree. Unless of
-course, if you update the secondary index value(s) themselves. But
-the extra lookup has't hurt MySQL performance.
+primary btree and other indexes just hold the primary key value on their
+leaves. Updates only affect the primary key btree. Unless of course,
+if you update the secondary index fields. But the extra lookup has't
+hurt MySQL performance.
 
 [Uber migrated away from Postgres](https://www.uber.com/en-NO/blog/postgres-to-mysql-migration/)
 due to this.
 
-Plus, the heavier (and weirder) replication, the use of caches and a
-whole OS process per connection (solution: install `pgbouncer` everywhere)
-leaves a sour taste.
+Plus, the heavier and weirder replication, the use of caches and a
+whole OS process per connection (solution: install `pgbouncer`
+everywhere) leaves a sour taste.
 
 
 ## The conclusion
@@ -132,8 +135,7 @@ leaves a sour taste.
 Is this enough to stop me from using it? Hell no. Sometimes, you gotta
 swallow something whole. Then you can judge how it really tastes.
 
-I'm migrating some apps to Postgres but for the small fish I'm using
+I'm migrating apps to Postgres but for the small fish I'm using
 SQLite. It statically links as a library. Yes, storage is a single
-file that no one else can write into but it simplifies so much. And
-the performance is as good as it gets for a traditional relational
-storage.
+file that no one else can write into but it's a bliss. And the
+performance is as good as it gets for a relational storage.
