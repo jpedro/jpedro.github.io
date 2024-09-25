@@ -116,7 +116,7 @@ Yo, a monad is a monoid in the category of endofunctors! Have a 🍪
 it's symlinked to `bash` or more commonly to `dash`. And dash is
 kinda old. 10 times smaller than bash sure but misses some nice bash'isms.
 For example, the better `[[` builtin doesn't exist. You can either fix
-the `sh` symlink or code accordingly.
+the `sh` symlink or code accordingly. (And you thought bash was bad!)
 
 
 ![But why](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg)
