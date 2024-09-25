@@ -47,7 +47,9 @@ Git alias can host not only alias to 1. other git commands and flags,
 but also to 2. shelled out calls and, abusing that, 3. inline shell
 functions.
 
-We can abuse git as a task manager. And so we shall.
+We can start sticking code into `~/.gitconfig` like there's no tomorrow
+and because that file is accessible to all git repos, we can abuse git
+as a _global_ task manager. And so we shall.
 
 
 ### 1. Subcommand alias
