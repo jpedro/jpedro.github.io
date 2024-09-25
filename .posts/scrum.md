@@ -1,6 +1,6 @@
 ## Scrum
 
-"It is a truth universally acknowledged, that a single developer
+> "It is a truth universally acknowledged, that a single developer
 in possession of a good project, _must be_ in sear hate of Scrum".
 
 Scrum sucks. People shifted from "is it bad?" to "why is it bad?"
