@@ -13,8 +13,8 @@ But Postgres misses on some basics. I'm disappointed.
 ## TL;DR
 
 Postgres feels like a Citroën, with a sleek design and full
-of  gadgetry. MySQL is just a truck that just keeps running
-and replicates better.
+of  gadgetry. MySQL is a truck that just keeps running and
+replicates better.
 
 
 ## The good
