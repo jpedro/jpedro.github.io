@@ -20,18 +20,14 @@ But I keep finding the people that do the best work in
 operations/infrastructure/cloud were for a long enough time developers.
 They think in layers and single responsabilities, reusability and
 decoupling. Naming, punctation, attention to detail matter, because
-compilers don't tolerate typos.
+compilers don't tolerate typos. Every time I open a shell script and
+I don't see what I'm gonna call EU mode (`set -eu`) at the top I get
+worried.
 
 Everyone should be exposed at coding. Coding should be mandatory at
-school, even if just for a few lessons. Sometimes it doesn't stick. For
-others, it can become addictive and it will change how they approach
-problems.
+school, even if just for a few lessons. For most people it will not stick.
+For others, it can become addictive and it will change how they approach
+problems. It's a great mental tool.
 
-It's a great mental tool. Programming languages are the midway between
-human languages and math (nature's language).
-<!-- START FOOTER -->
- &nbsp;
-
-<script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
-<script defer="">Comments.start(document.body.children[0]);</script>
-<!-- END FOOTER -->
+Programming languages are the midway between human languages and math
+(nature's language).
