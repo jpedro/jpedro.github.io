@@ -34,8 +34,8 @@ productive as before that meeting.
 
 And Scrum is _meeting heavy_. This carries appeal to managers,
 by giving them a feeling that they are in the loop. Which they should.
-Because they are the ones calming the customer down when things take
-longer.
+Because they are the ones calming the customer down when things go
+sideways.
 
 But Agile is all about ad-hoc interactions ("Individuals and
 interactions"). Scrum on the other hand, establishes processes,
