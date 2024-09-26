@@ -280,3 +280,35 @@ easier-than-ever distribution part but if all you have is a go or
 rust statically built binary, systemd or even good ol' SysVinit
 will happily keep it alive. And a new deployment can be another rsync
 away, promptly followed by a `systemctl restart`.
+
+
+## Progression
+
+It's funny how things evolve in developmment and operations.
+
+You start by installing some tool and testing a few CLI calls. When you
+start using them often enough you throw them into a bash script in the
+`$PATH`. Extract a few CLI arguments into script arguments. Tidy it up,
+with a few functions, subcommands, usage help text.
+
+Now you need to call them from your app, like say creating image thumbnails.
+And sure enough, you can shell these out. Or the tool has or the community
+created a SDK. Great.
+
+Down the road, you realise that it's better to do this off the main thread
+and asynchronously, in the background. You extract that into its own service.
+Throw the payload to some queue. Accept a callback URL. After a while
+you need to add some authentication because
+[you don't want this to be public, right?]([https://x.com/search?q=panels+art](https://x.com/ozgrozer/status/1838895852259041362))
+[Right?!](https://x.com/kaepora/status/1838651348797063276)
+
+But now with an auth token away (hopefully an OAuth or ODIC one) and your
+main business tanking, you realise you can sell this cheaper than the
+crazy competition prices. So you do _that_.
+
+And that's the whole dev "journey":
+
+Shell commands --> Shell script --> App system calls --> App SDK calls
+--> Separate service --> Distinct platform
+
+Something similar happens in the infrastrcuture level.
