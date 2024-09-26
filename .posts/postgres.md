@@ -53,7 +53,7 @@ The one that's non-trivial to horizontally scale. So keep it simple.
 Keep it dumb.
 
 Because the database _should_ be dumb. Just store and retrieve my data.
-And let me to run some adhoc queries over unindexed fields 😱, that
+And let me to run some adhoc queries over unindexed fields 😱, that on
 other wiser systems is strictly forbudt.
 
 So do **that** and do it well. And please, for the love of god,
@@ -103,6 +103,9 @@ pointing to them. Or use a proper search engine for this. Doing
 searches on JSON fields comes with a performance penalty. But I do get
 that you can shrink the amount of data significantly enough that
 searching the records doesn't hurt performance.
+
+And over time people added extensions. Cache storages. Cron schedulers.
+Pub/sub mechanisms. Even cypher graph support.
 
 
 ## The ugly
