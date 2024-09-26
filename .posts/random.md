@@ -304,10 +304,10 @@ makes sense. It's a service. Maybe not a Chad service but one nonetheless.
 
 After a while you need to add some authentication because
 [you don't want this to be public, right](https://x.com/ozgrozer/status/1838895852259041362)?
-[Right](https://x.com/kaepora/status/1838651348797063276)?! Or you just want
-to move this out of some private subnet or have its own dev/test environments.
-Anyway, there's now a pizza team of 2 only doing this now. With separate
-monitoring, alerts channels.
+[Right](https://x.com/kaepora/status/1838651348797063276)?! Because moved this
+out of some private subnets or have its own dev/test environments. Anyway,
+there's now a pizza team of 2 only doing this now. With separate monitoring,
+alerts channels.
 
 Now with an auth token away (hopefully an OAuth or OIDC one) and
 your main business tanking, you realise you can sell this cheaper than
