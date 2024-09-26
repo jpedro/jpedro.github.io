@@ -19,13 +19,12 @@ replicates better.
 
 ## The Good
 
-Postgres is sometimes referred as an object-relational database, as
-opposed to predefined data types systems. That's because columns
-in Postgres belong to an object data type and you can expand on
-them by creating your custom types from their 43 primitives types.
-Yes. 43! `CREATE TYPE Person AS (name VARCHAR, skills TEXT[])`. You
-can also create DOMAINS, which are aliases to types with `CHECK`
-constraints. All very neat. Opaque but neat.
+Postgres is sometimes referred as an object-relational database. That's
+because columns in Postgres belong to an object data type and you can
+expand on them by creating your custom types from their 43 primitives
+types. Yes. 43! `CREATE TYPE Person AS (name VARCHAR, skills TEXT[])`.
+You can also create DOMAINS, which basically work as aliases to
+types with `CHECK` constraints. All very neat. Opaque but neat.
 
 Tables can have hierarchical relationships, which sounds very OOP'ish.
 But not sure how this can be a good thing. Plus, in my naive opinion
