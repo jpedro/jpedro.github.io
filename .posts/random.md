@@ -297,8 +297,11 @@ created a SDK. Great.
 
 Down the road, you realise that it's better to do this off the main thread
 and asynchronously, in the background. You extract that into its own service.
-Throw the payload to some queue. Accept a callback URL. After a while
-you need to add some authentication because
+Throw the payload to some queue. Accept a callback URL. Maybe even use some
+evented loop runtime as this will wait on the CPU anyway. Maybe a lambda
+makes sense.
+
+After a while you need to add some authentication because
 [you don't want this to be public, right?]([https://x.com/search?q=panels+art](https://x.com/ozgrozer/status/1838895852259041362))
 [Right?!](https://x.com/kaepora/status/1838651348797063276)
 
