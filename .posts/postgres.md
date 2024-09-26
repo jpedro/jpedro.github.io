@@ -17,7 +17,7 @@ of  gadgetry. MySQL is a truck that just keeps running and
 replicates better.
 
 
-## The good
+## The Good
 
 Postgres is sometimes referred as an object-relational database, as
 opposed to predefined data types systems. That's because columns
@@ -36,45 +36,13 @@ There're also sequences, better view support, native support for
 `UUID`s, JSONPath functionality and much more candy out of the box.
 And it's also a more compliant RDBMS.
 
-
-## Design
-
-But at core there's a fundamental fork how Postgres and say MySQL
-were designed.
-
-For a long time, MySQL just wanted to be the fastest. For a long time,
-screw referential integrity. Use the application and build your own
-triggers. Stored procedures? You mean, schmore procedures?!... Only
-added after strong demand.
-
-To be fair, 99.9% of the time you don't need _and_ you definitely do not
-want application logic in database. The most critical tech component.
-The one that's non-trivial to horizontally scale. So keep it simple.
-Keep it dumb.
-
-Because the database _should_ be dumb. Just store and retrieve my data.
-And let me to run some adhoc queries over unindexed fields 😱, that on
-other wiser systems is strictly forbudt.
-
-So do **that** and do it well. And please, for the love of god,
-make the WAL _impossible_ to turn off. Don't make me opt' it in
-(_looking at SQLite_).
-
-So I can't see how extending the database type system as added value.
-It's not keeping it dumb. It's definitely not keeping portable.
-
-Unless, of course, you are building your own data store atop Postgres.
-Then this all makes sense. Maybe that opacity is exactly what pays the
-bills.
-
 It's superficial but the out-of-the-box `psql` cli is friendlier
 than `mysql`. `\l` is and `\d+ table_name` are faster than
 `SHOW DATABASES` and `SHOW CREATE TABLE table_name` (this though
 goes away with `pgcli`, `mycli` and `litecli` tools available).
 
 
-
-## The different
+## The Different
 
 Postgres won't return the last inserted id value by default. It's a
 small annoyance. It forces me to add ifs and buts to my SQL adapters.
@@ -91,9 +59,10 @@ feels a bit wasteful but this is a row oriented system, right? The other
 fields are already in memory anyway.
 
 With [the right extension](https://sive.rs/pg) you can even write stored
-procedures in python, ruby, rust, call `curl` and apparetnly even render
-html templates from a pgsql connection. Some peole don't know the difference
-between "can" and "should". Good luck testing that code.
+procedures in python, ruby, rust, call `curl` and even
+[render html templates](https://postgrest.org) from a pgsql connection.
+Some peole don't know the difference between "can" and "should".
+Good luck testing that code.
 
 Postgres also adds support for JSON and JSONB values but I find this
 very weird. In my mind, why the need for a specialised JSON column or
@@ -108,7 +77,7 @@ And over time people added extensions. Cache storages. Cron schedulers.
 Pub/sub mechanisms. Even cypher graph support.
 
 
-## The ugly
+## The Ugly
 
 The ugly is related to how Postgres handles MVCC. It's a long known
 problem called "write amplification" and although some proposals where
@@ -141,7 +110,40 @@ whole OS process per connection (solution: install `pgbouncer`
 everywhere) leaves a sour taste.
 
 
-## The conclusion
+## The Design
+
+At core there's a fundamental fork how Postgres and say MySQL
+were designed.
+
+MySQL just wanted to be the fastest. For a long time, screw referential
+integrity. Use the application and build your own triggers. Stored
+procedures? You mean, schmore procedures?!... Only added after strong
+demand.
+
+To be fair, 99.9% of the time you don't need _and_ you definitely do not
+want application logic in the database. I'll fight anyone on this. I'll
+die on this hill.
+
+The database is the most critical tech component. The one that's
+non-trivial to horizontally scale. So keep it simple. Keep it dumb.
+
+Because the database _should_ be dumb. Just store and retrieve my data.
+And let me to run some adhoc queries over unindexed fields 😱, that on
+other wiser systems is strictly forbudt.
+
+So do **that** and do it well. And please, for the love of god,
+make the WAL _impossible_ to turn off. Don't make me opt' it in
+(_looking at SQLite_).
+
+So I can't see how extending the database type system as added value.
+It's not keeping it dumb. It's definitely not keeping portable.
+
+Unless, of course, you are building your own data store atop Postgres.
+Then this all makes sense. Maybe that opacity is exactly what pays the
+bills.
+
+
+## The Conclusion
 
 Is this enough to stop me from using it? Hell no. Sometimes, you gotta
 swallow something whole. Then you can judge how it really tastes.
