@@ -22,12 +22,14 @@ replicates better.
 Postgres is sometimes referred as an object-relational database, as
 opposed to predefined data types systems. That's because columns
 in Postgres belong to an object data type and you can expand on
-them by defining your own types. Which it's pretty neat.
+them by creating your own types from their primitives.
+`CREATE TYPE Person AS (name VARCHAR, skills TEXT[])`.
+Which it's neat. Opaque but neat.
 
-Tables can have hierarchical relationships. But not sure how this
-can be a good thing. Plus, in my naive opinion database schema
-tools can handle data hierarchies with more flexibility. But we'll
-see with more use.
+Tables can have hierarchical relationships, basically like in OOP's
+inheritance. But not sure how this can be a good thing. Plus, in
+my naive opinion database schema tools can handle data hierarchies
+with more flexibily. But we'll see, with more use.
 
 There're also sequences, better view support, native support for
 `UUID`s, JSONPath functionality and much more candy out of the box.
