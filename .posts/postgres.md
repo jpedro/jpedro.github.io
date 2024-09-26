@@ -57,11 +57,11 @@ Some ORMs actually return the whole row by default. Just in case. It
 feels a bit wasteful but this is a row oriented system, right? The other
 fields are already in memory anyway.
 
-With [the right extension](https://sive.rs/pg) you can even write stored
+With [the right extension](https://pgt.dev/) you can even write stored
 procedures in python, ruby, rust, call `curl` and even
 [render html templates](https://postgrest.org) from a pgsql connection.
 Some peole don't know the difference between "can" and "should".
-Good luck testing that code.
+Good luck testing [that code](https://sive.rs/pg).
 
 Postgres also adds support for JSON and JSONB values but I find this
 very weird. In my mind, why the need for a specialised JSON column or
