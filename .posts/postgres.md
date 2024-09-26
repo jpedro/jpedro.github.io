@@ -121,11 +121,10 @@ procedures? You mean, schmore procedures?!... Only added after strong
 demand.
 
 To be fair, 99.9% of the time you don't need _and_ you definitely do not
-want application logic in the database. I'll fight anyone on this. I'll
-die on this hill.
-
-The database is the most critical tech component. The one that's
-non-trivial to horizontally scale. So keep it simple. Keep it dumb.
+want application logic in the database. I'll fight anyone on this. This
+is the hill I'll die for. The database is the most critical tech component.
+The one that's non-trivial to horizontally scale. So keep it simple, Keep
+it lean. Keep it dumb, stupid.
 
 Because the database _should_ be dumb. Just store and retrieve my data.
 And let me to run some adhoc queries over unindexed fields 😱, that on
