@@ -320,9 +320,6 @@ notifications, maybe a marketplace if you are bug enough. It's now a platform.
 
 And here it is. The whole dev "journey":
 
-Shell commands --> Shell script --> App system calls --> App SDK calls
---> Separate service --> Distinct platform --> Enterprise product
-
-Or shell commands --> Script --> Function --> Module --> Library --> Service --> Product --> Platform.
+Shell commands --> Script --> Function --> Module --> Library --> Service --> Product --> Platform.
 
 Something similar happens in the infrastrcuture level.
