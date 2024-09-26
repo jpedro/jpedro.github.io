@@ -286,32 +286,43 @@ away, promptly followed by a `systemctl restart`.
 
 It's funny how things evolve in developmment and operations.
 
-You start by installing some tool and testing a few CLI calls. When you
-start using them often enough you throw them into a bash script in the
-`$PATH`. Extract a few CLI arguments into script arguments. Tidy it up,
-with a few functions, subcommands, usage help text.
+You start by installing some tool and testing it with a few CLI calls.
 
-Now you need to call them from your app, like say creating image thumbnails.
-And sure enough, you can shell these out. Or the tool has or the community
-created a SDK. Great.
+When you use it enough you throw them into a bash script in the `$PATH`.
+Extract a few CLI arguments into script arguments. Tidy it up, with a
+few functions, subcommands, a useful usage help text.
 
-Down the road, you realise that it's better to do this off the main thread
-and asynchronously, in the background. You extract that into its own service.
-Throw the payload to some queue. Accept a callback URL. Maybe even use some
-evented loop runtime as this will wait on the CPU anyway. Maybe a lambda
-makes sense.
+After a company hacktahin, now you need to integrate these from your app,
+like say creating image thumbnails. And sure enough, you can shell these
+out. Or the tool has or the community created a SDK. Great.
+
+Down the road, you realise that it's better to do this off the main app thread
+and do it asynchronously, in the background. You extract that into its own
+service. Throw the payload to some queue. Accept a callback URL. Maybe even
+use some evented loop runtime as this is CPU-bound anyway. Maybe a lambda
+makes sense. It's a service. Maybe not a Chad service but one nonetheless.
 
 After a while you need to add some authentication because
 [you don't want this to be public, right](https://x.com/ozgrozer/status/1838895852259041362)?
-[Right](https://x.com/kaepora/status/1838651348797063276)?!
+[Right](https://x.com/kaepora/status/1838651348797063276)?! Or you just want
+to move this out of some private subnet or have its own dev/test environments.
+Anyway, there's now a pizza team of 2 only doing this now. With separate
+monitoring, alerts channels.
 
-But now with an auth token away (hopefully an OAuth or ODIC one) and your
-main business tanking, you realise you can sell this cheaper than the
-crazy competition prices. So you do _that_.
+Now with an auth token away (hopefully an OAuth or OIDC one) and
+your main business tanking, you realise you can sell this cheaper than
+crazy competition prices. So you do _that_. The service now needs its own
+login endpoint. It's now a product.
 
-And that's the whole dev "journey":
+Later you add enterprise features. Which in my book comes down to granular
+access controls and integration with other services and platforms, like SSO,
+notifications, maybe a marketplace if you are bug enough. It's now a platform.
+
+And here it is. The whole dev "journey":
 
 Shell commands --> Shell script --> App system calls --> App SDK calls
---> Separate service --> Distinct platform
+--> Separate service --> Distinct platform --> Enterprise product
+
+Or shell commands --> Script --> Function --> Module --> Library --> Service --> Product --> Platform.
 
 Something similar happens in the infrastrcuture level.
