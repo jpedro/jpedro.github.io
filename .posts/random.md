@@ -316,7 +316,7 @@ login endpoint. It's now a product.
 
 Later you add enterprise features. Which in my book comes down to granular
 access controls and integration with other services and platforms, like SSO,
-notifications, maybe a marketplace if you are bug enough. It's now a platform.
+notifications, maybe a marketplace if you are big enough. It's now a platform.
 
 And here it is. The whole dev "journey":
 
