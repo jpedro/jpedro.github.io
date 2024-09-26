@@ -26,10 +26,10 @@ them by creating your custom types from their 43 primitives types.
 Yes. 43! `CREATE TYPE Person AS (name VARCHAR, skills TEXT[])`.
 Which is neat. Opaque but neat.
 
-Tables can have hierarchical relationships, basically like in OOP's
-inheritance. But not sure how this can be a good thing. Plus, in
-my naive opinion database schema tools can handle data hierarchies
-with more flexibily. But we'll see, with more use.
+Tables can have hierarchical relationships, which sounds very OOP'ish.
+But not sure how this can be a good thing. Plus, in my naive opinion
+database schema tools can handle data hierarchies with more flexibily.
+But we'll see, with more use.
 
 There're also sequences, better view support, native support for
 `UUID`s, JSONPath functionality and much more candy out of the box.
