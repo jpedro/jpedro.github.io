@@ -137,8 +137,8 @@ So I can't see how extending the database type system as added value.
 It's not keeping it dumb. It's definitely not keeping it portable.
 
 Unless, of course, you are building your own data store atop Postgres.
-Then this all makes sense. Maybe that opacity is exactly what pays the
-bills.
+Then this all makes sense. Maybe those features and that opacity is
+exactly [what pays the bills](https://www.timescale.com/).
 
 
 ## The Conclusion
