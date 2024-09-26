@@ -61,7 +61,7 @@ With [the right extension](https://pgt.dev/) you can even write stored
 procedures in python, ruby, rust, call `curl` and even
 [render html templates](https://postgrest.org) from a pgsql connection.
 Some peole don't know the difference between "can" and "should".
-Good luck testing [that code](https://sive.rs/pg).
+Good luck [testing that code](https://pgtap.org/).
 
 Postgres also adds support for JSON and JSONB values but I find this
 very weird. In my mind, why the need for a specialised JSON column or
@@ -120,10 +120,11 @@ procedures? You mean, schmore procedures?!... Only added after strong
 demand.
 
 To be fair, 99.9% of the time you don't need _and_ you definitely do not
-want application logic in the database. I'll fight anyone on this. This
-is the hill I'll die for. The database is the most critical tech component.
-The one that's non-trivial to horizontally scale. So keep it lean, keep
-it simple. Keep it dumb, stupid.
+want application logic in the database. I'll fight
+[anyone](https://sive.rs/pg) on this. This is The Hill I'll die for.
+The database is the most critical tech component. The one that's
+non-trivial to horizontally scale. So keep it lean, keep it simple. Keep
+it dumb, stupid.
 
 Because the database _should_ be dumb. Just store and retrieve my data.
 And let me to run some adhoc queries over unindexed fields 😱, that on
