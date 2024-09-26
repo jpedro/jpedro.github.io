@@ -302,7 +302,7 @@ evented loop runtime as this will wait on the CPU anyway. Maybe a lambda
 makes sense.
 
 After a while you need to add some authentication because
-[you don't want this to be public, right?]([https://x.com/search?q=panels+art](https://x.com/ozgrozer/status/1838895852259041362))
+[you don't want this to be public, right?](https://x.com/search?q=panels+art](https://x.com/ozgrozer/status/1838895852259041362)
 [Right?!](https://x.com/kaepora/status/1838651348797063276)
 
 But now with an auth token away (hopefully an OAuth or ODIC one) and your
