@@ -121,7 +121,7 @@ demand.
 
 To be fair, 99.9% of the time you don't need _and_ you definitely do not
 want application logic in the database. I'll fight
-[anyone](https://sive.rs/pg) on this. This is The Hill I'll die for.
+[anyone](https://sive.rs/pg) on this. I found the hill I'll die for.
 The database is the most critical tech component. The one that's
 non-trivial to horizontally scale. So keep it lean, keep it simple. Keep
 it dumb, stupid.
