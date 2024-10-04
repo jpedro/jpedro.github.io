@@ -313,20 +313,20 @@ HAProxy just to removed it later.
 
 It's funny how things evolve in developmment and operations.
 
-You start by installing some tool and testing it with a few CLI calls.
+You start by installing some tool and testing it with a few CLI commands.
 
 When you use it enough you throw them into a bash script in the `$PATH`.
-Extract a few CLI arguments into script arguments. Tidy it up, with a
-few functions, subcommands, a useful usage help text.
+Extract those CLI flags into script arguments. Tidy it up, wrap it with a
+few functions, subcommands, a useful usage help text, validate all inputs.
 
-After a company hacktahin, now you need to integrate these from your app,
-like say creating image thumbnails. And sure enough, you can shell these
-out. Or the tool has or the community created a SDK. Great.
+After the company hacktahon, now you got the greenlight to integrate that
+into the app, like say creating image thumbnails. And sure enough, you can
+shell these out. Or the tool has or the community created a SDK. Great.
 
 Down the road, you realise that it's better to do this off the main app thread
 and do it asynchronously, in the background. You extract that into its own
-service. Throw the payload to some queue. Accept a callback URL. Maybe even
-use some evented loop runtime as this is CPU-bound anyway. Maybe a lambda
+service. Throw the payload to some queue. Accept a callback. Maybe even
+use some evented loop runtime, as this is CPU-bound anyway. Maybe a lambda
 makes sense. It's a service. Maybe not a Chad service but one nonetheless.
 
 After a while you need to add some authentication because
