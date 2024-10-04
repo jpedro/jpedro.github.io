@@ -267,7 +267,7 @@ on a standard for the sand that builds the bricks.
 Totally unrelated: [I have a bridge to sell to you](/hosting).
 
 
-## Don't
+## No, you don't!
 
 Sometimes you don't need a cloud. Deploy that app straight into a bare
 host. Use unix sockets. Avoid TCP/IP network overheads.
@@ -275,11 +275,38 @@ host. Use unix sockets. Avoid TCP/IP network overheads.
 You better pray the backups are working when things fail (which they
 will) but until then, it's the best performance you will _ever_ get.
 
-Also, on a single host, do you really need docker? I get the
-easier-than-ever distribution part but if all you have is a go or
+
+<!--
+### Docker
+
+Also, on a single host, do you really need docker? I really like the
+easier-than-ever distribution (if you disagree, try to build a layered
+AMI and then we can compare notes) but if all you have is a go or
 rust statically built binary, systemd or even good ol' SysVinit
 will happily keep it alive. And a new deployment can be another rsync
 away, promptly followed by a `systemctl restart`.
+
+
+## Yes, you do!
+
+If a company decides to go off the cloud and you have more than a trivial
+system to maintain, is it really worth it? You gotta dol the math.
+
+Even in the cloud someone needs to be keep tabs on that infra. But off
+the cloud you would manage those totally by yourself. Failovers, HA,
+scaling out and in, according to demand, is not trivial. And in the end
+your Ops team would be reproducing what cloud providers did, in a smaller
+scale, without all the war wounds and experience.
+
+BUT.... if your infra is simple enough, it's def worth it.
+
+I ran all infra for a logitics and recycling application out of 2 Digital
+Ocean droplets. That app manages 75% of the electronics market. It tracks
+and processes thousands of tons of materials each year. 10 bucks in total.
+And it was 10 and not 5 because I wanted the database on a separate VM than
+the app. But this apps infra requirements are pretty trivial. I even added
+HAProxy just to removed it later.
+-->
 
 
 ## Progression
