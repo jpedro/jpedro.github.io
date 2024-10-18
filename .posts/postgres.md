@@ -73,7 +73,7 @@ that you can shrink the amount of data significantly enough that
 searching the records doesn't hurt performance.
 
 And over time people added extensions. Cache storages. Cron schedulers.
-Pub/sub mechanisms. Even cypher graph support.
+Pub/sub mechanisms. Even Cypher graph support.
 
 
 ## The Ugly
@@ -111,8 +111,7 @@ everywhere) leaves a sour taste.
 
 ## The Design
 
-At core there's a fundamental fork how Postgres and say MySQL
-were designed.
+At core there's a fundamental fork how Postgres and MySQL were designed.
 
 MySQL just wanted to be the fastest. For a long time, screw referential
 integrity. Use the application and build your own triggers. Stored
