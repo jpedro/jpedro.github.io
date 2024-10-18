@@ -125,11 +125,11 @@ The database is the most critical tech component. The one that's
 non-trivial to horizontally scale. So keep it lean, keep it simple. Keep
 it dumb, stupid.
 
-Because the database _should_ be dumb. Just store and retrieve my data.
-And let me to run some adhoc queries over unindexed fields 😱, that on
-other wiser systems is strictly forbudt.
+Because the database _should_ be dumb. Just safely store and retrieve my
+data. And let me to run some adhoc queries over unindexed fields 😱,
+that on other wiser, systems is strictly forbudt.
 
-So do **that** and do it well. And please, for the love of god,
+So, do **that** and do it well. And please, for the love of god,
 make the WAL _impossible_ to turn off. Don't make me opt' it in
 (_looking at SQLite_).
 
