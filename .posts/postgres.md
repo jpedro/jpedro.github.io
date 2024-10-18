@@ -148,6 +148,6 @@ Is this enough to stop me from using it? Hell no. Sometimes, you gotta
 swallow something whole. Then you can judge how it really tastes.
 
 I'm migrating apps to Postgres but for the small fish I'm using
-SQLite. It statically links as a library. Yes, storage is a single
-file that no one thread can write into but it's a bliss. And the
-performance is as good as it gets for a relational storage.
+SQLite. It statically links as a library. Yes, storage is a stupid
+single file that no one other thread can write into but it's a bliss.
+And the performance is as good as it gets for a relational storage.
