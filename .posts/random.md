@@ -326,8 +326,8 @@ shell these out. Or the tool has or the community created a SDK. Great.
 Down the road, you realise that it's better to do this off the main app thread
 and do it asynchronously, in the background. You extract that into its own
 service. Throw the payload to some queue. Accept a callback. Maybe even
-use some evented loop runtime, as this is CPU-bound anyway. Maybe a lambda
-makes sense. It's a service. Maybe not a Chad service but one nonetheless.
+use some evented loop runtime, as this is CPU-bound anyway. It's a service.
+Maybe not a Chad service but one nonetheless.
 
 After a while you need to add some authentication because
 [you don't want this to be public, right](https://x.com/ozgrozer/status/1838895852259041362)?
