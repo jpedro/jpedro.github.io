@@ -2,7 +2,7 @@
 
 - **Veep**: it's an amazing satirical series. Fast punch lines, a few
   subtle jokes in an ocean of unafraid, brutal insults. Nev-AD-a!
-  #NotMe
+  "We dated... and the world is gonna know about that." #NotMe
 
 - **Silicon Valley**: one of the most funny, realistic, ironic peeks
   into the startup world. Well thought and refreshingly up-to-date,
