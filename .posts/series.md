@@ -26,5 +26,6 @@
   Same The West Wing vs Veep. How politicians see themselves vs how
   they really are. Allegedly.
 
-- **Peep Show**: another underrated cringe, dry comedy series. Not for
-  everyone. Same creator as Succession.
+- **Peep Show**: another underrated cringe, dry comedy series, that follows
+  2 goofy losers and their inner monologues. Not for everyone. Same
+  creator as Succession.
