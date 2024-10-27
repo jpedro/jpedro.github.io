@@ -23,8 +23,7 @@
 - **Succession**: many people's favourite but the finale left too many loose
   ends. Feels closer to reality than Billions. You could say, Billions
   is how billionaires see themselves. Succession how they really are.
-  Same The West Wing vs Veep. How politicians see themselves vs how
-  they really are. Allegedly.
+  Same with The West Wing vs Veep for politicians. Allegedly.
 
 - **Peep Show**: another underrated cringe, dry comedy series, that follows
   2 goofy losers and their inner monologues. Not for everyone. Same
