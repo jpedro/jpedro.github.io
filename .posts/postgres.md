@@ -126,8 +126,7 @@ To be fair, 99.9% of the time you don't need _and_ you definitely do not
 want application logic in the database. I'll fight
 [anyone](https://sive.rs/pg) on this. I found the hill I'll die for.
 The database is the most critical tech component. The one that's
-non-trivial to horizontally scale. So keep it lean, keep it simple. Keep
-it dumb, stupid.
+non-trivial to horizontally scale. So keep it lean, keep it dumb. KISS.
 
 Because the database _should_ be dumb. Just safely store and retrieve my
 data. And let me to run some adhoc queries over unindexed fields 😱,
