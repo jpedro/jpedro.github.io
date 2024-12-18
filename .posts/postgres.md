@@ -89,7 +89,7 @@ put forward, none was adopted so far.
 This write amplification happens when **for each new update**, even to
 a single field, Postgres creates a new row version, while older ones
 are marked as dead. Those tombstoned records accumulate in disk and
-therefore Postgres needs to garbagge collect them frequently enough,
+therefore Postgres needs to garbage collect them frequently enough,
 in the form of `VACUUM`. This operation can run in parallel and can
 be scheduled to run after certain thresholds are hit.
 
