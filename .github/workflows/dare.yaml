@@ -73,7 +73,7 @@ jobs:
               core.warning('It WAS skipped.');
             }
             core.info('core.info: This is an info so basically this will not be in the "Annotations" section.')
-            core.notice('core.notice: What does this do?')
+            core.notice('core.notice: Who reads these?')
             core.warning('core.warning: This is a warning!');
             core.error('core.error: This is bad, run may still succeed though.')
             core.setOutput('outKey', 'core.setOutput');
