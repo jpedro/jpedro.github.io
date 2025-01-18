@@ -1,12 +1,13 @@
 name: Don't you dare!
-run-name: YOOOU dared!!! [${{ github.ref }}] ${{ inputs.SHA || github.sha }}
+run-name: YOOOU dared!!! [${{ github.ref }}] ${{ inputs.smart || github.sha }}
 
 on:
   workflow_dispatch:
     inputs:
-      SHA:
+      smart:
         type: string
-        description: Something something
+        description: Say something smart
+        default: "Holy molly, Jesus Louise!"
 
 env:
   AWS_REGION : "eu-west-1"
