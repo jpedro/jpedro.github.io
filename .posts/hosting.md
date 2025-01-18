@@ -159,7 +159,6 @@ test:
 
 build:
   command: go build .
-  args: []
   image:
     base: golang:latest
     name: hello-kaiku
@@ -187,7 +186,7 @@ run:
 Here the use of `$(( scope.var ))` is used to dynamically insert values
 at different phases.
 
-The configured `test`, `build`, and `run` phases above have defaults
+The configured `test`, `build`, and `run` stages above have defaults
 for each runtime the tool figures out and merges.
 
 
