@@ -33,7 +33,7 @@ and rsync files into the right directory.
 
 ### One conf to rule them all
 
-Nginx's virtual hosting is quite flexible because you can use
+Nginx's virtual hosts is quite flexible because you can use
 `$variables` in places. Nginx 1.9 finally allows variable
 interpolation in the `ssl_*` fields. So one `sites-enabled/` conf file
 can rule 'em all.
