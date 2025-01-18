@@ -38,7 +38,7 @@ Nginx's virtual hosts is quite flexible because you can use
 interpolation in the `ssl_*` fields. So one `sites-enabled/` conf file
 can rule 'em all.
 
-A more flexible server block in nginx would look like this:
+A server block in nginx can look like this:
 
 ```
 server {
