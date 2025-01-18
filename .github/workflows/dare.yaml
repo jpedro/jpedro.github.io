@@ -74,10 +74,10 @@ jobs:
             }
             core.info('core.info: This is an info so basically this will not be in the "Annotations" section.')
             core.notice('core.notice: Who reads these?')
-            core.warning('core.warning: This is a warning!');
+            core.warning('core.warning: I see warnings are your fetich...');
             core.error('core.error: This is bad, run may still succeed though.')
-            core.setOutput('outKey', 'core.setOutput');
-            core.exportVariable('envVar', 'core.exportVariable() did this to me. I will point it in the doll');
+            core.setOutput('outKey', 'core.setOutput() did this to me');
+            core.exportVariable('envVar', 'core.exportVariable() did it again. I will point it in the doll');
 
       - name: Debugs
         run: |
