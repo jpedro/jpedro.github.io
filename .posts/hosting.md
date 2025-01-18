@@ -1,7 +1,7 @@
 <!-- hidden-no -->
 <!-- tags: shell, linux, kubernetes, reinventing the wheels -->
 
-# Self Hosting
+# Hosting your stuff
 
 I used [surge.sh](https://surge.sh/) to host static content and some
 SPAs and [heroku.com](https://www.heroku.com/) as the backend.
@@ -10,7 +10,7 @@ But [heroku will stop free plans](https://blog.heroku.com/next-chapter)
 and surge [has a 60 MB limit](https://surge.sh) for the total
 size of files uploaded. A few larger images and you are toast.
 
-Owning your hosting stack avoids Surge's free plan's limits and no
+Owning your hosting stack avoids these free plan's limits and no
 longer have to wait for Heroku's free dynos to slowly kick in. You will
 lose surge's fast updated CDN though but we can fix that too. If you
 use Cloudflare you can select which DNS records should be proxied
