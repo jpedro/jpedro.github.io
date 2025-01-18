@@ -59,7 +59,7 @@ server {
 
 > **Note**
 >
-> Note that the usage of `$ssl_server_name` comes with a performance
+> The usage of `$ssl_server_name` comes with a performance
 > cost.
 
 So the web root directory for the subdomain `test.example.com` is
