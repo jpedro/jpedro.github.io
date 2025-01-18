@@ -67,7 +67,7 @@ jobs:
           script: |
             core.warning('Will the debug message be skipped?');
             if (core.isDebug()) {
-              core.debug('This is a debug message.');
+              core.debug('This is a debug message. It was NOT skipped.');
             } else {
               core.warning('It WAS skipped.');
             }
@@ -76,7 +76,7 @@ jobs:
             core.warning('core.warning: This is a warning!');
             core.error('core.error: This is bad, run may still succeed though.')
             core.setOutput('outKey', 'core.setOutput');
-            core.exportVariable('envVar', 'core.exportVariable');
+            core.exportVariable('envVar', 'core.exportVariable() did this to me. I will point it in the doll');
 
       - name: Debugs
         run: |
