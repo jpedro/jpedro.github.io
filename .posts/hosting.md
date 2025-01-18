@@ -131,7 +131,7 @@ Kubernetes or plain old docker daemon can fit neatly as the container
 runtime.
 
 
-### Lazy guesses
+### Implicit
 
 The laziest approach to guessing how the repo should be packaged is to
 look for some files that indicate which language, framework the repo
