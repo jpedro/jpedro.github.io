@@ -38,7 +38,7 @@ jobs:
           aws-region: ${{ env.AWS_REGION }}
 
       - name: Of course this wouldn't work...
-        if: always()
+        if: failure()
         run: |
           echo "What did you expect?"
 
@@ -74,9 +74,9 @@ jobs:
             } else {
               core.warning('It WAS skipped.');
             }
-            core.info('This is an info so basically this will not be in the "Annotations" section.')
-            core.notice('What does this do?')
-            core.warning('This is a warning!');
-            core.error('This is bad, action may still succeed though.')
-            core.setOutput('outputKey', 'outputVal');
-            core.exportVariable('envVar', 'Val');
+            core.info('core.info: This is an info so basically this will not be in the "Annotations" section.')
+            core.notice('core.notice: What does this do?')
+            core.warning('core.warning: This is a warning!');
+            core.error('core.error: This is bad, run may still succeed though.')
+            core.setOutput('outKey', 'core.setOutput');
+            core.exportVariable('envVar', 'core.exportVariable');
