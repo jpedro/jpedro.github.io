@@ -7,7 +7,7 @@ on:
       smart:
         type: string
         description: Say something smart
-        default: "Holy molly, Jesus Louise!"
+        default: "Holy molly, Jeez Louise!"
 
 env:
   AWS_REGION : "eu-west-1"
