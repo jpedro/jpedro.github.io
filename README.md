@@ -19,8 +19,9 @@ to set properties. Supported:
 
 ## Todos
 
-- [x] Move posts from the root directory to [.posts](.posts)
+- [x] Move posts from the root directory to [.posts](.posts).
+- [ ] Dump generated posts into the [docs](docs) directory.
 - [ ] Add generated tags at the top of each page.
 - [ ] Allow multi-line comments.
-- [ ] Allow `date` and `index` ordering.
-- [ ] Allow `path` or the ugly noun `slug` for custom urls.
+- [ ] Allow `date` and `index` ordering (index overrides date).
+- [ ] Allow `path` for custom urls.
