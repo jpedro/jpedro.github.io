@@ -1,5 +1,5 @@
 name: Don't you dare!
-run-name: YOOOU dared!!! [${{ github.ref }}] ${{ inputs.smart || github.sha }}
+run-name: YOOOU dared!!! ${{ inputs.smart || github.sha }} (${{ github.ref }})
 
 on:
   workflow_dispatch:
