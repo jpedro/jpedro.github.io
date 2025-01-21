@@ -1,0 +1,27 @@
+{% extends "layouts/base.html" %}
+
+{% block title %}{{ title }}{% endblock title %}
+
+{% block head %}
+{{ super() }}
+<style type="text/css">
+.important {
+    color: #336699;
+}
+</style>
+{% endblock head %}
+
+{% block content %}
+<h1>{{ title }}</h1>
+<p class="important">Welcome to my awesome homepage.</p>
+
+<ul>
+{%- for a in [1,2,3,] %}
+  <li>{{a}}</li>
+{%- endfor %}
+</ul>
+{% endblock content %}
+
+{% block footer %}
+<p>CUSTOM FOOTER</p>
+{% endblock footer %}
