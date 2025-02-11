@@ -53,6 +53,8 @@ deploy on dev need to be replicated somehow on the other 2 environments.
 And since in Google Cloud the best isolation mechanism to reduce the
 blast radius is the project, this leads to more copy-pasting-tweaking.
 
+![Now there are 3 of them](https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/three.jpg)
+
 In larger organisations, functionality like Single Sign On, private
 networking, connectivity to OnPrem, security, log analysis and incident
 alerts are managed centrally. And the design that achieves this is the
