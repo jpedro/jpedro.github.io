@@ -133,7 +133,7 @@ Other project settings can include creating service accounts, groups,
 custom IAM roles, APIs to enable, WIF bindings, etc. This list grows
 with every sprint.
 
-If you are thinking: "Bruh! You just traded 800 small directories foruh
+If you are thinking: "Bruh! You just traded 800 small directories for
 800 yaml files". Correct. But now it's 800 centralised files.
 
 Now we can do interesting things.
