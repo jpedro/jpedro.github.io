@@ -43,7 +43,7 @@ Stalin, a bull, was succeeded by Malenkov, a mouse.
 
 Was Hitler a bull or a mouse? Not sure. Göring was a beautiful
 bull. Goebbels and Himmler? Mice. I suspect Putin is a mouse, pretending to be
-a bull.
+a bull. Preceeded by Yeltsin.
 
 It's like the bull fears rising bulls and the mouse rising mice. And somehow
 they snuff them out. Also in relationships. There's never a single stubborn
