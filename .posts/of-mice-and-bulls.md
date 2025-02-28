@@ -57,7 +57,7 @@ better after all. Also in traditional politics.
 
 Which begs the question: are figures in the political parties and investors
 behind boards the bull figures? Some Éminence grise inside them the real
-bulls? This would be an intesting conundrum. Or are we as a society generally
+bulls? This would be an intesting oxymoron. Or are we as a society generally
 trending towards a mice-majority personality? I argue both types are needed.
 
 I have no firm opinion but still an interesting dynamic.
