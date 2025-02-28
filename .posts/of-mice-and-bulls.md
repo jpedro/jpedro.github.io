@@ -27,7 +27,7 @@ developing.
 
 Does this happen _always_? No. But there are examples of this.
 
-Steve Ballmer is a bull. In the sense of a
+Steve Ballmer is a bull. A
 [bullish](https://www.britannica.com/dictionary/bullish),
 effervescent personality. Maybe a bit literally too. As opposed to many
 devs I always respected (and still do!) Ballmer's
