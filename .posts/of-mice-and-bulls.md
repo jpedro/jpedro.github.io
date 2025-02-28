@@ -47,7 +47,8 @@ a bull.
 
 It's like the bull fears rising bulls and the mouse rising mice. And somehow
 they snuff them out. Also in relationships. There's never a single stubborn
-person (bull) in a relationship.
+person in a relationship but there can never be 2 bulls in one. 2 mice might
+get along just fine though.
 
 This analogy does seem to break in the corporate world though. In sufficiently
 large companies, run by boards, where the CEO is but a disposable employee,
