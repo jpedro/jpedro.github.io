@@ -55,9 +55,10 @@ large companies, run by boards, where the CEO is but a disposable employee,
 mice tend to abound. They survive personality clashes and the office politics
 better after all. Also in traditional politics.
 
-Which begs the question: are political parties and boards the bull figures? Or
-some Éminence grise inside them the real bulls? This would be an intesting
-conundrum. Or are we as a society trending towards a mice-majority personality?
+Which begs the question: are figures in the political parties and investors
+behind boards the bull figures? Some Éminence grise inside them the real
+bulls? This would be an intesting conundrum. Or are we as a society generally
+trending towards a mice-majority personality? I argue both types are needed.
 
 I have no firm opinion but still an interesting dynamic.
 
