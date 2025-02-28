@@ -32,7 +32,7 @@ Steve Ballmer is a bull. In the sense of a
 effervescent personality. Maybe a bit literally too. As opposed to many
 devs I always respected (and still do!) Ballmer's
 ["developers, developers, developers"](https://youtu.be/8fcSviC7cRM)
-inspirational despite severly mocked and underappreciated talk.
+inspirational despite severely mocked and underappreciated talk.
 
 He followed a mouse. Bill Gates. After Ballmer, came Satya Nadella. A mouse.
 
