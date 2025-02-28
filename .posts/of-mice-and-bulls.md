@@ -56,9 +56,9 @@ mice tend to abound. They survive personality clashes and the office politics
 better after all. Also in traditional politics.
 
 Which begs the question: are figures in the political parties and investors
-behind boards the bull figures? Some Éminence grise inside them the real
-bulls? This would be an intesting oxymoron. Or are we as a society generally
-trending towards a mice-majority personality?
+behind boards the bulls? Some Éminence grise inside them the real bulls?
+This would be an intesting oxymoron. Or are we as a society generally
+trending towards a majority mice-type personality?
 
 I have no firm opinion but still an interesting dynamic. Both types are needed.
 
