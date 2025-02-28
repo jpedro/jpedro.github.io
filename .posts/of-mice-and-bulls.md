@@ -60,5 +60,5 @@ behind boards the bulls? Some Éminence grise inside them the real bulls?
 This would be an intesting oxymoron. Or are we as a society generally
 trending towards a majority mice-type personality?
 
-I have no firm opinion but still an interesting dynamic. Both types are needed.
+I have no firm opinion. Still, an interesting dynamic.
 
