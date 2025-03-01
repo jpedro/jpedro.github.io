@@ -42,13 +42,17 @@ Tim Cook, a mouse, followed Steve Jobs. A bull. Wozniak was a mouse too
 Stalin, a bull, was succeeded by Malenkov, a mouse.
 
 Was Hitler a bull or a mouse? Not sure. Göring was a beautiful
-bull. Goebbels and Himmler? Mice. I suspect Putin is a mouse, pretending to be
-a bull. Preceeded by Yeltsin.
+bull. Goebbels and Himmler? Mice. Putin is a mouse, pretending to be
+a bull. Preceeded by Yeltsin. A bull.
 
 It's like the bull fears rising bulls and the mouse rising mice. And somehow
-they snuff them out. Also in relationships. There's never a single stubborn
+they snuff them out.
+
+<!--
+Also in relationships. There's never a single stubborn
 person in a relationship but there can never be 2 bulls in one. 2 mice might
 get along just fine though.
+-->
 
 This analogy does seem to break in the corporate world though. In sufficiently
 large companies, run by boards, where the CEO is but a disposable employee,
