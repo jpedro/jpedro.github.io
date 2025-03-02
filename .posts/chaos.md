@@ -48,3 +48,5 @@ knife’s edge".
 
 - [I Contribute to the Windows Kernel](https://blog.zorinaq.com/i-contribute-to-the-windows-kernel-we-are-slower-than-other-oper/)
 
+- [Wirzenius wrote this portably, Torvalds fucked it up](https://github.com/torvalds/linux/blob/master/lib/vsprintf.c#L10)
+
