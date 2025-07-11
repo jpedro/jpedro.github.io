@@ -128,15 +128,17 @@ With separate monitoring, alerts channels. It's now **an app**.
 
 Now with an auth token away (hopefully an OAuth or OIDC one) and
 your main business tanking, you realise you can sell this cheaper than
-crazy competition prices. So you do _that_. The app now needs its own
-login endpoint. It's now **a product**.
+crazy competition prices. So you do _that_. The app now needs a public
+end point and its own authz. It's now **a product**.
 
-Later you add enterprise features. Which in my book comes down to granular
-access controls and integration with other services and platforms, like
-customer SSO, notifications, maybe a marketplace, that allows 3rd parties to
+You add enterprise features. Because you need a new boat. In my book
+comes down to granular access controls and integration with other
+services and platforms, like customer SSO, notifications. Maybe a
+marketplace if you get big enough, that allows 3rd parties to
 hook up with ge public API.  Voilá. It's now **a platform**.
 
+<!--
 And there it is. The whole "journey":
 
 Shell commands --> Script --> Function --> Module --> Library --> Service --> Product --> Platform.
-
+-->
