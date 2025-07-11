@@ -67,7 +67,8 @@ SELECT * FROM "item";
 SELECT * FROM "data";
 ```
 
-## Queries
+
+## The query
 Say you are looking for the 10 most recent posts.
 
 ```sql
