@@ -20,45 +20,43 @@ the extrovert protects and promotes the introvert. Over time the
 introvert, the mouse, becomes Heir apparent. The mouse is loyal to the
 bull that protects him.
 
-When the mouse is in power, he's no less brutal that the bull but the path
-that took him to power, the details, is what he might prefer. He has no
-patience for people or dumbsplaining stuff to others. He now needs to rely
-on a bull to handle people with the firm hand the mouse has no interest
-developing.
+When the mouse is in power, he's no less brutal than the bull but the path
+that took him to power, the details, is what he prefers. He has no patience
+for people or dumbsplaining stuff to others. He now needs to rely on a
+loyal bull to handle people with the firm hand the mouse never had an interest
+to develop.
 
 Does this happen _always_? No. But there are examples of this.
 
 Steve Ballmer is a bull. A
 [bullish](https://www.britannica.com/dictionary/bullish),
-effervescent personality. Maybe a bit literally too. As opposed to many
-devs I always respected (and still do!) Ballmer's
-["developers, developers, developers"](https://youtu.be/8fcSviC7cRM)
-inspirational despite severely mocked and underappreciated talk.
+effervescent personality. A bit literally too.
+
+> As opposed to many devs I always respected (and still do!) Ballmer's
+> ["developers, developers, developers"](https://youtu.be/8fcSviC7cRM)
+> inspirational despite severely mocked and underappreciated talk.
 
 He followed a mouse. Bill Gates. After Ballmer, came Satya Nadella. A mouse.
 
-Tim Cook, a mouse, followed Steve Jobs. A bull. Wozniak was a mouse too
-(a beautiful majestic mouse!)
+Tim Cook, a mouse, followed Steve Jobs. A bull. Wozniak was a mouse. A
+beautiful majestic mouse.
 
 Stalin, a bull, was succeeded by Malenkov, a mouse.
 
 Was Hitler a bull or a mouse? Not sure. Göring was a beautiful
-bull. Goebbels and Himmler? Mice. Putin is a mouse, pretending to be
-a bull. Preceeded by Yeltsin. A bull.
+bull. Goebbels and Himmler? Mice.
 
-It's like the bull fears rising bulls and the mouse rising mice. And somehow
-they snuff them out.
+Putin is a mouse. Preceeded by Yeltsin. A bull.
 
-<!--
-Also in relationships. There's never a single stubborn
-person in a relationship but there can never be 2 bulls in one. 2 mice might
-get along just fine though.
--->
+It's like the bull fears rising bulls and the mouse rising mice. And
+somehow they snuff them out.
 
-This analogy does seem to break in the corporate world though. In sufficiently
-large companies, run by boards, where the CEO is but a disposable employee,
-mice tend to abound. They survive personality clashes and the office politics
-better after all. Also in traditional politics.
+This analogy does seem to break in the corporate world though. In
+sufficiently large companies, run by boards, where the non-founder CEO
+is but a disposable employee, mice tend to abound. They survive
+personality clashes and office politics better.
+
+Also in traditional politics.
 
 Which begs the question: are figures in the political parties and investors
 behind boards the bulls? Some Éminence grise inside them the real bulls?
