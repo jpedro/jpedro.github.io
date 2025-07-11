@@ -138,7 +138,14 @@ marketplace if you get big enough, that allows 3rd parties to
 hook up with ge public API.  Voilá. It's now **a platform**.
 
 <!--
-And there it is. The whole "journey":
+And there it is. The whole "journey". This is mom and dad made you.
 
-Shell commands --> Script --> Function --> Module --> Library --> Service --> Product --> Platform.
+- Shell commands
+- Script
+- Function
+- Module
+- Library
+- Service
+- Product
+- Platform
 -->
