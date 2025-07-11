@@ -54,9 +54,8 @@ Opaque ways to track progress.
 
 > What problem does "complexity points" solve? The only metric that
 > matters is time. Sure, complexity can be understood to combine time
-> with an element of uncertainty, that translates to a multiplying
-> factor. In the end, it's still time. A sprint is still a fixed
-> amount of time.
+> with an element of uncertainty but that translates to a multiplying
+> factor of... time. A sprint is a fixed amount of time.
 
 Also, Scrum, which is older than Agile, jumped into the Agile
 bangwagon, got a restart and promises to be cool and flexible and
