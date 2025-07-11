@@ -18,7 +18,7 @@ to justify development costs, that manifesto is meaningless. Wishful
 thinking. I get it.
 
 So Scrum swooped in and saved the day as a way to get workers to
-_commit_ to deadlines and _track_ those. This is, obviously, important.
+_commit_ to deadlines and _track_ those. This is obviously important.
 
 It also shorten the dev and deploy cycles from months and years of
 waterfall to weeks. This is all nice and dandy. Calling it a sprint
