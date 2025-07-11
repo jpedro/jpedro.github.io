@@ -4,8 +4,8 @@
 in possession of a good project, _must be_ in sear hate of Scrum".
 
 Scrum sucks. The Zeitgeist (am I using this right??) shifted from
-"is it bad?" to "why is it so soo bad?". And there's no visible
-alternative.
+"is it bad?" to "why is it so soo bad?". And there're no accepted
+viable alternatives.
 
 
 ## Agile
@@ -13,37 +13,52 @@ alternative.
 Agile, whatever that may be (_cue Prince Charles_), is not enough.
 
 I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
-but I understand for managers, that need to justify development costs
-(that ties directly to development time), that manifesto is meaningless.
-Wishful thinking.
+but those are just that: ideas. I get that for managers, that need
+to justify development costs (that ties directly to development time),
+that manifesto is meaningless. Wishful thinking. I get it.
 
-So Scrum saved the day as a way to get workers to commit to deadlines
-and track those. This is, obviously, important.
+So Scrum swooped in and saved the day as a way to get workers to
+_commit_ to deadlines and _track_ those. This is, obviously, important.
 
-Scrum even make a concession: it allows developers to estimate
-themselves. And most of the time they fail their own generous
-estimations.
+It also shorten the dev and deploy cycles from months and years of
+waterfall to weeks. This is all nice and dandy. Calling it a sprint
+however it sneakily introduces mental stress. A time pressure. And
+pressure can become counter-productive.
+
+Scrum make a concession though: it allows developers to estimate
+themselves. Yes, themselves. Not the tasks. Because the senior can
+do that in 1 day but junior over there needs 5.
 
 
-## Work Killers
+## The killer
 
 Managers fail to grasp how hard is to get back into a coding state
 of mind (flow) after meetings. It can take hours. Most of the time
-it ruins the day. Yes, you might do something but it's not as
-productive as before that meeting.
+it ruins the day.
+
+(At least, that's what I tell myself. _Cue Seinfeld_ "It's not a lie
+if you believe in it".)
+
+Anyway, you might _do something_ but it's not as productive as before
+that interruption.
 
 And Scrum is _meeting heavy_. This carries appeal to managers,
 by giving them a feeling that they are in the loop. Which they should.
 Because they are the ones calming the customer down when things go
 sideways.
 
-But Agile is all about ad-hoc interactions ("Individuals and
+Agile is all about ad-hoc interactions ("Individuals and
 interactions"). Scrum on the other hand, establishes processes,
 cadences, cerimonies, strangely named roles and resposibilities.
-Weird ways to track progress. What problem does "complexity points"
-solve? The only metric that matters is development time.
+Opaque ways to track progress.
 
-Yes, Scrum, which is older than Agile, jumped into the Agile
+What problem does "complexity points" solve? The only metric that
+matters is time. Sure, complexity can be understood to combine time
+with an element of uncertainty, that translates to a multiplying
+factor. But in the end, it's still time. A sprint is still X amount
+of days.
+
+Also, Scrum, which is older than Agile, jumped into the Agile
 bangwagon, got a restart and promises to be cool and flexible and
 whatnot to get the devs onboard. But it really isn't.
 
@@ -53,28 +68,35 @@ companies gobbled it. Because there's no viable alternative.
 
 ## The wasteland
 
-There are 5 ceremonies, 3 of them are totally a waste of time and
-only one (a weekly meeting, combining task status and planning) is
-truly essential.
+There are 5 ceremonies, 3 of them are a waste of time and only one
+(a weekly meeting, combining task status and planning) is truly
+essential.
 
-- Sprint Planning
+- Sprint Planning: Needed
 
-  Should be done _every_ week or every cycle. The only one needed.
+  Should be done _every_ week or every cycle.
 
-- Daily Scrum
+- Daily Scrum: Optional
 
-  Should be optional. Most of time people just say "I did this and I'll
-  continue on it". Why. Even. Bother?!
+  Most of time people just say "I did this yesterday and
+  I'll continue on it today". Why. Even. Bother?!
 
-- Sprint Demo: Waste
+  But it acts as a daily reminder to devs if they are moving
+  along or not.
+
+- Demo: Waste
 
   Don't wait for the sprint to be over to **show** something.
 
-- Sprint Retrospective: Waste
+- Retrospective: Waste
 
   Don't wait for the sprint to be over to **say** something.
   Just say it when you can. Then expand it on the weekly meeting, if
   need be.
+
+  The rest of the time it's people trying to come up with something
+  clever to write on a postit. "This went well. This went wrong." The
+  potential improvements are rarely followed up.
 
 - Backlog Refinement / Grooming: Waste
 
@@ -103,6 +125,11 @@ for it.
 
 - [Agile at 20: The Failed Rebellion](https://www.simplethread.com/agile-at-20-the-failed-rebellion/)
 
+  > Scrum was invented to function in hostile environments. It's a
+  > contract between hard-pushing managers and developers needing
+  > time to think and explore. 
+
+
 - [Developers Should Abandon Agile](https://ronjeffries.com/articles/018-01ff/abandon-1/)
 
 - [Agile is Dead (Long Live Agility)](https://pragdave.me/thoughts/active/2014-03-04-time-to-kill-agile.html)
@@ -111,15 +138,23 @@ for it.
 
 - [Scrum is the Symptom, not the Problem](https://rethinkingsoftware.substack.com/p/scrum-is-the-symptom-not-the-problem)
 
-  This articles points out that by not having devs on receiveing end of
+  This article points out that by not having devs on receiveing end of
   the fruits of their labour, they got reduced to punch card workers.
 
 
-## Alternatives
+## The alternatives
 
 37signals has an interesting approach. They have 6 weeks cycles
-followed by a 2 week cool-off period. And in the 6 weeks they ship
+followed by a 2 week cool-off period. In the 6 weeks they ship
 features. In the 2 weeks they polish what was done or play with
 new stuff.
 
+This appeals to me because it looks like 37 signals understands
+the sharp difference between thinking and designing a thing and
+implementing that thing. The first requires time, playfulnes and
+zero mental pressure.
+
+This operating model only works if you trust your employees to be
+driven. Which in large companies doesn't happen and that's
+another story.
 
