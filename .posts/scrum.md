@@ -14,8 +14,8 @@ Agile, whatever that may be (_cue Prince Charles_), is not enough.
 
 I like the ideas in the [Agile Manifesto](https://agilemanifesto.org/)
 but those are just that: ideas. I get that for managers, that need
-to justify development costs (that ties directly to development time),
-that manifesto is meaningless. Wishful thinking. I get it.
+to justify development costs, that manifesto is meaningless. Wishful
+thinking. I get it.
 
 So Scrum swooped in and saved the day as a way to get workers to
 _commit_ to deadlines and _track_ those. This is, obviously, important.
