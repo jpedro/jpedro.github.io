@@ -4,11 +4,11 @@
 # Schemaless
 
 Schemaless databases are in fashion for a reason. On relational
-databases, out of the box schema changes sometimes involve locking and
-copying an entire table from the old to the new structure.
+databases, out of the box schema changes sometimes involve locking
+and copying an entire table from the old to the new structure.
 
-When a table copy is required and it holds millions of rows that table
-will be unavailable, sometimes for hours.
+When that table holds billions and billions of rows it will be
+unavailable, sometimes for hours and hours.
 
 
 ## Things
