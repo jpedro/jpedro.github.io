@@ -6,7 +6,7 @@
 
 There's an interesting dance when it comes to the top dog in a room. Be
 that room a home, a company or even a country, where leaders are not
-elected but rather choosen.
+elected but rather choosen by the previous top dog.
 
 A strong, assertive outspoken leader is many times followed by a more
 quiet, thoughtful one. The bull and the mouse. And vice-versa. Yin-yang
