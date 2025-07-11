@@ -15,19 +15,19 @@ kinda cycles.
 A loud extroverted leader that revels in big picture, big talk needs to
 rely on a quietly efficient counterpart to handle the pesky minutiae to
 get actual things done. To bounce ideas and get an honest take on what's
-doable or not. Since the latter is not a threat (it can't possibly be!)
+happening or doable. Since he's not a threat (it can't possibly be!)
 the extrovert protects and promotes the introvert. Over time the
-introvert, the mouse, becomes Heir apparent. The mouse is loyal to the
-bull that protects him.
+introvert, the mouse, becomes Heir apparent. The mouse is grateful and
+loyal to the bull that protects him.
 
 When the mouse is in power, he's no less brutal than the bull but the path
 that took him to power, the details, is what he prefers. He has no patience
 for people or dumbsplaining stuff to others. He now needs to rely on a
-loyal bull to handle people with the firm hand the mouse never had an interest
-to develop.
+loyal bull to handle people with the firm hand the mouse never had an
+interest to develop.
 
 So the incentives are there for a bull and his mouse to appreciate each
-other respectively and coexist productively.
+other and coexist productively.
 
 Does this happen _always_? No. But there are examples of this.
 
