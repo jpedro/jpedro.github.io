@@ -3,12 +3,15 @@
 
 # Schemaless
 
-Schemaless databases are in fashion for a reason. On relational
-databases, out of the box schema changes sometimes involve locking
-and copying an entire table from the old to the new structure.
+Schemaless databases are in fashion for a reason.
 
-When that table holds millions and millions of rows it will be
-unavailable, sometimes for hours and hours.
+On relational databases, out of the box schema changes
+sometimes involve locking and copying an entire table
+from the old structure to the new. When that table holds
+millions and millions of rows it will be unavailable,
+sometimes for hours and hours.
+
+Schemaless data is easier to shard, across nodes.
 
 
 ## Things
