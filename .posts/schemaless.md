@@ -14,7 +14,7 @@ sometimes for hours and hours.
 Schemaless data is easier to shard, across nodes.
 
 
-## Things
+## The tables
 
 In theory, only 2 tables are needed to hold a schemaless schema:
 
@@ -28,7 +28,7 @@ The `data` table hydrates `item`.
 > the alignment.
 
 
-## Schema
+## The example
 
 Using sqlite3 as example:
 
