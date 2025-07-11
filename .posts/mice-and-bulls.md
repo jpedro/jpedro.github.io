@@ -26,6 +26,9 @@ for people or dumbsplaining stuff to others. He now needs to rely on a
 loyal bull to handle people with the firm hand the mouse never had an interest
 to develop.
 
+So the incentives are there for a bull and his mouse to appreciate each
+other respectively and coexist productively.
+
 Does this happen _always_? No. But there are examples of this.
 
 Steve Ballmer is a bull. A
@@ -56,12 +59,12 @@ sufficiently large companies, run by boards, where the non-founder CEO
 is but a disposable employee, mice tend to abound. They survive
 personality clashes and office politics better.
 
-Also in traditional politics.
+Does this mean any bulls need to live at the board level? Are they the
+investors behind these boards?
 
-Which begs the question: are figures in the political parties and investors
-behind boards the bulls? Some Éminence grise inside them the real bulls?
-This would be an intesting oxymoron. Or are we as a society generally
-trending towards a majority mice-type personality?
+Also in traditional politics. Are shadown figures in the political
+the bulls? Some Éminence grise inside them? Or are we as a society
+generally trending towards a majority mice-type personality?
 
 I have no firm opinion. Still, an interesting dynamic.
 
