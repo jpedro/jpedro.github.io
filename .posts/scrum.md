@@ -36,8 +36,8 @@ Managers fail to grasp how hard is to get back into a coding state
 of mind (flow) after meetings. It can take hours. Most of the time
 it ruins the day.
 
-(At least, that's what I tell myself. _Cue Seinfeld_ "It's not a lie
-if you believe in it".)
+> At least, that's what I tell myself. _Cue Seinfeld_ "It's not a lie
+> if you believe in it".
 
 Anyway, you might _do something_ but it's not as productive as before
 that interruption.
@@ -52,11 +52,11 @@ interactions"). Scrum on the other hand, establishes processes,
 cadences, cerimonies, strangely named roles and resposibilities.
 Opaque ways to track progress.
 
-What problem does "complexity points" solve? The only metric that
-matters is time. Sure, complexity can be understood to combine time
-with an element of uncertainty, that translates to a multiplying
-factor. But in the end, it's still time. A sprint is still X amount
-of days.
+> What problem does "complexity points" solve? The only metric that
+> matters is time. Sure, complexity can be understood to combine time
+> with an element of uncertainty, that translates to a multiplying
+> factor. In the end, it's still time. A sprint is still a fixed
+> amount of time.
 
 Also, Scrum, which is older than Agile, jumped into the Agile
 bangwagon, got a restart and promises to be cool and flexible and
@@ -149,10 +149,10 @@ followed by a 2 week cool-off period. In the 6 weeks they ship
 features. In the 2 weeks they polish what was done or play with
 new stuff.
 
-This appeals to me because it looks like 37 signals understands
-the sharp difference between thinking and designing a thing and
-implementing that thing. The first requires time, playfulnes and
-zero mental pressure.
+> This appeals to me because it looks like 37 signals understands
+> the sharp difference between thinking and designing a thing and
+> implementing that thing. The first requires time, playfulness and
+> zero mental pressure.
 
 This operating model only works if you trust your employees to be
 driven. Which in large companies doesn't happen and that's
