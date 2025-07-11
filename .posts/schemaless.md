@@ -15,11 +15,14 @@ unavailable, sometimes for hours and hours.
 
 In theory, only 2 tables are needed to hold a schemaless schema:
 
-- `item`, basically holds an `id` and a `type` and some metadata.
+- `item`, holds an `id` and a `type` and metadata.
 - `data`, holds the `field=value` for each for each of the items.
 - `find`, holds indexed data (optional).
 
 The `data` table hydrates `item`.
+
+> Yes. You got me there! I used four letter names. Purely for
+> the alignment.
 
 
 ## Schema
