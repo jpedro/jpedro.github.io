@@ -15,9 +15,10 @@ kinda cycles.
 A loud extroverted leader that revels in big picture, big talk needs to
 rely on a quietly efficient counterpart to handle the pesky minutiae to
 get actual things done. To bounce ideas and get an honest take on what's
-doable or not. Since the latter is not a threat, it can't possibly be,
+doable or not. Since the latter is not a threat (it can't possibly be!)
 the extrovert protects and promotes the introvert. Over time the
-introvert, the mouse, becomes Heir apparent.
+introvert, the mouse, becomes Heir apparent. The mouse is loyal to the
+bull that protects him.
 
 When the mouse is in power, he's no less brutal that the bull but the path
 that took him to power, the details, is what he might prefer. He has no
