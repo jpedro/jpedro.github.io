@@ -8,13 +8,12 @@
 Add a markdown comment in the format `<!-- write something smart here -->`
 to set properties. Supported:
 
-| Comment    | Description                                            | Type    | Default  |
-| ---------- | ------------------------------------------------------ | ------- | -------- |
-| `hidden`   | Hides a page from the `index.md`                       | boolean | `false`  |
-| `title`    | Overrides both `# H1` and beautified file name         | string  | `""`     |
-| `tags`     | Custom tags                                            | csv     | `""`     |
-| `comments` | Controls comments in pages (right now, only dad jokes) | boolean | `false`  |
-
+| Comment    | Description                                 | Type    | Default  |
+| ---------- | ------------------------------------------- | ------- | -------- |
+| `hidden`   | Hides a page from the `index.md`            | boolean | `false`  |
+| `title`    | Overrides `# H1` and beautified file name   | string  | `""`     |
+| `tags`     | Custom tags                                 | csv     | `""`     |
+| `comments` | Controls comments in pages (only dad jokes) | boolean | `false`  |
 
 
 ## Todos
@@ -23,5 +22,5 @@ to set properties. Supported:
 - [ ] Dump generated posts into the [docs](docs) directory.
 - [ ] Add generated tags at the top of each page.
 - [ ] Allow multi-line comments.
-- [ ] Allow `date` and `index` ordering (index overrides date).
+- [ ] Allow `index` and `date` ordering (in that order).
 - [ ] Allow `path` for custom urls.
