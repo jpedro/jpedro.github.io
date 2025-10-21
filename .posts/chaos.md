@@ -5,7 +5,7 @@ someone remarked:
 
 > all companies are operating on a knife's edge
 
-And it makes sense, when you think about it. It's the outcome of:
+And it makes sense, when you think about it. It's the corelary of:
 
 > if ain't broke don't fix it
 
