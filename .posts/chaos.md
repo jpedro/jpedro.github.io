@@ -50,3 +50,9 @@ knife’s edge".
 
 - [Wirzenius wrote this portably, Torvalds fucked it up](https://github.com/torvalds/linux/blob/master/lib/vsprintf.c#L10)
 
+
+<!--
+## Solution?
+
+What products needs is constant attention.
+-->
