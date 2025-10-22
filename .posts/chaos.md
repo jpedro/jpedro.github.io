@@ -25,8 +25,8 @@ and proclaim "Mission Accomplished" (_cue George W. Bush_).
 Touching code that barely works becomes a risky adventure, that only
 the approved enter, and only when there’s a clear JIRA ticket for it.
 Fresh meat assigned to extend or fix stuff are only allowed to touch
-the _*minimal*_ amount of code, in the _*minimal*_ amount of time. So,
-every 10 years, "say hello to my little friend" (_cue Tony Montana_),
+the _**minimal**_ amount of code, in the _**minimal**_ amount of time.
+So, every 10 years, "say hello to my little friend" (_cue Tony Montana_),
 aka that big-bang rewrite.
 
 > Broken gets fixed but shoddy is forever
