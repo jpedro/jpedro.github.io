@@ -26,8 +26,8 @@ decoupling. Naming, punctation, attention to detail matter, because
 compilers don't tolerate typos. Or sub- or dis- missively ignore errors.
 
 > Every time I open a shell script and I don't see what I'm gonna
-> call now EU mode (`set -eu`) or its better `set -euo pipefail` at
-> the top I get worried.
+> call now EU mode (`set -eu`) or its better part `set -euo pipefail`
+> at the top I get worried.
 
 Everyone should be exposed at coding. Coding should be mandatory at
 school, even if just for a few lessons. For most people it will not stick.
