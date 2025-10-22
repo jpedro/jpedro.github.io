@@ -17,14 +17,13 @@ A baby company starts with:
 - Better execution. Price or value. Ideally both. That beats
   the complacent competitors.
 
-The birth survival rate is quite low. Some point out that 9
-out of 10 startups fail.
+Survival rate are low. It's chaos. Founders wear all hats
+and aprons.
 
-It's chaos. Founders wear all hats and aprons.
-
-There's no need for process. The process is "getting shit done". 
+There's no process. "Process" is getting shit done. 
 Decisions are discussions between 2 people. Sometimes, it's just
-inside one's head. There is no time for it either.
+inside one's head. Based on a single post. There is no time for
+it either.
 
 Since time to market is the most critical metric here, it's all about
 making it work. THEN make it pretty. Then make it fast (economically viable, viral, or performant. That means doing more with the same)
