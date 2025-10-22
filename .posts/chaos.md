@@ -23,7 +23,7 @@ to shinnier things. Managers to end the apologising
 and proclaim "Mission Accomplished" (_cue George W. Bush_).
 
 Touching code that barely works becomes a risky adventure, that only
-the approved enter, and only when there’s a clear case built for it.
+the approved enter, and only when there’s a clear JIRA ticket for it.
 Fresh meat assigned to add or fix stuff are only allowed to touch the
 minimal amount of code, in the minimal amount of time. So, every 10
 years, "say hello to my little friend" (_cue Tony Montana_), aka that
