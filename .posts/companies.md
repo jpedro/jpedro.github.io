@@ -84,6 +84,14 @@ reputation in the market. Their tempos and MO match.
 
 The opposite happens too. Casual companies have no patience for "suits".
 
+
+## The cause
+
+No. Middle managers mere existence don't sofucate and kill companies.
+But they do reduce the flow of information between the Vision at the
+top and the trenches at the bottom.
+
+
 <!--
 ## Cults
 
