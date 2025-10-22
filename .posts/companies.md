@@ -26,7 +26,8 @@ inside one's head. Based on a single post. There is no time for
 it either.
 
 Since time to market is the most critical metric here, it's all about
-making it work. THEN make it pretty. Then make it fast (economically viable, viral, or performant. That means doing more with the same)
+making it work. THEN make it pretty. Finally make it fast (economically
+viable, viral, or performant).
 
 If it hits the market and monetise quickly enough they can afford to
 pay full time employees. The other option is to get investors. Either
