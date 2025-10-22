@@ -29,8 +29,8 @@ read the day before.
 
 There is no time for this anyway.
 
-Time to market is the most critical metric. It's all about making
-it work. Those savings (yours or someone else's) won't last
+Time to market is the most critical metric. It's about making
+it work for the first customer. Those savings or loans won't last
 forever. THEN make it pretty, appealing. Finally make it fast
 (economically viable, viral, or performant).
 
