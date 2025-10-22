@@ -5,7 +5,7 @@
 Like stars and humans, companies have a life cycle.
 
 
-TLDR; This is a story about middle managers.
+And it's all about middle managers.
 
 
 ## Birth
