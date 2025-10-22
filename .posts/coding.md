@@ -12,6 +12,9 @@ _organising_ code, specially at scale, that's the interest.
 If you persevere long enough you will inevitably arrive at a hairy
 mess you created and you will need to fix your own entangled code.
 
+Arriving at this pain is critical to appreciate why design patterns
+exist and what practical value they offer.
+
 I met smart, knowledgeable people working in operations but when I read
 their code I got a gut reaction to it. It was unmanageable. Unreusable.
 Maybe it's how their messy brains work.
