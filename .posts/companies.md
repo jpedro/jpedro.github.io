@@ -92,7 +92,7 @@ But they do reduce the flow of information between the Vision at the
 top and the trenches at the bottom.
 
 The whats flows down but not the whys. The critical data that made those
-decision less risky.
+decisions less risky.
 
 
 <!--
