@@ -3,8 +3,8 @@
 Coding does something to the brain.
 
 It structures it. It also introduces a dopamine reward mechanism when
-you get a high when you get it just right and things worked as you
-said so. No other activity that I know of allows such precise control.
+you get a high when you get it _just_ right and things worked as you
+tell it so. No other activity that I know of allows such precise control.
 
 Coding itself is easy. Everyone can learn it in a week or less. But
 _organising_ code, specially at scale, that's the interest.
