@@ -20,9 +20,7 @@ A baby company starts with:
 The birth survival rate is quite low. Some point out that 9
 out of 10 startups fail.
 
-
-It's often chaotic. With the founders wearing all the hats and
-aprons.
+It's chaos. Founders wear all the hats and aprons.
 
 There's no need for process. The process is "getting shit done". 
 Decisions are discussions between 2 people. Sometimes, it's just
@@ -50,9 +48,10 @@ most people "disagree and commit".
 
 ## Middle Age, Middle Managers
 
-As the company grows and, with it, revenue and profits, top management
-tends to be pulled more onto the business side of things and get less
-involved in implementation details.
+As the company grows (revenue, profits, people) top management
+tends to be pulled more onto the business side of things. Strategic
+Innovation, Vision And Values. Cool stuuf like these. They get less
+involved in the mundane implementation details and people doing it.
 
 The middle age of middle managers inexorably arrives.
 
