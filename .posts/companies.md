@@ -20,7 +20,7 @@ A baby company starts with:
 The birth survival rate is quite low. Some point out that 9
 out of 10 startups fail.
 
-It's chaos. Founders wear all the hats and aprons.
+It's chaos. Founders wear all hats and aprons.
 
 There's no need for process. The process is "getting shit done". 
 Decisions are discussions between 2 people. Sometimes, it's just
