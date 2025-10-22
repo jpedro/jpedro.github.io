@@ -16,18 +16,24 @@ A baby company starts with:
 - Better execution. Price or value. Ideally both. That beats
   the complacent competitors.
 
-Survival rate are low. It's chaos. Founders wear all hats
-and aprons.
+Survival rates are low.
+
+It's chaos.
+
+Founders wear all hats and aprons.
 
 There's no process. "Process" is getting shit done. 
 Decisions are discussions between 2 people. Sometimes, it's just
-inside one's head. Based on a single post. There is no time for
-it either.
+inside one's head. Based on a single post read the day before.
+There is no time for it either.
 
 Time to market is the most critical metric. It's all about making
 it work. Because those savings (yours or someone else's) won't last
 forever. THEN make it pretty, appealing. Finally make it fast
 (economically viable, viral, or performant).
+
+
+## Alive
 
 If it hits the market and monetise quickly enough they can afford to
 pay full time employees. The other option is to get investors. Either
