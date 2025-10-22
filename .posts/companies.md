@@ -91,7 +91,7 @@ No. Middle managers mere existence don't sofucate and kill companies.
 But they do reduce the flow of information between the Vision at the
 top and the trenches at the bottom.
 
-The what flows down but not the why. The critical data that made this
+The whats flows down but not the whys. The critical data that made those
 decision less risky.
 
 
