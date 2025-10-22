@@ -23,7 +23,7 @@ But I keep finding the people that do the best work in
 operations/infrastructure/cloud were for a long enough time developers.
 They think in layers and single responsabilities, reusability and
 decoupling. Naming, punctation, attention to detail matter, because
-compilers don't tolerate typos.
+compilers don't tolerate typos. Or sub- or dis- missively ignore errors.
 
 > Every time I open a shell script and I don't see what I'm gonna
 > call now EU mode (`set -eu`) or its better `set -euo pipefail` at
