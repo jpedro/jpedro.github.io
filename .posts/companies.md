@@ -4,7 +4,6 @@
 
 Like stars and humans, companies have a life cycle.
 
-
 And it's all about middle managers.
 
 
@@ -25,9 +24,10 @@ Decisions are discussions between 2 people. Sometimes, it's just
 inside one's head. Based on a single post. There is no time for
 it either.
 
-Since time to market is the most critical metric here, it's all about
-making it work. THEN make it pretty. Finally make it fast (economically
-viable, viral, or performant).
+Time to market is the most critical metric. It's all about making
+it work. Because those savings (yours or someone else's) won't last
+forever. THEN make it pretty, appealing. Finally make it fast
+(economically viable, viral, or performant).
 
 If it hits the market and monetise quickly enough they can afford to
 pay full time employees. The other option is to get investors. Either
@@ -40,31 +40,31 @@ will pay off. So they become much more engaged with it.
 
 Founders tend to be pretty down to earth. Know everybody's weakeness
 and strengths. Discussions involve everyone since a decision, an idea 
-or a pivot can have a life or death impact.
-
-People disagree in the open but since it's a swim-or-sink situation
-most people "disagree and commit".
+or a pivot can have a life or death impact. People disagree in the
+open but since it's a swim-or-sink situation most people "disagree
+and commit".
 
 
 ## Middle Age, Middle Managers
 
 As the company grows (revenue, profits, people) top management
 tends to be pulled more onto the business side of things. Strategic
-Innovation, Vision And Values. Cool stuff like these. They get less
+Innovation, Vision And Values. Cool shit like this. They get less
 involved in the mundane implementation details and people doing it.
 
 The middle age of middle managers inexorably arrives.
 
-Because a CEO of 100 people can't keep tabs on all of them.
+Because the CEO of 100 can't keep tabs on all of them like when
+they were 10.
 
 Middle managers' whose sole responsibility is to ensure decisions
-at the top get implemented to the bottom. They enforce process and
+at the top get implemented at the bottom. They enforce process and
 policy.
 
-Their voices don't carry the same weight. They disagree the least
-than any other groups in the company. In part because they aim to
-be at the top table and can't create too many waves. They might be
-aware they are the most replacable part of the company.
+Their voices don't carry the same weight. They disagree the least.
+They aim to be at the top table and can't create too many waves.
+They also might be aware they are the most replacable part of the
+company.
 
 Foot soldiers might disagree but because they lack the bigger
 context that the top management has their opinions can be quickly
