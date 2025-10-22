@@ -13,7 +13,7 @@ A baby company starts with:
 
 - An innovation, something new in the world (like Docker)
 
-- Better execution. Price or value. Ideally both. That beats
+- Better execution. On price or value. Ideally both. That beats
   the complacent competitors.
 
 Survival rates are low.
