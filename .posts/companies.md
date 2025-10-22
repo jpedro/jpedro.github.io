@@ -50,7 +50,7 @@ most people "disagree and commit".
 
 As the company grows (revenue, profits, people) top management
 tends to be pulled more onto the business side of things. Strategic
-Innovation, Vision And Values. Cool stuuf like these. They get less
+Innovation, Vision And Values. Cool stuff like these. They get less
 involved in the mundane implementation details and people doing it.
 
 The middle age of middle managers inexorably arrives.
