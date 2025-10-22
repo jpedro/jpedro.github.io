@@ -1,6 +1,6 @@
 # Coding
 
-Coding does something to your brain.
+Coding does something to the brain.
 
 It structures it. It also introduces a dopamine reward mechanism when
 you get a high when you get it just right and things worked as you
