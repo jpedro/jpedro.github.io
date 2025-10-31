@@ -4,6 +4,8 @@ use std::path::Path;
 
 use std::collections::HashMap;
 
+const TAG_H1: &str = "# ";
+
 #[allow(dead_code)]
 pub struct Post<'a> {
     pub path: &'a Path,
@@ -16,7 +18,7 @@ pub struct Post<'a> {
 pub fn process(path: &Path) -> Result<Post<'_>, Error> {
     let text = fs::read_to_string(path).expect("Couldn't read file");
 
-    println!("{:?}:\n---\n{}===\n", path, &text);
+    // println!("{:?}:\n---\n{}===\n", path, &text);
 
     let mut post = Post {
         path: &path,
@@ -36,8 +38,13 @@ pub fn process(path: &Path) -> Result<Post<'_>, Error> {
 
 pub fn parse(_post: &mut Post, path: &Path) {
     let mut _attrs = HashMap::<String, String>::new();
+    let mut found = false;
 
     for line in fs::read_to_string(path).unwrap().lines() {
-        println!("- {}", line.to_string())
+        if !found && line.starts_with(TAG_H1) {
+            println!("> xxxxx --- Found the H1 tag");
+            found = true;
+        }
+        println!("> {}", line);
     }
 }

@@ -4,7 +4,8 @@ Coding does something to the brain.
 
 It structures it. It also introduces a dopamine reward mechanism when
 you get a high when you get it _just_ right and things worked as you
-tell it so. No other activity that I know of allows such precise control.
+tell it so. No other activity that I know of allows such precise
+control.
 
 Coding itself is easy. Everyone can learn it in a week or less. But
 _organising_ code, specially at scale, that's the interest.
@@ -30,9 +31,9 @@ compilers don't tolerate typos. Or sub- or dis- missively ignore errors.
 > at the top I get worried.
 
 Everyone should be exposed at coding. Coding should be mandatory at
-school, even if just for a few lessons. For most people it will not stick.
-For others, it can become addictive and it will change how they approach
-problems. It's a great mental tool.
+school, even if just for a few lessons. For most people it will not
+stick. For others, it can become addictive and it will change how they
+approach problems. It's a great mental tool.
 
 Programming languages are the midway between human languages and math
 (nature's language).
