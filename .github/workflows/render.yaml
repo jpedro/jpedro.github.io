@@ -1,11 +1,10 @@
-name: Rusty
+name: Render
 
 on:
   workflow_dispatch:
-
-  # push:
-  #   branches:
-  #   - master
+  push:
+    branches:
+    - master
 
 
 jobs:
@@ -22,4 +21,4 @@ jobs:
 
     - name: Run
       run: |
-        cargo run -- --name NAME --count 2 --prefix "PREFIX:"
+        cargo run -- --name NAME --count 3 --prefix "PREFIX:"
