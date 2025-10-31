@@ -8,17 +8,17 @@ pub struct Args {
     #[arg(short, long, default_value = ".posts")]
     pub dir: String,
 
-    /// Greeting prefix
-    #[arg(short, long, default_value = "Hello")]
-    pub prefix: String,
+    // /// Greeting prefix
+    // #[arg(short, long, default_value = "Hello")]
+    // pub prefix: String,
 
-    /// Number of times to greet
-    #[arg(short, long)]
-    pub name: String,
+    // /// Number of times to greet
+    // #[arg(short, long)]
+    // pub name: String,
 
-    /// Number of times to greet
-    #[arg(short, long, default_value_t = 1)]
-    pub count: u8,
+    // /// Number of times to greet
+    // #[arg(short, long, default_value_t = 1)]
+    // pub count: u8,
 }
 
 impl Args {

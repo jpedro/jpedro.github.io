@@ -13,7 +13,7 @@ pub struct Post<'a> {
     pub attrs: HashMap<String, String>,
 }
 
-pub fn process(path: &Path) -> Result<Post, Error> {
+pub fn process(path: &Path) -> Result<Post<'_>, Error> {
     let text = fs::read_to_string(path).expect("Couldn't read file");
 
     println!("{:?}:\n---\n{}===\n", path, &text);
