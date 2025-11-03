@@ -9,7 +9,7 @@ pub struct Args {
     pub prefix: String,
 
     /// Number of times to greet
-    #[arg(short, long)]
+    #[arg(short, long, default_value = "posts")]
     pub name: String,
 
     /// Number of times to greet
