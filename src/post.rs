@@ -6,7 +6,6 @@ use std::collections::HashMap;
 
 const TAG_H1: &str = "# ";
 
-// #[allow(dead_code)]
 pub struct Post<'a> {
     pub path: &'a Path,
     pub text: String,
@@ -28,12 +27,7 @@ pub fn process(path: &Path) -> Result<Post<'_>, Error> {
         lines: vec![],
         attrs: HashMap::new(),
     };
-    load(&mut post);
 
-    Ok(post)
-}
-
-pub fn load<'a>(post: &'a mut Post<'a>) {
     let mut attrs: HashMap::<&str, &str> = HashMap::new();
     let mut lines: Vec<&str> = Vec::new();
     let mut found = false;
@@ -64,4 +58,6 @@ pub fn load<'a>(post: &'a mut Post<'a>) {
 
     post.attrs = attrs;
     post.lines = lines;
+
+    Ok(post)
 }
