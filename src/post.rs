@@ -4,7 +4,7 @@ use std::path::Path;
 
 use std::collections::HashMap;
 
-// const TAG_H1: &str = "# ";
+const TAG_H1: &str = "# ";
 
 pub struct Post<'a> {
     pub path: &'a Path,
@@ -60,24 +60,28 @@ fn read_lines(path: &Path) -> Vec<String> {
 
 fn read_attrs(path: &Path) -> HashMap<String, String> {
     let mut attrs: HashMap::<String, String> = HashMap::new();
-    let mut _found = false;
+
     for line in fs::read_to_string(path).unwrap().lines() {
+        if line.starts_with(TAG_H1) {
+            return attrs;
+        }
+
         let line = line.to_owned();
         if !line.starts_with("<!--") {
             continue;
         }
 
-        let front = line.replace("<!--", "").replace("-->", "");
-        println!("> Found front: '{}'", front);
-        let mut field = line.clone();
+        let bare = line.replace("<!--", "").replace("-->", "");
+        // println!("> Using bare: '{}'.", bare);
+        let mut field = bare.clone().trim().to_string();
         let mut value = "true".to_string();
-        if let Some(colon) = line.find(":") {
-            println!("> Found colon: '{}'", colon);
-            field = line[0..colon].to_string();
-            value = line[colon+1..].to_string();
+        if let Some(colon) = bare.find(":") {
+            // println!("> Found colon: {} on '{}'", colon, bare);
+            field = bare[0..colon].to_string().trim().to_string();
+            value = bare[colon+1..].to_string().trim().to_string();
         }
         attrs.insert(field.clone(), value.to_string());
-        println!("> Front field: '{}', value: '{}'", &field, &value);
+        // println!("  {}: {}", field, value);
     }
     attrs
 }
