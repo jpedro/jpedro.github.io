@@ -27,7 +27,6 @@ make it work. Finally how to make it fast.</p>
 <h3>TL;DR</h3>
 <p>A combination of centralised yaml files, Python running Terraform and
 GitHub matricised jobs.</p>
-&lt;!-- --- --&gt;
 <h2>The problem</h2>
 <p>When you have a single digit number of projects, you start by having
 different Terraform root modules for each project, consuming upstream
@@ -80,7 +79,6 @@ the very start. Before they are handed out to developer teams.</p>
 <p>Centralising these projects under this single vending machine allows
 covering 90% of the Terraform plan validations. The rest 10% can
 be flagged for inspection.</p>
-&lt;!-- --- --&gt;
 <h2>Enter yaml</h2>
 <p>Firstly and foremostly, we extracted all config, not into tfvars files,
 but into yaml files. Could be JSON or TOML but yaml is human-friendly
@@ -323,7 +321,6 @@ the number of projects involved.</p>
 &lt;!-- $${\color{red}■}$$ --&gt;
 <p>(Well... not exactly. You will hit some hard limited APIs. Check the
 <a href="#quotas">Quotas</a> section below.)</p>
-&lt;!-- --- --&gt;
 <h2>Final notes</h2>
 <p>Now anyone can create a project with a pull request with a yaml file
 inside, get it approved, merged, provisioned and then get the same
@@ -345,7 +342,6 @@ article.</p>
 <p>They all live happily in their own repos and run in non-threaded,
 non-parallelised, manually approved, python-unstrangled pipelines.</p>
 <p>Because they can.</p>
-&lt;!-- --- --&gt;
 <h2>If you missed it</h2>
 <p>The title is a reference to Carl Sagan's misquoted expression that was
 eventually
