@@ -23,8 +23,6 @@ A combination of centralised yaml files, Python running Terraform and
 GitHub matricised jobs.
 
 
-<!-- --- -->
-
 ## The problem
 
 When you have a single digit number of projects, you start by having
@@ -98,8 +96,6 @@ Centralising these projects under this single vending machine allows
 covering 90% of the Terraform plan validations. The rest 10% can
 be flagged for inspection.
 
-
-<!-- --- -->
 
 ## Enter yaml
 
@@ -391,7 +387,6 @@ from the `Total duration` inside a run. In the screenshot above, it
 shows `58s` vs `4m`.
 
 
-
 ### The fix
 
 The only matrix list we set is a list of slots. Each slot is an
@@ -417,8 +412,6 @@ Q.E.D. <font color="red" size="1px">■</font>
 (Well... not exactly. You will hit some hard limited APIs. Check the
 [Quotas](#quotas) section below.)
 
-
-<!-- --- -->
 
 ## Final notes
 
@@ -452,8 +445,6 @@ non-parallelised, manually approved, python-unstrangled pipelines.
 
 Because they can.
 
-
-<!-- --- -->
 
 ## If you missed it
 
