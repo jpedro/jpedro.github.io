@@ -8,7 +8,6 @@ use std::path::PathBuf;
 pub fn files(path: impl AsRef<Path>) -> Result<Vec<PathBuf>> {
     let mut paths = vec![];
     let entries = fs::read_dir(path)?;
-
     for entry in entries {
         let entry = entry?;
         let meta = entry.metadata()?;

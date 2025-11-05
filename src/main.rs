@@ -5,20 +5,20 @@ mod cli;
 mod find;
 mod post;
 
-
 fn main() {
     let args = cli::Args::parse();
-    println!("DIR: {}", args.dir);
-
-    for _ in 0 .. args.count {
-        println!("{} {}!", args.prefix, args.name);
-    }
+    println!("- Dir   {:?}", args.dir);
 
     let found = find::files(PathBuf::from(&args.dir));
     if let Ok(paths) = found {
         for path in paths {
-            // println!("- {:?}.", path);
-            let _post = post::process(&path);
+            let post = post::process(&path).expect("Failed");
+            println!("");
+            println!("- Path  {:?}", post.path);
+            println!("- Text  {:?}", post.text);
+            println!("- Title {:?}", post.title);
+            println!("- Lines {:?}", post.lines);
+            println!("- Attrs {:?}", post.attrs);
         }
     }
 }
