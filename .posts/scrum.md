@@ -1,4 +1,4 @@
-## Scrum
+# Scrum
 
 > "It is a truth universally acknowledged, that a single developer
 in possession of a good project, _must be_ in sear hate of Scrum".
@@ -126,7 +126,7 @@ for it.
 
   > Scrum was invented to function in hostile environments. It's a
   > contract between hard-pushing managers and developers needing
-  > time to think and explore. 
+  > time to think and explore.
 
 
 - [Developers Should Abandon Agile](https://ronjeffries.com/articles/018-01ff/abandon-1/)
