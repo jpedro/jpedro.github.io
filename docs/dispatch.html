@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/style.css" />
+<title>dispatch.md - Posts nobody asked for</title>
+</head>
+<body>
+<div id="content">
+
+<ul>
+<li>tags: shell, markdown</li>
+</ul>
+
+<h1>Bash Dispatch</h1>
+<p>Bash as a language is horrible.</p>
+<p>The weird syntax reeks of historical hacks on top of each other.
+Unfortunately, until a better shell is wide-spread we are stuck with it.
+PowerShell does a good job using objects.</p>
+<p>On the plus side, it's everywhere and it's easy to get started. You just
+throw all shell commands into a file. As time goes by, you always add
+more cruft, like conditionals, loops and functions.</p>
+<h2>Subcommands</h2>
+<p>I grew particularly tired of using <code>case</code> to select the correct
+subcommand / function to run from the first argument. Something like
+this:</p>
+<pre><code class="language-bash">#!/usr/bin/env bash
+set -euo pipefail
+
+cmd.list() {
+    ls -alF ${1:-$HOME}
+}
+
+cmd.help() {
+    echo &quot;Usage: something &lt;command&gt;&quot;
+    echo
+    echo &quot;Commands:&quot;
+    echo &quot;    list          # List all files in the home directory&quot;
+}
+
+cmd.other() {
+    echo &quot;==&gt; Args: $@ ($#)&quot;
+}
+
+COMMAND=&quot;${1:-list}
+shift
+
+case &quot;$COMMAND&quot; in
+    &quot;list&quot;)     cmd.list $@ ;;
+    &quot;help&quot;)     cmd.help $@ ;;
+    &quot;other&quot;)    cmd.other $@ ;;
+    #...
+esac
+</code></pre>
+<p>As you add more functionality, the case list becomes longer to maintain
+and it gets hard to add nested commands. Some nested commands might
+accept values that can also be <code>--flag</code>s. So for a command like:</p>
+<pre><code>please list --repos
+</code></pre>
+<p>one would need to check not only <code>$1</code> but <code>$2</code>. Or use a 2nd case inside
+the <code>cmd.list</code> function. And <code>--repos</code> is a valid directory name.</p>
+<h2>Enter dispatch</h2>
+<p>Lately, I'm using a <code>dispatch</code> function that tries to find the
+subcommand from the declared functions with a known prefix:</p>
+<pre><code class="language-bash">
+# All of the above...
+
+dispatch() {
+    : &quot;Finding command for $@...&quot;
+    local prefix=&quot;cmd&quot;
+    local fallback=&quot;cmd.help&quot;
+    local max=${#@}
+
+    if [ $max -lt 1 ]
+    then
+        $fallback
+        return
+    fi
+
+    while true
+    do
+        arg=${@:1:$max}
+        cmd=&quot;${arg// /.}&quot;
+        : &quot;Checking $prefix.$cmd: $(type $prefix.$cmd 2&gt;/dev/null | head -n 1)&quot;
+        if type $prefix.$cmd &gt;/dev/null 2&gt;&amp;1
+        then
+            args=${@:$(($max+1))}
+            : &quot;Calling $prefix.$cmd($args)&quot;
+            eval $prefix.$cmd $args
+            return
+        fi
+
+        max=$(( max - 1))
+        if [ $max -lt 1 ]
+        then
+            echo &gt;&amp;2 &quot;Error: Couldn't find command for '$@'. Try '$0 help'.&quot;
+            return 1
+        fi
+    done
+
+    echo &gt;&amp;2 &quot;Error: Command '$1' not found.&quot;
+    return 1
+}
+
+dispatch $@
+
+</code></pre>
+<p>It will try to find <code>cmd.${@// /.}</code> from declared functions. The
+longest one that matches the arguments you pass. It starts with all
+the arguments and removes one by one until it finds a function that
+can be run.</p>
+<p>Poor man's function dispatcher or lazy solution? Both. Always both!</p>
+<p>It &quot;supports&quot; nested command by replacing any spaces with a period <code>.</code>
+and check if that function is available.</p>
+<p>For example, if your main script is called <code>please</code>,
+<code>please help me now</code> will start by loooking for a function called
+<code>cmd.help.me.now</code>. If that doesn't exist, it will look for one called
+<code>cmd.help.me</code>. That one also doesn't exist, so it tries next <code>cmd.help</code>
+which is declared. Then it will send <code>me now</code> as the arguments to it.</p>
+<p>In case <code>cmd.help</code> doesn't exist, it calls the function name inside the
+<code>fallback</code> variable.</p>
+<p>The existence of a <code>prefix</code> means other functions will not be searched
+in the lookup process. It's a guard.</p>
+<h2>One more thing</h2>
+<p>I gave up showing a script's usage using <code>echo</code>s. It's so ugly.</p>
+<p>So now, I just slap the usage in a comment in the beginning of the file
+and grep for it. It's also thas the benefit it's the first thing you see
+when you open the script in a code editor.</p>
+<pre><code class="language-bash">#!/usr/bin/env bash
+### USAGE
+###     please &lt;command&gt;
+###
+### COMMANDS
+###    list          # List all files in the home directory
+###    other         # And now for something completely different
+###    help [WHAT]   # It supposedly helps with WHAT
+set -euo pipefail
+
+cmd.help() {
+    grep '^###' $0 | cut -c 5-
+}
+
+# ...
+</code></pre>
+<h2>The whole #!shebang</h2>
+<pre><code class="language-bash">#!/usr/bin/env bash
+### USAGE
+###     please &lt;command&gt;
+###
+### COMMANDS
+###    list          # List all files in the home directory
+###    other         # And now for something completely different
+###    help [WHAT]   # It supposedly helps with WHAT
+set -euo pipefail
+
+cmd.help() {
+    grep '^###' $0 | cut -c 5-
+}
+
+cmd.list() {
+    ls -alF --color=auto ${1:-$HOME}
+}
+
+cmd.other() {
+    echo &quot;==&gt; Args: $@ ($#)&quot;
+}
+
+dispatch() {
+    : &quot;Finding command for $@...&quot;
+    local prefix=&quot;cmd&quot;
+    local fallback=&quot;cmd.help&quot;
+    local max=${#@}
+
+    if [ $max -lt 1 ]
+    then
+        $fallback
+        return
+    fi
+
+    while true
+    do
+        arg=${@:1:$max}
+        cmd=&quot;${arg// /.}&quot;
+        : &quot;Checking $prefix.$cmd: $(type $prefix.$cmd 2&gt;/dev/null | head -n 1)&quot;
+        if type $prefix.$cmd &gt;/dev/null 2&gt;&amp;1
+        then
+            args=${@:$(($max+1))}
+            : &quot;Calling $prefix.$cmd($args)&quot;
+            eval $prefix.$cmd $args
+            return
+        fi
+
+        max=$(( max - 1))
+        if [ $max -lt 1 ]
+        then
+            echo &gt;&amp;2 &quot;Error: Couldn't find command for '$@'. Try '$0 help'.&quot;
+            return 1
+        fi
+    done
+
+    echo &gt;&amp;2 &quot;Error: Command '$1' not found.&quot;
+    return 1
+}
+
+dispatch $@
+</code></pre>
+<h2>Todos</h2>
+<ul>
+<li>
+<p>Ignore everything after the first flag is found.</p>
+</li>
+<li>
+<p>Store the found flags in a map.</p>
+</li>
+<li>
+<p>Try to stick that <code>dispatch</code> into a code snippet...</p>
+</li>
+<li>
+<p>Think on the ambiguity between a valid value and a command. For
+example: should <code>repo</code> in <code>please list repo</code> be the <code>$1</code> value
+to <code>cmd.list</code> or the command <code>cmd.list.repo</code>? This is the stuff
+that keeps me awake at night.</p>
+</li>
+</ul>
+
+</div>
+
+<footer id="footer">
+Made with some &lt;3 <a href="http://jpedro.github.io/">not a lot</a>
+</footer>
+
+
+</body>
+</html>

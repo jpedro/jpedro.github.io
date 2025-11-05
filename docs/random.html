@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/style.css" />
+<title>random.md - Posts nobody asked for</title>
+</head>
+<body>
+<div id="content">
+
+<ul>
+</ul>
+
+<h1>Random</h1>
+<p><a href="/tags/mildly-interesting">&lt;img src=&quot;https://img.shields.io/badge/Mildly-Interesting-brightgreen&quot;&gt;</a></p>
+<h2>Interviewing</h2>
+<p>Just read <a href="https://thecodist.com/career-retrospective-being-interviewed/">Career Retrospective: Being Interviewed</a>.</p>
+<p>Andrew ends by saying:</p>
+<blockquote>
+<p>I never asked anyone to write code in an interview</p>
+</blockquote>
+<p>I disagree with this statement. The post reflects on his experiences
+being interviewed and you can see the progression from interviews being
+human conversations to harder and more technical.</p>
+<p>I insist on getting people to code on interviews. Real code, not
+leetcode, on their preferred IDE or code editor. Normally, the smallest
+example, that can be expanded or complicated as allowed by the
+candidate.</p>
+<p>I know this adds extra stress to the process but coding live helps
+us to gain invaluable insight. We don't care if they complete the coding
+challenge or not. We care how they search and filter information,
+how they tweak code they find and think.</p>
+<h2>The end</h2>
+<p>Sometimes a means to an end is not the mean to that end. Sometimes,
+the &quot;mean&quot; is the <strong>end goal itself</strong>.</p>
+<h2>Mastery</h2>
+<p>The internets tell me mastery is spending 10_000 hours doing
+something. Cute but no. I prefer this:</p>
+<blockquote>
+<p>It's when you made ALL the possible mistakes you can. Over
+and over again. Even then, maybe...</p>
+</blockquote>
+<h2>In my shoe</h2>
+<p>From my limited viewpoint, the worst managers are the ones that were
+very technical at some point. And it's worse the more recently that
+transition happened.</p>
+<p>I'm not bragging but I know I would be a terrible manager. Because I
+fuss about code. A comma or a space out of place done by someone else
+is a like a particle in my shoe. I might not remove it immediately but
+my brain knows it's theeeeere!</p>
+<p>When you code, you have absolute control over every character you type.
+That translate poorly when managing people.</p>
+<p><a href="https://news.ycombinator.com/item?id=39844104">Peter Principle discussion on Hacker News</a></p>
+<p><a href="https://www.youtube.com/watch?v=39wzku9KIEM">How that name started</a></p>
+<h2>Sounds</h2>
+<p>Sometimes I wonder how much music or how many songs connect to us at a
+deeper level because they resemble sounds we hear in the womb. Can we
+see, smell, touch, taste in there? No, no, and probably not.</p>
+<p>The sole source of stimuli are sounds.</p>
+<p>Just think. In total darkness, floating in that warm, sensory-deprived
+amniotic universe. It has be the ultimate ASMR experience.</p>
+<h2>Undersold</h2>
+<p>The most undersold value of the cloud is their unified API. Why?</p>
+<p>Because AU. TO. MA. TION!</p>
+<p>Those API calls are the smallest lego pieces. The bricks. Atop
+that, you can assemble walls, rooms, flats, houses, buildings. Whole
+cities in the cloud can be captured in a repo, automated, packaged
+as a library, some tool, service or platform.</p>
+<p>Most ad-hoc scripts and home brewed provisioning tools can't even
+agree on a standard for the sand that builds the bricks.</p>
+<p>Totally unrelated: <a href="/hosting">I have a bridge to sell to you</a>.</p>
+<h2>No, you don't!</h2>
+<p>Sometimes you don't need a &quot;cloud&quot;. Deploy that app straight into
+a bare host. Use unix sockets. Avoid TCP/IP overheads.</p>
+<p>You better pray the backups and failover are working when things
+fail (which they will) but until then, weeee! It's the best
+performance you will <em>ever</em> get.</p>
+<h2>Progression</h2>
+<p>It's funny how things organically evolve in dev and ops.</p>
+<p>You start by installing some tool and testing it with a few CLI commands.</p>
+<p>When you use it enough you throw them into a bash script in the <code>$PATH</code>.
+Extract those CLI flags into script arguments. Tidy it up, wrap it with a
+few functions, subcommands, a useful usage help text, validate all inputs.</p>
+<p>After that company hacktahon, now you got the greenlight to integrate that
+into the app, like say creating image thumbnails. And sure enough, you can
+shell these out. Or the tool has or the community created a SDK. Great.</p>
+<p>Down the road, you realise that it's better to do this off the main thread
+and do it asynchronously in the background. You extract that into its own
+service. Throw the payload to some queue with a callback. Maybe deploy
+this to some evented loop runtime. It's <strong>a service</strong> now. Maybe not a
+Chad service but one nonetheless.</p>
+<p>After a while you need to add some authentication because
+<a href="https://x.com/ozgrozer/status/1838895852259041362">you don't want this to be public, right</a>?
+<a href="https://x.com/kaepora/status/1838651348797063276">Right</a>?!
+Because moved this out of some private subnets and split its own dev/test
+environments. Anyway, there's now a pizza team of 2 only doing this now.
+With separate monitoring, alerts channels. It's now <strong>an app</strong>.</p>
+<p>Now with an auth token away (hopefully an OAuth or OIDC one) and
+your main business tanking, you realise you can sell this cheaper than
+crazy competition prices. So you do <em>that</em>. The app now needs a public
+end point and its own authz. It's now <strong>a product</strong>.</p>
+<p>You add enterprise features. Because you need a new boat. In my book
+comes down to granular access controls and integration with other
+services and platforms, like customer SSO, notifications. Maybe a
+marketplace if you get big enough, that allows 3rd parties to
+hook up with ge public API.  Voilá. It's now <strong>a platform</strong>.</p>
+&lt;!--
+And there it is. The whole &quot;journey&quot;. This is mom and dad made you.
+
+- Shell commands
+- Script
+- Function
+- Module
+- Library
+- Service
+- Product
+- Platform
+--&gt;
+
+</div>
+
+<footer id="footer">
+Made with some &lt;3 <a href="http://jpedro.github.io/">not a lot</a>
+</footer>
+
+
+</body>
+</html>

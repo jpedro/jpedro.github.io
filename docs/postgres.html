@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/style.css" />
+<title>postgres.md - Posts nobody asked for</title>
+</head>
+<body>
+<div id="content">
+
+<ul>
+<li>hidden: true</li>
+<li>tags: databases</li>
+</ul>
+
+<h1>Postgres</h1>
+<p>I'm learning Postgres for a while and while many things are
+<em><strong>so much nicer</strong></em> than MySQL. I mean, come on! How long until
+there's a datetime type with a timezoned component?</p>
+<p>But Postgres misses on some basics. I'm disappointed.</p>
+<h2>TL;DR</h2>
+<p>Postgres feels like a Citroën, with a sleek design and full
+of  gadgetry. MySQL is a truck that just keeps running and
+replicates better.</p>
+&lt;!--
+[1] Ok, fine. This was before all cars start to look the same
+due to manufacturing consolidation.
+--&gt;
+<h2>The Good</h2>
+<p>Postgres is sometimes referred as an object-relational database. That's
+because columns in Postgres belong to an object data type and you can
+expand on them by creating your custom types from their 43 primitives
+types. Yes. 43! <code>CREATE TYPE Person AS (name VARCHAR, skills TEXT[])</code>.
+You can also create DOMAINS, which basically work as aliases to
+types with <code>CHECK</code> constraints. All very neat. Opaque but neat.</p>
+<p>Tables can have hierarchical relationships, which sounds very OOP'ish.
+But not sure how this can be a good thing. Plus, in my naive opinion
+database schema tools can handle data hierarchies with more flexibily.
+But we'll see, with more use.</p>
+<p>There're also sequences, better view support, native support for
+<code>UUID</code>s, JSONPath functionality and much more candy out of the box.
+And it's also a more compliant RDBMS.</p>
+<p>It's superficial but the out-of-the-box <code>psql</code> cli is friendlier
+than <code>mysql</code>. <code>\l</code> is and <code>\d+ table_name</code> are faster than
+<code>SHOW DATABASES</code> and <code>SHOW CREATE TABLE table_name</code> (this though
+goes away with <code>pgcli</code>, <code>mycli</code> and <code>litecli</code> tools available).</p>
+<h2>The Different</h2>
+<p>Postgres won't return the last inserted id value by default. It's a
+small annoyance. It forces me to add ifs and buts to my SQL adapters.</p>
+<p>It <em>does</em> allow instead to return one or more fields from each write.
+It's not even limited to <code>INSERT INTO table ... RETURN &lt;field&gt;</code>. It can
+be used with a <code>DELETE FROM table WHERE id = 123 OR id = 456 RETURNING *</code>
+and you can loop over those now 2 deleted rows. So that saves you
+another round trip to the database. But most of the times, you just
+need that new serial id and redirect the page to the <code>GET /blah/id</code>.</p>
+<p>Some ORMs actually return the whole row by default. Just in case. It
+feels a bit wasteful but this is a row oriented system, right? The other
+fields are already in memory anyway.</p>
+<p>With <a href="https://pgt.dev/">the right extension</a> you can even write stored
+procedures in python, ruby, rust, call <code>curl</code> and even
+<a href="https://postgrest.org">render html templates</a> from a pgsql connection.
+Some peole don't know the difference between &quot;can&quot; and &quot;should&quot;.
+Good luck <a href="https://pgtap.org/">testing that code</a>.</p>
+<p>Postgres also adds support for JSON and JSONB values but I find this
+very weird. In my mind, why the need for a specialised JSON column or
+its space optimised version? You can put it in a TEXT field and
+if you need to really index some values just create a separate table
+pointing to them. Or use a proper search engine for this. Doing
+searches on JSON fields comes with a performance penalty. But I do get
+that you can shrink the amount of data significantly enough that
+searching the records doesn't hurt performance.</p>
+<p>And over time people added extensions. Cache storages. Cron schedulers.
+Pub/sub mechanisms. Even Cypher graph support.</p>
+<h2>The Ugly</h2>
+<p>The ugly is related to how Postgres handles MVCC. It's a long known
+problem called &quot;write amplification&quot; and although some proposals where
+put forward, none was adopted so far.</p>
+<p>This write amplification happens when <strong>for each new update</strong>, even to
+a single field, Postgres creates a new row version, while older ones
+are marked as dead. Those tombstoned records accumulate in disk and
+therefore Postgres needs to garbage collect them frequently enough,
+in the form of <code>VACUUM</code>. This operation can run in parallel and can
+be scheduled to run after certain thresholds are hit.</p>
+<p>This is because indexes in Postgres store <strong>the whole damned row</strong>.
+Another way to say it is: Postgres itself doesn't follow the Normal
+Forms. I get it. This is a trade between more space and saving one
+extra disk searchs (to hidrate Row IDs) but in write intensive
+applications, with mutating data, this shows.</p>
+<p>MySQL doesn't suffer from this amplification as data is stored in the
+primary btree and other indexes just hold the primary key value on their
+leaves. Updates only affect the primary key btree. Unless of course,
+if you update the secondary index fields. But the extra lookup has't
+hurt MySQL performance.</p>
+<p><a href="https://www.uber.com/en-NO/blog/postgres-to-mysql-migration/">Uber migrated away from Postgres</a>
+due to this.</p>
+<p>Plus, the heavier and weirder replication, the use of caches and a
+whole OS process per connection (solution: install <code>pgbouncer</code>
+everywhere) leaves a sour taste.</p>
+<h2>The Design</h2>
+<p>At core there's a fundamental fork how Postgres and MySQL were designed.</p>
+<p>MySQL just wanted to be the fastest. For a long time, screw referential
+integrity. Use the application and build your own triggers. Stored
+procedures? You mean, schmore procedures?!... Only added after strong
+demand.</p>
+<p>To be fair, 99.9% of the time you don't need <em>and</em> you definitely do not
+want application logic in the database. I'll fight
+<a href="https://sive.rs/pg">anyone</a> on this. I found the hill I'll die for.
+The database is the most critical tech component. The one that's
+non-trivial to horizontally scale. So keep it lean, keep it dumb, stupid!</p>
+<p>Because the database <em>should</em> be dumb. Just safely store and retrieve my
+data. And let me to run some adhoc queries over unindexed fields 😱,
+that on other, wiser systems is strictly forbudt.</p>
+<p>So, do <strong>that</strong> and do it well. And please, for the love of god,
+make the WAL <em>impossible</em> to turn off. Don't make me opt' it in
+(<em>looking at SQLite</em>).</p>
+<p>So I can't see how extending the database type system as added value.
+It's not keeping it dumb. It's definitely not keeping it portable.</p>
+<p>Unless, of course, you are building your own data store atop Postgres.
+Then this all makes sense. Maybe those features and that opacity is
+exactly <a href="https://www.timescale.com/">what pays the bills</a>.</p>
+<h2>The Conclusion</h2>
+<p>Is this enough to stop me from using it? Hell no. Sometimes, you gotta
+swallow something whole. Then you can judge how it really tastes.</p>
+<p>I'm migrating apps to Postgres but for the small fish I'm using
+SQLite. It statically links as a library. Yes, storage is a stupid
+single file that no one other thread can write into but it's a bliss.
+And the performance is as good as it gets for a relational storage.</p>
+
+</div>
+
+<footer id="footer">
+Made with some &lt;3 <a href="http://jpedro.github.io/">not a lot</a>
+</footer>
+
+
+</body>
+</html>

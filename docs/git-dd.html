@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/style.css" />
+<title>git-dd.md - Posts nobody asked for</title>
+</head>
+<body>
+<div id="content">
+
+<ul>
+<li>tags: git, shell</li>
+</ul>
+
+<h1><code>git dd</code></h1>
+<p>I have this git alias called <code>dd</code>. Cool cool. What does it do?</p>
+<pre><code>$ git help dd
+'dd' is aliased to 'deploy'
+</code></pre>
+<p><code>dd</code> is a git finger-friendly alias to another git alias.</p>
+<blockquote>
+<p>&quot;Turtles all the way down&quot;</p>
+<p>— Older flat eather</p>
+</blockquote>
+<pre><code>$ git help deploy | fold -sw 72
+'deploy' is aliased to '!f(){ host=$(git config deploy.host); dir=$(git
+config deploy.dir); if [[ $host = '' ]] || [[ $dir = '' ]] ; then echo
+'Git config deploy is not configured.'; return 1; fi; git pp; IFS=,;
+for h in $host; do echo; echo Updating $(git green $dir) @ $(git green
+$h); printf '\033[2m'; git hr; ssh -A $h 'cd '$dir' &amp;&amp; git ff &amp;&amp; git
+log -1'; git hr; printf '\033[0m'; done ;};f'
+</code></pre>
+<p>Let's break it down.</p>
+<ul>
+<li>
+<p>The <code>!f() { ... ;};f</code> sets the git alias to call a shell command with
+an inline function <code>f</code>, that we call immediately. Inside it:</p>
+</li>
+<li>
+<p>Grab the <code>deploy.host</code> and <code>deploy.dir</code> git config  values.</p>
+</li>
+<li>
+<p>Ensure they have values. Exit early with a message if empty.</p>
+</li>
+<li>
+<p><code>ssh</code> into the host and rebases the current branch in the target
+directory against its upstream.</p>
+</li>
+</ul>
+<p>The last part is surrounded with a pair of dimmed and reset ansi codes
+to signal that output comes from the host, not your local machine.</p>
+<h2>Git aliases</h2>
+<p>Git alias can host not only alias to 1. other git commands and flags,
+but also to 2. shelled out calls and, abusing that, 3. inline shell
+functions.</p>
+<p>We can start sticking code into <code>~/.gitconfig</code> like there's no tomorrow
+and because that file is accessible to all git repos, we can abuse git
+as a <em>global</em> task manager. And so we shall.</p>
+<h3>1. Subcommand alias</h3>
+<pre><code class="language-ini">[alias]
+    st = status
+    me = branch --show-current
+</code></pre>
+<p>So now <code>git st</code> is short for <code>git status</code>. And <code>git me</code> is short for
+<code>git branch --show-current</code> (or if you are using an older git version
+set it to <code>rev-parse --abbrev-ref HEAD</code>).</p>
+<h3>2. Shell calls</h3>
+<pre><code class="language-ini">[alias]
+    date   = &quot;!date +'%Y-%m-%d'&quot;
+    parent = &quot;!git config branch.$(git me).remote&quot; # Can't use `remote`
+</code></pre>
+<p>The leading <code>!</code> again indicates we are shelling out.</p>
+<p><code>git date</code> is just an example of calling the <code>/usr/date</code> with the
+format as the first argument.</p>
+<p>Also note how <code>git parent</code> calls <code>git</code> itself as an external program
+and accepts subshell commands (the <code>$(command)</code> part). In this case,
+it will use the alias we created above <code>git me</code> and will resolve the
+upstream remote name for the current branch, if it exists.</p>
+<h3>3. Shell functions</h3>
+<pre><code class="language-ini">[alias]
+    yo = &quot;!f(){ echo &quot;Yo, ${@:-dude}! Have a 🍪&quot; ;};f&quot;
+</code></pre>
+<p>The leading <code>!</code> tells us we are shelling out, then the <code>f(){ ... }</code>
+tells we are creating an inline function, and the last <code>f</code> means we are
+calling it immediately. The extra semicolons are required for shell
+one-liners.</p>
+<p><code>yo</code> is now an alias for that inline shell function. If you call it,
+it will answer.</p>
+<pre><code>$ git yo
+Yo, dude! Have a 🍪
+</code></pre>
+<p>If you feel bold, you can pass an argument:</p>
+<pre><code>$ git yo a monad is a monoid in the category of endofunctors
+Yo, a monad is a monoid in the category of endofunctors! Have a 🍪
+</code></pre>
+<p><strong>Note:</strong> Keep in mind, when git shells out, it calls, not <code>bash</code>, nor
+<code>zsh</code>, but <code>sh</code>. But there is no real binary named <code>sh</code>. In most systems
+it's symlinked to <code>bash</code> or more commonly to <code>dash</code>. And dash is kinda
+old and a minimally compliant POSIX shell. 10 times smaller than bash
+sure but misses some nice bash'isms. For example, the better <code>[[</code> builtin
+just doesn't exist. You can either fix the <code>sh</code> symlink or code accordingly.
+And you thought bash was bad!... Everything <em>is</em> BAD... until you find
+something worse.</p>
+<p><img src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/img/why.jpg" alt="But why" /></p>
+<p>Functions are more flexible that shelled out commands. Conditionals,
+loops, arguments work better. You can download the internets and stream
+Veep. From the comfort of your local repo.</p>
+<h2>Git Config</h2>
+<p>Git config is a convenient key value store in
+<a href="https://en.wikipedia.org/wiki/INI_file">INI format</a>. You can store
+values both in the local repo's <code>.git/config</code> or in the global
+<code>~/.gitconfig</code> file. The command is unsurprising:</p>
+<pre><code>git config ENTRY [VALUE]
+</code></pre>
+<p>The <code>ENTRY</code> is formed by an INI <code>section</code> and an INI <code>key</code> name, joined
+by a <code>.</code>. If you pass the <code>VALUE</code> it sets it. If you don't, it returns
+the stored value. For example, a local git repo has this section:</p>
+<pre><code class="language-ini">[branch &quot;master&quot;]
+    remote = origin
+    merge = refs/heads/master
+</code></pre>
+<p>Note how the INI section name has quotes when composed of 2 words.
+Which is what we used for the <code>git parent</code> alias above. In that case,
+the <code>ENTRY</code> is <code>branch.master.remote</code> and <code>branch.master</code> is the INI
+section, <code>remote</code> being the INI key.</p>
+<p>You need to quote aditional section parts if they have dots on them.
+For example:</p>
+<pre><code>$ grep -A 1 hi .git/config
+[hi &quot;are.you&quot;]
+    ok = &quot;Fine, I'VE NEVER BEEN BETTER&quot;
+
+$ git config hi.are.you.ok
+Fine, I'VE NEVER BEEN BETTER
+</code></pre>
+<p>There's no section or key checking by git. Just follow your heart, my
+friend. You got this!</p>
+<p>Armed with this knowledge we can understand now how this unholy
+contraption works.</p>
+<h2>Ru[n|i]ning things</h2>
+<blockquote>
+<p>&quot;Finger-friendly turtles all the way down&quot;</p>
+<p>— Wiser flat eather</p>
+</blockquote>
+<p>If we break down the inline function in the <code>deploy</code> alias and format
+it humanely and compassionately, it looks like your run-of-the-mill
+shell function:</p>
+<pre><code class="language-bash">f() {
+    host=$(git config deploy.host)
+    dir=$(git config deploy.dir)
+
+    if [[ $host = '' ]] || [[ $dir = '' ]]
+    then
+        echo 'Git config deploy is not configured.'
+        return
+    fi
+
+    git pp
+    echo '\033[2m'
+    ssh -A $host 'cd '$dir' &amp;&amp; git ff &amp;&amp; git log -1'
+    echo '\033[0m'
+}
+f
+</code></pre>
+<p>It loads and checks if the <code>host</code> and <code>dir</code> keys are present in the
+<code>deploy</code> section and then ssh's into the host and does <code>git ff</code> in
+that directory. Here's <code>git ff</code> along with the rest of the gang:</p>
+<pre><code class="language-ini">[alias]
+    pp = &quot;!f(){ git ss \&quot;$1\&quot; &amp;&amp; [[ $(git parent) != '' ]] &amp;&amp; git push || git push $(git primus) HEAD -u ;};f&quot;
+    ff = &quot;!f(){ git fetch $@ &amp;&amp; git rebase $(git upstream) || (git rebase --abort &amp;&amp; echo '==&gt; Failed to rebase' &amp;&amp; exit 1);};f&quot;
+    ss = &quot;!f(){ git add --all &amp;&amp; git cc \&quot;$1\&quot; ;};f&quot;
+    cc = &quot;!f(){ git commit --verbose -m \&quot;${1:-$(git message)}\&quot; || true ;};f&quot;
+
+    parent   = &quot;!git config branch.$(git name).remote&quot;  # Can't use 'remote'
+    upstream = &quot;!git rev-parse --abbrev-ref @{u} 2&gt;/dev/null || echo '(none)'&quot;
+    origin   = &quot;!git remote get-url origin &gt;/dev/null 2&gt;&amp;1 &amp;&amp; echo origin || git remote | head -1&quot;
+    message  = &quot;!commitment 2&gt;/dev/null || curl -sfL commit.jpedro.dev || echo 'This reveals a lack of commitment'&quot;
+    alias    = &quot;!git --no-pager config -l | grep 'alias.' | cut -c7- | awk -F= '{ printf \&quot;\\033\\[32;1m%-20s\\033\\[0m%s\\n\&quot;, $1, $2 }'&quot;$2}'&quot;
+</code></pre>
+<p>So not only are we abusing git as a task manager, we are using it as a
+code sync mechanism. Fan. Tas. Tic.</p>
+<p><code>make</code> has nothin' on <code>git</code>!</p>
+<h2>Is there a better way?</h2>
+<p>I'm glad you probably asked.</p>
+<p>You can put that function's code into an executable script <code>git-deploy</code>
+in your <code>$PATH</code> and git will use it when you call <code>git deploy</code>.</p>
+<p>How does that work? Well, git started as a
+<a href="https://github.com/git/git/tree/e83c5163316f89bfbde7d9ab23ca2e25604af290">collection of small C binaries</a>
+named after their commands. For example <code>git write-tree</code> used to call
+<code>git-write-tree</code>. Any executables in your <code>$PATH</code> (even better,
+<a href="https://github.com/git/git/blob/c75fd8d8150afdf836b63a8e0534d9b9e3e111ba/exec-cmd.c#L289-L300"><code>$GIT_EXEC_PATH</code></a>)
+that start with <code>git-</code> can be called from git. <code>git-xxx</code> can be called
+as <code>git xxx</code>. I mean, you saved yourself from an hyphen! Now... if this
+is not something to brag about around the company water cooler what is?</p>
+
+</div>
+
+<footer id="footer">
+Made with some &lt;3 <a href="http://jpedro.github.io/">not a lot</a>
+</footer>
+
+
+</body>
+</html>

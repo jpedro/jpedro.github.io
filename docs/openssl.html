@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/style.css" />
+<title>openssl.md - Posts nobody asked for</title>
+</head>
+<body>
+<div id="content">
+
+<ul>
+<li>hidden: true</li>
+<li>tags: shell, security</li>
+</ul>
+
+<h1>Useful OpenSSL commands</h1>
+<p><a href="https://www.sslshopper.com/article-most-common-openssl-commands.html">Original post</a></p>
+<p>One of the most versatile SSL tools is OpenSSL which is an open source
+implementation of the SSL protocol. There are versions of OpenSSL for
+nearly every platform, including Windows, Linux, and Mac OS X. OpenSSL
+is commonly used to create the CSR and private key for many different
+platforms, including Apache. However, it also has hundreds of different
+functions that allow you to view the details of a CSR or certificate,
+compare an MD5 hash of the certificate and private key (to make sure
+they match), verify that a certificate is installed properly on any
+website, and convert the certificate to a different format.</p>
+<p>If you don't want to bother with OpenSSL, you can do many of the same
+things with our SSL Certificate Tools. Below, we have listed the most
+common OpenSSL commands and their usage:</p>
+<h2>General OpenSSL Commands</h2>
+<p>These commands allow you to</p>
+<ul>
+<li>
+<p>Generate CSRs</p>
+</li>
+<li>
+<p>Generate certificates</p>
+</li>
+<li>
+<p>Generate private keys</p>
+</li>
+<li>
+<p>Other miscellaneous tasks.</p>
+</li>
+</ul>
+<h4>Generate a new private key and Certificate Signing Request</h4>
+<pre><code>openssl req \
+    -new \
+    -newkey rsa:2048 \
+    -nodes \
+    -keyout private.key \
+    -out request.csr \
+</code></pre>
+<h4>Generate a self-signed certificate</h4>
+<pre><code>openssl req \
+    -x509 \
+    -sha256 \
+    -nodes \
+    -days 365 \
+    -newkey rsa:2048 \
+    -keyout private.key \
+    -out certificate.crt
+</code></pre>
+<h4>Generate a certificate signing request (CSR) for a private key</h4>
+<pre><code>openssl req \
+    -new \
+    -key private.key \
+    -out request.csr
+</code></pre>
+<h4>Generate a certificate signing request based on a certificate</h4>
+<pre><code>openssl x509 \
+    -x509toreq \
+    -signkey private.key \
+    -in certificate.crt \
+    -out request.csr
+</code></pre>
+<h4>Remove a passphrase from a private key</h4>
+<pre><code>openssl rsa \
+    -in private.pem \
+    -out new-private.pem
+</code></pre>
+<h2>Checking Using OpenSSL</h2>
+<p>If you need to check the information within a Certificate, CSR or
+Private Key, use these commands. You can also check CSRs and
+check certificates using our online tools.</p>
+<h4>Check a Certificate Signing Request (CSR)</h4>
+<pre><code>openssl req -text -noout -verify -in CSR.csr
+</code></pre>
+<h4>Check a private key</h4>
+<pre><code>openssl rsa -in private.key -check
+</code></pre>
+<h4>Check a certificate</h4>
+<pre><code>openssl x509 -in certificate.crt -text -noout
+</code></pre>
+<h4>Check a PKCS#12 file (.pfx or .p12)</h4>
+<pre><code>openssl pkcs12 -info -in keyStore.p12
+</code></pre>
+<h2>Debugging Using OpenSSL</h2>
+<p>If you are receiving an error that the private doesn't match
+the certificate or that a certificate that you installed to
+a site is not trusted, try one of these commands. If you are
+trying to verify that an SSL certificate is installed correctly,
+be sure to check out the SSL Checker.</p>
+<h4>Check an MD5 hash of the public key to ensure that it matches with what is in a CSR or private key</h4>
+<pre><code>openssl x509 -noout -modulus -in certificate.crt | openssl md5
+openssl rsa -noout -modulus -in privateKey.key | openssl md5
+openssl req -noout -modulus -in CSR.csr | openssl md5
+</code></pre>
+<h4>Check an SSL connection</h4>
+<p>All the certificates (including Intermediates) should be displayed</p>
+<pre><code>openssl s_client -connect www.paypal.com:443
+</code></pre>
+<h2>Converting Using OpenSSL</h2>
+<p>These commands allow you to convert certificates and keys to
+different formats to make them compatible with specific types
+of servers or software. For example, you can convert a normal
+PEM file that would work with Apache to a PFX (PKCS#12) file
+and use it with Tomcat or IIS. Use our SSL Converter to convert
+certificates without messing with OpenSSL.</p>
+<h4>Convert a DER file (.crt .cer .der) to PEM</h4>
+<pre><code>openssl x509 -inform der -in certificate.cer -out certificate.pem
+</code></pre>
+<h4>Convert a PEM file to DER</h4>
+<pre><code>openssl x509 -outform der -in certificate.pem -out certificate.der
+</code></pre>
+<h4>Convert a PKCS#12 file (.pfx .p12) containing a private key and certificates to PEM</h4>
+<pre><code>openssl pkcs12 -in keyStore.pfx -out keyStore.pem -nodes
+</code></pre>
+<p>You can add -nocerts to only output the private key or add -nokeys to only output the certificates.</p>
+<h4>Convert a PEM certificate file and a private key to PKCS#12 (.pfx .p12)</h4>
+<pre><code>openssl pkcs12 -export -out certificate.pfx -inkey privateKey.key -in certificate.crt -certfile CACert.crt
+</code></pre>
+
+</div>
+
+<footer id="footer">
+Made with some &lt;3 <a href="http://jpedro.github.io/">not a lot</a>
+</footer>
+
+
+</body>
+</html>

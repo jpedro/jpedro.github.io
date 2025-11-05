@@ -4,6 +4,6 @@ use clap::Parser;
 #[command(version, about, long_about = None)]
 pub struct Args {
     /// Directory to load files from
-    #[arg(short, long, default_value = ".test")]
+    #[arg(short, long, default_value = ".posts")]
     pub dir: String,
 }

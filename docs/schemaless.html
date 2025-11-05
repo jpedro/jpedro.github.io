@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/style.css" />
+<title>schemaless.md - Posts nobody asked for</title>
+</head>
+<body>
+<div id="content">
+
+<ul>
+<li>hidden: true</li>
+<li>tags: databases</li>
+</ul>
+
+<h1>Schemaless</h1>
+<p>Schemaless databases are in fashion for a reason.</p>
+<p>On relational databases, out of the box schema changes
+sometimes involve locking and copying an entire table
+from the old structure to the new. When that table holds
+millions and millions of rows it will be unavailable,
+sometimes for hours and hours.</p>
+<p>Schemaless data is easier to shard, across nodes.</p>
+<h2>The tables</h2>
+<p>In theory, only 2 tables are needed to hold a schemaless schema:</p>
+<ul>
+<li><code>item</code>, holds an <code>id</code> and a <code>type</code> and metadata.</li>
+<li><code>data</code>, holds the <code>field=value</code> for each for each of the items.</li>
+<li><code>find</code>, holds indexed data (optional).</li>
+</ul>
+<p>The <code>data</code> table hydrates <code>item</code>.</p>
+<blockquote>
+<p>Yes. You got me there! I used four letter names. Purely for
+the alignment.</p>
+</blockquote>
+<h2>The example</h2>
+<p>Using sqlite3 as example:</p>
+<pre><code class="language-sql">DROP TABLE IF EXISTS &quot;item&quot;;
+DROP TABLE IF EXISTS &quot;data&quot;;
+CREATE TABLE &quot;item&quot; (
+    &quot;id&quot;        INTEGER PRIMARY KEY AUTOINCREMENT,
+    &quot;type&quot;      TEXT,
+    &quot;created&quot;   TEXT DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    &quot;updated&quot;   TEXT,
+    &quot;status&quot;    TEXT,
+    &quot;meta&quot;      TEXT
+);
+CREATE TABLE &quot;data&quot; (
+    &quot;id&quot;        INTEGER NOT NULL,
+    &quot;field&quot;     TEXT NOT NULL,
+    &quot;value&quot;     TEXT NOT NULL
+);
+CREATE UNIQUE INDEX &quot;data_id_field&quot; ON &quot;data&quot; (&quot;id&quot;, &quot;field&quot;);
+</code></pre>
+<p>Now, let's pump some data and review it:</p>
+<pre><code class="language-sql">INSERT INTO &quot;item&quot; (&quot;type&quot;) VALUES ('post');
+INSERT INTO &quot;item&quot; (&quot;type&quot;) VALUES ('post');
+
+INSERT INTO &quot;data&quot; VALUES (1, 'title', 'First post');
+INSERT INTO &quot;data&quot; VALUES (2, 'title', 'Second post');
+INSERT INTO &quot;data&quot; VALUES (2, 'content', 'Some stuff');
+
+UPDATE &quot;item&quot; SET &quot;status&quot; = 'published' WHERE id = 2;
+
+SELECT * FROM &quot;item&quot;;
+SELECT * FROM &quot;data&quot;;
+</code></pre>
+<h2>The query</h2>
+<p>Say you are looking for the 10 most recent posts.</p>
+<pre><code class="language-sql">SELECT
+        d.id,
+        d.field,
+        d.value
+FROM
+        &quot;item&quot; i
+JOIN
+        &quot;data&quot; d
+        ON d.id = i.id
+WHERE
+        i.type = &quot;post&quot;
+        AND i.status = &quot;published&quot;
+ORDER BY
+        i.created DESC
+LIMIT 10
+;
+</code></pre>
+
+</div>
+
+<footer id="footer">
+Made with some &lt;3 <a href="http://jpedro.github.io/">not a lot</a>
+</footer>
+
+
+</body>
+</html>

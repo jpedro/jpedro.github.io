@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" href="/style.css" />
+<title>hosting.md - Posts nobody asked for</title>
+</head>
+<body>
+<div id="content">
+
+<ul>
+<li>hidden-no: true</li>
+<li>tags: shell, linux, kubernetes, reinventing the wheels</li>
+</ul>
+
+<h1>Hosting your stuff</h1>
+<p>I used <a href="https://surge.sh/">surge.sh</a> to host static content and some
+SPAs and <a href="https://www.heroku.com/">heroku.com</a> as the backend.</p>
+<p>But <a href="https://blog.heroku.com/next-chapter">heroku will stop free plans</a>
+and surge <a href="https://surge.sh">has a 60 MB limit</a> for the total
+size of files uploaded. A few larger images and you are toast.</p>
+<p>Owning your hosting stack avoids these free plan's limits and no
+longer have to wait for Heroku's free dynos to slowly kick in. You will
+lose surge's fast updated CDN though but we can fix that too. If you
+use Cloudflare you can select which DNS records should be proxied
+through them.</p>
+<h2>But why?</h2>
+<p>Fun and profit. Read this: <a href="https://news.ycombinator.com/item?id=39520776#39524350">https://news.ycombinator.com/item?id=39520776#39524350</a></p>
+<h2>Replacing surge</h2>
+<p>Replacing surge is the easiest. Just install nginx on a linux machine
+and rsync files into the right directory.</p>
+<p><strong>Boom! Done.</strong> Any more questions?</p>
+<h3>One conf to rule them all</h3>
+<p>Nginx's virtual hosts is quite flexible because you can use
+<code>$variables</code> in places. Nginx 1.9 finally allows variable
+interpolation in the <code>ssl_*</code> fields. So one <code>sites-enabled/</code> conf file
+can rule 'em all.</p>
+<p>A server block in nginx can look like this:</p>
+<pre><code>server {
+    server_name example.com *.example.com;
+
+    listen 443 ssl http2;
+    listen [::]:443 ssl http2;
+
+    ssl_certificate          /etc/letsencrypt/live/$ssl_server_name/fullchain.pem;
+    ssl_certificate_key      /etc/letsencrypt/live/$ssl_server_name/privkey.pem;
+    ssl_trusted_certificate  /etc/letsencrypt/live/$ssl_server_name/cert.pem;
+
+    root /var/www/vhosts/$host;
+    index index.html;
+    # ....
+}
+</code></pre>
+<blockquote>
+<p><strong>Note</strong></p>
+<p>The usage of <code>$ssl_server_name</code> comes with a performance
+cost.</p>
+</blockquote>
+<p>So the web root directory for the subdomain <code>test.example.com</code> is
+found at <code>/var/www/vhosts/test.example.com</code>. Transparent.</p>
+<p>You just need to symlink <code>/etc/letsencrypt/live/test.example.com</code>
+to <code>/etc/letsencrypt/live/example.com</code> and make sure when you create
+the Lets Encrypt cert you add a wildcard domain to it. Something like:</p>
+<pre><code class="language-bash">certbot certonly \
+    -d example.com \
+    -d '*.example.com' \
+    -d '*.acme.example.com' \
+    --server https://acme-v02.api.letsencrypt.org/directory \
+    --register-unsafely-without-email \
+    --agree-tos \
+    --dns-cloudflare \
+    --dns-cloudflare-credentials cloudflare.ini
+</code></pre>
+<p>You should use the DNS challenge for it. The Cloudflare plugin works
+well with Lets Encrypt.</p>
+<p>Now a &quot;deployment&quot; is an <code>rsync</code> call away:</p>
+<pre><code class="language-bash">$ cat ./bin/deploy
+#!/usr/bin/env bash
+set -euo pipefail
+
+rsync \
+    --recursive \
+    --archive \
+    --verbose \
+    --perms \
+    --links \
+    --compress \
+    --delete \
+    --exclude '.git' \
+    $PWD \
+    $(cat CNAME):/var/www/vhosts/$(cat CNAME)
+
+    # &quot;Rave please&quot; is a good mnemonic for the short flags &quot;rsync -ravplz&quot;
+</code></pre>
+<p>Easy. And yes. That <code>CNAME</code> contains the single line <code>test.example.com</code>,
+just like surge.</p>
+<h3>Todos</h3>
+<ul>
+<li>
+<p>Introduce surge-like directives, like <code>redirect</code> and <code>auth</code>, that
+basically render a custom nginx <code>sites-enabled/</code> conf files for a
+deployment. You lose the single conf to rule 'em all but you can
+optimize settings per host. Caching static assets could be one of
+them, if you are not proxying those through some CDN.</p>
+</li>
+</ul>
+<h2>Replacing heroku apps</h2>
+<p>The idea is to replace heroku's build packs with some tool that knows
+how to package the repo files into a docker image and deploy it.</p>
+<p>The tool figures out what type of application the repo is and how it
+should be handled or you explicitly tell it to.</p>
+<p>Kubernetes or plain old docker daemon can fit neatly as the container
+runtime.</p>
+<h3>Implicit</h3>
+<p>The laziest approach to guessing how the repo should be packaged is to
+look for some files that indicate which language, framework the repo
+uses.</p>
+<p>In java one can check if there's a <code>pom.xml</code> or a <code>build.gradle</code> file.
+For go that would be a <code>go.mod</code>, for rust <code>Cargo.toml</code>.</p>
+<p>That informs the tool which base docker image should use, copies the
+repo files into it, install dependencies, run tests in the staged
+build container, copy the relevant built files into the final stage
+and deploys that via a rendered kubernetes, docker-composer or helm
+charts.</p>
+<h3>Explicit</h3>
+<p>If you don't need the latest and greatest default configuration, you
+can tell the script what to do. This could look like:</p>
+<pre><code class="language-yaml">test:
+  command: go test
+  coverage: true # or configure a coverage.out file path
+
+build:
+  command: go build .
+  image:
+    base: golang:latest
+    name: hello-kaiku
+    tags:
+    - latest
+    - time-$(( build.time.now ))
+    - version-$(( build.git.describe ))
+
+deploy:
+  targets:
+  - docker-compose
+  - kubernetes
+  - helm
+
+run:
+  # These get translated into `spec.template.spec.containers[]` fields
+  # Overrides the command in the docker base image
+  command: ['sh', '-c', 'echo &quot;Hello, Kubernetes!&quot; &amp;&amp; sleep 3600']
+  env:
+    SOME_VAR: some-value
+    SOME_SECRET: $(( build.secrets.SOME_SECRET ))
+    LISTEN_POST: $(( run.PORT ))
+</code></pre>
+<p>Here the use of <code>$(( scope.var ))</code> is used to dynamically insert values
+at different phases.</p>
+<p>The configured <code>test</code>, <code>build</code>, and <code>run</code> stages above have defaults
+for each runtime the tool figures out and merges.</p>
+<h3>Todos</h3>
+<ul>
+<li>
+<p>Based on the <code>CNAME</code> file or some configuration, ensure the required
+TLS certificates exist and get attached to the kubernetes Ingress.</p>
+</li>
+</ul>
+<h2>Replacing heroku addons</h2>
+<p>This boils down to exposing some CRUD API that creates cloud resources,
+like a new postgres database, a redis database or an elasticsearch
+index and exposes environment variables for each deployment that uses
+them.</p>
+<h3>Todos</h3>
+<ul>
+<li>There should be a way to uniquely identify a repo so each time it
+chages its name or domain the same resources env gets injected into
+the kubernetes deployment via config maps or secrets.</li>
+</ul>
+
+</div>
+
+<footer id="footer">
+Made with some &lt;3 <a href="http://jpedro.github.io/">not a lot</a>
+</footer>
+
+
+</body>
+</html>
