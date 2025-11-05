@@ -17,7 +17,7 @@ fn main() {
             println!("- Path  {:?}", post.path);
             println!("- Text  {:?}", post.text);
             println!("- Title {:?}", post.title);
-            println!("- Lines {:?}", post.lines);
+            // println!("- Lines {:?}", post.lines);
             println!("- Attrs {:?}", post.attrs);
         }
     }
