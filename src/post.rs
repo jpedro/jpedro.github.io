@@ -110,7 +110,7 @@ fn parse(path: &Path) -> (String, HashMap<String, String>) {
 }
 
 pub fn render(post: &Post, file: impl AsRef<Path>) {
-    let tera = match Tera::new("templates/**/*.html") {
+    let tera = match Tera::new("src/templates/**/*.html") {
         Ok(t) => t,
         Err(e) => panic!("Error parsing templates: {}.\n", e),
     };
