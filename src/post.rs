@@ -12,7 +12,7 @@ const TAG_H1: &str = "# ";
 
 #[derive(Serialize)]
 pub struct Post<'a> {
-    pub path: &'a Path,
+    pub path: &'a str,
     pub text: String,
     pub html: String,
     pub title: &'a str,
@@ -48,7 +48,7 @@ pub fn load(path: &Path) -> Result<Post<'_>, Error> {
     let html = markdown::to_html(&text);
 
     let post = Post {
-        path: &path,
+        path: &path.to_str().unwrap(),
         text: text,
         html: html,
         title: &path.file_name().unwrap().to_str().unwrap(),
@@ -108,10 +108,6 @@ fn parse(path: &Path) -> (String, HashMap<String, String>) {
 
     (text, attrs)
 }
-
-// fn get_html(text: &str) -> String {
-//     markdown::to_html(text)
-// }
 
 pub fn render(post: &Post, file: impl AsRef<Path>) {
     let tera = match Tera::new("templates/**/*.html") {

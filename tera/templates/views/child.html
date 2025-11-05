@@ -3,6 +3,12 @@
 {% block title %}{{ post.title }}{% endblock title %}
 
 {% block head %}
+<link ref="ok" />
+{{ super() }}
+{% endblock head %}
+
+
+{% block head %}
 {{ super() }}
 <style type="text/css">
 .important {
