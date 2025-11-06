@@ -19,7 +19,7 @@ to set properties. Supported:
 ## Todos
 
 - [x] Move posts from the root directory to [.posts](.posts).
-- [ ] Dump generated posts into the [docs](docs) directory.
+- [x] Dump generated posts into the [docs](docs) directory.
 - [ ] Add generated tags at the top of each page.
 - [ ] Allow multi-line comments.
 - [ ] Allow `index` and `date` ordering (in that order).
