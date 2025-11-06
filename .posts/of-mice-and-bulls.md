@@ -64,7 +64,7 @@ It's like the bull fears rising bulls and the mouse rising mice. And
 somehow they snuff them out.
 
 
-## The Big Exception
+## Notable Exceptions
 
 This analogy does seem to break in the corporate world though. In
 sufficiently large companies, run by boards, where the non-founder CEO
