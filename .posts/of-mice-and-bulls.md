@@ -71,12 +71,20 @@ sufficiently large companies, run by boards, where the non-founder CEO
 is but a disposable employee, mice tend to abound. They survive
 personality clashes and office politics better.
 
-Does this mean any bulls need to live at the board level? Are they the
-investors behind these boards?
+Does this mean any bulls need to live at the board level? Or the
+shareholders behind these boards?
 
-Also in traditional politics. Are shadow figures in political parties
-the real bulls? Some Éminence grise types inside them? Or are we as a
-society generally trending towards a majority mice-type personality?
+In traditional politics: are shadow figures in political parties
+the real bulls? Some Éminence grise types inside them?
+
+> Because it's becoming apparent the most impactful, critical,
+> hard-to-reverse decisions are not done at Prime Minister or
+> even President level. These are mostly replacable figure-heads,
+> with a back story built to entertain the masses and maintain
+> the illusion of choice.
+
+Or are we as a society generally trending towards a majority
+mice-type personality?
 
 I have no idea. An interesting dynamic though.
 
