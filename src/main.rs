@@ -3,13 +3,16 @@ use std::path::Path;
 
 use clap::Parser;
 
+use crate::post::Post;
+
 mod args;
 mod find;
 mod post;
 
+const SLASH: &str = "/";
+
 fn main() {
     let args = args::Args::parse();
-    let slash = "/";
     println!("- Dir   {:?}", args.dir);
 
     let found = find::files(Path::new(&args.dir));
@@ -23,13 +26,24 @@ fn main() {
             println!("- Title {:?}", p.title);
             // println!("- Lines {:?}", post.lines);
             println!("- Attrs {:?}", p.attrs);
-            let docs = format!("docs/{}.html", p.path.replace(".md", "").replace(&args.dir, "").strip_prefix(slash).unwrap());
+            let docs = dest(&args.dir, &p);
             let parent = Path::new(&docs).parent().unwrap();
             println!("- Docs  {:?}", docs);
             println!("- Parent  {:?}", parent);
             let _ = fs::create_dir_all(parent);
-            let dest = Path::new(&docs);
-            post::render(&p, &dest);
+            let d = Path::new(&docs);
+            post::render(&p, &d);
         }
     }
+}
+
+fn dest(dir: &str, p: &Post) -> String {
+    format!(
+        "docs/{}.html",
+        p.path.
+            replace(".md", "").
+            replace(&dir, "").
+            strip_prefix(SLASH)
+            .unwrap()
+    )
 }
