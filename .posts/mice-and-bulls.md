@@ -62,7 +62,7 @@ personality clashes and office politics better.
 Does this mean any bulls need to live at the board level? Are they the
 investors behind these boards?
 
-Also in traditional politics. Are shadown figures in the political
+Also in traditional politics. Are shadow figures in the political
 the bulls? Some Éminence grise inside them? Or are we as a society
 generally trending towards a majority mice-type personality?
 
