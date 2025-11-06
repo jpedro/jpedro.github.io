@@ -81,7 +81,8 @@ the real bulls? Some Éminence grise types inside them?
 > hard-to-reverse decisions are not done at Prime Minister or
 > even President level. These are mostly replacable figure-heads,
 > with a back story built to entertain the masses and maintain
-> the illusion of choice.
+> the illusion of choice. Some might be bland. Others very
+> colourful and controversial. But mice nonetheless.
 
 Or are we as a society generally trending towards a majority
 mice-type personality?
