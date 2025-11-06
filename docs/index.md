@@ -8,18 +8,18 @@
 <!-- # Index -->
 <!--  &nbsp; -->
 
-- [Series](series.md)
-- [Scrum](scrum.md)
-- [Boredom](boredom.md)
-- [My Favourite Unit](unit.md)
-- [Random](random.md)
-- [Hundreds and Hundreds](hundreds.md)
-- [Knife's edge](chaos.md)
-- [Self Hosting](hosting.md)
-- [`git dd`](git-dd.md)
-- [Bash Dispatch](dispatch.md)
-- [Coding](coding.md)
-- [Annoying People](annoy.md)
+- [Series](series)
+- [Scrum](scrum)
+- [Boredom](boredom)
+- [My Favourite Unit](unit)
+- [Random](random)
+- [Hundreds and Hundreds](hundreds)
+- [Knife's edge](chaos)
+- [Self Hosting](hosting)
+- [`git dd`](git-dd)
+- [Bash Dispatch](dispatch)
+- [Coding](coding)
+- [Annoying People](annoy)
 <br />
 <br />
 <!-- #  &nbsp; -->
