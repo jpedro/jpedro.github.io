@@ -12,6 +12,9 @@ A strong, assertive outspoken leader is many times followed by a more
 quiet, thoughtful one. The bull and the mouse. And vice-versa. Yin-yang
 kinda cycles.
 
+
+## The bull
+
 A loud extroverted leader that revels in big picture, big talk needs to
 rely on a quietly efficient counterpart to handle the pesky minutiae to
 get actual things done. To bounce ideas and get an honest take on what's
@@ -19,6 +22,9 @@ happening or doable. Since he's not a threat (it can't possibly be!)
 the extrovert protects and promotes the introvert. Over time the
 introvert, the mouse, becomes Heir apparent. The mouse is grateful and
 loyal to the bull that protects him.
+
+
+## The mouse
 
 When the mouse is in power, he's no less brutal than the bull but the path
 that took him to power, the details, is what he prefers. He has no patience
@@ -28,6 +34,9 @@ interest to develop.
 
 So the incentives are there for a bull and his mouse to appreciate each
 other and coexist productively.
+
+
+## Examples
 
 Does this happen _always_? No. But there are examples of this.
 
@@ -53,6 +62,9 @@ Putin is a mouse. Preceeded by Yeltsin. A bull.
 
 It's like the bull fears rising bulls and the mouse rising mice. And
 somehow they snuff them out.
+
+
+## The Big Exception
 
 This analogy does seem to break in the corporate world though. In
 sufficiently large companies, run by boards, where the non-founder CEO
