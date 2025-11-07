@@ -20,4 +20,4 @@ jobs:
 
     - name: Run
       run: |
-        cargo run -- --name NAME --count 3 --prefix "PREFIX:"
+        cargo run
