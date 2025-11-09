@@ -128,3 +128,20 @@ responsilibities and your impact radius increases but your pay
 barely moves.
 -->
 
+
+- [Management is the least efficient activity in your organization.
+](https://archive.is/IjEst)
+
+> A related problem is that the most powerful managers are the ones
+> furthest from frontline realities. All too often, decisions made
+> on an Olympian peak prove to be unworkable on the ground.
+>
+> The problem isn’t the occasional control freak; it’s the
+> hierarchical structure that systematically disempowers lower-level
+> employees. For example, as a consumer you have the freedom to spend
+> $20,000 or more on a new car, but as an employee you probably don’t
+> have the authority to requisition a $500 office chair. Narrow an
+> individual’s scope of authority, and you shrink the incentive to
+> dream, imagine, and contribute.
+
+- [](https://codegood.co/writing/why-your-best-engineers-are-interviewing-elsewhere)
