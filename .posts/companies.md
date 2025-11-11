@@ -144,4 +144,9 @@ barely moves.
 > individual’s scope of authority, and you shrink the incentive to
 > dream, imagine, and contribute.
 
-- [](https://codegood.co/writing/why-your-best-engineers-are-interviewing-elsewhere)
+- [Why Your Best Engineers Are Interviewing Elsewhere
+](https://codegood.co/writing/why-your-best-engineers-are-interviewing-elsewhere)
+
+Long, a bit repetetive, but drives the point that there's a disconnect
+between the soldiers in the trenches and the generals planning their
+work.
