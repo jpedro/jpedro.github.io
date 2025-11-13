@@ -20,30 +20,6 @@ pub struct Post<'a> {
 }
 
 pub fn load(path: &Path) -> Result<Post<'_>, Error> {
-    // for line in post.text.split("\n") {
-    //     if found {
-    //         lines.push(line);
-    //     } else if line.starts_with(TAG_H1) {
-    //         println!("> # Found the H1 tag: '{}'", line);
-    //         post.title = &line.replace("# from", "");
-    //         found = true;
-    //     } else if line.starts_with("<!--") {
-    //         let front = line.replace("<!--", "").replace("-->", "");
-    //         println!("> Found front: '{}'", front);
-    //         let mut field = line;
-    //         let mut value = "true";
-    //         if let Some(colon) = line.find(":") {
-    //             println!("> Found colon: '{}'", colon);
-    //             field = &line[0..colon];
-    //             value = &line[colon+1..];
-    //         }
-    //         attrs.insert(field, value);
-    //         println!("> Front field: '{}', value: '{}'", field, value);
-    //     } else {
-    //         println!("> What is this: '{}'", line);
-    //     }
-    // }
-
     let (text, attrs) = parse(&path);
     let html = markdown::to_html(&text);
 
@@ -58,18 +34,6 @@ pub fn load(path: &Path) -> Result<Post<'_>, Error> {
 
     Ok(post)
 }
-
-// fn read_text(path: &Path) -> String {
-//     fs::read_to_string(path).unwrap()
-// }
-
-// fn read_lines(path: &Path) -> Vec<String> {
-//     fs::read_to_string(path)
-//         .unwrap()
-//         .lines()
-//         .map(|line: &str| line.into())
-//         .collect()
-// }
 
 // fn read_attrs(path: &Path) -> HashMap<String, String> {
 fn parse(path: &Path) -> (String, HashMap<String, String>) {
