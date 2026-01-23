@@ -52,6 +52,8 @@ knife’s edge".
 
 - [Wirzenius wrote this portably, Torvalds fucked it up](https://github.com/torvalds/linux/blob/master/lib/vsprintf.c#L10)
 
+- ["Note that this may result in tears!"](https://github.com/torvalds/linux/blob/a66191c590b3b58eaff05d2277971f854772bd5b/include/asm-generic/rwonce.h#L41)
+
 
 <!--
 ## Solution?
