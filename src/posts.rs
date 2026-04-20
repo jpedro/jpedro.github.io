@@ -19,30 +19,33 @@ pub struct Post<'a> {
     pub attrs: HashMap<String, String>,
 }
 
-pub fn load(path: &Path) -> Result<Post<'_>, Error> {
-    let (text, attrs) = parse(&path);
-    let html = markdown::to_html(&text);
+impl Post<'_> {
+    pub fn new(path: &Path) -> Post<'_> {
+        Post {
+            path: &path.to_str().unwrap(),
+            text: "".into(),
+            html: "".into(),
+            title: &path.file_name().unwrap().to_str().unwrap(),
+            attrs: HashMap::new(),
+        }
+    }
+}
 
-    let post = Post {
-        path: &path.to_str().unwrap(),
-        text: text,
-        html: html,
-        title: &path.file_name().unwrap().to_str().unwrap(),
-        attrs: attrs,
-        // lines: read_lines(&path),
-    };
+pub fn load(path: &Path) -> Result<Post<'_>, Error> {
+    let mut post = Post::new(path);
+    parse(&mut post);
+    post.html = markdown::to_html(&post.text);
 
     Ok(post)
 }
 
 // fn read_attrs(path: &Path) -> HashMap<String, String> {
-fn parse(path: &Path) -> (String, HashMap<String, String>) {
+fn parse(post: &mut Post) {
     let new_line: String = '\n'.to_string();
     let mut found = false;
-    let mut text: String = String::from("");
-    let mut attrs: HashMap::<String, String> = HashMap::new();
+    let mut text = String::from("");
 
-    for line in fs::read_to_string(path).unwrap().lines() {
+    for line in fs::read_to_string(&post.path).unwrap().lines() {
         if !found && line.starts_with(TAG_H1) {
             found = true;
         }
@@ -58,19 +61,16 @@ fn parse(path: &Path) -> (String, HashMap<String, String>) {
         }
 
         let bare = line.replace("<!--", "").replace("-->", "");
-        // println!("> Using bare: '{}'.", bare);
         let mut field = bare.clone().trim().to_string();
         let mut value = "true".to_string();
         if let Some(colon) = bare.find(":") {
-            // println!("> Found colon: {} on '{}'", colon, bare);
             field = bare[0..colon].to_string().trim().to_string();
             value = bare[colon+1..].to_string().trim().to_string();
         }
-        attrs.insert(field.clone(), value.to_string());
-        // println!("  {}: {}", field, value);
+        post.attrs.insert(field.clone(), value.to_string());
     }
 
-    (text, attrs)
+    post.text = text;
 }
 
 pub fn render(post: &Post, file: impl AsRef<Path>) {
