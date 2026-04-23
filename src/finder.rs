@@ -1,9 +1,7 @@
-use std::io::Result;
-
 use std::fs;
 use std::path::Path;
 use std::path::PathBuf;
-
+use std::io::Result;
 
 pub fn files(path: impl AsRef<Path>) -> Result<Vec<PathBuf>> {
     let mut paths = vec![];
