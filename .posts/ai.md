@@ -3,13 +3,47 @@
 One of the things I hear or read anybody complain about AI is the
 impact this will have en innovation.
 
-This is closely related to the post about [boredom](boredom.md).
+This is closely related to the post about [boredom](boredom.md). That
+was about the lack of excitment and stimulation. That vacuum is good.
+Is important. And it's missing.
 
-Let's assume AI can create perfect code. It can almost read your mind
-becased on your prompt, current context, previous analysis of your
-tweaks. AI will create the code you had in mind.
+This post is more about pain and the frustation. The one that comes
+from repeating the same shit over and over again.
 
-But that still leaves a massive problem.
+
+## Assumptions
+
+Let's assume AI can create perfect code.
+
+They probably can almost read your mind anyway, becased on your prompt,
+context, and previous analysis of your requests and tweaks.
+
+
+## The problem
+
+But that still leaves a massive problem. How would that code,
+regurgitated faster than you can blink, be improved?
+
+Humans hate repetitive work. We and our bodies hate it so much that
+when the first opportunity came to automate stuff away, the whole
+industrial revolution kicked.
+
+In the development world, we have the unique luxury of doing that. Just
+faster. Because the costs are lower.
+
+Devs abstract away what is repetitive. We shovel the boring,
+undifferentiated parts in libraries, frameworks. It's all tucked away.
+Development happens in layers.
+
+Boring CRUD SQL queries that only change the table name? Wrap it in a
+Model. Repetitive request routing? Extend the BaseController, name it
+in a certain way, write it in this directory and you get mapping for
+free.
+
+And we loooove to add new layers all the time. We move the concern for
+this thing, that used to be complex and error-prone, to this box, that
+can be re-used by many afterwards. And that gives us a dopamine hit.
+
 
 
 
