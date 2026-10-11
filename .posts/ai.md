@@ -3,7 +3,7 @@
 One of the things I hear or read anybody complain about AI is the
 impact this will have en innovation.
 
-This is closely related to the post about [boredrom](boredrom).
+This is closely related to the post about [boredrom](boredrom.md).
 
 Let's assume AI can create perfect code. It can almost read your mind
 becased on your prompt, current context, previous analysis of your
