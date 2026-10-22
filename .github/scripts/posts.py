@@ -15,6 +15,7 @@ TRUTHY = [
     "yes",
     "on",
     "1",
+    "fuck yeah",
 ]
 COMMENT_START = "<!--"
 COMMENT_STOP = "-->"
