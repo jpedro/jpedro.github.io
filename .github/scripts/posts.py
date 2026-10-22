@@ -21,8 +21,6 @@ COMMENT_START = "<!--"
 COMMENT_STOP = "-->"
 
 CENSORED_SEXY_COMMENTS = """
- &nbsp;
-
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
 <script src="https://jpedro.github.io/js/v1/data.js"></script>
@@ -31,20 +29,15 @@ CENSORED_SEXY_COMMENTS = """
 """
 
 COOL_SEXY_COMMENTS = """
- &nbsp;
-
 <script src="https://raw.githubusercontent.com/jpedro/jpedro.github.io/master/.github/static/js/comments.js"></script>
 <script defer="">Comments.start(document.body.children[0]);</script>
 """
 
 SHOW_ME_SOME_MCLOVIN = """
-<br />
-<br />
-<!-- #  &nbsp; -->
-
+<br /><br />
 <!-- Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io) -->
 <!-- Posts nobody asked for <font color="red" size="1px">■</font> -->
-[Made](https://github.com/jpedro/jpedro.github.io) with some <3 not a lot
+Made with some <3 but [not a lot](https://github.com/jpedro/jpedro.github.io)
 """
 
 TEMPLATE_INDEX = """
