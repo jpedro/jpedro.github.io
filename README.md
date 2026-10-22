@@ -13,7 +13,7 @@ to set properties. Supported:
 | `hidden`   | Hides a page from the `index.md`                | boolean | `false`  |
 | `title`    | Overrides `# H1` and its beautified file name   | string  | `""`     |
 | `tags`     | Custom tags                                     | csv     | `""`     |
-| `comments` | Allows comments in pages (only dad jokes because we need freaking storage for this) | boolean | `false`  |
+| `comments` | Allows comments (only dad jokes because freaking storage) | boolean | `false`  |
 
 
 ## Todos
