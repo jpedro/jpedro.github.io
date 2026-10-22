@@ -95,7 +95,6 @@ class Colors:
     @staticmethod
     def debug(text: str) -> str:
         if not DEBUG: return
-        # print(DEBUG, text)
         print(Colors.gray("==> " + str(text)))
 
 
