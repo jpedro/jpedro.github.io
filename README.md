@@ -8,12 +8,12 @@
 Add a markdown comment in the format `<!-- write something smart here -->`
 to set properties. Supported:
 
-| Comment    | Description                                 | Type    | Default  |
-| ---------- | ------------------------------------------- | ------- | -------- |
-| `hidden`   | Hides a page from the `index.md`            | boolean | `false`  |
-| `title`    | Overrides `# H1` and beautified file name   | string  | `""`     |
-| `tags`     | Custom tags                                 | csv     | `""`     |
-| `comments` | Controls comments in pages (only dad jokes) | boolean | `false`  |
+| Comment    | Description                                     | Type    | Default  |
+| ---------- | ----------------------------------------------- | ------- | -------- |
+| `hidden`   | Hides a page from the `index.md`                | boolean | `false`  |
+| `title`    | Overrides `# H1` and its beautified file name   | string  | `""`     |
+| `tags`     | Custom tags                                     | csv     | `""`     |
+| `comments` | Allows comments in pages (only dad jokes because we need freaking storage for this) | boolean | `false`  |
 
 
 ## Todos
