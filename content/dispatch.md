@@ -58,7 +58,8 @@ accept values that can also be `--flag`s. So for a command like:
     please list --repos
 
 one would need to check not only `$1` but `$2`. Or use a 2nd case inside
-the `cmd.list` function. And `--repos` is a valid directory name.
+the `cmd.list` function. And `--repos` is a valid directory name and
+that means `--` needs to be handled.
 
 
 ## Enter dispatch
@@ -112,7 +113,7 @@ dispatch $@
 ```
 
 It will try to find `cmd.${@// /.}` from declared functions. The
-longest one that matches the arguments you pass. It starts with all
+longest one that matches the arguments get called. It starts with all
 the arguments and removes one by one until it finds a function that
 can be run.
 
