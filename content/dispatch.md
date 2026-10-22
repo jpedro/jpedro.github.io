@@ -12,6 +12,8 @@ On the plus side, it's everywhere and it's easy to get started. You just
 throw all shell commands into a file. As time goes by, you always add
 more cruft, like conditionals, loops and functions.
 
+So that means my scripts reek.
+
 
 ## Subcommands
 
