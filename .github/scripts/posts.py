@@ -34,10 +34,7 @@ COOL_SEXY_COMMENTS = """
 """
 
 SHOW_ME_SOME_MCLOVIN = """
-<br /><br />
-<!-- Made with some <3 [Not a lot](https://github.com/jpedro/jpedro.github.io) -->
-<!-- Posts nobody asked for <font color="red" size="1px">■</font> -->
-Made with some <3 but [not a lot](https://github.com/jpedro/jpedro.github.io)
+<p class="footer">Made with some <3 but [not a lot](https://github.com/jpedro/jpedro.github.io)</p>
 """
 
 TEMPLATE_INDEX = """
